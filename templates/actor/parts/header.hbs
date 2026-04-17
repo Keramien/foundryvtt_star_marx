@@ -1,0 +1,20 @@
+<header class="kamarade-header">
+  <img class="kamarade-avatar" src="{{actor.img}}" data-edit="img" alt="{{actor.name}}">
+  <div class="kamarade-header__titles">
+    <input type="text" name="name" value="{{actor.name}}" placeholder="Nom du Kamarade" class="charname">
+    <div class="kamarade-header__meta">
+      <label>
+        <span>{{localize "STARMARX.Actor.Details.Peuple"}}</span>
+        <input type="text" name="system.details.peuple" value="{{system.details.peuple}}">
+      </label>
+      <label>
+        <span>{{localize "STARMARX.Actor.Details.Doctrine"}}</span>
+        <select name="system.details.doctrine">
+          <option value="marteau" {{#if (eq system.details.doctrine "marteau")}}selected{{/if}}>{{localize "STARMARX.Doctrine.Marteau"}}</option>
+          <option value="faucille" {{#if (eq system.details.doctrine "faucille")}}selected{{/if}}>{{localize "STARMARX.Doctrine.Faucille"}}</option>
+          <option value="etoile" {{#if (eq system.details.doctrine "etoile")}}selected{{/if}}>{{localize "STARMARX.Doctrine.Etoile"}}</option>
+        </select>
+      </label>
+    </div>
+  </div>
+</header>

@@ -13,8 +13,14 @@
         "Historique": "Historique",
         "Description": "Description physique",
         "Notes": "Notes",
+        "Secret": "Secret",
+        "Manie": "Manie",
         "Xp": "Points d'expérience",
-        "XpTotal": "XP total gagné"
+        "XpTraits": "XP Traits",
+        "XpSignes": "XP Signes",
+        "XpClefs": "XP Clefs",
+        "XpAutres": "XP Autres",
+        "XpTotal": "Total"
       },
       "Health": {
         "Label": "Points de vie",
@@ -26,8 +32,13 @@
       },
       "Damage": {
         "Label": "Dégâts",
-        "Value": "Dégâts de base",
-        "Bonus": "Bonus aux dégâts"
+        "Source": "Source de dégâts",
+        "Bonus": "Bonus aux dégâts",
+        "Sources": {
+          "Lutte": "Lutte",
+          "Ak47": "AK 47"
+        },
+        "Hint": "Calculés depuis le rang du Trait (0-2→1, 3-4→2, 5-6→3, 7+→4) + bonus."
       },
       "Armure": {
         "Label": "Armure",
@@ -42,7 +53,48 @@
       },
       "Limits": {
         "Kontrebande": "Kontrebandes max",
-        "Clefs": "Clefs max"
+        "Clefs": "Clefs max",
+        "Signes": "Signes max"
+      }
+    },
+    "Sheet": {
+      "Tabs": {
+        "Presentation": "Présentation",
+        "Traits": "Traits",
+        "Signes": "Signes",
+        "Equipement": "Équipement"
+      },
+      "KamaradeLabel": "Fiche Kamarade",
+      "TraitPoints": {
+        "Label": "Points de Traits",
+        "Available": "Disponibles",
+        "Max": "Maximum",
+        "Spent": "Dépensés",
+        "Hint": "20 points de création + 1 par XP cumulé",
+        "ResetHint": "Remettre tous les Traits à 0",
+        "ResetTitle": "Réinitialiser les Traits",
+        "ResetConfirm": "Tous les rangs de Traits seront remis à 0. Continuer ?"
+      },
+      "Sections": {
+        "DoctrineChoisie": "Doctrine choisie",
+        "AutresDoctrines": "Autres doctrines",
+        "SigneRacial": "Signe racial obligatoire",
+        "SigneRacialVide": "Aucun signe racial défini",
+        "SignesGeneraux": "Signes particuliers",
+        "Armure": "Armure",
+        "Kontrebandes": "Kontrebandes",
+        "Bardas": "Barda"
+      },
+      "Action": {
+        "Add": "Ajouter",
+        "Edit": "Éditer",
+        "Delete": "Supprimer",
+        "AddSigne": "Ajouter un signe",
+        "AddKontrebande": "Ajouter une kontrebande",
+        "AddBarda": "Ajouter un barda",
+        "RollTrait": "Lancer 2d6 + Trait",
+        "HelpTrait": "Jet d'aide",
+        "HelpTraitTodo": "Jet d'aide — implémentation à venir"
       }
     },
     "Doctrine": {
@@ -56,6 +108,10 @@
     "Trait": {
       "Header": "Traits",
       "Value": "Rangs",
+      "Points": "Points dépensés",
+      "Bonus": "Bonus (équipement, signes, etc.)",
+      "BonusPlaceholder": "bonus",
+      "Total": "Total effectif (points + bonus + croix gratuite de doctrine)",
       "Marteau": {
         "Ak47": "AK 47",
         "BriseurDeGreve": "Briseur de Grève",

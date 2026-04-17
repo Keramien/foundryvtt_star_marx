@@ -1,0 +1,70 @@
+<section class="tab {{tab.cssClass}}" data-group="{{tab.group}}" data-tab="{{tab.id}}">
+
+  <div class="trait-points-banner">
+    <div class="pts-value">
+      <span class="pts-available">{{system.traitPoints.available}}</span>
+      <span class="pts-sep">/</span>
+      <span class="pts-max">{{system.traitPoints.max}}</span>
+    </div>
+    <div class="pts-label">
+      <strong>{{localize "STARMARX.Sheet.TraitPoints.Label"}}</strong>
+      <small>{{localize "STARMARX.Sheet.TraitPoints.Hint"}}</small>
+    </div>
+    <div class="pts-spent">
+      {{localize "STARMARX.Sheet.TraitPoints.Spent"}} : {{system.traitPoints.spent}}
+      <button type="button" class="pts-reset" data-action="resetTraits"
+              title="{{localize 'STARMARX.Sheet.TraitPoints.ResetHint'}}">
+        <i class="fa-solid fa-rotate-left"></i>
+      </button>
+    </div>
+  </div>
+
+  {{#each traitGroups}}
+    <div class="doctrine-group {{#if isChosen}}doctrine-chosen{{/if}}">
+      <header class="doctrine-header">
+        <h2>{{localize labelKey}}</h2>
+        {{#if isChosen}}
+          <small class="doctrine-tag">{{localize "STARMARX.Sheet.Sections.DoctrineChoisie"}}</small>
+        {{/if}}
+      </header>
+      <ul class="trait-list">
+        {{#each traits}}
+          <li class="trait-row">
+            <label class="trait-name">{{localize labelKey}}</label>
+            <button type="button" class="trait-btn trait-roll"
+                    data-action="rollTrait"
+                    data-doctrine="{{../id}}"
+                    data-trait="{{id}}"
+                    title="{{localize 'STARMARX.Sheet.Action.RollTrait'}}">
+              <i class="fa-solid fa-dice-d6"></i>
+            </button>
+            <button type="button" class="trait-btn trait-help"
+                    data-action="helpTrait"
+                    data-doctrine="{{../id}}"
+                    data-trait="{{id}}"
+                    title="{{localize 'STARMARX.Sheet.Action.HelpTrait'}}">
+              <i class="fa-solid fa-hand"></i>
+            </button>
+            <input class="trait-field trait-points"
+                   type="number"
+                   name="{{pointsPath}}"
+                   value="{{points}}"
+                   min="0"
+                   title="{{localize 'STARMARX.Trait.Points'}}">
+            <span class="trait-op">+</span>
+            <input class="trait-field trait-bonus"
+                   type="number"
+                   name="{{bonusPath}}"
+                   value="{{#if bonus}}{{bonus}}{{/if}}"
+                   placeholder="{{localize 'STARMARX.Trait.BonusPlaceholder'}}"
+                   title="{{localize 'STARMARX.Trait.Bonus'}}">
+            <span class="trait-op">=</span>
+            <span class="trait-total" title="{{localize 'STARMARX.Trait.Total'}}">{{total}}</span>
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+    {{#if isChosen}}<hr class="doctrine-sep">{{/if}}
+  {{/each}}
+
+</section>

@@ -1,0 +1,652 @@
+/* =========================================================================
+   Star Marx — Kamarade sheet styles
+   Palette inspired by soviet propaganda: red, black, off-white, gold accents.
+   ========================================================================= */
+
+:root {
+  --sm-red:       #a61c1c;
+  --sm-red-dark:  #7a1212;
+  --sm-gold:      #e9bd3b;
+  --sm-ink:       #1b1b1b;
+  --sm-paper:     #f3ede1;
+  --sm-paper-alt: #e8dfce;
+  --sm-border:    #2a2a2a;
+  --sm-muted:     #7a6f5c;
+}
+
+.application.star-marx {
+  background: var(--sm-paper);
+  color: var(--sm-ink);
+  font-family: "Roboto Slab", "Signika", serif;
+}
+
+/* Flex column layout: header + nav pinned, only the active tab scrolls. */
+.star-marx .window-content {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+}
+
+.star-marx-content {
+  padding: 0;
+}
+
+/* Default text color for all editable fields — matches the dark background
+   shade. Header inputs override this with --sm-paper (white on red). */
+.star-marx input,
+.star-marx textarea,
+.star-marx select {
+  color: var(--sm-ink);
+}
+
+/* Select dropdown options — browsers render <option> separately from the
+   closed <select>, so style them explicitly. Applies to every select,
+   including the one in the red header where the closed field stays white. */
+.star-marx select option {
+  color: var(--sm-ink);
+  background: var(--sm-paper);
+}
+
+/* -------- Header (avatar + name + peuple + doctrine) -------- */
+.star-marx .kamarade-header {
+  display: flex;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(135deg, var(--sm-red) 0%, var(--sm-red-dark) 100%);
+  color: var(--sm-paper);
+  border-bottom: 3px solid var(--sm-gold);
+  flex-shrink: 0;
+}
+
+.star-marx .kamarade-avatar {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  border: 3px solid var(--sm-gold);
+  border-radius: 4px;
+  cursor: pointer;
+  background: #000;
+}
+
+.star-marx .kamarade-header__titles {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.star-marx .charname {
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--sm-gold);
+  color: var(--sm-paper);
+  padding: 2px 0;
+}
+
+.star-marx .charname:focus {
+  outline: none;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.star-marx .kamarade-header__meta {
+  display: flex;
+  gap: 1rem;
+}
+
+.star-marx .kamarade-header__meta label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.75rem;
+  color: var(--sm-gold);
+  flex: 1;
+}
+
+.star-marx .kamarade-header__meta input,
+.star-marx .kamarade-header__meta select {
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--sm-paper);
+  border: 1px solid var(--sm-gold);
+  padding: 2px 4px;
+}
+
+/* -------- Tabs nav (pinned, always fully visible, inner text cropped) -------- */
+/* Override Foundry's default .tabs spacing (it ships with gap/margin/justify-content
+   that leave empty strips around the items). */
+.star-marx nav.sheet-tabs {
+  display: flex;
+  flex-wrap: nowrap;
+  background: var(--sm-ink);
+  padding: 0;
+  margin: 0;
+  gap: 0;
+  justify-content: stretch;
+  align-items: stretch;
+  border-bottom: 2px solid var(--sm-gold);
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.star-marx nav.sheet-tabs .item {
+  flex: 1 1 0;
+  min-width: 0;              /* allow child to shrink below intrinsic width */
+  margin: 0;
+  border: none;
+  border-right: 1px solid #3a3a3a;
+  border-radius: 0;
+  text-align: center;
+  padding: 0.6rem 0.5rem;
+  color: var(--sm-paper);
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: background 0.15s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;   /* crop label with "…" when too narrow */
+}
+
+.star-marx nav.sheet-tabs .item:last-child { border-right: none; }
+.star-marx nav.sheet-tabs .item:hover   { background: var(--sm-red-dark); }
+.star-marx nav.sheet-tabs .item.active  { background: var(--sm-red); color: var(--sm-gold); }
+
+.star-marx nav.sheet-tabs .item i {
+  margin-right: 0.4rem;
+  flex-shrink: 0;
+}
+
+/* -------- Tab panels: only the active one is visible and scrolls -------- */
+.star-marx section.tab {
+  padding: 1rem;
+  display: none;
+  flex: 1 1 auto;
+  min-height: 0;             /* required in a flex column for overflow to work */
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.star-marx section.tab.active {
+  display: block;
+}
+
+/* -------- Tab 1 : Presentation -------- */
+.star-marx .stats-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.star-marx .stat-block {
+  background: var(--sm-paper-alt);
+  border: 1px solid var(--sm-border);
+  border-radius: 4px;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.star-marx .stat-block h3 {
+  margin: 0 0 0.3rem 0;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--sm-red-dark);
+  border: none;
+}
+
+.star-marx .stat-values {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.star-marx .stat-values input {
+  width: 3rem;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  background: var(--sm-paper);
+  border: 1px solid var(--sm-border);
+}
+
+.star-marx .stat-values .sep { color: var(--sm-muted); }
+.star-marx .stat-values .stat-max { min-width: 3rem; }
+.star-marx .stat-block .hint {
+  margin: 0.25rem 0 0;
+  font-size: 0.65rem;
+  color: var(--sm-muted);
+}
+
+.star-marx .damage-sources {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  font-size: 0.9rem;
+}
+
+/* XP block gets its own full-width row below the identity row. The 4 XP
+   inputs + total are laid out horizontally to use the available width. */
+.star-marx .stat-xp--full {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.star-marx .stat-xp--full h3 {
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+.star-marx .xp-breakdown {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.star-marx .xp-breakdown label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  color: var(--sm-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.star-marx .xp-breakdown input {
+  width: 3.2rem;
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 700;
+  background: var(--sm-paper);
+  border: 1px solid var(--sm-border);
+  padding: 2px 0;
+}
+
+.star-marx .xp-total {
+  font-size: 0.8rem;
+  color: var(--sm-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.star-marx .xp-total strong {
+  color: var(--sm-ink);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-left: 0.35rem;
+}
+
+/* Zlotys = gold currency, so the value is rendered in the gold accent. */
+.star-marx .stat-zlotys input {
+  color: var(--sm-gold);
+  font-weight: 700;
+  text-align: center;
+}
+
+.star-marx .identity-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.star-marx .identity-row label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.75rem;
+  color: var(--sm-muted);
+}
+
+.star-marx .identity-row input {
+  background: var(--sm-paper-alt);
+  border: 1px solid var(--sm-border);
+  padding: 3px 6px;
+}
+
+.star-marx .narrative-block {
+  margin-top: 0.75rem;
+}
+
+.star-marx .narrative-block h3 {
+  margin: 0 0 0.25rem;
+  font-size: 0.9rem;
+  color: var(--sm-red-dark);
+  border-bottom: 1px solid var(--sm-red);
+  padding-bottom: 2px;
+}
+
+.star-marx .narrative-block textarea {
+  width: 100%;
+  background: var(--sm-paper-alt);
+  border: 1px solid var(--sm-border);
+  padding: 6px 8px;
+  font-family: inherit;
+  resize: vertical;
+}
+
+/* -------- Tab 2 : Traits -------- */
+.star-marx .trait-points-banner {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.6rem 1rem;
+  background: var(--sm-ink);
+  color: var(--sm-paper);
+  border-left: 6px solid var(--sm-gold);
+  margin-bottom: 1rem;
+}
+
+.star-marx .pts-value { font-size: 1.6rem; font-weight: 700; }
+.star-marx .pts-available { color: var(--sm-gold); }
+.star-marx .pts-sep { color: var(--sm-muted); margin: 0 0.25rem; }
+.star-marx .pts-label small { display: block; font-size: 0.7rem; color: var(--sm-muted); }
+.star-marx .pts-spent {
+  font-size: 0.85rem;
+  color: var(--sm-paper);
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.star-marx .pts-reset {
+  background: transparent;
+  border: 1px solid var(--sm-gold);
+  color: var(--sm-gold);
+  width: 26px;
+  height: 26px;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.star-marx .pts-reset:hover {
+  background: var(--sm-gold);
+  color: var(--sm-ink);
+}
+
+.star-marx .doctrine-group {
+  margin-bottom: 1rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--sm-paper-alt);
+  border: 1px solid var(--sm-border);
+  border-radius: 4px;
+}
+
+.star-marx .doctrine-group.doctrine-chosen {
+  border: 2px solid var(--sm-red);
+  background: #f7ede0;
+}
+
+.star-marx .doctrine-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid var(--sm-border);
+  margin-bottom: 0.5rem;
+}
+
+.star-marx .doctrine-header h2 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--sm-red-dark);
+  border: none;
+}
+
+.star-marx .doctrine-tag {
+  background: var(--sm-red);
+  color: var(--sm-gold);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.star-marx .trait-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 0.3rem 0.75rem;
+}
+
+/* Row layout: name | roll | help | points | + | bonus | = | total (compact). */
+.star-marx .trait-row {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto auto auto auto 1.8rem;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 2px 6px;
+  background: rgba(0, 0, 0, 0.03);
+  border-radius: 2px;
+}
+
+.star-marx .trait-btn {
+  background: transparent;
+  border: 1px solid var(--sm-border);
+  color: var(--sm-ink);
+  width: 22px;
+  height: 22px;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  font-size: 0.75rem;
+}
+
+.star-marx .trait-btn:hover {
+  background: var(--sm-red);
+  color: var(--sm-paper);
+  border-color: var(--sm-red);
+}
+
+.star-marx .trait-btn.trait-help:hover {
+  background: var(--sm-gold);
+  color: var(--sm-ink);
+  border-color: var(--sm-gold);
+}
+
+.star-marx .trait-name {
+  font-size: 0.9rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.star-marx .trait-field {
+  width: 2.4rem;
+  text-align: center;
+  background: var(--sm-paper);
+  border: 1px solid var(--sm-border);
+  font-weight: 700;
+  padding: 1px 0;
+}
+
+.star-marx .trait-bonus {
+  color: var(--sm-muted);       /* muted so bonuses read as secondary */
+}
+
+.star-marx .trait-op {
+  color: var(--sm-muted);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.star-marx .trait-total {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--sm-red-dark);    /* pop the final total in soviet red */
+}
+
+.star-marx .doctrine-sep {
+  border: none;
+  height: 2px;
+  background: repeating-linear-gradient(90deg, var(--sm-red) 0 8px, transparent 8px 16px);
+  margin: 1rem 0;
+}
+
+/* -------- Tab 3 : Signes & Tab 4 : Equipement — shared item list styles -------- */
+.star-marx .signe-block,
+.star-marx .equip-block {
+  margin-bottom: 1rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--sm-paper-alt);
+  border: 1px solid var(--sm-border);
+  border-radius: 4px;
+}
+
+.star-marx .signe-block__header,
+.star-marx .equip-block__header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--sm-border);
+  margin-bottom: 0.5rem;
+}
+
+.star-marx .signe-block__header h2,
+.star-marx .equip-block__header h2 {
+  flex: 1;
+  margin: 0;
+  font-size: 1rem;
+  color: var(--sm-red-dark);
+  border: none;
+}
+
+.star-marx .counter {
+  font-size: 0.8rem;
+  color: var(--sm-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.star-marx .add-btn {
+  background: var(--sm-red);
+  color: var(--sm-paper);
+  border: none;
+  padding: 3px 10px;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.star-marx .add-btn:hover { background: var(--sm-red-dark); }
+.star-marx .add-btn i { margin-right: 4px; }
+
+.star-marx .item-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.star-marx .item-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  padding: 0.5rem;
+  border-bottom: 1px dashed var(--sm-border);
+}
+
+.star-marx .item-row:last-child { border-bottom: none; }
+
+.star-marx .item-img {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border: 1px solid var(--sm-border);
+  border-radius: 3px;
+  background: #000;
+}
+
+.star-marx .item-body {
+  flex: 1;
+}
+
+.star-marx .item-name {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--sm-ink);
+}
+
+.star-marx .item-desc {
+  font-size: 0.8rem;
+  color: var(--sm-muted);
+}
+
+.star-marx .item-actions {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.star-marx .item-actions button {
+  background: transparent;
+  border: 1px solid var(--sm-border);
+  color: var(--sm-ink);
+  width: 26px;
+  height: 26px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.star-marx .item-actions button:hover {
+  background: var(--sm-red);
+  color: var(--sm-paper);
+  border-color: var(--sm-red);
+}
+
+.star-marx .tag {
+  display: inline-block;
+  padding: 1px 6px;
+  margin-left: 4px;
+  border-radius: 3px;
+  background: var(--sm-ink);
+  color: var(--sm-gold);
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.star-marx .tag.tag-casse { background: var(--sm-red); color: var(--sm-paper); }
+.star-marx .tag.tag-intact { background: #2e6b2e; color: var(--sm-paper); }
+
+.star-marx .armure-desc,
+.star-marx .armure-uses {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+
+.star-marx .armure-desc span,
+.star-marx .armure-uses span {
+  font-size: 0.8rem;
+  min-width: 110px;
+}
+
+.star-marx .armure-desc input { flex: 1; color: var(--sm-paper); }
+.star-marx .armure-uses input { width: 3rem; text-align: center; color: var(--sm-paper); }
+
+.star-marx .empty {
+  color: var(--sm-muted);
+  font-style: italic;
+  text-align: center;
+  padding: 0.5rem;
+}

@@ -13,8 +13,14 @@
         "Historique": "Background",
         "Description": "Physical description",
         "Notes": "Notes",
+        "Secret": "Secret",
+        "Manie": "Quirk",
         "Xp": "Experience points",
-        "XpTotal": "Total XP earned"
+        "XpTraits": "XP Traits",
+        "XpSignes": "XP Signs",
+        "XpClefs": "XP Keys",
+        "XpAutres": "XP Other",
+        "XpTotal": "Total"
       },
       "Health": {
         "Label": "Health",
@@ -26,8 +32,13 @@
       },
       "Damage": {
         "Label": "Damage",
-        "Value": "Base damage",
-        "Bonus": "Damage bonus"
+        "Source": "Damage source",
+        "Bonus": "Damage bonus",
+        "Sources": {
+          "Lutte": "Brawl",
+          "Ak47": "AK 47"
+        },
+        "Hint": "Computed from Trait rank (0-2→1, 3-4→2, 5-6→3, 7+→4) + bonus."
       },
       "Armure": {
         "Label": "Armor",
@@ -42,7 +53,48 @@
       },
       "Limits": {
         "Kontrebande": "Max Kontrebande",
-        "Clefs": "Max Keys"
+        "Clefs": "Max Keys",
+        "Signes": "Max Signs"
+      }
+    },
+    "Sheet": {
+      "Tabs": {
+        "Presentation": "Overview",
+        "Traits": "Traits",
+        "Signes": "Signs",
+        "Equipement": "Gear"
+      },
+      "KamaradeLabel": "Kamarade Sheet",
+      "TraitPoints": {
+        "Label": "Trait points",
+        "Available": "Available",
+        "Max": "Maximum",
+        "Spent": "Spent",
+        "Hint": "20 creation points + 1 per XP earned",
+        "ResetHint": "Reset all Traits to 0",
+        "ResetTitle": "Reset Traits",
+        "ResetConfirm": "All Trait ranks will be reset to 0. Continue?"
+      },
+      "Sections": {
+        "DoctrineChoisie": "Chosen doctrine",
+        "AutresDoctrines": "Other doctrines",
+        "SigneRacial": "Mandatory racial sign",
+        "SigneRacialVide": "No racial sign set",
+        "SignesGeneraux": "Distinctive signs",
+        "Armure": "Armor",
+        "Kontrebandes": "Kontrebande",
+        "Bardas": "Gear"
+      },
+      "Action": {
+        "Add": "Add",
+        "Edit": "Edit",
+        "Delete": "Delete",
+        "AddSigne": "Add sign",
+        "AddKontrebande": "Add kontrebande",
+        "AddBarda": "Add gear",
+        "RollTrait": "Roll 2d6 + Trait",
+        "HelpTrait": "Help roll",
+        "HelpTraitTodo": "Help roll — implementation coming"
       }
     },
     "Doctrine": {
@@ -56,6 +108,10 @@
     "Trait": {
       "Header": "Traits",
       "Value": "Ranks",
+      "Points": "Points spent",
+      "Bonus": "Bonus (equipment, signs, etc.)",
+      "BonusPlaceholder": "bonus",
+      "Total": "Effective total (points + bonus + doctrine free rank)",
       "Marteau": {
         "Ak47": "AK 47",
         "BriseurDeGreve": "Strike Breaker",

@@ -3,6 +3,8 @@
     "types": ["kamarade"],
     "htmlFields": [
       "details.historique",
+      "details.secret",
+      "details.manie",
       "details.description",
       "details.notes",
       "armure.description"
@@ -24,46 +26,50 @@
         "sexe": "",
         "age": 0,
         "historique": "",
+        "secret": "",
+        "manie": "",
         "xp": {
-          "value": 0,
-          "total": 0
+          "traits": 0,
+          "signes": 0,
+          "clefs":  0,
+          "autres": 0
         }
       },
       "traits": {
         "marteau": {
-          "ak47":                 { "value": 0 },
-          "briseurDeGreve":       { "value": 0 },
-          "goulag":               { "value": 0 },
-          "karkass":              { "value": 0 },
-          "lutte":                { "value": 0 },
-          "medailleOlympique":    { "value": 0 },
-          "muskle":               { "value": 0 },
-          "prisonnierPolitique":  { "value": 0 },
-          "soyouz":               { "value": 0 }
+          "ak47":                 { "points": 0, "bonus": 0 },
+          "briseurDeGreve":       { "points": 0, "bonus": 0 },
+          "goulag":               { "points": 0, "bonus": 0 },
+          "karkass":              { "points": 0, "bonus": 0 },
+          "lutte":                { "points": 0, "bonus": 0 },
+          "medailleOlympique":    { "points": 0, "bonus": 0 },
+          "muskle":               { "points": 0, "bonus": 0 },
+          "prisonnierPolitique":  { "points": 0, "bonus": 0 },
+          "soyouz":               { "points": 0, "bonus": 0 }
         },
         "faucille": {
-          "acrobate":             { "value": 0 },
-          "actionPartisane":      { "value": 0 },
-          "bolchoi":              { "value": 0 },
-          "corruption":           { "value": 0 },
-          "etreAuParfum":         { "value": 0 },
-          "grouillot":            { "value": 0 },
-          "marcheNoir":           { "value": 0 },
-          "poupeeRusse":          { "value": 0 },
-          "propagande":           { "value": 0 },
-          "socialTraitre":        { "value": 0 }
+          "acrobate":             { "points": 0, "bonus": 0 },
+          "actionPartisane":      { "points": 0, "bonus": 0 },
+          "bolchoi":              { "points": 0, "bonus": 0 },
+          "corruption":           { "points": 0, "bonus": 0 },
+          "etreAuParfum":         { "points": 0, "bonus": 0 },
+          "grouillot":            { "points": 0, "bonus": 0 },
+          "marcheNoir":           { "points": 0, "bonus": 0 },
+          "poupeeRusse":          { "points": 0, "bonus": 0 },
+          "propagande":           { "points": 0, "bonus": 0 },
+          "socialTraitre":        { "points": 0, "bonus": 0 }
         },
         "etoile": {
-          "dopage":               { "value": 0 },
-          "jeuxEtParis":          { "value": 0 },
-          "kgb":                  { "value": 0 },
-          "machiniste":           { "value": 0 },
-          "operateurCodeur":      { "value": 0 },
-          "pionnier":             { "value": 0 },
-          "rechercheConception":  { "value": 0 },
-          "samizdats":            { "value": 0 },
-          "tchernobyl":           { "value": 0 },
-          "universitet":          { "value": 0 }
+          "dopage":               { "points": 0, "bonus": 0 },
+          "jeuxEtParis":          { "points": 0, "bonus": 0 },
+          "kgb":                  { "points": 0, "bonus": 0 },
+          "machiniste":           { "points": 0, "bonus": 0 },
+          "operateurCodeur":      { "points": 0, "bonus": 0 },
+          "pionnier":             { "points": 0, "bonus": 0 },
+          "rechercheConception":  { "points": 0, "bonus": 0 },
+          "samizdats":            { "points": 0, "bonus": 0 },
+          "tchernobyl":           { "points": 0, "bonus": 0 },
+          "universitet":          { "points": 0, "bonus": 0 }
         }
       },
       "health": {
@@ -72,8 +78,8 @@
         "bonus": 0
       },
       "damage": {
-        "value": 1,
-        "bonus": 0
+        "lutte": { "bonus": 0 },
+        "ak47":  { "bonus": 0 }
       },
       "armure": {
         "description": "",
@@ -87,7 +93,8 @@
       },
       "limits": {
         "kontrebande": 5,
-        "clefs": 5
+        "clefs": 5,
+        "signes": 2
       }
     }
   },

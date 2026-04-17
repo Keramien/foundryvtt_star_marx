@@ -179,8 +179,8 @@ Sur un succès critique hors combat, gagne une phrase d'avantage commémorative 
 NOM : _______________
 PEUPLE : ____________     DOCTRINE : ___________
 
-TRAITS MARTEAU          TRAITS FAUCILLE         TRAITS ETOILE				       TRAITS SPECIAUX
-□□□□□ AK 47             □□□□□ Acrobate          □□□□□ Dopage               □□□□□ Tchernobyl
+TRAITS MARTEAU          TRAITS FAUCILLE         TRAITS ETOILE
+□□□□□ AK 47             □□□□□ Acrobate          □□□□□ Dopage
 □□□□□ Briseur de Greve  □□□□□ Action Partisane  □□□□□ Jeux et Paris
 □□□□□ Goulag            □□□□□ Bolchoi           □□□□□ KGB
 □□□□□ Karkass           □□□□□ Corruption        □□□□□ Machiniste
@@ -189,7 +189,7 @@ TRAITS MARTEAU          TRAITS FAUCILLE         TRAITS ETOILE				       TRAITS S
 □□□□□ Muskle            □□□□□ Marche Noir       □□□□□ Recherche & Conc.
 □□□□□ Prisonnier Pol.   □□□□□ Poupee Russe      □□□□□ Samizdats
 □□□□□ Soyouz            □□□□□ Propagande        □□□□□ Universitet
-                        □□□□□ Social Traitre    
+                        □□□□□ Social Traitre    □□□□□ Tchernobyl
 
 PV : 5 + KARKASS = ___     DEGATS : ___
 ARMURE : ___ (2 utilisations/scénario)

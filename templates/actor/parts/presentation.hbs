@@ -1,0 +1,83 @@
+<section class="tab {{tab.cssClass}}" data-group="{{tab.group}}" data-tab="{{tab.id}}">
+
+  <div class="stats-row">
+    <div class="stat-block stat-hp">
+      <h3>{{localize "STARMARX.Actor.Health.Label"}}</h3>
+      <div class="stat-values">
+        <input type="number" name="system.health.value" value="{{system.health.value}}" min="0">
+        <span class="sep">/</span>
+        <span class="stat-max">{{system.health.max}}</span>
+      </div>
+      <p class="hint">{{localize "STARMARX.Actor.Health.Formula"}}</p>
+    </div>
+
+    <div class="stat-block stat-damage">
+      <h3>{{localize "STARMARX.Actor.Damage.Label"}}</h3>
+      <div class="damage-sources">
+        <div><span>{{localize "STARMARX.Actor.Damage.Sources.Lutte"}}</span> <strong>{{system.damage.lutte.value}}</strong></div>
+        <div><span>{{localize "STARMARX.Actor.Damage.Sources.Ak47"}}</span> <strong>{{system.damage.ak47.value}}</strong></div>
+      </div>
+    </div>
+
+    <div class="stat-block stat-zlotys">
+      <h3>{{localize "STARMARX.Actor.Zlotys.Label"}}</h3>
+      <input type="number" name="system.zlotys.value" value="{{system.zlotys.value}}" min="0">
+    </div>
+  </div>
+
+  <div class="stat-block stat-xp stat-xp--full">
+    <h3>{{localize "STARMARX.Actor.Details.Xp"}}</h3>
+    <div class="xp-breakdown">
+      <label>
+        <span>{{localize "STARMARX.Actor.Details.XpTraits"}}</span>
+        <input type="number" name="system.details.xp.traits" value="{{system.details.xp.traits}}" min="0">
+      </label>
+      <label>
+        <span>{{localize "STARMARX.Actor.Details.XpSignes"}}</span>
+        <input type="number" name="system.details.xp.signes" value="{{system.details.xp.signes}}" min="0">
+      </label>
+      <label>
+        <span>{{localize "STARMARX.Actor.Details.XpClefs"}}</span>
+        <input type="number" name="system.details.xp.clefs" value="{{system.details.xp.clefs}}" min="0">
+      </label>
+      <label>
+        <span>{{localize "STARMARX.Actor.Details.XpAutres"}}</span>
+        <input type="number" name="system.details.xp.autres" value="{{system.details.xp.autres}}" min="0">
+      </label>
+      <div class="xp-total">
+        {{localize "STARMARX.Actor.Details.XpTotal"}} <strong>{{system.details.xp.total}}</strong>
+      </div>
+    </div>
+  </div>
+
+  <div class="identity-row">
+    <label>
+      <span>{{localize "STARMARX.Actor.Details.Sexe"}}</span>
+      <input type="text" name="system.details.sexe" value="{{system.details.sexe}}">
+    </label>
+    <label>
+      <span>{{localize "STARMARX.Actor.Details.Age"}}</span>
+      <input type="number" name="system.details.age" value="{{system.details.age}}" min="0">
+    </label>
+    <label>
+      <span>{{localize "STARMARX.Actor.Details.Groupuscule"}}</span>
+      <input type="text" name="system.details.groupuscule" value="{{system.details.groupuscule}}">
+    </label>
+  </div>
+
+  <div class="narrative-block">
+    <h3>{{localize "STARMARX.Actor.Details.Historique"}}</h3>
+    <textarea name="system.details.historique" rows="4">{{system.details.historique}}</textarea>
+  </div>
+
+  <div class="narrative-block">
+    <h3>{{localize "STARMARX.Actor.Details.Secret"}}</h3>
+    <textarea name="system.details.secret" rows="3">{{system.details.secret}}</textarea>
+  </div>
+
+  <div class="narrative-block">
+    <h3>{{localize "STARMARX.Actor.Details.Manie"}}</h3>
+    <textarea name="system.details.manie" rows="3">{{system.details.manie}}</textarea>
+  </div>
+
+</section>

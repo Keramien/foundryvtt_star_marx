@@ -69,7 +69,7 @@ Chaque personnage choisit UNE Doctrine à la création. Les Traits de sa Doctrin
 | 18 | **PROPAGANDE** | Mensonge, bluff, diversions, baratin. |
 | 19 | **SOCIAL TRAITRE** | Discrétion, furtivité. Se déplacer silencieusement, se cacher dans l'ombre, pickpocket, ouvrir des portes sans bruit. |
 
-### ETOILE (9 traits)
+### ETOILE (10 traits)
 
 | # | Trait | Description |
 |---|---|---|
@@ -82,11 +82,6 @@ Chaque personnage choisit UNE Doctrine à la création. Les Traits de sa Doctrin
 | 26 | **RECHERCHE ET CONCEPTION** | Compétences scientifiques. Inventer des machines, créer des substances chimiques, connaître les travaux de chercheurs célèbres. |
 | 27 | **SAMIZDATS** | Journalisme et édition. Écrire des livres/articles, journalisme d'investigation, publier malgré la censure. |
 | 28 | **UNIVERSITET** | Sciences humaines et sociales. Littérature, histoire, connaissance des universités et professeurs renommés. |
-
-### TRAIT SPECIAL (hors Doctrine)
-
-| # | Trait | Description |
-|---|---|---|
 | 29 | **TCHERNOBYL** | Trait pour mutants, robots et pouvoirs spéciaux. "Joker" représentant des capacités surnaturelles/mutantes. Chaque personnage prenant TCHERNOBYL doit définir un pouvoir spécifique via un Signe Particulier. Exemples : projeter des pensées dans le corps d'ivrognes, métamorphose (Bourbaskyi), vol (Xiphomis), lire les pensées par la sueur (Truizyik). |
 
 ---

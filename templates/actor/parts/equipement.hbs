@@ -1,0 +1,76 @@
+<section class="tab {{tab.cssClass}}" data-group="{{tab.group}}" data-tab="{{tab.id}}">
+
+  <div class="equip-block armure-block">
+    <header class="equip-block__header">
+      <h2>{{localize "STARMARX.Sheet.Sections.Armure"}}</h2>
+      <small class="hint">{{localize "STARMARX.Actor.Armure.Hint"}}</small>
+    </header>
+    <label class="armure-desc">
+      <span>{{localize "STARMARX.Actor.Armure.Description"}}</span>
+      <input type="text" name="system.armure.description" value="{{system.armure.description}}">
+    </label>
+    <label class="armure-uses">
+      <span>{{localize "STARMARX.Actor.Armure.Uses"}}</span>
+      <input type="number" name="system.armure.uses.value" value="{{system.armure.uses.value}}" min="0" max="{{system.armure.uses.max}}">
+      <span class="sep">/</span>
+      <input type="number" name="system.armure.uses.max" value="{{system.armure.uses.max}}" min="0">
+    </label>
+  </div>
+
+  <div class="equip-block kontrebande-block">
+    <header class="equip-block__header">
+      <h2>{{localize "STARMARX.Sheet.Sections.Kontrebandes"}}</h2>
+      <div class="counter">{{kontrebandes.length}} / {{system.limits.kontrebande}}</div>
+      <button type="button" class="add-btn" data-action="itemCreate" data-item-type="kontrebande">
+        <i class="fa-solid fa-plus"></i> {{localize "STARMARX.Sheet.Action.AddKontrebande"}}
+      </button>
+    </header>
+    <ul class="item-list">
+      {{#each kontrebandes}}
+        <li class="item-row" data-item-id="{{this.id}}">
+          <img class="item-img" src="{{this.img}}" alt="">
+          <div class="item-body">
+            <h4 class="item-name">
+              {{this.name}}
+              <span class="tag">+{{this.system.bonus}}</span>
+              <span class="tag tag-{{this.system.state}}">{{localize (concat "STARMARX.Item.Kontrebande.State" (capitalize this.system.state))}}</span>
+              {{#if this.system.repairs}}<span class="tag">{{localize "STARMARX.Item.Kontrebande.Repairs"}} : {{this.system.repairs}}</span>{{/if}}
+            </h4>
+            <div class="item-desc">{{{this.system.description}}}</div>
+          </div>
+          <div class="item-actions">
+            <button type="button" data-action="itemEdit"><i class="fa-solid fa-pen"></i></button>
+            <button type="button" data-action="itemDelete"><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+
+  <div class="equip-block barda-block">
+    <header class="equip-block__header">
+      <h2>{{localize "STARMARX.Sheet.Sections.Bardas"}}</h2>
+      <button type="button" class="add-btn" data-action="itemCreate" data-item-type="barda">
+        <i class="fa-solid fa-plus"></i> {{localize "STARMARX.Sheet.Action.AddBarda"}}
+      </button>
+    </header>
+    <ul class="item-list barda-list">
+      {{#each bardas}}
+        <li class="item-row" data-item-id="{{this.id}}">
+          <img class="item-img" src="{{this.img}}" alt="">
+          <div class="item-body">
+            <h4 class="item-name">
+              {{this.name}}
+              {{#if this.system.source}}<span class="tag">{{this.system.source}}</span>{{/if}}
+            </h4>
+          </div>
+          <div class="item-actions">
+            <button type="button" data-action="itemEdit"><i class="fa-solid fa-pen"></i></button>
+            <button type="button" data-action="itemDelete"><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+
+</section>

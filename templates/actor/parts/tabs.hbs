@@ -1,0 +1,8 @@
+<nav class="sheet-tabs tabs" data-group="primary" aria-role="Form Tabs">
+  {{#each tabs}}
+    <a class="item {{this.cssClass}}" data-action="tab" data-group="{{this.group}}" data-tab="{{this.id}}">
+      <i class="{{this.icon}}"></i>
+      {{localize this.label}}
+    </a>
+  {{/each}}
+</nav>
