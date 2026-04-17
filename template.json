@@ -1,0 +1,133 @@
+{
+  "Actor": {
+    "types": ["kamarade"],
+    "htmlFields": [
+      "details.historique",
+      "details.description",
+      "details.notes",
+      "armure.description"
+    ],
+    "templates": {
+      "base": {
+        "details": {
+          "description": "",
+          "notes": ""
+        }
+      }
+    },
+    "kamarade": {
+      "templates": ["base"],
+      "details": {
+        "peuple": "",
+        "doctrine": "marteau",
+        "groupuscule": "",
+        "sexe": "",
+        "age": 0,
+        "historique": "",
+        "xp": {
+          "value": 0,
+          "total": 0
+        }
+      },
+      "traits": {
+        "marteau": {
+          "ak47":                 { "value": 0 },
+          "briseurDeGreve":       { "value": 0 },
+          "goulag":               { "value": 0 },
+          "karkass":              { "value": 0 },
+          "lutte":                { "value": 0 },
+          "medailleOlympique":    { "value": 0 },
+          "muskle":               { "value": 0 },
+          "prisonnierPolitique":  { "value": 0 },
+          "soyouz":               { "value": 0 }
+        },
+        "faucille": {
+          "acrobate":             { "value": 0 },
+          "actionPartisane":      { "value": 0 },
+          "bolchoi":              { "value": 0 },
+          "corruption":           { "value": 0 },
+          "etreAuParfum":         { "value": 0 },
+          "grouillot":            { "value": 0 },
+          "marcheNoir":           { "value": 0 },
+          "poupeeRusse":          { "value": 0 },
+          "propagande":           { "value": 0 },
+          "socialTraitre":        { "value": 0 }
+        },
+        "etoile": {
+          "dopage":               { "value": 0 },
+          "jeuxEtParis":          { "value": 0 },
+          "kgb":                  { "value": 0 },
+          "machiniste":           { "value": 0 },
+          "operateurCodeur":      { "value": 0 },
+          "pionnier":             { "value": 0 },
+          "rechercheConception":  { "value": 0 },
+          "samizdats":            { "value": 0 },
+          "tchernobyl":           { "value": 0 },
+          "universitet":          { "value": 0 }
+        }
+      },
+      "health": {
+        "value": 5,
+        "max": 5,
+        "bonus": 0
+      },
+      "damage": {
+        "value": 1,
+        "bonus": 0
+      },
+      "armure": {
+        "description": "",
+        "uses": {
+          "value": 2,
+          "max": 2
+        }
+      },
+      "zlotys": {
+        "value": 5
+      },
+      "limits": {
+        "kontrebande": 5,
+        "clefs": 5
+      }
+    }
+  },
+  "Item": {
+    "types": ["signe", "kontrebande", "clef", "barda", "faiblesse", "atout"],
+    "htmlFields": ["description"],
+    "templates": {
+      "base": {
+        "description": ""
+      }
+    },
+    "signe": {
+      "templates": ["base"],
+      "category": "general",
+      "traitLink": ""
+    },
+    "kontrebande": {
+      "templates": ["base"],
+      "bonus": 2,
+      "state": "intact",
+      "repairs": 0,
+      "used": false
+    },
+    "clef": {
+      "templates": ["base"],
+      "active": true
+    },
+    "barda": {
+      "templates": ["base"],
+      "source": ""
+    },
+    "faiblesse": {
+      "templates": ["base"],
+      "malus": -4,
+      "invoked": false
+    },
+    "atout": {
+      "templates": ["base"],
+      "bonus": 2,
+      "used": false
+    }
+  }
+}

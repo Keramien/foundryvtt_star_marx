@@ -1,0 +1,148 @@
+{
+  "STARMARX": {
+    "Actor": {
+      "Type": {
+        "kamarade": "Kamarade"
+      },
+      "Details": {
+        "Peuple": "People",
+        "Doctrine": "Doctrine",
+        "Groupuscule": "Faction",
+        "Sexe": "Sex",
+        "Age": "Age",
+        "Historique": "Background",
+        "Description": "Physical description",
+        "Notes": "Notes",
+        "Xp": "Experience points",
+        "XpTotal": "Total XP earned"
+      },
+      "Health": {
+        "Label": "Health",
+        "Short": "HP",
+        "Value": "Current HP",
+        "Max": "Max HP",
+        "Bonus": "HP bonus",
+        "Formula": "5 + KARKASS"
+      },
+      "Damage": {
+        "Label": "Damage",
+        "Value": "Base damage",
+        "Bonus": "Damage bonus"
+      },
+      "Armure": {
+        "Label": "Armor",
+        "Description": "Armor description",
+        "Uses": "Uses",
+        "UsesMax": "Uses / scenario",
+        "Hint": "Ignores all damage from one attack. 2 uses per scenario."
+      },
+      "Zlotys": {
+        "Label": "Zlotys",
+        "Hint": "Meta-currency. Spend to add dice, reroll, or activate a Sign."
+      },
+      "Limits": {
+        "Kontrebande": "Max Kontrebande",
+        "Clefs": "Max Keys"
+      }
+    },
+    "Doctrine": {
+      "Marteau": "Hammer",
+      "Faucille": "Sickle",
+      "Etoile": "Star",
+      "MarteauHint": "Physical / Combat",
+      "FaucilleHint": "Social / Interaction",
+      "EtoileHint": "Intellectual / Technical"
+    },
+    "Trait": {
+      "Header": "Traits",
+      "Value": "Ranks",
+      "Marteau": {
+        "Ak47": "AK 47",
+        "BriseurDeGreve": "Strike Breaker",
+        "Goulag": "Gulag",
+        "Karkass": "Karkass",
+        "Lutte": "Brawl",
+        "MedailleOlympique": "Olympic Medal",
+        "Muskle": "Muskle",
+        "PrisonnierPolitique": "Political Prisoner",
+        "Soyouz": "Soyouz"
+      },
+      "Faucille": {
+        "Acrobate": "Acrobat",
+        "ActionPartisane": "Partisan Action",
+        "Bolchoi": "Bolshoi",
+        "Corruption": "Corruption",
+        "EtreAuParfum": "In the Know",
+        "Grouillot": "Dogsbody",
+        "MarcheNoir": "Black Market",
+        "PoupeeRusse": "Russian Doll",
+        "Propagande": "Propaganda",
+        "SocialTraitre": "Social Traitor"
+      },
+      "Etoile": {
+        "Dopage": "Doping",
+        "JeuxEtParis": "Games & Bets",
+        "Kgb": "KGB",
+        "Machiniste": "Machinist",
+        "OperateurCodeur": "Coder-Operator",
+        "Pionnier": "Pioneer",
+        "RechercheConception": "Research & Design",
+        "Samizdats": "Samizdats",
+        "Tchernobyl": "Chernobyl",
+        "Universitet": "Universitet"
+      }
+    },
+    "Item": {
+      "Type": {
+        "signe": "Distinctive Sign",
+        "kontrebande": "Kontrebande",
+        "clef": "Key",
+        "barda": "Gear",
+        "faiblesse": "Weakness",
+        "atout": "Trump"
+      },
+      "Common": {
+        "Description": "Description"
+      },
+      "Signe": {
+        "Category": "Category",
+        "TraitLink": "Linked Trait",
+        "CategoryGeneral": "General",
+        "CategoryTrait": "Trait-linked",
+        "CategoryRacial": "Racial",
+        "CategoryGroupuscule": "Faction"
+      },
+      "Kontrebande": {
+        "Bonus": "Bonus granted",
+        "State": "State",
+        "StateIntact": "Intact",
+        "StateCoche": "Used (ticked)",
+        "StateCasse": "Broken",
+        "Repairs": "Repairs performed",
+        "Used": "Used this scenario"
+      },
+      "Clef": {
+        "Active": "Active",
+        "Hint": "Grants Zlotys when played at the table."
+      },
+      "Barda": {
+        "Source": "Source table"
+      },
+      "Faiblesse": {
+        "Malus": "Malus when invoked",
+        "Invoked": "Invoked this scenario"
+      },
+      "Atout": {
+        "Bonus": "Bonus granted",
+        "Used": "Used this scenario"
+      }
+    },
+    "Roll": {
+      "Threshold": "Threshold",
+      "ThresholdDefault": "Default threshold: 9",
+      "Dangerosite": "Enemy Danger",
+      "CriticalSuccess": "Critical success",
+      "CriticalFailure": "Critical failure"
+    }
+  }
+}

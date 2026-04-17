@@ -1,0 +1,2 @@
+- [Foundry VTT version](feedback_foundry_version.md) — User runs Foundry v14, target v14 compatibility
+- [User profile](user_profile.md) — Experienced C++ dev, new to web/JS — use C++ analogies

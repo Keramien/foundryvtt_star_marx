@@ -16,9 +16,9 @@ logs/
 *.log
 
 # ============================================================
-# memory_bank — PDFs et ressources propriétaires
+# memory — PDFs et ressources propriétaires
 # ============================================================
-memory_bank/
+*.pdf
 
 # ============================================================
 # Node / Build

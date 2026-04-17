@@ -21,7 +21,7 @@ Star Marx est un jeu de rôle sur table existant, à l'univers science-fiction p
 Les livres de règles complets au format PDF sont disponibles ici :
 
 ```
-memory_bank/star_marx_books/
+memory/star_marx_books/
 ```
 
 > ⚠️ **Note pour Claude Opus :** Avant d'intervenir sur les mécaniques de jeu, consulter les PDFs dans ce dossier pour connaître les règles officielles. Ne jamais inventer ou supposer une règle sans avoir vérifié dans ces sources.
@@ -60,6 +60,7 @@ memory_bank/star_marx_books/
 star-marx/          ← dossier racine du game system Foundry
 ├── system.json
 ├── template.json
+├── memory/
 ├── module/
 ├── templates/
 └── lang/
@@ -69,7 +70,8 @@ star-marx/          ← dossier racine du game system Foundry
 
 ## 6. Conventions de travail
 
-- Toujours se référer aux PDFs dans `memory_bank/star_marx_books/` avant de coder une mécanique
+- Toujours se référer aux fichiers .md dans `memory/star_marx_books/rules/` avant de coder une mécanique
+- `memory/star_marx_books/rules/edition_augmentee_sommaire.md` contient les liens des fichiers en fonction du besoin.
 - Conserver le ton **humoristique et parodique** de l'univers dans les textes UI (labels, descriptions, messages de chat)
 - Ecrire et commenter le code en anglais !
 

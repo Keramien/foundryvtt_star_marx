@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:foundryvtt.com)",
+      "WebFetch(domain:foundryvtt.wiki)",
+      "Bash(pip show *)",
+      "Bash(pip install *)",
+      "Bash(py --version)",
+      "Bash(powershell.exe *)",
+      "Bash(python3 *)",
+      "Bash(node.exe --version)",
+      "Bash(where.exe node *)",
+      "Bash(node *)",
+      "Bash(/c/Program Files/nodejs/node.exe *)",
+      "Bash(perl --version)",
+      "Bash('/c/Program Files/nodejs/node.exe' -e ' *)",
+      "Bash(perl *)",
+      "Read(//tmp/**)",
+      "Bash(ls *)",
+      "Bash(echo \"EXIT: $?\")",
+      "Bash(grep -o \"[A-Z] [a-z]\\\\{1,3\\\\} \" \"C:\\\\Users\\\\damie\\\\AppData\\\\Local\\\\FoundryVTT\\\\Data\\\\systems\\\\star_marx\\\\memory\\\\start_marx_books\\\\edition-augmentee.md\")"
+    ]
+  }
+}

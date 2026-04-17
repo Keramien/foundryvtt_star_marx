@@ -1,0 +1,148 @@
+{
+  "STARMARX": {
+    "Actor": {
+      "Type": {
+        "kamarade": "Kamarade"
+      },
+      "Details": {
+        "Peuple": "Peuple",
+        "Doctrine": "Doctrine",
+        "Groupuscule": "Groupuscule",
+        "Sexe": "Sexe",
+        "Age": "Âge",
+        "Historique": "Historique",
+        "Description": "Description physique",
+        "Notes": "Notes",
+        "Xp": "Points d'expérience",
+        "XpTotal": "XP total gagné"
+      },
+      "Health": {
+        "Label": "Points de vie",
+        "Short": "PV",
+        "Value": "PV actuels",
+        "Max": "PV max",
+        "Bonus": "Bonus PV",
+        "Formula": "5 + KARKASS"
+      },
+      "Damage": {
+        "Label": "Dégâts",
+        "Value": "Dégâts de base",
+        "Bonus": "Bonus aux dégâts"
+      },
+      "Armure": {
+        "Label": "Armure",
+        "Description": "Description de l'Armure",
+        "Uses": "Utilisations",
+        "UsesMax": "Utilisations / scénario",
+        "Hint": "Ignore tous les dégâts d'une attaque. 2 utilisations par scénario."
+      },
+      "Zlotys": {
+        "Label": "Zlotys",
+        "Hint": "Méta-monnaie. Permet d'ajouter des dés, relancer, activer un Signe."
+      },
+      "Limits": {
+        "Kontrebande": "Kontrebandes max",
+        "Clefs": "Clefs max"
+      }
+    },
+    "Doctrine": {
+      "Marteau": "Marteau",
+      "Faucille": "Faucille",
+      "Etoile": "Étoile",
+      "MarteauHint": "Physique / Combat",
+      "FaucilleHint": "Social / Interaction",
+      "EtoileHint": "Intellectuel / Technique"
+    },
+    "Trait": {
+      "Header": "Traits",
+      "Value": "Rangs",
+      "Marteau": {
+        "Ak47": "AK 47",
+        "BriseurDeGreve": "Briseur de Grève",
+        "Goulag": "Goulag",
+        "Karkass": "Karkass",
+        "Lutte": "Lutte",
+        "MedailleOlympique": "Médaille Olympique",
+        "Muskle": "Muskle",
+        "PrisonnierPolitique": "Prisonnier Politique",
+        "Soyouz": "Soyouz"
+      },
+      "Faucille": {
+        "Acrobate": "Acrobate",
+        "ActionPartisane": "Action Partisane",
+        "Bolchoi": "Bolchoï",
+        "Corruption": "Corruption",
+        "EtreAuParfum": "Être au Parfum",
+        "Grouillot": "Grouillot",
+        "MarcheNoir": "Marché Noir",
+        "PoupeeRusse": "Poupée Russe",
+        "Propagande": "Propagande",
+        "SocialTraitre": "Social Traître"
+      },
+      "Etoile": {
+        "Dopage": "Dopage",
+        "JeuxEtParis": "Jeux et Paris",
+        "Kgb": "KGB",
+        "Machiniste": "Machiniste",
+        "OperateurCodeur": "Opérateur Codeur",
+        "Pionnier": "Pionnier",
+        "RechercheConception": "Recherche & Conception",
+        "Samizdats": "Samizdats",
+        "Tchernobyl": "Tchernobyl",
+        "Universitet": "Universitet"
+      }
+    },
+    "Item": {
+      "Type": {
+        "signe": "Signe Particulier",
+        "kontrebande": "Kontrebande",
+        "clef": "Clef",
+        "barda": "Barda",
+        "faiblesse": "Faiblesse",
+        "atout": "Atout"
+      },
+      "Common": {
+        "Description": "Description"
+      },
+      "Signe": {
+        "Category": "Catégorie",
+        "TraitLink": "Trait associé",
+        "CategoryGeneral": "Général",
+        "CategoryTrait": "Lié à un Trait",
+        "CategoryRacial": "Racial",
+        "CategoryGroupuscule": "Groupuscule"
+      },
+      "Kontrebande": {
+        "Bonus": "Bonus accordé",
+        "State": "État",
+        "StateIntact": "Intact",
+        "StateCoche": "Coché (utilisé)",
+        "StateCasse": "Cassé",
+        "Repairs": "Réparations effectuées",
+        "Used": "Déjà utilisé ce scénario"
+      },
+      "Clef": {
+        "Active": "Active",
+        "Hint": "Rapporte des Zlotys quand jouée à table."
+      },
+      "Barda": {
+        "Source": "Table d'origine"
+      },
+      "Faiblesse": {
+        "Malus": "Malus quand invoquée",
+        "Invoked": "Invoquée ce scénario"
+      },
+      "Atout": {
+        "Bonus": "Bonus accordé",
+        "Used": "Déjà utilisé ce scénario"
+      }
+    },
+    "Roll": {
+      "Threshold": "Seuil",
+      "ThresholdDefault": "Seuil par défaut : 9",
+      "Dangerosite": "Dangerosité de l'ennemi",
+      "CriticalSuccess": "Succès critique",
+      "CriticalFailure": "Échec critique"
+    }
+  }
+}

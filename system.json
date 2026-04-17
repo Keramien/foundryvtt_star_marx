@@ -1,0 +1,50 @@
+{
+  "id": "star-marx",
+  "title": "Star Marx",
+  "description": "Système officieux pour Star Marx, le jeu de rôle parodique de science-fiction.",
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14",
+    "maximum": "14"
+  },
+  "authors": [
+    {
+      "name": "Damien",
+      "email": "damien@midgarr.com"
+    }
+  ],
+  "esmodules": [
+    "module/star-marx.mjs"
+  ],
+  "styles": [
+    "styles/star-marx.css"
+  ],
+  "languages": [
+    {
+      "lang": "fr",
+      "name": "Français",
+      "path": "languages/fr.json",
+      "flags": {}
+    },
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "languages/en.json",
+      "flags": {}
+    }
+  ],
+  "primaryTokenAttribute": "health",
+  "secondaryTokenAttribute": null,
+  "grid": {
+    "type": 1,
+    "distance": 1,
+    "units": "m"
+  },
+  "socket": false,
+  "url": "",
+  "license": "",
+  "bugs": "",
+  "changelog": "",
+  "background": ""
+}
