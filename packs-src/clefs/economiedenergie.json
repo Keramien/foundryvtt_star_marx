@@ -1,0 +1,21 @@
+{
+  "_id": "clfeconomiedener",
+  "name": "Clef de l'Économie d'Énergie",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>Le Kamarade évite scrupuleusement tout effort physique, fainéante et se contente de discuter et de donner des conseils pendant que les autres s'échinent.</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": ""
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clfeconomiedener"
+}

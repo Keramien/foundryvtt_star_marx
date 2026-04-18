@@ -1,0 +1,20 @@
+{
+  "_id": "sgtpangalacticma",
+  "name": "Pangalactic Market",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait GROUILLOT.</p><p>Avec <strong>uniquement des produits locaux</strong>, le Kamarade peut soit donner l'illusion d'utiliser des produits de sa planete d'origine, soit faire naitre l'exotisme galactique a partir d'ingredients du quotidien.</p>",
+    "category": "trait",
+    "traitLink": "faucille.grouillot",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtpangalacticma"
+}

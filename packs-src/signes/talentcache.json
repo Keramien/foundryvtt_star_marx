@@ -1,0 +1,20 @@
+{
+  "_id": "sgntalentcacheAA",
+  "name": "Talent cache",
+  "type": "signe",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Aucune.</p><p>Le joueur peut <strong>depenser ses XP en pleine partie</strong> pour acquerir un Trait necessaire au scenario ou a une action. S'il n'a pas assez d'XP, les autres joueurs peuvent en donner (remboursement possible plus tard ; les interets sont proscrits - goulag immediat).</p>",
+    "category": "general",
+    "traitLink": "",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignegeneralA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgntalentcacheAA"
+}

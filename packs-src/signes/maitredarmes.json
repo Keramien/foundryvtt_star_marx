@@ -1,0 +1,20 @@
+{
+  "_id": "sgtmaitredarmesA",
+  "name": "Maitre d'armes",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait LUTTE.</p><p>Le Kamarade peut <strong>repartir les degats d'une attaque LUTTE entre plusieurs adversaires</strong>, a condition que la difficulte pour les toucher soit la meme (ou inferieure).</p><p><strong>Exemple :</strong> <em>Kronen le Hjort affronte un molosse pouilleux de Mabrouk 28 (gros comme une Novye Trabant, difficulte -4) entoure de puces (difficulte normale). Avec 5 en degats, Kronen ecrase le molosse (3 PV) et peut, dans le meme mouvement, tuer 2 puces (1 PV chacune). S'il avait attaque les puces, il n'aurait pas pu atteindre le molosse (plus dur a toucher), mais aurait eclate 5 puces.</em></p>",
+    "category": "trait",
+    "traitLink": "marteau.lutte",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtmaitredarmesA"
+}

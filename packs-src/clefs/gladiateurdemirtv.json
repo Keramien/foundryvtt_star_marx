@@ -1,0 +1,21 @@
+{
+  "_id": "clfgladiateurdem",
+  "name": "Clef du Gladiateur de Mir TV",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>Le Kamarade adore avoir des spectateurs quand il se bat, et dans ce cas, il a tendance à en faire des tonnes et prendre des risques inutiles ou des poses de victoire.</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": ""
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clfgladiateurdem"
+}

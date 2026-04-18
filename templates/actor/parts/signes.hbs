@@ -1,49 +1,92 @@
 <section class="tab {{tab.cssClass}}" data-group="{{tab.group}}" data-tab="{{tab.id}}">
 
-  <div class="signe-block signe-racial">
+  <div class="signe-block signe-raciaux">
     <header class="signe-block__header">
-      <h2>{{localize "STARMARX.Sheet.Sections.SigneRacial"}}</h2>
+      <h2>{{localize "STARMARX.Sheet.Sections.SignesRaciaux"}}</h2>
+      <div class="counter">{{signes.raciaux.length}}</div>
     </header>
-    {{#if signes.racial}}
-      <div class="item-row" data-item-id="{{signes.racial.id}}">
-        <img class="item-img" src="{{signes.racial.img}}" alt="">
-        <div class="item-body">
-          <h4 class="item-name">{{signes.racial.name}}</h4>
-          <div class="item-desc">{{{signes.racial.system.description}}}</div>
-        </div>
-        <div class="item-actions">
-          <button type="button" data-action="itemEdit" title="{{localize 'STARMARX.Sheet.Action.Edit'}}"><i class="fa-solid fa-pen"></i></button>
-          <button type="button" data-action="itemDelete" title="{{localize 'STARMARX.Sheet.Action.Delete'}}"><i class="fa-solid fa-trash"></i></button>
-        </div>
-      </div>
+    {{#if signes.raciaux.length}}
+      <ul class="item-list">
+        {{#each signes.raciaux}}
+          <li class="item-row" data-item-id="{{this.id}}">
+            <img class="item-img" src="{{this.img}}" alt="">
+            <div class="item-body">
+              <h4 class="item-name">{{this.name}}</h4>
+              <div class="item-desc">{{{this.system.description}}}</div>
+            </div>
+            <div class="item-actions">
+              <button type="button" data-action="itemEdit" title="{{localize 'STARMARX.Sheet.Action.Edit'}}"><i class="fa-solid fa-pen"></i></button>
+            </div>
+          </li>
+        {{/each}}
+      </ul>
     {{else}}
-      <p class="empty">{{localize "STARMARX.Sheet.Sections.SigneRacialVide"}}</p>
+      <p class="empty">{{localize "STARMARX.Sheet.Sections.SignesRaciauxVide"}}</p>
     {{/if}}
   </div>
 
   <div class="signe-block signe-generaux">
     <header class="signe-block__header">
       <h2>{{localize "STARMARX.Sheet.Sections.SignesGeneraux"}}</h2>
-      <div class="counter">{{signes.generaux.length}} / {{system.limits.signes}}</div>
+      <div class="counter">{{signes.generaux.length}} / {{signesMax}}</div>
       <button type="button" class="add-btn" data-action="itemCreate" data-item-type="signe">
         <i class="fa-solid fa-plus"></i> {{localize "STARMARX.Sheet.Action.AddSigne"}}
       </button>
     </header>
-    <ul class="item-list">
-      {{#each signes.generaux}}
-        <li class="item-row" data-item-id="{{this.id}}">
-          <img class="item-img" src="{{this.img}}" alt="">
-          <div class="item-body">
-            <h4 class="item-name">{{this.name}}</h4>
-            <div class="item-desc">{{{this.system.description}}}</div>
-          </div>
-          <div class="item-actions">
-            <button type="button" data-action="itemEdit"><i class="fa-solid fa-pen"></i></button>
-            <button type="button" data-action="itemDelete"><i class="fa-solid fa-trash"></i></button>
-          </div>
-        </li>
-      {{/each}}
-    </ul>
+    {{#if signes.generaux.length}}
+      <ul class="item-list">
+        {{#each signes.generaux}}
+          <li class="item-row" data-item-id="{{this.id}}">
+            <img class="item-img" src="{{this.img}}" alt="">
+            <div class="item-body">
+              <h4 class="item-name">{{this.name}}</h4>
+              <div class="item-desc">{{{this.system.description}}}</div>
+            </div>
+            <div class="item-actions">
+              <button type="button" data-action="itemEdit"><i class="fa-solid fa-pen"></i></button>
+              <button type="button" data-action="itemDelete"><i class="fa-solid fa-trash"></i></button>
+            </div>
+          </li>
+        {{/each}}
+      </ul>
+    {{else}}
+      <div class="drop-zone">
+        <i class="fa-solid fa-star"></i>
+        <p>{{localize "STARMARX.Sheet.Action.DropSigneHere"}}</p>
+      </div>
+    {{/if}}
+  </div>
+
+  <div class="signe-block signe-bonus">
+    <header class="signe-block__header">
+      <h2>{{localize "STARMARX.Sheet.Sections.SignesBonus"}}</h2>
+      <div class="counter">{{signes.bonus.length}}</div>
+      <button type="button" class="add-btn" data-action="itemCreateBonus">
+        <i class="fa-solid fa-plus"></i> {{localize "STARMARX.Sheet.Action.AddSigneBonus"}}
+      </button>
+    </header>
+    {{#if signes.bonus.length}}
+      <ul class="item-list">
+        {{#each signes.bonus}}
+          <li class="item-row" data-item-id="{{this.id}}">
+            <img class="item-img" src="{{this.img}}" alt="">
+            <div class="item-body">
+              <h4 class="item-name">
+                {{this.name}}
+                <span class="badge">{{localize "STARMARX.Signe.Fields.Bonus"}}</span>
+              </h4>
+              <div class="item-desc">{{{this.system.description}}}</div>
+            </div>
+            <div class="item-actions">
+              <button type="button" data-action="itemEdit"><i class="fa-solid fa-pen"></i></button>
+              <button type="button" data-action="itemDelete"><i class="fa-solid fa-trash"></i></button>
+            </div>
+          </li>
+        {{/each}}
+      </ul>
+    {{else}}
+      <p class="empty">{{localize "STARMARX.Sheet.Sections.SignesBonusVide"}}</p>
+    {{/if}}
   </div>
 
 </section>

@@ -1,0 +1,20 @@
+{
+  "_id": "sgrbourbaskyAAAA",
+  "name": "Bourbasky",
+  "type": "signe",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Race Bourbasky.</p><ul><li><strong>Adapte au vide</strong> (pas besoin de scaphandre)</li><li><strong>Corps protoplasmique modulable :</strong> couleur, forme, nageoires, ventouses, membranes, follicules, etc.</li><li><strong>TCHERNOBYL peut se substituer a MEDAILLE OLYMPIQUE ou a SOCIAL TRAITRE</strong>, a condition que le joueur etaye son recit</li></ul><p><em>Limitations de Kontrebande :</em> les Bourbaskyi n'ont pas de possessions materielles ; leurs Kontrebandes sont soit des PNJ, soit des formules mathematiques qu'ils reemploient jusqu'a s'en lasser puis revisent pour les reparer.</p>",
+    "category": "racial",
+    "traitLink": "",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsigneracialAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgrbourbaskyAAAA"
+}

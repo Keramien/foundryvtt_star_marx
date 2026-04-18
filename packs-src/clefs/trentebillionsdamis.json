@@ -1,0 +1,21 @@
+{
+  "_id": "clftrentebillion",
+  "name": "Clef de Trente Billions d'Amis",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>Le Kamarade aime tellement les animaux qu'il ne supporte pas de les voir souffrir. Quand on pense qu'il y en a qui ignore encore que le gros blatsuv cornu adore que son maître le fouette et qu'il voit d'un très mauvais œil le fait d'être interrompu dans une séance de « caresses », on prend conscience que cette Clef peut rapporter beaucoup de Zlotys à son heureux possesseur...</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": ""
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clftrentebillion"
+}

@@ -1,0 +1,21 @@
+{
+  "_id": "clfmasochisteAAA",
+  "name": "Clef du Masochiste",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>À trop visiter les baignoires du KGB, le Kamarade a pris goût à la souffrance. Cette Clef a un fonctionnement particulier, le personnage gagnant un Zloty quand il est blessé, et trois Zlotys s'il finit K.O.</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": "<p>1 Zloty quand le Kamarade est blessé, 3 Zlotys s'il finit K.O.</p>"
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clfmasochisteAAA"
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "clrgalanteriebab",
+  "name": "Clef Raciale Obligatoire de la Galanterie Babouline",
+  "type": "clef",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Baboulin. Clef obligatoire gratuite pour la race.</p><p>Les amours baboulines se règlent à grand renfort de mandales. Les femelles, plus charpentées, ont souvent le dessus, assommant les mâles à grands coups de mamelles distendues. Le Baboulin, querelleur, a donc, depuis l'enfance, un respect craintif pour la gent féminine, fût-elle d'une autre espèce, il suffit d'élever le ton. C'est pourquoi l'on conseille de passer un contrat avec ces soudards en présence de leurs femmes ou à défaut d'une personne du beau sexe. Attention toutefois, mesdames, à ne pas trop les brutaliser, ces grands costauds s'attachent vite. À l'inverse, si le Kamarade est UNE babouline, elle adoptera un comportement particulièrement misandre et aura tendance à ne s'adresser qu'aux femelles, les mâles étant quantité négligeable voire corrigible.</p><p>Comme pour toutes les clefs, le joueur gagne <strong>1 Zloty</strong> s'il fait rire le groupe et entre <strong>1 et 3 Zlotys</strong> si le Secrétaire Général se sert de sa faiblesse comme ressort scénaristique.</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": "<p>1 Zloty si le joueur fait rire le groupe ; 1 à 3 Zlotys si le Secrétaire Général utilise sa faiblesse comme ressort scénaristique.</p>"
+  },
+  "effects": [],
+  "folder": "fldclefracialAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "starmarx": {
+      "racialOnly": "baboulin"
+    }
+  },
+  "_key": "!items!clrgalanteriebab"
+}

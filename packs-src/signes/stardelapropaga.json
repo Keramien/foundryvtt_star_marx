@@ -1,0 +1,20 @@
+{
+  "_id": "sgtstardelapropA",
+  "name": "Star de la propagande mediatique",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait BOLCHOI ; presence d'un public.</p><p><strong>Une fois par aventure</strong>, le Kamarade peut <strong>substituer son score en BOLCHOI a n'importe quel autre Trait</strong>. <em>(Facile ! J'ai joue le commissaire Navaritch pendant 5 ans !)</em></p>",
+    "category": "trait",
+    "traitLink": "faucille.bolchoi",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtstardelapropA"
+}

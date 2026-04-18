@@ -1,0 +1,31 @@
+{
+  "_id": "racrobotAAAAAAAA",
+  "name": "Robot",
+  "type": "race",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>N'importe quelle forme mecanique. Soumis aux trois lois de la robotique de Garcimov (parodie).</p><p><strong>Signe Racial :</strong> Ne respire pas. Pas besoin d'oxygene. Resistant au vide. Peut operer dans l'espace, sous l'eau, etc.</p>",
+    "traitBonuses": [],
+    "hpBonus": 0,
+    "zlotysBonus": 0,
+    "signesBonus": 0,
+    "traitPointsBonus": 0,
+    "restrictions": "<p>Ne peut <strong>pas</strong> etre soigne par DOPAGE (medecine). Necessite <strong>MACHINISTE</strong> (mecanicien) et des pieces detachees pour etre repare.</p>",
+    "doctrinesAutorisees": {
+      "marteau": true,
+      "faucille": true,
+      "etoile": true
+    },
+    "signesRacialUuids": [
+      "Compendium.star_marx.signes.Item.sgrrobotAAAAAAAA"
+    ]
+  },
+  "effects": [],
+  "folder": "fldracecoreAAAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!racrobotAAAAAAAA"
+}

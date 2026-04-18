@@ -1,0 +1,20 @@
+{
+  "_id": "sgrklonAAAAAAAAA",
+  "name": "Klon",
+  "type": "signe",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Race Klon.</p><ul><li><strong>+2 pour resister a la peur</strong> (sous PRISONNIER POLITIQUE)</li><li><strong>Signe General Grand gratuit</strong> (voir signes generaux)</li></ul>",
+    "category": "racial",
+    "traitLink": "",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsigneracialAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgrklonAAAAAAAAA"
+}

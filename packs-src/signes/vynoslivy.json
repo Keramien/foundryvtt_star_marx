@@ -1,0 +1,20 @@
+{
+  "_id": "sgrvynoslivyAAAA",
+  "name": "Vynoslivy",
+  "type": "signe",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Source :</strong> Kosmokultor p.15</p><p><strong>Conditions requises :</strong> Race Gusano.</p><p>Le Kamarade est quasi-invulnerable : <strong>ni le vide, ni le manque d'air, ni les temperatures extremes, ni le manque de nourriture ne sauraient l'achever</strong>.</p><p><strong>Seules menaces mortelles :</strong></p><ul><li><strong>Dessechement</strong> (extraction du scaphandre et abandon au sec)</li><li><strong>Degrisement fatal des cellules</strong></li></ul>",
+    "category": "racial",
+    "traitLink": "",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsigneracialAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgrvynoslivyAAAA"
+}

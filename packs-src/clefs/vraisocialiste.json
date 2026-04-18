@@ -1,0 +1,21 @@
+{
+  "_id": "clfvraisocialist",
+  "name": "Clef du Vrai Socialiste",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>Le Kamarade a une certaine tendresse pour les faibles et les opprimés. Il aide les personnes dans le besoin et partage ce qu'il a avec les nécessiteux.</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": ""
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clfvraisocialist"
+}

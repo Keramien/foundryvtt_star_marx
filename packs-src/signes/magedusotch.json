@@ -1,0 +1,20 @@
+{
+  "_id": "sgtmagedusotchAA",
+  "name": "Mage du scotch",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait MACHINISTE.</p><p><strong>Pour 1 Zloty</strong>, le Kamarade <strong>repare un objet de Kontrebande casse</strong>. <strong>Pour un nombre de Zlotys negocie</strong>, il peut <strong>faire tenir une machine au-dela de ses limites</strong>.</p>",
+    "category": "trait",
+    "traitLink": "etoile.machiniste",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtmagedusotchAA"
+}

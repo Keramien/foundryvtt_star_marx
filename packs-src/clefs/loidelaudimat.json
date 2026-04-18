@@ -1,0 +1,25 @@
+{
+  "_id": "clrloidelaudimat",
+  "name": "Clef Raciale Obligatoire de la Loi de l'Audimat",
+  "type": "clef",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Mnogy. Clef obligatoire gratuite pour la race.</p><p>Si les actions de nombreux Kamarades sont dictées par des préceptes moraux ou un instinct de survie basique, les réactions d'un mécanoïde mnogy ne connaissent qu'une seule loi : l'audimat. « Je suis désolé de donner l'alerte lors de notre évasion, mais 57% des résidents ont envie de voir ces fameux combats d'arène auxquels on nous destine, donc AU SECOURS ! À LA GARDE ! » Voilà ce qu'on peut attendre d'un compagnon mnogy, sans compter que leur personnalité peut changer d'heure en heure : « Oui, nous savons que nous avions promis de vous aider à réparer le soyouz, mais les enfants sont couchés, et c'est le premier samedi du mois, donc c'est le moment de notre virée érotique mensuelle, ne zappez pas… »</p><p>Si le joueur parvient à faire rire la table avec une telle attitude, il gagne <strong>1 Zloty</strong>. Si le Secrétaire Général utilise le prétexte d'un putsch du huitième étage pour mettre le groupe d'aventuriers dans la panade, il peut accorder entre <strong>1 et 3 Zlotys</strong> au Kamarade.</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": "<p>1 Zloty si le joueur fait rire la table ; 1 à 3 Zlotys si le Secrétaire Général utilise un putsch d'audimat pour mettre le groupe dans la panade.</p>"
+  },
+  "effects": [],
+  "folder": "fldclefracialAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "starmarx": {
+      "racialOnly": "mnogy"
+    }
+  },
+  "_key": "!items!clrloidelaudimat"
+}

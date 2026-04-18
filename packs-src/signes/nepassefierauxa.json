@@ -1,0 +1,20 @@
+{
+  "_id": "sgtnepassefieraA",
+  "name": "Ne pas se fier aux apparences",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait LUTTE ; fiction justifiant la sous-estimation (taille, sexe, allure faible).</p><p>Le Kamarade beneficie d'un <strong>+2 au debut de tout conflit</strong> car ses adversaires le sous-estiment.</p>",
+    "category": "trait",
+    "traitLink": "marteau.lutte",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtnepassefieraA"
+}

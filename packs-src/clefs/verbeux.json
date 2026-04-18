@@ -1,0 +1,21 @@
+{
+  "_id": "clfverbeuxAAAAAA",
+  "name": "Clef du Verbeux",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>Le Kamarade collectionne les phrases cultes et ne peut pas s'empêcher de les ressortir à tout bout de la conversation. Il le fait tellement souvent que plus personne ne se rend compte qu'il cite Yan Klaud Vandamsk dans le texte. Dans l'ancienne version des règles, nous proposions au Secrétaire Général de piocher cinq phrases dans les discours officiels des pères du Communisme, mais nous avons remarqué que c'était beaucoup plus drôle avec cinq répliques plus connues, tirées du cinéma par exemple. Dans les faits, cette Clef rapporte un Zloty si le joueur arrive à caser une de ses phrases à propos dans une scène, et deux Zlotys si aucun joueur autour de la table ne remarque qu'il s'agit d'une citation célèbre.</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": "<p>1 Zloty si le joueur arrive à caser une de ses phrases à propos dans une scène, 2 Zlotys si aucun joueur autour de la table ne remarque qu'il s'agit d'une citation célèbre.</p>"
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clfverbeuxAAAAAA"
+}

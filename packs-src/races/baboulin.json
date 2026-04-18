@@ -1,0 +1,29 @@
+{
+  "_id": "racbaboulinAAAAA",
+  "name": "Baboulin",
+  "type": "race",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>Mercenaires colossaux avec d'enormes yeux en soucoupe.</p><p><strong>Signes suggeres :</strong> \"Grand\", \"Esprit de groupe\".</p>",
+    "traitBonuses": [],
+    "hpBonus": 0,
+    "zlotysBonus": 0,
+    "signesBonus": 0,
+    "traitPointsBonus": 0,
+    "restrictions": "<p>Clef Raciale Obligatoire (Galanterie babouline) : les males ont un respect craintif envers les femelles (de toute espece) ; les Baboulines femelles sont misandres.</p>",
+    "doctrinesAutorisees": {
+      "marteau": true,
+      "faucille": true,
+      "etoile": true
+    },
+    "signesRacialUuids": []
+  },
+  "effects": [],
+  "folder": "fldraceotherAAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!racbaboulinAAAAA"
+}

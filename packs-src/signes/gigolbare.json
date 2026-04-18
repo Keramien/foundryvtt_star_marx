@@ -1,0 +1,20 @@
+{
+  "_id": "sgrgigolbareAAAA",
+  "name": "Gigolbare",
+  "type": "signe",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Race Gigolbare.</p><p>Le Kamarade peut cuisiner des <strong>gateaux dopants</strong> en y mettant une part de ses sucs vitaux. Chaque gateau <strong>ajoute 1 de a un test</strong>, mais coute :</p><ul><li><strong>1 PV</strong> si le de supplementaire donne un resultat <strong>impair</strong></li><li><strong>2 PV</strong> s'il donne un resultat <strong>pair</strong></li></ul><p>Le Kamarade peut preparer ce genre de cuisine <strong>un nombre de fois par partie egal a son score en KARKASS</strong>.</p>",
+    "category": "racial",
+    "traitLink": "",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsigneracialAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgrgigolbareAAAA"
+}

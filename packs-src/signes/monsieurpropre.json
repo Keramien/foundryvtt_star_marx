@@ -1,0 +1,20 @@
+{
+  "_id": "sgtmonsieurpropr",
+  "name": "Monsieur Propre",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait GROUILLOT.</p><p>Sur un <strong>jet de GROUILLOT reussi</strong> (difficulte fixee par le Secretaire General), le Kamarade fait <strong>disparaitre temoins genants et traces d'un crime</strong>.</p>",
+    "category": "trait",
+    "traitLink": "faucille.grouillot",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtmonsieurpropr"
+}

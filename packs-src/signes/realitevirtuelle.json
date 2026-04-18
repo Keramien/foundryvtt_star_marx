@@ -1,0 +1,20 @@
+{
+  "_id": "sgtrealitevirtue",
+  "name": "Realite virtuelle",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait OPERATEUR CODEUR ; machine VR disponible.</p><p>Le Kamarade possede une machine capable de <strong>projeter le groupe dans un univers de jeu video</strong>. Les joueurs mettent les casques et changent d'univers de jeu (<em>Alone in the Bank</em>, <em>Kommissaire of Persia</em>, <em>Kolkhoze of Duty</em>, etc.).</p>",
+    "category": "trait",
+    "traitLink": "etoile.operateurCodeur",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtrealitevirtue"
+}

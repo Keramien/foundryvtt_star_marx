@@ -1,0 +1,25 @@
+{
+  "_id": "clrgonklinAAAAAA",
+  "name": "Clef Raciale Obligatoire du Gonklin",
+  "type": "clef",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Gonklin. Clef obligatoire gratuite pour la race.</p><p>Le Gonklin a tendance à considérer les machines comme des animaux, ce qui lui cause certains tracas. On en a vu certains essayer de piloter une Novye Trabant assis sur le toit, les ceintures de sécurité dans les mains, pareilles à des rênes, ou s'électrocuter en essayant de traire un distributeur à Kolkha Kola.</p><p>Si la table rit d'une mésaventure d'un Kamarade gonklin face à une machine, il gagne <strong>1 Zloty</strong>. Si le Secrétaire Général prend excuse de son arriération technologique pour précipiter le groupe au-devant d'une armada de problèmes, il peut accorder entre <strong>1 et 3 Zlotys</strong> au joueur.</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": "<p>1 Zloty si la table rit d'une mésaventure face à une machine ; 1 à 3 Zlotys si le Secrétaire Général s'en sert comme ressort scénaristique.</p>"
+  },
+  "effects": [],
+  "folder": "fldclefracialAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "starmarx": {
+      "racialOnly": "gonklin"
+    }
+  },
+  "_key": "!items!clrgonklinAAAAAA"
+}

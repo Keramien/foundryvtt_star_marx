@@ -1,0 +1,20 @@
+{
+  "_id": "sgtphysionomiste",
+  "name": "Physionomiste",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait KGB.</p><p>Le Kamarade <strong>reconnait immediatement toute personne deja rencontree</strong> (visage, demarche, voix).</p>",
+    "category": "trait",
+    "traitLink": "etoile.kgb",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtphysionomiste"
+}

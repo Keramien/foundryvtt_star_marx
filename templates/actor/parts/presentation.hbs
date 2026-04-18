@@ -65,6 +65,44 @@
     </label>
   </div>
 
+  <div class="race-block">
+    <header class="race-block__header">
+      <h3>{{localize "STARMARX.Sheet.Sections.Race"}}</h3>
+    </header>
+    {{#if race}}
+      <div class="item-row" data-item-id="{{race.id}}">
+        <img class="item-img" src="{{race.img}}" alt="">
+        <div class="item-body">
+          <h4 class="item-name">
+            {{race.name}}
+            {{#if doctrineMismatch}}
+              <span class="badge badge--warning" title="{{localize 'STARMARX.Race.DoctrineMismatch.Hint'}}">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                {{localize "STARMARX.Race.DoctrineMismatch.Label"}}
+              </span>
+            {{/if}}
+          </h4>
+          <div class="item-desc">{{{race.system.description}}}</div>
+          {{#if race.system.restrictions}}
+            <details class="race-restrictions">
+              <summary>{{localize "STARMARX.Race.Fields.Restrictions"}}</summary>
+              <div>{{{race.system.restrictions}}}</div>
+            </details>
+          {{/if}}
+        </div>
+        <div class="item-actions">
+          <button type="button" data-action="itemEdit" title="{{localize 'STARMARX.Sheet.Action.Edit'}}"><i class="fa-solid fa-pen"></i></button>
+          <button type="button" data-action="itemDelete" title="{{localize 'STARMARX.Sheet.Action.Delete'}}"><i class="fa-solid fa-trash"></i></button>
+        </div>
+      </div>
+    {{else}}
+      <div class="drop-zone">
+        <i class="fa-solid fa-people-group"></i>
+        <p>{{localize "STARMARX.Sheet.Sections.RaceVide"}}</p>
+      </div>
+    {{/if}}
+  </div>
+
   <div class="narrative-block">
     <h3>{{localize "STARMARX.Actor.Details.Historique"}}</h3>
     <textarea name="system.details.historique" rows="4">{{system.details.historique}}</textarea>

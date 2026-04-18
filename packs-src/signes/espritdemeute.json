@@ -1,0 +1,20 @@
+{
+  "_id": "sgtespritdemeute",
+  "name": "Esprit de meute",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait LUTTE.</p><p><strong>Pour 1 Zloty</strong>, le Kamarade porte une <strong>attaque supplementaire</strong> a une cible qu'un de ses allies vient de blesser.</p>",
+    "category": "trait",
+    "traitLink": "marteau.lutte",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtespritdemeute"
+}

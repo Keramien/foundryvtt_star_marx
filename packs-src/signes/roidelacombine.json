@@ -1,0 +1,20 @@
+{
+  "_id": "sgtroidelacombiA",
+  "name": "Roi de la combine",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait MARCHE NOIR.</p><p>En debut de scenario, sur un <strong>premier jet en MARCHE NOIR reussi</strong>, le Kamarade obtient <strong>1 Kontrebande gratuite pour l'equipe</strong> (acquise en une demi-journee). Avec un <strong>deuxieme jet en CORRUPTION a difficulte -2</strong>, il peut obtenir <strong>2 Kontrebandes</strong>, mais sombre dans la frange illegale. <strong>Echec sur l'un des deux jets : ennuis garantis.</strong> La Kontrebande obtenue <strong>disparait a la fin de l'aventure</strong>.</p>",
+    "category": "trait",
+    "traitLink": "faucille.marcheNoir",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtroidelacombiA"
+}

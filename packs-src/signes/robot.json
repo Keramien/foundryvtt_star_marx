@@ -1,0 +1,20 @@
+{
+  "_id": "sgrrobotAAAAAAAA",
+  "name": "Robot",
+  "type": "signe",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Race Robot.</p><p>Le Robot <strong>ne respire pas</strong> : il n'a besoin ni d'oxygene ni d'autre chose. Il est <strong>resistant au vide</strong> et peut operer <strong>dans l'espace sans scaphandre</strong>, sous l'eau, ou dans tout autre milieu similaire. Un traitement antirouille peut etre necessaire par la suite.</p>",
+    "category": "racial",
+    "traitLink": "",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsigneracialAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgrrobotAAAAAAAA"
+}

@@ -1,0 +1,21 @@
+{
+  "_id": "clfapparatchikAA",
+  "name": "Clef de l'Apparatchik",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>Le Kamarade rêve de se faire remarquer par quelqu'un d'important ou de prouver qu'il est plus valeureux que les autres. Il cherche tout le temps à surclasser des personnes qu'il se choisit comme adversaires ou bien tente de les ridiculiser.</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": ""
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clfapparatchikAA"
+}

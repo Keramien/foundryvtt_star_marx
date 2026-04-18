@@ -1,0 +1,37 @@
+{
+  "_id": "rachjortAAAAAAAA",
+  "name": "Hjort",
+  "type": "race",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>Gros sacs de cuir boursoufles, bouche en cul de poule, suintent une secretion bleue epaisse (comme de la gouache) quand ils sont stresses ou secoues. Obtus, gras, graisseux. Bureaucrates ultimes, obsedes par les formulaires, tampons et procedures. Premiers aliens a rejoindre l'Union. Couards et serviles.</p><p><strong>Signe Racial :</strong> +2 bonus au score de CORRUPTION. Commence chaque session avec +2 Zlotys supplementaires. Limite a 1 maximum en PRISONNIER POLITIQUE (ne peut depasser sauf negociation avec le MJ).</p>",
+    "traitBonuses": [
+      {
+        "doctrine": "faucille",
+        "trait": "corruption",
+        "bonus": 2
+      }
+    ],
+    "hpBonus": 0,
+    "zlotysBonus": 2,
+    "signesBonus": 0,
+    "traitPointsBonus": 0,
+    "restrictions": "<p>Doctrine <strong>Faucille</strong> uniquement (trop couards pour Marteau, trop faineants pour Etoile). Limite a <strong>1 maximum</strong> en PRISONNIER POLITIQUE.</p>",
+    "doctrinesAutorisees": {
+      "marteau": false,
+      "faucille": true,
+      "etoile": false
+    },
+    "signesRacialUuids": [
+      "Compendium.star_marx.signes.Item.sgrhjortAAAAAAAA"
+    ]
+  },
+  "effects": [],
+  "folder": "fldracecoreAAAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!rachjortAAAAAAAA"
+}

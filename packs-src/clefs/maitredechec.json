@@ -1,0 +1,21 @@
+{
+  "_id": "clfmaitredechecA",
+  "name": "Clef du Maître d'Échec",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>Cette Clef a un fonctionnement particulier. Le Kamarade est méthodique et rusé, il gagne des Zlotys quand il comprend les choses avant tout le monde, qu'il échafaude un plan, etc.</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": "<p>Le Kamarade gagne des Zlotys quand il comprend les choses avant tout le monde ou qu'il échafaude un plan.</p>"
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clfmaitredechecA"
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "sgtdosaumurAAAAA",
+  "name": "Dos au mur",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait LUTTE.</p><p>Quand le Kamarade tombe a <strong>1 point de vie</strong>, il beneficie de <strong>+1 a tous ses scores en Marteau et +1 aux degats</strong> qu'il inflige.</p>",
+    "category": "trait",
+    "traitLink": "marteau.lutte",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtdosaumurAAAAA"
+}

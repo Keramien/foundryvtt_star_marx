@@ -1,0 +1,20 @@
+{
+  "_id": "sgtcuistotrobora",
+  "name": "Cuistot roboratif",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait GROUILLOT ; temps de cuisiner et ingredients de bonne qualite.</p><p>Les repas du Kamarade <strong>rendent des points de vie</strong>. Il dispose d'un <strong>pool de soins egal a son score en GROUILLOT</strong>, a repartir entre lui et ses compagnons.</p>",
+    "category": "trait",
+    "traitLink": "faucille.grouillot",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtcuistotrobora"
+}

@@ -1,0 +1,21 @@
+{
+  "_id": "clfexileAAAAAAAA",
+  "name": "Clef de l'Exilé",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>Le Kamarade a perdu le contact avec une organisation, un groupe ou une culture, et il en ressent une profonde nostalgie.</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": ""
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clfexileAAAAAAAA"
+}

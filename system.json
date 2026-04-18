@@ -34,6 +34,43 @@
       "flags": {}
     }
   ],
+  "documentTypes": {
+    "Actor": {
+      "kamarade": {}
+    },
+    "Item": {
+      "race":        {},
+      "signe":       {},
+      "kontrebande": {},
+      "clef":        {},
+      "barda":       {},
+      "faiblesse":   {},
+      "atout":       {}
+    }
+  },
+  "packs": [
+    {
+      "name": "races",
+      "label": "Races",
+      "path": "packs/races",
+      "type": "Item",
+      "system": "star_marx"
+    },
+    {
+      "name": "signes",
+      "label": "Signes particuliers",
+      "path": "packs/signes",
+      "type": "Item",
+      "system": "star_marx"
+    },
+    {
+      "name": "clefs",
+      "label": "Clefs",
+      "path": "packs/clefs",
+      "type": "Item",
+      "system": "star_marx"
+    }
+  ],
   "primaryTokenAttribute": "health",
   "secondaryTokenAttribute": null,
   "grid": {

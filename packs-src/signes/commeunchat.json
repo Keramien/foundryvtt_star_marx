@@ -1,0 +1,20 @@
+{
+  "_id": "sgtcommeunchatAA",
+  "name": "Comme un chat",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait MEDAILLE OLYMPIQUE OU Trait ACROBATE.</p><p>Le Kamarade <strong>ne prend jamais de degats de chute</strong>, sauf sadisme flagrant du Secretaire General.</p><p><em>Note : les Signes applicables a ACROBATE sont les memes que ceux de MEDAILLE OLYMPIQUE.</em></p>",
+    "category": "trait",
+    "traitLink": "marteau.medailleOlympique",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtcommeunchatAA"
+}

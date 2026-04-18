@@ -1,0 +1,20 @@
+{
+  "_id": "sgtsouslaceintur",
+  "name": "Sous la ceinture",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait LUTTE.</p><p>Quand le joueur <strong>depense des Zlotys pour un jet de combat a 3 des</strong>, il peut <strong>considerer les 1 comme des 6</strong>.</p>",
+    "category": "trait",
+    "traitLink": "marteau.lutte",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtsouslaceintur"
+}

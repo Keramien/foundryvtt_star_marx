@@ -1,0 +1,21 @@
+{
+  "_id": "clfimposteurAAAA",
+  "name": "Clef de l'Imposteur",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>Le Kamarade doit se faire passer pour quelqu'un qu'il n'est pas, que ça soit par jeu ou par obligation.</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": ""
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clfimposteurAAAA"
+}

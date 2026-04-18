@@ -1,0 +1,20 @@
+{
+  "_id": "sgrhumainAAAAAAA",
+  "name": "Humain",
+  "type": "signe",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Race Humain.</p><p>Le signe racial Humain cumule deux effets :</p><ul><li>En plus des <strong>20 points de Traits</strong> standards, le Kamarade beneficie de <strong>2 points surnumeraires</strong> a repartir dans les Traits de son choix, <strong>meme hors de sa Doctrine</strong> (ces 2 points peuvent etre cumules sur un seul Trait).</li><li>Il dispose d'un <strong>signe au choix supplementaire</strong> (racial + 2 au choix au lieu de racial + 1).</li></ul>",
+    "category": "racial",
+    "traitLink": "",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsigneracialAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgrhumainAAAAAAA"
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "sgttoutenattaque",
+  "name": "Tout en attaque",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait MUSKLE.</p><p>Le Kamarade <strong>perd definitivement l'usage de son Armure</strong>, mais <strong>ses degats au contact deviennent egaux a son score en MUSKLE</strong>.</p>",
+    "category": "trait",
+    "traitLink": "marteau.muskle",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgttoutenattaque"
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "sgrduluskAAAAAAA",
+  "name": "Dulusk",
+  "type": "signe",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Race Dulusk ; le joueur justifie le metissage du personnage.</p><p>Le Kamarade a <strong>acces au Signe Racial ou a la Clef Raciale de son choix</strong> parmi les autres races (issu de ses sangs meles).</p><p><em>La Clef du Nuancier est optionnelle (RP uniquement, pas un Signe).</em></p>",
+    "category": "racial",
+    "traitLink": "",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsigneracialAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgrduluskAAAAAAA"
+}

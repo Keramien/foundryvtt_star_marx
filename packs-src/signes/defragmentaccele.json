@@ -1,0 +1,24 @@
+{
+  "_id": "sgndefragmentacc",
+  "name": "Defragmentation acceleree",
+  "type": "signe",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Race Robot.</p><p>Le Robot <strong>reste operationnel 24h/24</strong> (pas de mise en veille pour defragmentation).</p><p><em>Note : indisponible pour les Alevins.</em></p>",
+    "category": "general",
+    "traitLink": "",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignegeneralA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "starmarx": {
+      "racialOnly": "robot"
+    }
+  },
+  "_key": "!items!sgndefragmentacc"
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "sgtroentgenizdat",
+  "name": "Roentgenizdat",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait SAMIZDATS ; le joueur fournit au Secretaire General <strong>3 enregistrements musicaux</strong>.</p><p>Le Kamarade collectionne les roentgenizdats (enregistrements clandestins sur radiographies medicales). Le joueur <strong>gagne 1 Zloty chaque fois que le Secretaire General utilise un des enregistrements pour sonoriser la partie</strong>.</p>",
+    "category": "trait",
+    "traitLink": "etoile.samizdats",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtroentgenizdat"
+}

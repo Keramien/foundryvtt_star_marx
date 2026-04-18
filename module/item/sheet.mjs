@@ -1,0 +1,54 @@
+import { DOCTRINES, TRAITS_BY_DOCTRINE, SYSTEM_ID } from "../helpers/config.mjs";
+
+const { ItemSheetV2 } = foundry.applications.sheets;
+const { HandlebarsApplicationMixin } = foundry.applications.api;
+
+// Single Item sheet that picks its body template based on the item type.
+// `_configureRenderParts` rewrites the body part template before each render,
+// which keeps the class simple (one registration covers race / signe / clef).
+export class StarMarxItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
+
+  static DEFAULT_OPTIONS = {
+    classes: ["star-marx", "sheet", "item"],
+    position: { width: 520, height: 560 },
+    window: { resizable: true, contentClasses: ["star-marx-content"] },
+    form: { submitOnChange: true, closeOnSubmit: false }
+  };
+
+  static PARTS = {
+    header: { template: `systems/${SYSTEM_ID}/templates/item/parts/header.hbs` },
+    body:   { template: `systems/${SYSTEM_ID}/templates/item/parts/race.hbs` }
+  };
+
+  _configureRenderParts(options) {
+    const parts = super._configureRenderParts(options);
+    const type = this.item.type;
+    const bodyByType = {
+      race:  `systems/${SYSTEM_ID}/templates/item/parts/race.hbs`,
+      signe: `systems/${SYSTEM_ID}/templates/item/parts/signe.hbs`,
+      clef:  `systems/${SYSTEM_ID}/templates/item/parts/clef.hbs`
+    };
+    if (parts.body && bodyByType[type]) {
+      parts.body = { ...parts.body, template: bodyByType[type] };
+    }
+    return parts;
+  }
+
+  async _prepareContext(options) {
+    const context = await super._prepareContext(options);
+    const item = this.item;
+
+    context.item = item;
+    context.system = item.system;
+    context.isEditable = this.isEditable;
+
+    context.doctrines = DOCTRINES;
+    context.traitsByDoctrine = TRAITS_BY_DOCTRINE;
+
+    // No need to pre-enrich HTML here: we render HTML fields with the
+    // <prose-mirror> custom element, which takes the raw value via `value="…"`
+    // and handles serialization + editing itself.
+
+    return context;
+  }
+}

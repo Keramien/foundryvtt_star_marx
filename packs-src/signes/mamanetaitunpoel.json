@@ -1,0 +1,24 @@
+{
+  "_id": "sgnmamanetaitunp",
+  "name": "Maman etait un poele en fonte",
+  "type": "signe",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Race Robot.</p><p><strong>Blindage lourd. Pour 1 Zloty</strong>, une creature qui frappe le Robot <strong>avec des armes naturelles</strong> subit en retour <strong>la moitie des degats infliges</strong>.</p><p><strong>Contrepartie :</strong> le Robot est <strong>bien plus pesant</strong> qu'un Kamarade ordinaire ; le Secretaire General peut en faire un levier a histoires (planchers fragiles, cales fragiles, etc.).</p>",
+    "category": "general",
+    "traitLink": "",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignegeneralA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "starmarx": {
+      "racialOnly": "robot"
+    }
+  },
+  "_key": "!items!sgnmamanetaitunp"
+}

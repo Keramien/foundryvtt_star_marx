@@ -1,0 +1,20 @@
+{
+  "_id": "sgtseriallroverA",
+  "name": "Serial Lover",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait POUPEE RUSSE.</p><p><strong>Pour 1 Zloty</strong>, le Kamarade fait un jet en POUPEE RUSSE (seuil a la discretion du Secretaire General) :</p><ul><li><strong>Reussi :</strong> il connait un(e) ancien(ne) amant(e) avec un Trait utile a la situation.</li><li><strong>Echec :</strong> il connait toujours un(e) ex competent(e), mais les retrouvailles tournent mal (enfant cache, parents furieux, secte des Barbapapask, etc.).</li></ul>",
+    "category": "trait",
+    "traitLink": "faucille.poupeeRusse",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtseriallroverA"
+}

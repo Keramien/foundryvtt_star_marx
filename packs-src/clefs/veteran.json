@@ -1,0 +1,21 @@
+{
+  "_id": "clfveteranAAAAAA",
+  "name": "Clef du Vétéran",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>Le Kamarade en a trop fait, il a trop vu ou perpétré d'horreurs. Il est submergé par ses traumatismes.</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": ""
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clfveteranAAAAAA"
+}

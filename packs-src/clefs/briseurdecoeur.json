@@ -1,0 +1,21 @@
+{
+  "_id": "clfbriseurdecoeu",
+  "name": "Clef du Briseur de Cœur",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>Le Kamarade aime séduire. Lorsque le joueur décide d'opter pour cette option, il serait bon qu'il précise avec le Secrétaire Général, son cœur de cible : le Kamarade peut être un xénophile invétéré souhaitant connaître toutes les pratiques tantriques nemtsyi ; ou bien il peut ne prendre son plaisir qu'en couchant avec des hommes mariés ; à moins qu'il ait le projet de ne mettre dans son lit que des membres du Parti, espérant leur insuffler un brin d'humanité pendant le bref moment où l'orgasme les rend réceptifs…</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": ""
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clfbriseurdecoeu"
+}

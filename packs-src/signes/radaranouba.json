@@ -1,0 +1,20 @@
+{
+  "_id": "sgnradaranoubaAA",
+  "name": "Radar a Nouba",
+  "type": "signe",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p><strong>Source :</strong> Kosmokultor p.16</p><p><strong>Conditions requises :</strong> Aucune.</p><p>Le Kamarade detecte a distance les fetes, soirees clandestines, boums etudiantes et beuveries. Il <strong>declenche son pouvoir quand il le souhaite</strong>, pour un nombre de <strong>Zlotys fixe par le Secretaire General</strong> selon la situation. Il percoit la direction de la bamboche mais pas sa nature (barmitsva cannibale, cantina, etc.) et <strong>ne peut pas s'y teleporter</strong> : encore faut-il l'atteindre.</p>",
+    "category": "general",
+    "traitLink": "",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignegeneralA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgnradaranoubaAA"
+}

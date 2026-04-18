@@ -1,0 +1,24 @@
+{
+  "_id": "sgnbiblothequeam",
+  "name": "Bibliotheque ambulante",
+  "type": "signe",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong></p><ul><li>Appartenance au <strong>Kollectif Bradbourichque</strong> (groupuscule clandestin de libraires et lettres resistant a la censure)</li><li>Le joueur doit <strong>citer un livre existant</strong> se rapportant au sujet <strong>qu'il n'a pas encore evoque</strong> dans la partie</li></ul><p>Contre <strong>1 Zloty</strong>, le Kamarade peut <strong>echanger un de ses Traits avec UNIVERSITET</strong> le temps d'une scene.</p><p><strong>Exemple :</strong> <em>J'ai lu Premier de Cordee, je fais ma survie en montagne avec mon 4 en UNIVERSITET.</em></p><p><strong>Cout croissant :</strong> chaque nouvelle utilisation du Signe dans la meme partie <strong>double le cout en Zlotys</strong> :</p><ul><li>1re utilisation : 1 Zloty</li><li>2e utilisation : 2 Zlotys</li><li>3e utilisation : 3 Zlotys</li><li>...et ainsi de suite</li></ul>",
+    "category": "groupuscule",
+    "traitLink": "",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignegroupusc",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "starmarx": {
+      "groupuscule": "kollectif-bradbourichque"
+    }
+  },
+  "_key": "!items!sgnbiblothequeam"
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "clrnuancierAAAAA",
+  "name": "Clef du Nuancier",
+  "type": "clef",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Dulusk.</p><p>Le Kamarade juge les gens à leur couleur, pas à leurs actes. Qu'un personnage soit plus rougeaud qu'un autre et le Dulusk réagira différemment. Que son interlocuteur soit olivâtre et il sera soupçonné d'être au quart Klon. Plus le Secrétaire Général se sert de cette Clef pour poser problème, plus elle rapporte, comme toujours (entre <strong>1 et 3 Zlotys</strong>). Et si elle mène à un bon moment de rigolade, le joueur engrange <strong>1 Zloty</strong>.</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": "<p>1 Zloty pour un bon moment de rigolade ; 1 à 3 Zlotys si le Secrétaire Général s'en sert pour poser problème.</p>"
+  },
+  "effects": [],
+  "folder": "fldclefracialAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "starmarx": {
+      "racialOnly": "dulusk"
+    }
+  },
+  "_key": "!items!clrnuancierAAAAA"
+}

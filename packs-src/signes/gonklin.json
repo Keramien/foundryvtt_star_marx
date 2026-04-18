@@ -1,0 +1,20 @@
+{
+  "_id": "sgrgonklinAAAAAA",
+  "name": "Gonklin",
+  "type": "signe",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Race Gonklin.</p><ul><li><strong>+2 pour casser une machine</strong></li><li><strong>-2 pour utiliser une machine</strong></li></ul>",
+    "category": "racial",
+    "traitLink": "",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsigneracialAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgrgonklinAAAAAA"
+}

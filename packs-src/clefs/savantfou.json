@@ -1,0 +1,21 @@
+{
+  "_id": "clfsavantfouAAAA",
+  "name": "Clef du Savant Fou",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>Le Kamarade est prêt à toutes les expériences, même les plus extrêmes, à condition d'avoir un cobaye sous la main.</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": ""
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clfsavantfouAAAA"
+}

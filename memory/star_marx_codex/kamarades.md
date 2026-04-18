@@ -25,9 +25,12 @@ Chaque Trait de la Doctrine choisie reçoit **1 croix gratuite**.
 
 ### Etape 2 : Choisir les Signes Particuliers (p.70)
 
-- **2 Signes Particuliers** au choix
-- SAUF si le peuple a un Signe Racial obligatoire → 1 racial gratuit + 1 au choix
-- Humains : pas de racial, mais +2 points de Trait bonus à la place
+> Note d'adaptation : la formulation du livre est ambiguë. On clarifie :
+
+- **Base** : **1 signe racial** obligatoire (imposé par la race) + **1 signe au choix** = 2 signes au total.
+- **Races à double racial** (ex. Klon = racial Klon + *Grand* gratuit, Simple = racial Simple + *Petit* gratuit) : 2 raciaux + 1 au choix = 3 signes.
+- **Humain** : signe racial **Humain** obligatoire (accorde +2 points de Trait *et* +1 signe au choix supplémentaire), soit racial + **2** signes au choix = 3 signes.
+- **Baboulin / Vulgain** : pas de signe racial obligatoire (ils sont contraints par une Clef raciale à la place) → **2 signes au choix**.
 
 Voir le dossier `signes/` pour la liste complète :
 - `signes/signes_generaux.md` — Signes accessibles à tous

@@ -1,0 +1,24 @@
+{
+  "_id": "sgntulaslaissetA",
+  "name": "Tu l'as laisse tomber par terre",
+  "type": "signe",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong></p><ul><li>Appartenance aux <strong>Kosmoroms</strong> (nomades de l'espace, kontrebandiers et braconniers de faisandromede)</li></ul><p>Le Kamarade peut <strong>utiliser la Kontrebande d'un autre Personnage Joueur</strong> comme si c'etait la sienne.</p>",
+    "category": "groupuscule",
+    "traitLink": "",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignegroupusc",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "starmarx": {
+      "groupuscule": "kosmoroms"
+    }
+  },
+  "_key": "!items!sgntulaslaissetA"
+}

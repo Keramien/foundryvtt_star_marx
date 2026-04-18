@@ -1,0 +1,21 @@
+{
+  "_id": "clfkapoAAAAAAAAA",
+  "name": "Clef du Kapo",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>Un des membres de l'équipe est le souffre-douleur du Kamarade qui saisit la moindre occasion pour le rabaisser, l'humilier ou le brutaliser.</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": ""
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clfkapoAAAAAAAAA"
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "sgrmnogyAAAAAAAA",
+  "name": "Mnogy",
+  "type": "signe",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Race Mnogy.</p><ul><li><strong>+1 point de vie</strong> (coque incassable)</li><li><strong>+2 pour resister a la peur</strong></li><li>Meme mort, la coque reste intacte et les occupants survivent en attendant qu'un autre Mnogy les ramasse</li></ul><p><em>Le Mnogy est contraint par la Clef raciale de la Loi de l'Audimat : ses actions suivent les votes des residents. Regle RP, pas un Signe.</em></p>",
+    "category": "racial",
+    "traitLink": "",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsigneracialAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgrmnogyAAAAAAAA"
+}

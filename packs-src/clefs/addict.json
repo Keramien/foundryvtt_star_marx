@@ -1,0 +1,21 @@
+{
+  "_id": "clfaddictAAAAAAA",
+  "name": "Clef de l'Addict",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>Que ce soit l'alcool de pneu, les poils de hamster hallucinogène de Novye Mejiko ou le jeu vidéo interdit Alone in the Bank, le Kamarade est dépendant à une chose et ne peut s'en passer.</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": ""
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clfaddictAAAAAAA"
+}

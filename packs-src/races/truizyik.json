@@ -1,0 +1,31 @@
+{
+  "_id": "ractruizyikAAAAA",
+  "name": "Truizyik",
+  "type": "race",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>Nemtsyi porcins qui passent la moitie de leur vie a quatre pattes. Odorat inegale. Souvent trouves en extase pres des vestiaires ou dans les transports aux heures de pointe. Classes H dans l'Union (peuvent legalement etre transformes en cotelettes).</p><p><strong>Signe Racial :</strong> Quasi-telepathie via TCHERNOBYL : peut lire les pensees enfouies dans la sueur/transpiration. La cible doit effectivement transpirer ; le deodorant bloque le pouvoir. Certains individus puent tellement que seules des grossieretes sont lisibles.</p>",
+    "traitBonuses": [],
+    "hpBonus": 0,
+    "zlotysBonus": 0,
+    "signesBonus": 0,
+    "traitPointsBonus": 0,
+    "restrictions": "<p>La telepathie par la sueur requiert que la cible transpire effectivement.</p>",
+    "doctrinesAutorisees": {
+      "marteau": true,
+      "faucille": true,
+      "etoile": true
+    },
+    "signesRacialUuids": [
+      "Compendium.star_marx.signes.Item.sgrtruizykAAAAAA"
+    ]
+  },
+  "effects": [],
+  "folder": "fldraceotherAAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!ractruizyikAAAAA"
+}

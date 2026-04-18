@@ -1,0 +1,20 @@
+{
+  "_id": "sgnacolyteAAAAAA",
+  "name": "Acolyte, Larbin, etc.",
+  "type": "signe",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Aucune.</p><p>Le Kamarade est suivi par un personnage secondaire a son service, interprete par le joueur. Ce suiveur dispose de <strong>10 croix</strong> a repartir librement dans ses propres Traits, sans pouvoir depasser <strong>3 croix</strong> par score. Si le larbin meurt, le Secretaire General lui trouve un remplacant des la partie suivante. Les XP du Kamarade peuvent etre investis dans ce suivant : <strong>1 XP pour une croix</strong> dans un Trait choisi a la creation du larbin, <strong>2 XP pour une croix</strong> dans tout autre Trait.</p>",
+    "category": "general",
+    "traitLink": "",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignegeneralA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgnacolyteAAAAAA"
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "sgnunseulespritA",
+  "name": "Un seul esprit pour toute une equipe !",
+  "type": "signe",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Aucune.</p><ul><li>Accompagne d'<strong>au moins un compagnon</strong> : <strong>+1 en LUTTE, PRISONNIER POLITIQUE et BRISEUR DE GREVE</strong></li><li><strong>Seul</strong> : <strong>-1</strong> a ces memes Traits</li></ul>",
+    "category": "general",
+    "traitLink": "",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignegeneralA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgnunseulespritA"
+}

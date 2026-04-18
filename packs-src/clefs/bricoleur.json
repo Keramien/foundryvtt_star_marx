@@ -1,0 +1,21 @@
+{
+  "_id": "clfbricoleurAAAA",
+  "name": "Clef du Bricoleur",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>Le Kamarade passe son temps à modifier, réparer, améliorer et démonter tout ce qui lui passe entre les mains. Il peut aussi avoir un grand projet. Par exemple, il rêve de mettre la main sur un propulseur nemtsy de technologie inconnue ou les puces cérébrales d'une unité Upgradator des I.A. de Sark.</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": ""
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clfbricoleurAAAA"
+}

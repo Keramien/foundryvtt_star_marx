@@ -1,0 +1,20 @@
+{
+  "_id": "sgtminoriteclanA",
+  "name": "Minorite clandestine",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait PRISONNIER POLITIQUE ; appartenance a une minorite persecutee (religieuse, independantiste, capitaliste...).</p><p><strong>Contre des Zlotys</strong>, le Kamarade accede a <strong>tout un reseau (informateurs, materiel)</strong> pret a l'aider, surtout pour defendre La Cause. <strong>Contrepartie :</strong> il doit suivre des preceptes et pratiques risquant de le trahir aupres des autorites.</p>",
+    "category": "trait",
+    "traitLink": "marteau.prisonnierPolitique",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtminoriteclanA"
+}

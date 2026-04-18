@@ -1,0 +1,31 @@
+{
+  "_id": "racmorskoyzehAAA",
+  "name": "Morskoyzeh",
+  "type": "race",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>Oursins bipedes. Piquants partout. Les premiers punks galactiques. Attitude \"No Future\". Ont invente les piques sur la tete avant que ce soit a la mode. Quasi-eteints parce que des pervers croient que manger leurs organes reproducteurs mene au nirvana sexuel.</p><p><strong>Signe Racial (Roi du Pogo) :</strong> Toute personne ayant une interaction physique avec un Morskoyzeh (soins, danse, attaque de melee) perd automatiquement 1 PV a cause des piquants. Affecte allies et ennemis.</p>",
+    "traitBonuses": [],
+    "hpBonus": 0,
+    "zlotysBonus": 0,
+    "signesBonus": 0,
+    "traitPointsBonus": 0,
+    "restrictions": "",
+    "doctrinesAutorisees": {
+      "marteau": true,
+      "faucille": true,
+      "etoile": true
+    },
+    "signesRacialUuids": [
+      "Compendium.star_marx.signes.Item.sgrroidupogoAAAA"
+    ]
+  },
+  "effects": [],
+  "folder": "fldracekosmoAAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!racmorskoyzehAAA"
+}

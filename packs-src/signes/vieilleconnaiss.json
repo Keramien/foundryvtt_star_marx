@@ -1,0 +1,20 @@
+{
+  "_id": "sgnvieilleconnai",
+  "name": "Vieille connaissance",
+  "type": "signe",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Aucune.</p><p><strong>Une fois par partie, pour 1 Zloty</strong>, le joueur peut decreter que son Kamarade connait une personne en rapport avec l'un de ses Traits, qui pourra lui rendre un petit service.</p>",
+    "category": "general",
+    "traitLink": "",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignegeneralA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgnvieilleconnai"
+}

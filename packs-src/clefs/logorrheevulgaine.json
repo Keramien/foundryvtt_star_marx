@@ -1,0 +1,25 @@
+{
+  "_id": "clrlogorrheevulg",
+  "name": "Clef Raciale Obligatoire de la Logorrhée Vulgaine",
+  "type": "clef",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Vulgain. Clef obligatoire gratuite pour la race.</p><p>Quand le joueur invente une insulte étrange et digne du Kapitaine Spadock, et que la table rit, il gagne <strong>1 Zloty</strong>. Évidemment, ce serait mal vu d'arriver avec une liste toute prête ou de se répéter. Si le flot imprécatoire du Kamarade sert d'excuse au Secrétaire Général pour compliquer encore davantage la situation, le joueur récolte entre <strong>1 et 3 Zlotys</strong>.</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": "<p>1 Zloty si le joueur invente une insulte étrange et fait rire la table ; 1 à 3 Zlotys si le flot imprécatoire sert d'excuse au Secrétaire Général pour compliquer la situation.</p>"
+  },
+  "effects": [],
+  "folder": "fldclefracialAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "starmarx": {
+      "racialOnly": "vulgain"
+    }
+  },
+  "_key": "!items!clrlogorrheevulg"
+}

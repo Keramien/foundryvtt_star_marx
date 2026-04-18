@@ -1,0 +1,20 @@
+{
+  "_id": "sgnarmurierAAAAA",
+  "name": "Armurier",
+  "type": "signe",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Aucune.</p><p>Le Kamarade est un passionne des armes. Si le joueur decrit comment son personnage bichonne et modifie son arme, il beneficie, au premier jet, d'un <strong>+1 en LUTTE ou en AK 47</strong> et d'un <strong>+1 au score de degats</strong>. Il peut egalement faire profiter toute l'equipe de son talent (entretien d'une arme d'un compagnon).</p>",
+    "category": "general",
+    "traitLink": "",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignegeneralA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgnarmurierAAAAA"
+}

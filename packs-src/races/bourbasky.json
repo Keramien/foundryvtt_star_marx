@@ -1,0 +1,31 @@
+{
+  "_id": "racbourbaskyAAAA",
+  "name": "Bourbasky",
+  "type": "race",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>Etres translucides, tentaculaires, protoplasmiques. Comme une amibe geante. Peuvent changer de forme, couleur, faire pousser nageoires, ventouses, membranes, follicules, etc. Intellectuels ascetiques, philosophes, mathematiciens. Besoins minimaux. Ethiquement opposes au mensonge et a la possession.</p><p><strong>Signe Racial :</strong> Adapte au vide (vacuum spatial). Corps metamorphe : peut utiliser TCHERNOBYL a la place de MEDAILLE OLYMPIQUE ou SOCIAL TRAITRE (si justifie narrativement).</p>",
+    "traitBonuses": [],
+    "hpBonus": 0,
+    "zlotysBonus": 0,
+    "signesBonus": 0,
+    "traitPointsBonus": 0,
+    "restrictions": "<p>Doctrine <strong>Etoile</strong> uniquement (l'effort physique les repugne, la violence est impensable, la tromperie est indigne d'eux). Les Bourbaskyi ne possedent jamais rien. Leur Kontrebande doit etre des PNJ ou des formules mathematiques.</p>",
+    "doctrinesAutorisees": {
+      "marteau": false,
+      "faucille": false,
+      "etoile": true
+    },
+    "signesRacialUuids": [
+      "Compendium.star_marx.signes.Item.sgrbourbaskyAAAA"
+    ]
+  },
+  "effects": [],
+  "folder": "fldracecoreAAAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!racbourbaskyAAAA"
+}

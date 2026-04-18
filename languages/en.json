@@ -5,7 +5,6 @@
         "kamarade": "Kamarade"
       },
       "Details": {
-        "Peuple": "People",
         "Doctrine": "Doctrine",
         "Groupuscule": "Faction",
         "Sexe": "Sex",
@@ -62,9 +61,15 @@
         "Presentation": "Overview",
         "Traits": "Traits",
         "Signes": "Signs",
+        "Clefs": "Keys",
         "Equipement": "Gear"
       },
       "KamaradeLabel": "Kamarade Sheet",
+      "ItemLabel": "Star Marx Item Sheet",
+      "Fields": {
+        "Name": "Name",
+        "Description": "Description"
+      },
       "TraitPoints": {
         "Label": "Trait points",
         "Available": "Available",
@@ -78,9 +83,17 @@
       "Sections": {
         "DoctrineChoisie": "Chosen doctrine",
         "AutresDoctrines": "Other doctrines",
+        "Race": "Race",
+        "RaceVide": "Drag a Race from the compendium",
         "SigneRacial": "Mandatory racial sign",
         "SigneRacialVide": "No racial sign set",
+        "SignesRaciaux": "Racial signs",
+        "SignesRaciauxVide": "No racial signs — drag a Race to acquire them.",
         "SignesGeneraux": "Distinctive signs",
+        "SignesBonus": "Bonus signs",
+        "SignesBonusVide": "No bonus signs. Equipment or the GM may grant some.",
+        "Clefs": "Keys",
+        "ClefsVide": "Drag a Key from the compendium",
         "Armure": "Armor",
         "Kontrebandes": "Kontrebande",
         "Bardas": "Gear"
@@ -90,8 +103,13 @@
         "Edit": "Edit",
         "Delete": "Delete",
         "AddSigne": "Add sign",
+        "AddSigneBonus": "Add bonus sign",
+        "AddClef": "Add key",
         "AddKontrebande": "Add kontrebande",
         "AddBarda": "Add gear",
+        "DropHere": "Drop an item here",
+        "DropSigneHere": "Drag a Sign from the compendium",
+        "DropClefHere": "Drag a Key from the compendium",
         "RollTrait": "Roll 2d6 + Trait",
         "HelpTrait": "Help roll",
         "HelpTraitTodo": "Help roll — implementation coming"
@@ -150,6 +168,7 @@
     },
     "Item": {
       "Type": {
+        "race": "Race",
         "signe": "Distinctive Sign",
         "kontrebande": "Kontrebande",
         "clef": "Key",
@@ -159,39 +178,70 @@
       },
       "Common": {
         "Description": "Description"
+      }
+    },
+    "Race": {
+      "Fields": {
+        "DoctrinesAutorisees": "Compatible doctrines",
+        "HpBonus": "HP bonus",
+        "ZlotysBonus": "Zlotys bonus",
+        "SignesBonus": "Bonus signs",
+        "TraitPointsBonus": "Bonus trait points",
+        "Restrictions": "Restrictions"
       },
-      "Signe": {
+      "DoctrineMismatch": {
+        "Label": "Atypical doctrine",
+        "Hint": "This race does not recommend the chosen Doctrine. You can still play it, but the GM may ask for a justification."
+      }
+    },
+    "Signe": {
+      "Fields": {
         "Category": "Category",
         "TraitLink": "Linked Trait",
-        "CategoryGeneral": "General",
-        "CategoryTrait": "Trait-linked",
-        "CategoryRacial": "Racial",
-        "CategoryGroupuscule": "Faction"
+        "Bonus": "Bonus",
+        "BonusLabel": "Bonus sign (equipment / scenario)",
+        "BonusHint": "A bonus sign does not count against the chosen-signs cap."
       },
-      "Kontrebande": {
-        "Bonus": "Bonus granted",
-        "State": "State",
-        "StateIntact": "Intact",
-        "StateCoche": "Used (ticked)",
-        "StateCasse": "Broken",
-        "Repairs": "Repairs performed",
-        "Used": "Used this scenario"
-      },
-      "Clef": {
-        "Active": "Active",
-        "Hint": "Grants Zlotys when played at the table."
-      },
-      "Barda": {
-        "Source": "Source table"
-      },
-      "Faiblesse": {
-        "Malus": "Malus when invoked",
-        "Invoked": "Invoked this scenario"
-      },
-      "Atout": {
-        "Bonus": "Bonus granted",
-        "Used": "Used this scenario"
+      "Category": {
+        "General": "General",
+        "Trait": "Trait-linked",
+        "Racial": "Racial",
+        "Groupuscule": "Faction"
       }
+    },
+    "Clef": {
+      "Fields": {
+        "ZlotyReward": "Reward (Zlotys)",
+        "Trigger": "Trigger"
+      },
+      "Racial": "Racial",
+      "Hint": "Grants Zlotys when played at the table."
+    },
+    "Kontrebande": {
+      "Bonus": "Bonus granted",
+      "State": "State",
+      "StateIntact": "Intact",
+      "StateCoche": "Used (ticked)",
+      "StateCasse": "Broken",
+      "Repairs": "Repairs performed",
+      "Used": "Used this scenario"
+    },
+    "Barda": {
+      "Source": "Source table"
+    },
+    "Faiblesse": {
+      "Malus": "Malus when invoked",
+      "Invoked": "Invoked this scenario"
+    },
+    "Atout": {
+      "Bonus": "Bonus granted",
+      "Used": "Used this scenario"
+    },
+    "Notifications": {
+      "RaceReplaced": "Race replaced.",
+      "SigneLimitReached": "Sign limit reached ({max}).",
+      "ClefLimitReached": "Key limit reached ({max}).",
+      "RacialSigneNotDroppable": "Racial Signs are acquired through a Race, not dropped directly."
     },
     "Roll": {
       "Threshold": "Threshold",

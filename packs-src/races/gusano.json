@@ -1,0 +1,31 @@
+{
+  "_id": "racgusanoAAAAAAA",
+  "name": "Gusano",
+  "type": "race",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>Grandes larves/vers pales tentaculaires, amphibies, perpetuellement baignes dans l'alcool (leur milieu naturel). Portent des combinaisons spatiales remplies d'alcool. Tenue de mariachi avec sombreros et guitares. Nomades, indesirables partout. Musiciens de rue/mariachis ou assassins mortels cachant des armes dans des etuis de guitare. Nes dans l'alcool.</p><p><strong>Signe Racial (Vynoslivy) :</strong> Pas de bras, pas de jambes (larves rampantes). Extremement difficiles a tuer : ni le vide, ni le manque d'air, ni les temperatures extremes, ni la famine ne peuvent les tuer. Seule crainte : la dessiccation et le dessechement fatal de leurs cellules.</p>",
+    "traitBonuses": [],
+    "hpBonus": 0,
+    "zlotysBonus": 0,
+    "signesBonus": 0,
+    "traitPointsBonus": 0,
+    "restrictions": "<p>Doctrine <strong>Faucille</strong> preferee, mais certains preferent <strong>Marteau</strong>. Constamment menaces d'etre agresses par des alcooliques qui drainent le fluide de leur combinaison (Clef Obligatoire : Clef du Mezcal). Vulnerabilite unique : dessiccation.</p>",
+    "doctrinesAutorisees": {
+      "marteau": true,
+      "faucille": false,
+      "etoile": true
+    },
+    "signesRacialUuids": [
+      "Compendium.star_marx.signes.Item.sgrvynoslivyAAAA"
+    ]
+  },
+  "effects": [],
+  "folder": "fldracekosmoAAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!racgusanoAAAAAAA"
+}

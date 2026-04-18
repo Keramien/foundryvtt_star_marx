@@ -1,0 +1,20 @@
+{
+  "_id": "sgtembuscadeAAAA",
+  "name": "Embuscade",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait ACTION PARTISANE ; <strong>1 minute de preparation</strong> du terrain avant l'affrontement.</p><p>Les allies du Kamarade recoivent <strong>+1 a leurs jets et +1 a leurs degats pour le premier round</strong> de l'affrontement.</p>",
+    "category": "trait",
+    "traitLink": "faucille.actionPartisane",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtembuscadeAAAA"
+}

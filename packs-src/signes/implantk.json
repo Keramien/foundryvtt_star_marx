@@ -1,0 +1,20 @@
+{
+  "_id": "sgtimplantkAAAAA",
+  "name": "Implant K",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait UNIVERSITET.</p><p>Le Kamarade a une <strong>bibliotheque telechargee dans son cerveau</strong> via implant neocortical. La science sovietique etant ce qu'elle est, il lui faut <strong>1 heure de concentration</strong> pour obtenir l'information recherchee.</p>",
+    "category": "trait",
+    "traitLink": "etoile.universitet",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtimplantkAAAAA"
+}

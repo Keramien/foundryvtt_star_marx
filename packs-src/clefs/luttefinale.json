@@ -1,0 +1,21 @@
+{
+  "_id": "clfluttefinaleAA",
+  "name": "Clef de la Lutte Finale",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>Le Kamarade aime écraser ses ennemis en combat. Cette Clef fonctionne de façon spéciale : le personnage gagne à la fin d'un combat un Zloty si tous les ennemis étaient de puissance inférieure à la sienne, trois Zlotys s'il a vaincu un ennemi de puissance supérieure ou égale à la sienne.</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": "<p>À la fin d'un combat : 1 Zloty si tous les ennemis étaient de puissance inférieure, 3 Zlotys si le Kamarade a vaincu un ennemi de puissance supérieure ou égale à la sienne.</p>"
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clfluttefinaleAA"
+}

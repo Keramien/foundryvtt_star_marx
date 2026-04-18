@@ -1,0 +1,21 @@
+{
+  "_id": "clfcoeurbriseAAA",
+  "name": "Clef du Cœur Brisé",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>Le Kamarade n'arrive plus à former des liens d'amour ou d'amitié, il succombe à la nostalgie ou repousse l'affection des autres.</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": ""
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clfcoeurbriseAAA"
+}

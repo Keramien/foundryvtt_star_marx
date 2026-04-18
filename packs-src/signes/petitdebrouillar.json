@@ -1,0 +1,20 @@
+{
+  "_id": "sgtpetitdebrouil",
+  "name": "Petit debrouillard",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait MARCHE NOIR.</p><p>En <strong>debut de session</strong> (ou en cours de partie quand il a le temps), le joueur annonce ce qu'il cherche et fait un <strong>jet en MARCHE NOIR</strong> :</p><ul><li><strong>12 ou plus :</strong> 3 qualites au choix dans la liste</li><li><strong>9, 10 ou 11 :</strong> 2 qualites</li><li><strong>Echec :</strong> 1 qualite</li></ul><p><strong>Liste des qualites :</strong></p><ol><li>Cette chose fonctionne.</li><li>C'est plus ou moins ce que le joueur recherche.</li><li>Cela sert a quelque chose de puissant.</li><li>Ce n'est a personne (ou personne ne viendra le reclamer).</li></ol><p>Le Secretaire General utilise les qualites non choisies pour pimenter la suite.</p>",
+    "category": "trait",
+    "traitLink": "faucille.marcheNoir",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtpetitdebrouil"
+}

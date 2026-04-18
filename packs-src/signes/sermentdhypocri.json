@@ -1,0 +1,20 @@
+{
+  "_id": "sgtsermentdhypoc",
+  "name": "Serment d'hypocrite",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait DOPAGE.</p><p><strong>Une fois par combat, pour 1 Zloty</strong>, le Kamarade ajoute son score en <strong>DOPAGE a ses degats</strong>.</p>",
+    "category": "trait",
+    "traitLink": "etoile.dopage",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtsermentdhypoc"
+}

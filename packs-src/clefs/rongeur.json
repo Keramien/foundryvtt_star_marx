@@ -1,0 +1,25 @@
+{
+  "_id": "clrrongeurAAAAAA",
+  "name": "Clef Raciale du Rongeur",
+  "type": "clef",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Krolik.</p><p>Les incisives du Kamarade poussent sans discontinuer. Pour qu'elles ne le gênent pas, il a pris l'habitude de ronger. Un peu tout et n'importe quoi, comme ça vient… À vrai dire, il n'y prête plus vraiment attention : un câble du soyouz, la courroie du holster de son Kamarade le pistolero Dark Jack ou les bretelles de son pantalon, il grignote sans réfléchir.</p><p>Si le Secrétaire Général utilise sa manie pour faire rebondir son scénario, il donnera au personnage entre <strong>1 et 3 Zlotys</strong> selon l'impact de la chose. Et rien n'empêche le joueur de lui faire des propositions. Comme pour toutes les autres clefs, si cette manie de ronger tout et n'importe quoi devait mener à une situation amusante, le joueur gagnerait <strong>1 Zloty</strong>.</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": "<p>1 Zloty si la manie de ronger mène à une situation amusante ; 1 à 3 Zlotys si le Secrétaire Général s'en sert pour faire rebondir le scénario.</p>"
+  },
+  "effects": [],
+  "folder": "fldclefracialAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "starmarx": {
+      "racialOnly": "krolik"
+    }
+  },
+  "_key": "!items!clrrongeurAAAAAA"
+}

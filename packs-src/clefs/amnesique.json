@@ -1,0 +1,21 @@
+{
+  "_id": "clfamnesiqueAAAA",
+  "name": "Clef de l'Amnésique",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>La mémoire du Kamarade est trouée comme le fromage au lait des stalinoises des soviets satellites de Frybourgskaïa 4. Pour la combler, il cherche des éléments de son passé (la même peluche de Mon Voisin Trotskoro que celle qu'il avait petit, son superviseur de vacances organisées…).</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": ""
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clfamnesiqueAAAA"
+}

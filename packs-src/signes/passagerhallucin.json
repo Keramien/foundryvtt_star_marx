@@ -1,0 +1,20 @@
+{
+  "_id": "sgnpassagerhallu",
+  "name": "Passager Hallucinatoire",
+  "type": "signe",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p><strong>Source :</strong> Kosmokultor p.16</p><p><strong>Conditions requises :</strong> Aucune. (Fiction : le Kamarade souffre du syndrome d'Holdenmillersky suite a l'absorption d'une copromolecule pas fraiche.)</p><p>Le Kamarade recoit la visite d'un personnage <strong>qu'il est seul a percevoir</strong>, qui lui prodigue des conseils (salvateurs ou nefastes). <strong>Concretement, le Kamarade voit le Secretaire General</strong>, qui peut lui mentir, le manipuler a loisir et le traiter comme sa marionnette plus ou moins volontaire.</p>",
+    "category": "general",
+    "traitLink": "",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignegeneralA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgnpassagerhallu"
+}

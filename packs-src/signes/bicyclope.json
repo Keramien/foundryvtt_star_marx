@@ -1,0 +1,20 @@
+{
+  "_id": "sgrbicyclopeAAAA",
+  "name": "Bicyclope",
+  "type": "signe",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Race Bicyclope.</p><ul><li>Sur <strong>terrain favorable</strong> (routes, surfaces lisses) : <strong>+2 en MEDAILLE OLYMPIQUE</strong></li><li>Sur <strong>terrain defavorable</strong> (eau, terrain accidente) : <strong>malus</strong> a determiner par le Secretaire General</li><li>Les Bicyclopes peuvent monter des pneus tout-terrain en quelques minutes</li></ul>",
+    "category": "racial",
+    "traitLink": "",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsigneracialAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgrbicyclopeAAAA"
+}

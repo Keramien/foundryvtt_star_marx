@@ -1,0 +1,24 @@
+{
+  "_id": "sgnfamillenombre",
+  "name": "Famille nombreuse",
+  "type": "signe",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Race Klon.</p><p>Le Kamarade est accompagne d'une <strong>horde de Petits Klons bavant et degeneres</strong> (neveux, cousins, freres). Fonctionne comme le Signe Acolyte, Larbin, etc., mais <strong>chaque Trait est associe a un Petit Klon different</strong>.</p><p>Quand un neveu meurt, ses points de Traits peuvent, a la fin de l'aventure, servir a creer un nouveau mioche (dans un Trait different au besoin) ou etre reattribues aux survivants.</p><p><em>Famille nombreuse est le pre-requis pour les trois Signes Klon suivants : La dure Loi de l'Evolution, La Fessee, Tous dessus.</em></p>",
+    "category": "general",
+    "traitLink": "",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignegeneralA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "starmarx": {
+      "racialOnly": "klon"
+    }
+  },
+  "_key": "!items!sgnfamillenombre"
+}

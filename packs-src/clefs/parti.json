@@ -1,0 +1,21 @@
+{
+  "_id": "clfpartiAAAAAAAA",
+  "name": "Clef du Parti",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>Le Kamarade obéit aux directives du Parti et tâche de faire en sorte que ses actes soient en accord avec la ligne officielle, ce qui n'est pas toujours évident dans la Border Zone ou bien quand les consignes du congrès sont contradictoires.</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": ""
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clfpartiAAAAAAAA"
+}

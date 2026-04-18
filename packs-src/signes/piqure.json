@@ -1,0 +1,20 @@
+{
+  "_id": "sgtpiqureAAAAAAA",
+  "name": "Piqure",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait DOPAGE ; etre <strong>au contact</strong> de la cible ; le joueur decrit l'effet.</p><p>Le Kamarade injecte un compose qui <strong>ajoute 1d6</strong> a un test (de lui-meme ou d'un compagnon). La cible <strong>perd 1d2 PV</strong> du fait de l'injection.</p>",
+    "category": "trait",
+    "traitLink": "etoile.dopage",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtpiqureAAAAAAA"
+}

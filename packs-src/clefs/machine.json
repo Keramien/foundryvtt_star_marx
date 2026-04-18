@@ -1,0 +1,21 @@
+{
+  "_id": "clfmachineAAAAAA",
+  "name": "Clef de la Machine",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>La personnalité du Kamarade l'empêche de se livrer à ses sentiments. Il agit comme une froide machinerie logique pour éviter de se laisser submerger par ses émotions.</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": ""
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clfmachineAAAAAA"
+}

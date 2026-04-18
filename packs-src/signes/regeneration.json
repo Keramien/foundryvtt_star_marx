@@ -1,0 +1,20 @@
+{
+  "_id": "sgtregenerationA",
+  "name": "Regeneration",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait KARKASS.</p><p>A la fin de chaque combat, le Kamarade <strong>recupere 3 points de vie</strong>.</p><p><em>Aussi connu sous Juste une egratignure.</em></p>",
+    "category": "trait",
+    "traitLink": "marteau.karkass",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtregenerationA"
+}

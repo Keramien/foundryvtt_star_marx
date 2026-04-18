@@ -1,0 +1,20 @@
+{
+  "_id": "sgnrouedelafortu",
+  "name": "Roue de la Fortune",
+  "type": "signe",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Aucune.</p><p>Le destin s'acharne :</p><ul><li><strong>Echecs critiques sur 2 ET 3</strong> (au lieu de seulement 2)</li><li><strong>Toutes les 5 catastrophes</strong>, le Kamarade gagne <strong>1 XP a depenser immediatement</strong></li></ul>",
+    "category": "general",
+    "traitLink": "",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignegeneralA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgnrouedelafortu"
+}

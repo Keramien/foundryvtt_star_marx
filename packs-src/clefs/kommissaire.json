@@ -1,0 +1,21 @@
+{
+  "_id": "clfkommissaireAA",
+  "name": "Clef du Kommissaire",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>Le Kamarade est souvent amené à commander. Et il aime ça.</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": ""
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clfkommissaireAA"
+}

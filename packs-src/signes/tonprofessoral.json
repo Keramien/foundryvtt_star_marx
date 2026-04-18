@@ -1,0 +1,20 @@
+{
+  "_id": "sgttonprofessora",
+  "name": "Ton professoral",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait UNIVERSITET ; le PNJ vise doit avoir ete scolarise.</p><p>Le Kamarade peut <strong>substituer son score en UNIVERSITET a celui de BRISEUR DE GREVE</strong> pour intimider tout personnage ayant tremble un jour devant un enseignant.</p>",
+    "category": "trait",
+    "traitLink": "etoile.universitet",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgttonprofessora"
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "sgtcadavreexquis",
+  "name": "Cadavre exquis",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait GROUILLOT.</p><p>Les talents culinaires du Kamarade lui permettent de <strong>faire disparaitre n'importe quel cadavre</strong> sans laisser de trace. Les restes ne refont jamais surface et sont servis comme des petits pains.</p>",
+    "category": "trait",
+    "traitLink": "faucille.grouillot",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtcadavreexquis"
+}

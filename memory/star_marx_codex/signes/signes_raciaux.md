@@ -11,7 +11,11 @@
 
 **Conditions requises :** Race Humain.
 
-En plus des **20 points de Traits** standards, il bénéficie de **2 points surnuméraires** à répartir dans les Traits de son choix, **même hors de sa Doctrine** (ces 2 points peuvent être cumulés sur un seul Trait).
+> Note d'adaptation : le livre laisse entendre que l'Humain n'a « pas de racial » et reçoit « 2 Signes au choix ». On clarifie : l'Humain a bien un signe racial obligatoire, appelé « Humain », qui confère les **deux** effets ci-dessous. Le Kamarade Humain possède donc son racial **+ 2 signes au choix** (au lieu du schéma standard racial + 1 au choix).
+
+Cumule deux effets :
+- En plus des **20 points de Traits** standards, il bénéficie de **2 points surnuméraires** à répartir dans les Traits de son choix, **même hors de sa Doctrine** (ces 2 points peuvent être cumulés sur un seul Trait).
+- **+1 signe au choix supplémentaire** (racial Humain + 2 au choix, au lieu de racial + 1).
 
 ---
 

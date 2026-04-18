@@ -1,0 +1,21 @@
+{
+  "_id": "clfrevolteAAAAAA",
+  "name": "Clef du Révolté",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>Le Kamarade est un opposant politique engagé dans la préservation de la culture bretorse et de l'andouillette d'âne, un activiste de la NRA qui envisage la prolifération des armes comme l'avenir du genre humain, un terroriste du FLNC, le Front de Libération des Nemtsyi à Cagoule, ou un utopiste, toujours fervent mais déçu du système. Il gagne des Zlotys quand il soutient sa cause ou qu'il réagit en partisan.</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": "<p>Le Kamarade gagne des Zlotys quand il soutient sa cause ou qu'il réagit en partisan.</p>"
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clfrevolteAAAAAA"
+}

@@ -1,0 +1,21 @@
+{
+  "_id": "clfsurvivantAAAA",
+  "name": "Clef du Survivant",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>Le Kamarade a été conçu pour durer. Il résiste quand tous les autres flanchent et peut avaler trois biscuits de l'Armée Rouge en une minute (sans mourir).</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": ""
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clfsurvivantAAAA"
+}

@@ -1,0 +1,48 @@
+<section class="item-body race-body">
+
+  <fieldset class="doctrines-autorisees">
+    <legend>{{localize "STARMARX.Race.Fields.DoctrinesAutorisees"}}</legend>
+    <label class="checkbox-inline">
+      <input type="checkbox" name="system.doctrinesAutorisees.marteau"  {{#if system.doctrinesAutorisees.marteau}}checked{{/if}}>
+      <span>{{localize "STARMARX.Doctrine.Marteau"}}</span>
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" name="system.doctrinesAutorisees.faucille" {{#if system.doctrinesAutorisees.faucille}}checked{{/if}}>
+      <span>{{localize "STARMARX.Doctrine.Faucille"}}</span>
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" name="system.doctrinesAutorisees.etoile"   {{#if system.doctrinesAutorisees.etoile}}checked{{/if}}>
+      <span>{{localize "STARMARX.Doctrine.Etoile"}}</span>
+    </label>
+  </fieldset>
+
+  <div class="form-grid form-grid--4">
+    <label>
+      <span>{{localize "STARMARX.Race.Fields.HpBonus"}}</span>
+      <input type="number" name="system.hpBonus" value="{{system.hpBonus}}">
+    </label>
+    <label>
+      <span>{{localize "STARMARX.Race.Fields.ZlotysBonus"}}</span>
+      <input type="number" name="system.zlotysBonus" value="{{system.zlotysBonus}}">
+    </label>
+    <label>
+      <span>{{localize "STARMARX.Race.Fields.SignesBonus"}}</span>
+      <input type="number" name="system.signesBonus" value="{{system.signesBonus}}" min="0">
+    </label>
+    <label>
+      <span>{{localize "STARMARX.Race.Fields.TraitPointsBonus"}}</span>
+      <input type="number" name="system.traitPointsBonus" value="{{system.traitPointsBonus}}">
+    </label>
+  </div>
+
+  <div class="form-group">
+    <label>{{localize "STARMARX.Sheet.Fields.Description"}}</label>
+    <prose-mirror name="system.description" value="{{system.description}}"></prose-mirror>
+  </div>
+
+  <div class="form-group">
+    <label>{{localize "STARMARX.Race.Fields.Restrictions"}}</label>
+    <prose-mirror name="system.restrictions" value="{{system.restrictions}}"></prose-mirror>
+  </div>
+
+</section>

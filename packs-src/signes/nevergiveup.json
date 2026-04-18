@@ -1,0 +1,20 @@
+{
+  "_id": "sgtnevergiveupAA",
+  "name": "Never Give Up !",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait PRISONNIER POLITIQUE.</p><p>Les <strong>points de vie du Kamarade = PRISONNIER POLITIQUE + 5</strong> (au lieu de KARKASS + 5).</p>",
+    "category": "trait",
+    "traitLink": "marteau.prisonnierPolitique",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtnevergiveupAA"
+}

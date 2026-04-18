@@ -1,0 +1,21 @@
+{
+  "_id": "clffoncedeAAAAAA",
+  "name": "Clef du Foncedé",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>Le Kamarade aime goûter à toute substance illicite qui lui tombe sous la main. Cette Clef rapporte au joueur :</p><ul><li><strong>1 Zloty</strong> s'il y a de l'alcool ou une drogue en jeu sans que le joueur l'ait recherché, ou que le Kamarade goûte un stupéfiant inconnu.</li><li><strong>2 Zlotys</strong> si le joueur s'inflige un malus de –2 à tous ses jets pour une scène à cause de ce qu'il vient de s'enfiler.</li><li><strong>3 Zlotys</strong> s'il rate toute une scène à cause d'une de ses expérimentations ou si le Secrétaire Général prend sa mauvaise manie comme excuse pour prendre les commandes du personnage et faire rebondir une scène sans laisser aucune latitude au joueur.</li></ul>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": "<p>1 Zloty pour une substance croisée fortuitement ; 2 Zlotys si le Kamarade s'inflige –2 à tous ses jets pour une scène ; 3 Zlotys s'il rate une scène entière à cause de ses expérimentations.</p>"
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clffoncedeAAAAAA"
+}

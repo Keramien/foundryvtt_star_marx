@@ -1,0 +1,20 @@
+{
+  "_id": "sgtinterrogatoir",
+  "name": "Interrogatoire muscle",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait KGB.</p><p>En interrogatoire, le Kamarade peut <strong>relancer ses jets rates indefiniment</strong>, mais chaque nouvelle tentative <strong>coute 1d2 PV a la cible</strong>. (Les morts ne parlent pas.)</p>",
+    "category": "trait",
+    "traitLink": "etoile.kgb",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtinterrogatoir"
+}

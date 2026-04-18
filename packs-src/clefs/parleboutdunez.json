@@ -1,0 +1,21 @@
+{
+  "_id": "clfparleboutdune",
+  "name": "Clef du Par le Bout du Nez",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>Le personnage se débrouille souvent pour que ce soit un autre qui fasse les choses à sa place, sans se demander s'il ne serait pas lui-même statistiquement plus efficace.</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": ""
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clfparleboutdune"
+}

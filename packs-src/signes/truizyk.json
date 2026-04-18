@@ -1,0 +1,20 @@
+{
+  "_id": "sgrtruizykAAAAAA",
+  "name": "Truizyk",
+  "type": "signe",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Race Truizyk.</p><p>Le Kamarade possede un <strong>pouvoir quasi-telepathique via la transpiration</strong> (score en TCHERNOBYL) : il <strong>lit les pensees enfouies</strong> dans la sueur de ses cibles.</p><p><strong>Limites :</strong></p><ul><li>La cible doit transpirer (certaines races ne transpirent pas)</li><li>Il doit faire assez chaud</li><li>Un stick deodorant epais peut bloquer la lecture</li><li>Certains individus puent tellement des pieds qu'on ne peut lire que des gros mots dans leur sueur</li></ul>",
+    "category": "racial",
+    "traitLink": "",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsigneracialAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgrtruizykAAAAAA"
+}

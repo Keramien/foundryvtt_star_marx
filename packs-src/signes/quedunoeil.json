@@ -1,0 +1,20 @@
+{
+  "_id": "sgtquedunoeilAAA",
+  "name": "Que d'un oeil",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait GOULAG.</p><p>Le Kamarade a le sommeil leger : <strong>on ne le surprend jamais pendant qu'il dort</strong>. Au moindre bruit, il est debout et pret a l'action.</p>",
+    "category": "trait",
+    "traitLink": "marteau.goulag",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtquedunoeilAAA"
+}

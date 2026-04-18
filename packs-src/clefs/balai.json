@@ -1,0 +1,21 @@
+{
+  "_id": "clfbalaiAAAAAAAA",
+  "name": "Clef du Balai dans le C…",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>« L'Ordre et la Loi : il n'y a que ça de vrai ! », « un esprit sain dans un corps sain », « les légumes, c'est bon pour la santé », etc. Le Kamarade croit dur comme fer à un précepte moral à définir avec le Secrétaire Général.</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": ""
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clfbalaiAAAAAAAA"
+}

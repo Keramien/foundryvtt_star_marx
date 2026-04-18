@@ -1,0 +1,20 @@
+{
+  "_id": "sgtgardeducorpsA",
+  "name": "Garde du corps",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait KARKASS.</p><p>Le Kamarade peut <strong>s'interposer entre ses compagnons et l'ennemi</strong> pour encaisser les degats a leur place. Il peut alors utiliser son <strong>Armure pour absorber la totalite des attaques</strong> interceptees s'il le souhaite.</p><p><strong>Exemple :</strong> <em>Stein et Siva ont rate leurs defenses et subissent 2 points de degats chacun (total 4). Myasnik s'interpose et utilise son Armure : il ignore l'integralite des degats grace a ses organes vitaux deplaces apres m'etre fait quasiment couper en deux par un Bolchok a Grelots.</em></p>",
+    "category": "trait",
+    "traitLink": "marteau.karkass",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtgardeducorpsA"
+}

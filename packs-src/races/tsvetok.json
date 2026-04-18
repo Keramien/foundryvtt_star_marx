@@ -1,0 +1,31 @@
+{
+  "_id": "ractsvetokAAAAAA",
+  "name": "Tsvetok",
+  "type": "race",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>Grands Nemtsyi vegetaux avec des visages cercles de petales. Originaires de Mirnyyray 3, un monde pacifique sans predateurs. Naifs, candides, souvent exploites. Beaucoup finissent comme desodorisants de toilettes dans les kosmodocks. Certains s'eveillent - notamment le pirate Primevere, au visage a moitie brule par un echappement de fusee, qui libere ses \"freres de seve.\"</p><p><strong>Signe Racial (Reflexe Pavlovien) :</strong> Si le personnage reussit un jet de TCHERNOBYL (modifie par la dangerosite de l'ennemi), peut declencher un reflexe urinaire pavlovien chez l'ennemi. Les citoyens de l'Union sont tellement habitues a leur parfum dans les toilettes publiques que l'odeur declenche une envie de pisser, interrompant ou terminant souvent un combat.</p>",
+    "traitBonuses": [],
+    "hpBonus": 0,
+    "zlotysBonus": 0,
+    "signesBonus": 0,
+    "traitPointsBonus": 0,
+    "restrictions": "",
+    "doctrinesAutorisees": {
+      "marteau": true,
+      "faucille": true,
+      "etoile": true
+    },
+    "signesRacialUuids": [
+      "Compendium.star_marx.signes.Item.sgrreflexepavlov"
+    ]
+  },
+  "effects": [],
+  "folder": "fldracekosmoAAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!ractsvetokAAAAAA"
+}

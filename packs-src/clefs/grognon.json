@@ -1,0 +1,21 @@
+{
+  "_id": "clfgrognonAAAAAA",
+  "name": "Clef du Grognon",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>Le Kamarade n'aime pas quelque chose en particulier (les Nemtsyi, la vodka Smirnoff — trop légère à son goût —, les gradés de l'Armée Rouge... au joueur de choisir).</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": ""
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clfgrognonAAAAAA"
+}

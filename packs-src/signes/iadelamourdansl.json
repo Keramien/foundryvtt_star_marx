@@ -1,0 +1,20 @@
+{
+  "_id": "sgtiadelamourdaA",
+  "name": "IA de l'amour dans l'air",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait OPERATEUR CODEUR.</p><p>A chaque <strong>debut de scenario</strong>, le joueur fait un <strong>jet en POUPEE RUSSE, seuil 12</strong> :</p><ul><li><strong>Reussi :</strong> le Kamarade gagne <strong>3 Zlotys</strong> utilisables uniquement dans des situations liees a l'informatique.</li><li><strong>Echec :</strong> la dulcinee numerique est fachee (oubli du retrait securise du plug USB) ; le Secretaire General doit pourrir la vie du Kamarade avec des tracas numeriques.</li></ul>",
+    "category": "trait",
+    "traitLink": "etoile.operateurCodeur",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtiadelamourdaA"
+}

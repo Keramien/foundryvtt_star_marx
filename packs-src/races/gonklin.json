@@ -1,0 +1,31 @@
+{
+  "_id": "racgonklinAAAAAA",
+  "name": "Gonklin",
+  "type": "race",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>Ressemblent aux humains mais avec une crete osseuse sur le posterieur qui detruit les chaises. Primitifs qui traitent les machines comme des animaux. Illettres technologiques qui detruisent les machines. Voyagent en \"stop\" (piratent les vaisseaux des autres avec leurs troupeaux de chevres). Font des barbecues a l'interieur des vaisseaux.</p><p><strong>Signe Racial :</strong> +2 pour casser n'importe quelle machine. -2 pour utiliser n'importe quelle machine.</p>",
+    "traitBonuses": [],
+    "hpBonus": 0,
+    "zlotysBonus": 0,
+    "signesBonus": 0,
+    "traitPointsBonus": 0,
+    "restrictions": "<p>Doctrine <strong>Marteau</strong> preferee (certains chasseurs plus faibles peuvent etre Etoile). Les Gonklins traitent les machines comme des animaux : <strong>-2 pour utiliser</strong> n'importe quelle machine (Clef Raciale Obligatoire).</p>",
+    "doctrinesAutorisees": {
+      "marteau": true,
+      "faucille": false,
+      "etoile": true
+    },
+    "signesRacialUuids": [
+      "Compendium.star_marx.signes.Item.sgrgonklinAAAAAA"
+    ]
+  },
+  "effects": [],
+  "folder": "fldracecoreAAAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!racgonklinAAAAAA"
+}

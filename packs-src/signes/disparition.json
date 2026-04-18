@@ -1,0 +1,20 @@
+{
+  "_id": "sgtdisparitionAA",
+  "name": "Disparition",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait SOCIAL TRAITRE.</p><p><strong>Une fois par seance</strong>, sur un simple clignement de paupieres, le Kamarade disparait du champ de vision d'un tiers. <strong>Jet oppose</strong> : son score en SOCIAL TRAITRE contre la difficulte du PNJ (ou son score en KGB). Succes : son opposant le croit perdu ; le Kamarade peut s'echapper ou reattaquer par surprise.</p>",
+    "category": "trait",
+    "traitLink": "faucille.socialTraitre",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtdisparitionAA"
+}

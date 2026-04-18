@@ -1,0 +1,20 @@
+{
+  "_id": "sgrroidupogoAAAA",
+  "name": "Roi du Pogo",
+  "type": "signe",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Source :</strong> Kosmokultor p.13-14</p><p><strong>Conditions requises :</strong> Race Morskoyzeh.</p><p>Des que <strong>quelqu'un a une interaction physique au contact</strong> avec le Morskoyzeh - pour le soigner, danser avec lui ou l'attaquer -, il <strong>perd automatiquement 1 point de vie</strong> (epines naturelles).</p>",
+    "category": "racial",
+    "traitLink": "",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsigneracialAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgrroidupogoAAAA"
+}

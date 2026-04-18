@@ -1,0 +1,31 @@
+{
+  "_id": "rachumainAAAAAAA",
+  "name": "Humain",
+  "type": "race",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>Les Humains se sont repandus partout dans l'univers, s'adaptant a divers environnements. Certains ont developpe des mutations (second foie sur Vodkaworld, troisieme jambe sur les planetes a forte gravite, etc.) grace au Kolkha Kola qui a altere leur ADN.</p><p><strong>Signe Racial :</strong> le signe racial <em>Humain</em> (obligatoire) confere <strong>+2 points de Trait supplementaires</strong> (au-dela des 20 standards) pouvant etre places dans n'importe quel Trait meme hors Doctrine, <strong>et</strong> un <strong>signe au choix supplementaire</strong> (le Kamarade dispose donc de son racial + 2 signes au choix au lieu de racial + 1).</p>",
+    "traitBonuses": [],
+    "hpBonus": 0,
+    "zlotysBonus": 0,
+    "signesBonus": 1,
+    "traitPointsBonus": 2,
+    "restrictions": "<p>Aucune. Race la plus flexible.</p>",
+    "doctrinesAutorisees": {
+      "marteau": true,
+      "faucille": true,
+      "etoile": true
+    },
+    "signesRacialUuids": [
+      "Compendium.star_marx.signes.Item.sgrhumainAAAAAAA"
+    ]
+  },
+  "effects": [],
+  "folder": "fldracecoreAAAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!rachumainAAAAAAA"
+}

@@ -1,0 +1,37 @@
+{
+  "_id": "racmnogyAAAAAAAA",
+  "name": "Mnogy",
+  "type": "race",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>Des milliers d'etres microscopiques vivant a l'interieur d'un mech-batiment blinde massif, le controlant via telecommande depuis leurs canapes. La coque exterieure a des bras et jambes robotiques. Casaniers, accros a la TV, gouvernes par la democratie interne/audimat. Chaque action necessite un \"vote\" des habitants.</p><p><strong>Signe Racial :</strong> +1 point de vie. Meme si le personnage \"meurt\", la coque centrale reste indestructible (les habitants survivent a l'interieur). +2 bonus pour resister a la peur.</p>",
+    "traitBonuses": [
+      {
+        "doctrine": "marteau",
+        "trait": "prisonnierPolitique",
+        "bonus": 2
+      }
+    ],
+    "hpBonus": 1,
+    "zlotysBonus": 0,
+    "signesBonus": 0,
+    "traitPointsBonus": 0,
+    "restrictions": "<p>Les decisions du Mnogy sont dictees par les audiences de ses residents internes, pas par la logique ou la survie (Clef Raciale Obligatoire : Loi de l'Audimat).</p>",
+    "doctrinesAutorisees": {
+      "marteau": true,
+      "faucille": true,
+      "etoile": true
+    },
+    "signesRacialUuids": [
+      "Compendium.star_marx.signes.Item.sgrmnogyAAAAAAAA"
+    ]
+  },
+  "effects": [],
+  "folder": "fldracecoreAAAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!racmnogyAAAAAAAA"
+}

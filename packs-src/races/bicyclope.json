@@ -1,0 +1,31 @@
+{
+  "_id": "racbicyclopeAAAA",
+  "name": "Bicyclope",
+  "type": "race",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>Croisement entre un velo et un bobby britannique. Nemtsyi roulants avec des moustaches bien huilees.</p><p><strong>Signe Racial :</strong> Sur terrain favorable, +2 a MEDAILLE OLYMPIQUE. Nagent tres mal. Malus sur terrain defavorable, sauf s'ils prennent quelques minutes pour equiper des pneus tout-terrain.</p>",
+    "traitBonuses": [],
+    "hpBonus": 0,
+    "zlotysBonus": 0,
+    "signesBonus": 0,
+    "traitPointsBonus": 0,
+    "restrictions": "<p>Natation tres mauvaise. Malus sur terrain defavorable.</p>",
+    "doctrinesAutorisees": {
+      "marteau": true,
+      "faucille": true,
+      "etoile": true
+    },
+    "signesRacialUuids": [
+      "Compendium.star_marx.signes.Item.sgrbicyclopeAAAA"
+    ]
+  },
+  "effects": [],
+  "folder": "fldraceotherAAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!racbicyclopeAAAA"
+}

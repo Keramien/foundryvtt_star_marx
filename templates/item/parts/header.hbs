@@ -1,0 +1,7 @@
+<header class="item-sheet__header">
+  <img class="item-sheet__img" src="{{item.img}}" data-edit="img" alt="{{item.name}}">
+  <div class="item-sheet__heading">
+    <input class="item-sheet__name" type="text" name="name" value="{{item.name}}" placeholder="{{localize 'STARMARX.Sheet.Fields.Name'}}">
+    <div class="item-sheet__type">{{localize (concat "STARMARX.Item.Type." item.type)}}</div>
+  </div>
+</header>

@@ -1,0 +1,20 @@
+{
+  "_id": "sgnderogationAAA",
+  "name": "Derogation",
+  "type": "signe",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Aucune, mais le choix doit etre justifie par l'historique ou le peuple du Kamarade. Le Secretaire General peut refuser si la justification est insuffisante ou si ce Signe prolifere dans le groupe.</p><p>Le Kamarade peut progresser dans <strong>un Trait choisi</strong> comme s'il etait place sous sa Doctrine : <strong>1 point de creation ou d'XP pour une croix</strong> (au lieu de 2).</p><p><strong>Exemples :</strong></p><ul><li><em>Kronen le Hjort a survecu enchaine a une noria puis devenu gladiateur pour MIR TV : il a choisi Marteau comme Doctrine mais son joueur obtient une Derogation en CORRUPTION pour rappeler son passe de comptable.</em></li><li><em>Bishibo le savant fou voudrait une Derogation en AK 47 - sans justification solide, refus (quelle que soit la quantite de barres Marx offertes).</em></li></ul>",
+    "category": "general",
+    "traitLink": "",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignegeneralA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgnderogationAAA"
+}

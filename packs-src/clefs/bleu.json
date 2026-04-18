@@ -1,0 +1,25 @@
+{
+  "_id": "clrbleuAAAAAAAAA",
+  "name": "Clef du Bleu",
+  "type": "clef",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Hjort.</p><p>Les Hjorts préfèrent un train-train routinier et une vie sans fièvre. Face à des émotions trop fortes, ils dégoulinent de sueur d'un bleu électrique, abondante, et parfois aussi épaisse que de la gouache. Quand ses sécrétions provoquent un effet comique, le personnage gagne <strong>1 Zloty</strong>. Si le Secrétaire Général s'en sert pour compliquer la tâche des Kamarades ou mettre leur vie en danger, elles peuvent rapporter jusqu'à <strong>3 Zlotys</strong>.</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": "<p>1 Zloty quand les sécrétions bleues du Hjort provoquent un effet comique ; jusqu'à 3 Zlotys si le Secrétaire Général s'en sert pour compliquer la tâche des Kamarades.</p>"
+  },
+  "effects": [],
+  "folder": "fldclefracialAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "starmarx": {
+      "racialOnly": "hjort"
+    }
+  },
+  "_key": "!items!clrbleuAAAAAAAAA"
+}

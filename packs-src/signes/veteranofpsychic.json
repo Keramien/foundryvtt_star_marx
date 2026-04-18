@@ -1,0 +1,20 @@
+{
+  "_id": "sgnveteranofpsyc",
+  "name": "Veteran of Psychic War",
+  "type": "signe",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Aucune.</p><p>Le Kamarade capte l'attention d'un large public en racontant ses exploits (Novye Afghanistan, baie des Gros Klons...). L'auditoire est si captive qu'il ne remarque plus ce qui l'entoure. <strong>Le jet se fait en KARKASS</strong> si le veteran montre ses blessures, ou <strong>en LUTTE</strong> s'il decrit ses hauts faits sanglants (ex. j'ai eviscere les petits Ponalchky de Gully 27 pour en faire des lasagnes).</p>",
+    "category": "general",
+    "traitLink": "",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignegeneralA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgnveteranofpsyc"
+}

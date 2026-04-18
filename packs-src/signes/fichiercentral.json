@@ -1,0 +1,20 @@
+{
+  "_id": "sgtfichiercentra",
+  "name": "Fichier central",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait ETRE AU PARFUM.</p><p>Sur un <strong>jet d'ETRE AU PARFUM modifie par la difficulte de la cible</strong>, le Kamarade accede aux informations que celle-ci souhaite cacher. Le Secretaire General a le dernier mot sur le contenu et l'exactitude des donnees.</p>",
+    "category": "trait",
+    "traitLink": "faucille.etreAuParfum",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtfichiercentra"
+}

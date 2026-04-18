@@ -1,0 +1,20 @@
+{
+  "_id": "sgtmaitrechanteu",
+  "name": "Maitre chanteur",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait ETRE AU PARFUM.</p><p><strong>Une fois par partie, pour 1 Zloty</strong>, le Kamarade peut <strong>faire chanter une personne innocente</strong> pour obtenir un service, a condition que cela ne mette pas sa vie ou celles de ses proches en jeu.</p>",
+    "category": "trait",
+    "traitLink": "faucille.etreAuParfum",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtmaitrechanteu"
+}

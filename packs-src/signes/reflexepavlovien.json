@@ -1,0 +1,20 @@
+{
+  "_id": "sgrreflexepavlov",
+  "name": "Reflexe Pavlovien",
+  "type": "signe",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Source :</strong> Kosmokultor p.14</p><p><strong>Conditions requises :</strong> Race Tsvetok.</p><p>Le Kamarade declenche un <strong>reflexe urinaire</strong> chez son ennemi sur un <strong>jet en TCHERNOBYL pondere par la dangerosite de l'ennemi</strong>. L'effet met souvent fin a l'affrontement (ou offre un bref intermede). Les citoyens de l'Union sont conditionnes par la fragrance des Tsvetok dans les toilettes publiques.</p>",
+    "category": "racial",
+    "traitLink": "",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsigneracialAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgrreflexepavlov"
+}

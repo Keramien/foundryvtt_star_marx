@@ -1,0 +1,37 @@
+{
+  "_id": "rackrolikAAAAAAA",
+  "name": "Krolik",
+  "type": "race",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>Lapinoides pesant pres d'une tonne. Presque cubiques avec d'enormes oreilles. Yeux doux et gentils. Classes G (legalement chassables). Quasi-eteints parce qu'on en fait des Kroliks Nuggets. Mercenaires (grace a leur corpulence massive), ou caches deguises en Wookiees sur des lunes forestieres. Quelques vieux types druides existent.</p><p><strong>Signe Racial :</strong> +1 degat en LUTTE (melee). +2 points de vie. +2 bonus aux sauts (cuisses lapines puissantes). -2 malus au BRISEUR DE GREVE (ressemble a une peluche geante ; les gourmets revent de braiser son gigot).</p>",
+    "traitBonuses": [
+      {
+        "doctrine": "marteau",
+        "trait": "briseurDeGreve",
+        "bonus": -2
+      }
+    ],
+    "hpBonus": 2,
+    "zlotysBonus": 0,
+    "signesBonus": 0,
+    "traitPointsBonus": 0,
+    "restrictions": "<p>Doctrine <strong>Marteau</strong> preferee. Quelques anciens druides en Etoile (specialises en DOPAGE). Les incisives ne cessent de pousser ; ronge compulsivement tout (Clef Raciale Obligatoire : Clef du Rongeur).</p>",
+    "doctrinesAutorisees": {
+      "marteau": true,
+      "faucille": false,
+      "etoile": true
+    },
+    "signesRacialUuids": [
+      "Compendium.star_marx.signes.Item.sgrkrolikAAAAAAA"
+    ]
+  },
+  "effects": [],
+  "folder": "fldracecoreAAAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!rackrolikAAAAAAA"
+}

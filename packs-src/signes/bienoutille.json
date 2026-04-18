@@ -1,0 +1,20 @@
+{
+  "_id": "sgnbienoutilleAA",
+  "name": "Bien Outille",
+  "type": "signe",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Aucune.</p><p>Le Kamarade choisit sa Kontrebande avec meticulosite (ou appartient a la Nomenklatura qui ne manque de rien) : sa <strong>Kontrebande donne un bonus de +4</strong> au lieu du +2 standard.</p>",
+    "category": "general",
+    "traitLink": "",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignegeneralA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgnbienoutilleAA"
+}

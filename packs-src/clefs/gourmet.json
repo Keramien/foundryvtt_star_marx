@@ -1,0 +1,21 @@
+{
+  "_id": "clfgourmetAAAAAA",
+  "name": "Clef du Gourmet",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>Le Kamarade est capable de faire des folies pour manger un bon petit plat, ou pour trouver des ingrédients rares. Bref, il fait passer son palais et son estomac en priorité.</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": ""
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clfgourmetAAAAAA"
+}

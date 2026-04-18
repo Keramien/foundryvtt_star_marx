@@ -1,0 +1,21 @@
+{
+  "_id": "clfcontratsocial",
+  "name": "Clef du Contrat Social",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>Le Kamarade a quelqu'un à qui il est lié, quelqu'un de plus important que n'importe qui, un ami, une relation amoureuse, quelqu'un dont il est responsable.</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": ""
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clfcontratsocial"
+}

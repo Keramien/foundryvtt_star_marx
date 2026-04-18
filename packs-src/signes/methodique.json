@@ -1,0 +1,20 @@
+{
+  "_id": "sgnmethodiqueAAA",
+  "name": "Methodique",
+  "type": "signe",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Aucune.</p><p>Le Kamarade aime planifier. <strong>Une fois par scene</strong>, s'il reussit un jet depassant <strong>le seuil 9</strong>, tous les points excedentaires sont verses dans une <strong>reserve commune</strong> dans laquelle chaque joueur du groupe peut puiser a discretion pour completer ses propres jets (tant que les actions suivent le plan).</p><p><strong>Exemple :</strong> <em>(9 9), un Truizyk ex-agent du KGB dote de ce Signe, fait un jet en TCHERNOBYL et obtient 12, soit 3 points au-dessus du seuil 9. Il verse ces 3 points dans la reserve. Arsena Lapin, cambrioleur krolik, fait 10 en SOCIAL TRAITRE contre un seuil a 12 : il pioche 2 points dans la reserve pour atteindre 12. Il reste 1 point pour un autre membre de l'equipe.</em></p>",
+    "category": "general",
+    "traitLink": "",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignegeneralA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgnmethodiqueAAA"
+}

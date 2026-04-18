@@ -1,0 +1,21 @@
+{
+  "_id": "clfproductiviteA",
+  "name": "Clef de la Productivité",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>Le Kamarade se sent en compétition avec un autre membre de l'équipe qu'il veut battre sur son propre terrain.</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": ""
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clfproductiviteA"
+}

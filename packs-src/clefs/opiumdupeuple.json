@@ -1,0 +1,21 @@
+{
+  "_id": "clfopiumdupeuple",
+  "name": "Clef de l'Opium du Peuple",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>Le Kamarade a une foi profonde en une religion ou une philosophie qui guide ses pas (religion orthodoxe, culte de Staline ou autre, nudisme, tradition guerrière des Klons, etc.).</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": ""
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clfopiumdupeuple"
+}

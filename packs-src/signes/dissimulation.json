@@ -1,0 +1,20 @@
+{
+  "_id": "sgtdissimulation",
+  "name": "Dissimulation",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait SOCIAL TRAITRE.</p><p>Le Kamarade peut toujours dissimuler sur lui <strong>un objet pas plus grand qu'une dague</strong> ; celui-ci echappe a <strong>toutes les fouilles</strong>.</p>",
+    "category": "trait",
+    "traitLink": "faucille.socialTraitre",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtdissimulation"
+}

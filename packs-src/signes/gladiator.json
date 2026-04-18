@@ -1,0 +1,20 @@
+{
+  "_id": "sgtgladiatorAAAA",
+  "name": "Gladiator",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait BOLCHOI.</p><p><strong>Une fois par combat, pour 1 Zloty</strong>, le Kamarade ajoute son score en <strong>BOLCHOI a ses degats</strong>.</p>",
+    "category": "trait",
+    "traitLink": "faucille.bolchoi",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtgladiatorAAAA"
+}

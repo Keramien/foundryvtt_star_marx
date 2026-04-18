@@ -1,0 +1,20 @@
+{
+  "_id": "sgnherosmalgrelu",
+  "name": "Heros malgre lui",
+  "type": "signe",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Aucune.</p><p><strong>Une fois par partie</strong>, le Kamarade peut declarer que les consequences d'un echec critique ont finalement un effet benefique.</p>",
+    "category": "general",
+    "traitLink": "",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignegeneralA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgnherosmalgrelu"
+}

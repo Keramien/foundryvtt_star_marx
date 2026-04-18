@@ -1,0 +1,32 @@
+{
+  "_id": "racsimpleAAAAAAA",
+  "name": "Simple",
+  "type": "race",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>Petits primates mignons de Ringo 1er, moins d'un metre de haut. Imitateurs naturels. Imitent tout ce qu'ils voient. Classes E (citoyens de l'Union). Peuvent repeter des discours patriotiques comme des perroquets.</p><p><strong>Signe Racial :</strong> Obtient le Signe \"Petit\" gratuitement : +2 aux jets de discretion ; en cas de degats, jet de 1D6 - sur un 6, les degats sont evites. Pour 1 Zloty, peut emprunter le score de Trait de n'importe quel Kamarade allie pour un test (capacite d'imitation).</p>",
+    "traitBonuses": [],
+    "hpBonus": 0,
+    "zlotysBonus": 0,
+    "signesBonus": 0,
+    "traitPointsBonus": 0,
+    "restrictions": "<p>Doctrines disponibles : <strong>Faucille</strong> ou <strong>Marteau</strong> uniquement (aucun Simple connu en Etoile). A la creation, un Simple ne connait que <strong>10 mots</strong> (au choix du joueur). Le vocabulaire augmente de <strong>5 mots par session</strong>.</p>",
+    "doctrinesAutorisees": {
+      "marteau": true,
+      "faucille": true,
+      "etoile": false
+    },
+    "signesRacialUuids": [
+      "Compendium.star_marx.signes.Item.sgrsimpleAAAAAAA",
+      "Compendium.star_marx.signes.Item.sgnpetitAAAAAAAA"
+    ]
+  },
+  "effects": [],
+  "folder": "fldracecoreAAAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!racsimpleAAAAAAA"
+}

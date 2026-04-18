@@ -1,0 +1,20 @@
+{
+  "_id": "sgngrandAAAAAAAA",
+  "name": "Grand",
+  "type": "signe",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Aucune. (Signe racial obligatoire - et gratuit - pour les Klons.)</p><p>Le Kamarade est imposant :</p><ul><li><strong>+1 aux degats au contact</strong></li><li><strong>+2 croix en BRISEUR DE GREVE</strong></li><li><strong>+2 points de vie</strong></li><li><strong>-2 des qu'il s'agit d'etre discret</strong></li><li>Sa taille/son poids peuvent servir de complications scenaristiques (passages etroits, planchers fragiles).</li></ul>",
+    "category": "general",
+    "traitLink": "",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignegeneralA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgngrandAAAAAAAA"
+}

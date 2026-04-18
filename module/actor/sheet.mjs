@@ -15,12 +15,13 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     window: { resizable: true, contentClasses: ["star-marx-content"] },
     form: { submitOnChange: true, closeOnSubmit: false },
     actions: {
-      itemCreate:  KamaradeSheet.#onItemCreate,
-      itemEdit:    KamaradeSheet.#onItemEdit,
-      itemDelete:  KamaradeSheet.#onItemDelete,
-      resetTraits: KamaradeSheet.#onResetTraits,
-      rollTrait:   KamaradeSheet.#onRollTrait,
-      helpTrait:   KamaradeSheet.#onHelpTrait
+      itemCreate:       KamaradeSheet.#onItemCreate,
+      itemCreateBonus:  KamaradeSheet.#onItemCreateBonus,
+      itemEdit:         KamaradeSheet.#onItemEdit,
+      itemDelete:       KamaradeSheet.#onItemDelete,
+      resetTraits:      KamaradeSheet.#onResetTraits,
+      rollTrait:        KamaradeSheet.#onRollTrait,
+      helpTrait:        KamaradeSheet.#onHelpTrait
     }
   };
 
@@ -30,6 +31,7 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     presentation: { template: `systems/${SYSTEM_ID}/templates/actor/parts/presentation.hbs`, scrollable: [""] },
     traits:       { template: `systems/${SYSTEM_ID}/templates/actor/parts/traits.hbs`,       scrollable: [""] },
     signes:       { template: `systems/${SYSTEM_ID}/templates/actor/parts/signes.hbs`,       scrollable: [""] },
+    clefs:        { template: `systems/${SYSTEM_ID}/templates/actor/parts/clefs.hbs`,        scrollable: [""] },
     equipement:   { template: `systems/${SYSTEM_ID}/templates/actor/parts/equipement.hbs`,   scrollable: [""] }
   };
 
@@ -39,6 +41,7 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
         { id: "presentation", icon: "fa-solid fa-id-card",   label: "STARMARX.Sheet.Tabs.Presentation" },
         { id: "traits",       icon: "fa-solid fa-dice-d6",   label: "STARMARX.Sheet.Tabs.Traits" },
         { id: "signes",       icon: "fa-solid fa-star",      label: "STARMARX.Sheet.Tabs.Signes" },
+        { id: "clefs",        icon: "fa-solid fa-key",       label: "STARMARX.Sheet.Tabs.Clefs" },
         { id: "equipement",   icon: "fa-solid fa-briefcase", label: "STARMARX.Sheet.Tabs.Equipement" }
       ],
       initial: "presentation"
@@ -58,9 +61,20 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     context.chosenDoctrine = sys.details?.doctrine ?? DOCTRINES[0];
     context.traitGroups = this.#buildTraitGroups(sys, context.chosenDoctrine);
 
+    context.race  = actor.itemTypes.race?.[0] ?? null;
+    // Soft rule: a race may advertise which doctrines it is "compatible" with.
+    // We don't prevent a player from choosing any doctrine, but the sheet will
+    // flag the mismatch with a warning badge.
+    context.doctrineMismatch = !!context.race
+      && context.race.system.doctrinesAutorisees?.[context.chosenDoctrine] === false;
     context.signes = this.#partitionSignes(actor);
+    context.clefs = actor.itemTypes.clef ?? [];
     context.kontrebandes = actor.items.filter(i => i.type === "kontrebande");
     context.bardas       = actor.items.filter(i => i.type === "barda");
+
+    // Signes slot cap includes the racial bonus from the current race, if any.
+    const signesBonus = context.race?.system?.signesBonus ?? 0;
+    context.signesMax = (sys.signesMax ?? sys.limits?.signes ?? 2) + signesBonus;
 
     // Expose the primary tab list for the nav template. Individual content
     // parts receive their own `tab` context via _preparePartContext below.
@@ -100,15 +114,120 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     }));
   }
 
+  // Three buckets:
+  //   raciaux : signes granted by the current race (category === "racial")
+  //   bonus   : signes granted externally (equipment, GM) — system.bonus = true
+  //   generaux: player-chosen signes, counted against signesMax
   #partitionSignes(actor) {
     const signes = actor.items.filter(i => i.type === "signe");
-    const racial = signes.find(i => i.system.category === "racial") ?? null;
-    const generaux = signes.filter(i => i.system.category !== "racial");
-    return { racial, generaux };
+    const raciaux = signes.filter(i => i.system.category === "racial");
+    const bonus = signes.filter(i => i.system.bonus && i.system.category !== "racial");
+    const generaux = signes.filter(i =>
+      i.system.category !== "racial" && !i.system.bonus
+    );
+    return { raciaux, bonus, generaux };
   }
 
   #capitalize(s) {
     return s.charAt(0).toUpperCase() + s.slice(1);
+  }
+
+  // --- Drag & drop ---
+  //
+  // ActorSheetV2 calls `_onDropItem` when an Item is dropped (either from the
+  // sidebar, another actor, or a compendium). We fully take over item creation
+  // here (don't chain to super) so the rules — exactly one race, capped
+  // signes/clefs, no direct drop of racial signes — are always enforced.
+  async _onDropItem(event, data) {
+    const item = await Item.implementation.fromDropData(data);
+    if (!item) return;
+
+    switch (item.type) {
+      case "race":  return this.#onDropRace(item);
+      case "signe": return this.#onDropSigne(item);
+      case "clef":  return this.#onDropClef(item);
+      default:      return this.#createEmbedded(item);
+    }
+  }
+
+  // Shared helper: drop an item on the actor by copying its full data. Using
+  // toObject() avoids embedding a compendium reference or a live document.
+  async #createEmbedded(item) {
+    return this.actor.createEmbeddedDocuments("Item", [item.toObject()]);
+  }
+
+  async #onDropRace(item) {
+    const actor = this.actor;
+
+    // Enforce "exactly one race": remove any existing race (_preDelete on the
+    // race item will cascade-delete linked racial signes and clefs).
+    const existing = actor.itemTypes.race ?? [];
+    if (existing.length > 0) {
+      await actor.deleteEmbeddedDocuments("Item", existing.map(r => r.id));
+    }
+
+    // Copy the dropped race onto the actor.
+    const [newRace] = await actor.createEmbeddedDocuments("Item", [item.toObject()]);
+
+    // Resolve every racial-signe UUID, tag each copy with racialOf so the
+    // cascade delete fires when the race is removed, then batch-create.
+    const uuids = newRace.system?.signesRacialUuids ?? [];
+    const toCreate = [];
+    for (const uuid of uuids) {
+      if (!uuid) continue;
+      try {
+        const racialSigne = await fromUuid(uuid);
+        if (!racialSigne || racialSigne.type !== "signe") continue;
+        const signeData = racialSigne.toObject();
+        foundry.utils.setProperty(signeData, "system.category", "racial");
+        foundry.utils.setProperty(signeData, "system.racialOf", newRace.id);
+        toCreate.push(signeData);
+      } catch (err) {
+        console.warn("Star Marx | Could not resolve racial signe UUID", uuid, err);
+      }
+    }
+    if (toCreate.length > 0) {
+      await actor.createEmbeddedDocuments("Item", toCreate);
+    }
+
+    if (existing.length > 0) {
+      ui.notifications.info(game.i18n.localize("STARMARX.Notifications.RaceReplaced"));
+    }
+    return [newRace];
+  }
+
+  async #onDropSigne(item) {
+    const actor = this.actor;
+
+    if (item.system?.category === "racial") {
+      ui.notifications.warn(game.i18n.localize("STARMARX.Notifications.RacialSigneNotDroppable"));
+      return false;
+    }
+
+    const race = actor.itemTypes.race?.[0] ?? null;
+    const signesBonus = race?.system?.signesBonus ?? 0;
+    const max = (actor.system.signesMax ?? actor.system.limits?.signes ?? 1) + signesBonus;
+    // Cap applies only to player-chosen signes — racial and bonus ones are tracked separately.
+    const current = actor.items.filter(i =>
+      i.type === "signe" && i.system.category !== "racial" && !i.system.bonus
+    ).length;
+    if (current >= max) {
+      ui.notifications.warn(game.i18n.format("STARMARX.Notifications.SigneLimitReached", { max }));
+      return false;
+    }
+
+    return this.#createEmbedded(item);
+  }
+
+  async #onDropClef(item) {
+    const actor = this.actor;
+    const max = actor.system.clefsMax ?? actor.system.limits?.clefs ?? 5;
+    const current = (actor.itemTypes.clef ?? []).length;
+    if (current >= max) {
+      ui.notifications.warn(game.i18n.format("STARMARX.Notifications.ClefLimitReached", { max }));
+      return false;
+    }
+    return this.#createEmbedded(item);
   }
 
   // --- Actions ---
@@ -120,6 +239,21 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       type: game.i18n.localize(`STARMARX.Item.Type.${type}`)
     });
     const [item] = await this.actor.createEmbeddedDocuments("Item", [{ name, type }]);
+    item?.sheet?.render(true);
+  }
+
+  // Create a blank signe tagged as a bonus (equipment / GM grant). Shares
+  // the payload shape of #onItemCreate but sets system.bonus = true up front
+  // so the new doc lands in the Bonus list rather than Généraux.
+  static async #onItemCreateBonus(event, target) {
+    const name = game.i18n.format("DOCUMENT.New", {
+      type: game.i18n.localize("STARMARX.Item.Type.signe")
+    });
+    const [item] = await this.actor.createEmbeddedDocuments("Item", [{
+      name,
+      type: "signe",
+      system: { bonus: true }
+    }]);
     item?.sheet?.render(true);
   }
 

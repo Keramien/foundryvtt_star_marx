@@ -1,0 +1,21 @@
+{
+  "_id": "clfaustereAAAAAA",
+  "name": "Clef de l'Austère",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>Le Kamarade sait que les plaisirs de ce bas monde ne sont que de dangereux artifices qui vous font glisser du côté du vice ou pire, de la dissidence. Ainsi, chaque fois que ses compagnons festoient, il s'astreint au jeûne ou au pain sec. Chaque fois qu'ils dansent, il reste assis à s'ennuyer. Le pire, c'est que parfois, il se croit obligé de leur faire la leçon…</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": ""
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clfaustereAAAAAA"
+}

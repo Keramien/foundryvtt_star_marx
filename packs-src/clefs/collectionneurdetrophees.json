@@ -1,0 +1,21 @@
+{
+  "_id": "clfcollectionneu",
+  "name": "Clef du Collectionneur de Trophées",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>Le Kamarade ne peut pas se contenter de faire des victimes, il faut qu'il arrache les dents à son ennemi, les bougies à son soyouz et qu'il les suspende à son cou...</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": ""
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clfcollectionneu"
+}

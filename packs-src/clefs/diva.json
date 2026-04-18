@@ -1,0 +1,21 @@
+{
+  "_id": "clfdivaAAAAAAAAA",
+  "name": "Clef de la Diva",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>Le Kamarade est délicieux, délicat et il le sait. Il passe parfois un tour de combat à regarder son reflet dans une vitre ou le reflet d'une machine, il fait souvent un caprice en déclarant que ce kosmodock est bien en dessous de son standing, il refuse de s'enfuir par les égouts, alors que les ennemis le talonnent.</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": ""
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clfdivaAAAAAAAAA"
+}

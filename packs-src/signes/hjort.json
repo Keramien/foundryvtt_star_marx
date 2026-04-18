@@ -1,0 +1,20 @@
+{
+  "_id": "sgrhjortAAAAAAAA",
+  "name": "Hjort",
+  "type": "signe",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Race Hjort.</p><ul><li><strong>+2 points en CORRUPTION</strong></li><li><strong>+2 Zlotys supplementaires</strong> en debut de partie pour corrompre le Secretaire General</li><li><strong>PRISONNIER POLITIQUE plafonne a 1</strong> (depassable uniquement avec justification et longues negociations avec le Secretaire General)</li></ul>",
+    "category": "racial",
+    "traitLink": "",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsigneracialAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgrhjortAAAAAAAA"
+}

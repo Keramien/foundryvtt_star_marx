@@ -1,0 +1,20 @@
+{
+  "_id": "sgrsimpleAAAAAAA",
+  "name": "Simple",
+  "type": "signe",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Race Simple.</p><ul><li><strong>Signe General Petit gratuit</strong> (voir signes generaux)</li><li><strong>Pour 1 Zloty</strong>, le Simple peut <strong>emprunter, le temps d'un test, le score d'un Kamarade dans le Trait de son choix</strong> (talent naturel pour l'imitation)</li></ul><p><em>Note : le Simple ne connait a la creation que 10 mots au choix du joueur. Son vocabulaire s'agrandit de 5 mots par partie.</em></p>",
+    "category": "racial",
+    "traitLink": "",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsigneracialAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgrsimpleAAAAAAA"
+}

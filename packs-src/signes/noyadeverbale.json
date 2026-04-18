@@ -1,0 +1,20 @@
+{
+  "_id": "sgtnoyadeverbale",
+  "name": "Noyade verbale",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait PROPAGANDE.</p><p>Le Kamarade accapare une personne par son debit verbal. <strong>Duree (en secondes) pendant laquelle la victime ne peut rien faire d'autre qu'ecouter = resultat du jet de des.</strong></p>",
+    "category": "trait",
+    "traitLink": "faucille.propagande",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtnoyadeverbale"
+}

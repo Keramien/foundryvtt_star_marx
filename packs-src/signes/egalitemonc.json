@@ -1,0 +1,20 @@
+{
+  "_id": "sgnegalitemoncAA",
+  "name": "Egalite mon c...",
+  "type": "signe",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Aucune (fiction : chance genetique ou membre d'une societe ecran du Grand Ancien Kthulhuw).</p><p>Le Kamarade <strong>ne subit jamais les consequences de ses echecs critiques</strong> : la malchance se reporte sur ses compagnons, qui en paient le prix. Le hasard ne peut pas non plus le designer comme victime d'un evenement aleatoire.</p>",
+    "category": "general",
+    "traitLink": "",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignegeneralA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgnegalitemoncAA"
+}

@@ -5,7 +5,6 @@
         "kamarade": "Kamarade"
       },
       "Details": {
-        "Peuple": "Peuple",
         "Doctrine": "Doctrine",
         "Groupuscule": "Groupuscule",
         "Sexe": "Sexe",
@@ -62,9 +61,15 @@
         "Presentation": "Présentation",
         "Traits": "Traits",
         "Signes": "Signes",
+        "Clefs": "Clefs",
         "Equipement": "Équipement"
       },
       "KamaradeLabel": "Fiche Kamarade",
+      "ItemLabel": "Fiche d'objet Star Marx",
+      "Fields": {
+        "Name": "Nom",
+        "Description": "Description"
+      },
       "TraitPoints": {
         "Label": "Points de Traits",
         "Available": "Disponibles",
@@ -78,9 +83,17 @@
       "Sections": {
         "DoctrineChoisie": "Doctrine choisie",
         "AutresDoctrines": "Autres doctrines",
+        "Race": "Race",
+        "RaceVide": "Glissez une Race depuis le compendium",
         "SigneRacial": "Signe racial obligatoire",
         "SigneRacialVide": "Aucun signe racial défini",
+        "SignesRaciaux": "Signes raciaux",
+        "SignesRaciauxVide": "Aucun signe racial — glissez une Race pour en acquérir.",
         "SignesGeneraux": "Signes particuliers",
+        "SignesBonus": "Signes bonus",
+        "SignesBonusVide": "Aucun signe bonus. Les équipements ou le Secrétaire Général peuvent en octroyer.",
+        "Clefs": "Clefs",
+        "ClefsVide": "Glissez une Clef depuis le compendium",
         "Armure": "Armure",
         "Kontrebandes": "Kontrebandes",
         "Bardas": "Barda"
@@ -90,8 +103,13 @@
         "Edit": "Éditer",
         "Delete": "Supprimer",
         "AddSigne": "Ajouter un signe",
+        "AddSigneBonus": "Ajouter un signe bonus",
+        "AddClef": "Ajouter une clef",
         "AddKontrebande": "Ajouter une kontrebande",
         "AddBarda": "Ajouter un barda",
+        "DropHere": "Glissez un item ici",
+        "DropSigneHere": "Glissez un Signe depuis le compendium",
+        "DropClefHere": "Glissez une Clef depuis le compendium",
         "RollTrait": "Lancer 2d6 + Trait",
         "HelpTrait": "Jet d'aide",
         "HelpTraitTodo": "Jet d'aide — implémentation à venir"
@@ -150,6 +168,7 @@
     },
     "Item": {
       "Type": {
+        "race": "Race",
         "signe": "Signe Particulier",
         "kontrebande": "Kontrebande",
         "clef": "Clef",
@@ -159,39 +178,70 @@
       },
       "Common": {
         "Description": "Description"
+      }
+    },
+    "Race": {
+      "Fields": {
+        "DoctrinesAutorisees": "Doctrines compatibles",
+        "HpBonus": "Bonus PV",
+        "ZlotysBonus": "Bonus Zlotys",
+        "SignesBonus": "Bonus Signes",
+        "TraitPointsBonus": "Points de Trait bonus",
+        "Restrictions": "Restrictions"
       },
-      "Signe": {
+      "DoctrineMismatch": {
+        "Label": "Doctrine atypique",
+        "Hint": "Cette race ne recommande pas la Doctrine choisie. Le jeu reste possible, mais le Secrétaire Général pourrait demander une justification."
+      }
+    },
+    "Signe": {
+      "Fields": {
         "Category": "Catégorie",
         "TraitLink": "Trait associé",
-        "CategoryGeneral": "Général",
-        "CategoryTrait": "Lié à un Trait",
-        "CategoryRacial": "Racial",
-        "CategoryGroupuscule": "Groupuscule"
+        "Bonus": "Bonus",
+        "BonusLabel": "Signe bonus (équipement / scénario)",
+        "BonusHint": "Un signe bonus ne compte pas dans la limite des signes au choix."
       },
-      "Kontrebande": {
-        "Bonus": "Bonus accordé",
-        "State": "État",
-        "StateIntact": "Intact",
-        "StateCoche": "Coché (utilisé)",
-        "StateCasse": "Cassé",
-        "Repairs": "Réparations effectuées",
-        "Used": "Déjà utilisé ce scénario"
-      },
-      "Clef": {
-        "Active": "Active",
-        "Hint": "Rapporte des Zlotys quand jouée à table."
-      },
-      "Barda": {
-        "Source": "Table d'origine"
-      },
-      "Faiblesse": {
-        "Malus": "Malus quand invoquée",
-        "Invoked": "Invoquée ce scénario"
-      },
-      "Atout": {
-        "Bonus": "Bonus accordé",
-        "Used": "Déjà utilisé ce scénario"
+      "Category": {
+        "General": "Général",
+        "Trait": "Lié à un Trait",
+        "Racial": "Racial",
+        "Groupuscule": "Groupuscule"
       }
+    },
+    "Clef": {
+      "Fields": {
+        "ZlotyReward": "Récompense (Zlotys)",
+        "Trigger": "Déclencheur"
+      },
+      "Racial": "Raciale",
+      "Hint": "Rapporte des Zlotys quand jouée à table."
+    },
+    "Kontrebande": {
+      "Bonus": "Bonus accordé",
+      "State": "État",
+      "StateIntact": "Intact",
+      "StateCoche": "Coché (utilisé)",
+      "StateCasse": "Cassé",
+      "Repairs": "Réparations effectuées",
+      "Used": "Déjà utilisé ce scénario"
+    },
+    "Barda": {
+      "Source": "Table d'origine"
+    },
+    "Faiblesse": {
+      "Malus": "Malus quand invoquée",
+      "Invoked": "Invoquée ce scénario"
+    },
+    "Atout": {
+      "Bonus": "Bonus accordé",
+      "Used": "Déjà utilisé ce scénario"
+    },
+    "Notifications": {
+      "RaceReplaced": "Race remplacée.",
+      "SigneLimitReached": "Limite de Signes atteinte ({max}).",
+      "ClefLimitReached": "Limite de Clefs atteinte ({max}).",
+      "RacialSigneNotDroppable": "Les Signes raciaux s'acquièrent via une Race, pas directement."
     },
     "Roll": {
       "Threshold": "Seuil",

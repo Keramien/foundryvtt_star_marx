@@ -1,0 +1,20 @@
+{
+  "_id": "sgtlafureurdeviA",
+  "name": "La Fureur de Vivre",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait SOYOUZ ; le Kamarade doit etre aux commandes d'un engin lors d'une bataille spatiale.</p><p><strong>Dans chaque bataille spatiale, pour 1 Zloty</strong>, le joueur peut <strong>ajouter son score en PRISONNIER POLITIQUE a ses jets de pilotage</strong>.</p>",
+    "category": "trait",
+    "traitLink": "marteau.soyouz",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtlafureurdeviA"
+}

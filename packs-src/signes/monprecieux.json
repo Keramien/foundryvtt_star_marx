@@ -1,0 +1,20 @@
+{
+  "_id": "sgnmonprecieuxAA",
+  "name": "Mon precieux !",
+  "type": "signe",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Aucune. <strong>Un seul precieux par Kamarade.</strong></p><p>Un objet fetiche accorde un bonus permanent de <strong>+1 a un Trait</strong> du Kamarade, a justifier narrativement (couverture fetiche pour PRISONNIER POLITIQUE, guide de l'aventurier pour PIONNIER, etc.). L'objet <strong>ne peut pas etre perdu</strong> : si cela devait arriver, le Secretaire General doit reintroduire un objet aux memes caracteristiques a la session suivante. Seul le Kamarade beneficie du bonus ; pour tout autre personnage, c'est un objet ordinaire.</p>",
+    "category": "general",
+    "traitLink": "",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignegeneralA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgnmonprecieuxAA"
+}

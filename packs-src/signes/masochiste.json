@@ -1,0 +1,20 @@
+{
+  "_id": "sgtmasochisteAAA",
+  "name": "Masochiste",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait LUTTE.</p><p>Pour <strong>chaque tranche de 3 points de vie perdus</strong> en combat, le Kamarade gagne <strong>1 Zloty</strong>, <strong>a utiliser avant la fin de l'affrontement ou avant d'etre soigne</strong> (sinon perdu).</p>",
+    "category": "trait",
+    "traitLink": "marteau.lutte",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtmasochisteAAA"
+}

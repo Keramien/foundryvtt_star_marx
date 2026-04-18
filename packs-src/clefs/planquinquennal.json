@@ -1,0 +1,21 @@
+{
+  "_id": "clfplanquinquenn",
+  "name": "Clef du Plan Quinquennal",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>Le Kamarade a une mission qu'il veut mener à bien, que le joueur doit établir avec le Secrétaire Général. Cette Clef a un fonctionnement particulier, le personnage gagnant des Zlotys chaque fois qu'il avance vers l'accomplissement de cette tâche.</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": "<p>Le Kamarade gagne des Zlotys chaque fois qu'il avance vers l'accomplissement de sa mission.</p>"
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clfplanquinquenn"
+}

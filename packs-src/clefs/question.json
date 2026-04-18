@@ -1,0 +1,21 @@
+{
+  "_id": "clfquestionAAAAA",
+  "name": "Clef de la Question",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>Le Kamarade est obsédé par une question éthique, scientifique ou philosophique : « les I.A. de Sark rêvent-elles de moutons électriques ? », « quelle est la place de l'inné et de l'acquis chez le Klon ? », « le Communisme peut-il être autre chose qu'une utopie ? », « les 26% de matière noire non visible sont-elles rouges ? », « pourquoi les Humains ont-ils si peu de gênes ? ».</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": ""
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clfquestionAAAAA"
+}

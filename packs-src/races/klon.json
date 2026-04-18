@@ -1,0 +1,43 @@
+{
+  "_id": "racklonAAAAAAAAA",
+  "name": "Klon",
+  "type": "race",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>Sauriens de plus de 2 metres, nus, couverts d'ecailles, avec dents et griffes. Leurs vaisseaux sont ridiculement surarmes. Depuis le virus genetique, la plupart des rejetons sont des avortons diminues (\"petits Klons\" / \"neveux\"). Guerriers brutaux, nostalgiques de leur gloire passee. Beaucoup sont mercenaires, ivrognes ou gladiateurs. Mangent leurs propres enfants diminues.</p><p><strong>Signe Racial :</strong> +2 bonus pour resister a la peur (via PRISONNIER POLITIQUE). Obtient le Signe \"Grand\" gratuitement (difficile a cacher, mais bonus lies a la taille : +1 degats melee, +2 BRISEUR DE GREVE, +2 PV, -2 discretion).</p>",
+    "traitBonuses": [
+      {
+        "doctrine": "marteau",
+        "trait": "prisonnierPolitique",
+        "bonus": 2
+      },
+      {
+        "doctrine": "marteau",
+        "trait": "briseurDeGreve",
+        "bonus": 2
+      }
+    ],
+    "hpBonus": 2,
+    "zlotysBonus": 0,
+    "signesBonus": 0,
+    "traitPointsBonus": 0,
+    "restrictions": "<p>Doctrine <strong>Marteau</strong> uniquement (un Klon en Faucille serait demembre ; Etoile requiert une litteratie qu'ils n'ont pas).</p>",
+    "doctrinesAutorisees": {
+      "marteau": true,
+      "faucille": false,
+      "etoile": false
+    },
+    "signesRacialUuids": [
+      "Compendium.star_marx.signes.Item.sgrklonAAAAAAAAA",
+      "Compendium.star_marx.signes.Item.sgngrandAAAAAAAA"
+    ]
+  },
+  "effects": [],
+  "folder": "fldracecoreAAAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!racklonAAAAAAAAA"
+}

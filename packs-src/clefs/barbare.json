@@ -1,0 +1,21 @@
+{
+  "_id": "clfbarbareAAAAAA",
+  "name": "Clef du Barbare",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>Le peuple du Kamarade est souvent considéré comme arriéré, violent et sans culture, incapable d'utiliser la technologie, voire analphabète. Ce n'est pas forcément à tort…</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": ""
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clfbarbareAAAAAA"
+}

@@ -1,0 +1,21 @@
+{
+  "_id": "clfpromisaugoula",
+  "name": "Clef du Promis au Goulag",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>Le Kamarade est activement recherché et si les autorités mettent la main sur lui, il finira sur Sybéria 1.</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": ""
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clfpromisaugoula"
+}

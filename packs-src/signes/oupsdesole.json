@@ -1,0 +1,20 @@
+{
+  "_id": "sgnoupsdesoleAAA",
+  "name": "Oups ! Desole...",
+  "type": "signe",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Aucune.</p><p><strong>Une fois par combat</strong>, le Kamarade peut decider qu'un coup qui lui est destine le loupe. Les degats ne sont pas perdus : <strong>quelqu'un d'autre au hasard</strong> (PJ ou PNJ) les encaisse a sa place.</p>",
+    "category": "general",
+    "traitLink": "",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignegeneralA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgnoupsdesoleAAA"
+}

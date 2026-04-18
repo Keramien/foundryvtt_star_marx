@@ -1,0 +1,20 @@
+{
+  "_id": "sgtomonvaisseau2",
+  "name": "O mon vaisseau 2",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong></p><ul><li>Trait SOYOUZ</li><li><strong>Posseder O mon vaisseau 1</strong> (pre-requis explicite : ce Signe est une seconde prise de O mon vaisseau)</li><li><strong>Aucun autre membre de l'equipe ne peut prendre ce Signe</strong> (exclusif)</li></ul><p>Le bonus avec le vaisseau designe passe a <strong>+2</strong>, mais le Kamarade subit <strong>-1 avec tous les autres vehicules</strong>.</p>",
+    "category": "trait",
+    "traitLink": "marteau.soyouz",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtomonvaisseau2"
+}

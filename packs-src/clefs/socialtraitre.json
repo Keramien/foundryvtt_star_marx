@@ -1,0 +1,21 @@
+{
+  "_id": "clfsocialtraitre",
+  "name": "Clef du Social-Traître",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>Le Kamarade est attiré par tout ce qui a de la valeur, que ce soient des cartes de rationnement presque pas périmées ou des montagnes de kopeks, monnaie qui n'est plus en cours dans aucun coin de l'Univers…</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": ""
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clfsocialtraitre"
+}

@@ -1,0 +1,21 @@
+{
+  "_id": "clfrenommeeAAAAA",
+  "name": "Clef de la Renommée",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>Le Kamarade ne ménage pas ses efforts pour que son nom et ses actes soient reconnus, que ce soit parce qu'il s'en vante, ou qu'il fait exprès d'avoir des témoins. « Vous devez être le pire contrebandier dont j'ai jamais entendu parler ! — Peut-être, mais vous avez entendu parler de moi. »</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": ""
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clfrenommeeAAAAA"
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "sgtdeductionAAAA",
+  "name": "Deduction",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait KGB.</p><p>Le Kamarade expose un raisonnement a haute voix et peut demander au Secretaire General d'en <strong>confirmer la justesse</strong>, contre un <strong>nombre de Zlotys fixe par ce dernier</strong>. Le Secretaire ne donne pas d'informations nouvelles, il se contente de confirmer ou infirmer.</p><p>Des que le Secretaire annonce qu'un raisonnement est <strong>faux</strong>, le Kamarade <strong>paie le double de Zlotys</strong> et <strong>perd l'usage de la capacite jusqu'a la fin de la partie</strong>. Tant qu'il raisonne juste, utilisation a volonte.</p>",
+    "category": "trait",
+    "traitLink": "etoile.kgb",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtdeductionAAAA"
+}

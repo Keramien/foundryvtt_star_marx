@@ -1,0 +1,21 @@
+{
+  "_id": "clfradinAAAAAAAA",
+  "name": "Clef du Radin",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>Le personnage rechigne à dépenser ses sous et ses ressources.</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": ""
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clfradinAAAAAAAA"
+}

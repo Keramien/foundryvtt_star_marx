@@ -1,0 +1,20 @@
+{
+  "_id": "sgttoujourslaauA",
+  "name": "Toujours la au bon endroit",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait MACHINISTE.</p><p>En <strong>debut de scenario</strong>, le Kamarade fait un jet en MACHINISTE en annoncant son seuil :</p><ul><li><strong>Seuil 9 reussi :</strong> il pourra se trouver ou on a besoin de lui avec ses outils <strong>1 fois</strong> dans la partie.</li><li><strong>Seuil 12 reussi :</strong> <strong>2 fois</strong></li><li><strong>Seuil 15 reussi :</strong> <strong>3 fois</strong></li></ul>",
+    "category": "trait",
+    "traitLink": "etoile.machiniste",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgttoujourslaauA"
+}

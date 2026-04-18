@@ -1,0 +1,20 @@
+{
+  "_id": "sgtcestmarubriqA",
+  "name": "C'est ma rubrique",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait SAMIZDATS ; choisir <strong>a la prise du Signe</strong> une specialite journalistique (chiens ecrases, coeurs solitaires, critique gastronomique, histoire du Parti, etc.).</p><p>Le Kamarade peut utiliser son <strong>Trait en SAMIZDATS</strong> pour tout jet en lien avec sa rubrique (corruption d'un membre du Politburo pour un specialiste du Parti, drague pour un courrier du coeur, cuisine pour un critique gastronomique, etc.).</p>",
+    "category": "trait",
+    "traitLink": "etoile.samizdats",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtcestmarubriqA"
+}

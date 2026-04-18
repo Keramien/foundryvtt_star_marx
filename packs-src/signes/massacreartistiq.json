@@ -1,0 +1,20 @@
+{
+  "_id": "sgtmassacreartis",
+  "name": "Massacre artistique",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait LUTTE.</p><p><strong>Une fois par combat</strong>, le Kamarade peut tenter un jet avec, <strong>en bonus, le nombre de personnages qu'il a tues</strong> et <strong>en malus, la dangerosite de son ennemi</strong>. Si le jet reussit, <strong>l'attaque de l'adversaire est annulee</strong> (comme une Armure) : les ennemis ont trop peur pour attaquer.</p>",
+    "category": "trait",
+    "traitLink": "marteau.lutte",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtmassacreartis"
+}

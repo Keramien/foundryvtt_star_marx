@@ -1,0 +1,20 @@
+{
+  "_id": "sgtchernyirynokA",
+  "name": "Chernyi Rynok",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait MARCHE NOIR.</p><p><strong>Contre 1 Zloty en debut de partie</strong>, le Secretaire General offre au Kamarade une <strong>cargaison composite</strong> dont <strong>au moins une des denrees pourra servir au scenario</strong>.</p>",
+    "category": "trait",
+    "traitLink": "faucille.marcheNoir",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtchernyirynokA"
+}

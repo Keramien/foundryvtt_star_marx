@@ -1,0 +1,20 @@
+{
+  "_id": "sgtomonvaisseau1",
+  "name": "O mon vaisseau 1",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait SOYOUZ ; designation d'un vaisseau specifique auquel le Kamarade est lie.</p><p>Le Kamarade a un <strong>+1 a tous les jets effectues avec ce vaisseau designe</strong>, qu'il s'agisse de le piloter (SOYOUZ), d'utiliser ses ordinateurs/sonars (OPERATEUR CODEUR), son artillerie (AK 47) ou de le reparer (MACHINISTE).</p>",
+    "category": "trait",
+    "traitLink": "marteau.soyouz",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtomonvaisseau1"
+}

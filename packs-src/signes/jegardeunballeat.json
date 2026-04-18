@@ -1,0 +1,20 @@
+{
+  "_id": "sgtjegardeunball",
+  "name": "Je garde une balle a ton nom",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait AK 47 ; l'adversaire vise doit etre connu a l'avance.</p><p>Le Kamarade profile ses munitions en fonction d'un ennemi identifie. Le Secretaire General accorde alors <strong>un bonus aux degats ou au Trait AK 47</strong> en fonction des preparations et des recherches du joueur.</p>",
+    "category": "trait",
+    "traitLink": "marteau.ak47",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtjegardeunball"
+}

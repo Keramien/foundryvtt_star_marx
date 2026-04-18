@@ -4,8 +4,10 @@
     <input type="text" name="name" value="{{actor.name}}" placeholder="Nom du Kamarade" class="charname">
     <div class="kamarade-header__meta">
       <label>
-        <span>{{localize "STARMARX.Actor.Details.Peuple"}}</span>
-        <input type="text" name="system.details.peuple" value="{{system.details.peuple}}">
+        <span>{{localize "STARMARX.Sheet.Sections.Race"}}</span>
+        <div class="kamarade-header__race">
+          {{#if race}}{{race.name}}{{else}}—{{/if}}
+        </div>
       </label>
       <label>
         <span>{{localize "STARMARX.Actor.Details.Doctrine"}}</span>

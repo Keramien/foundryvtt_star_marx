@@ -1,0 +1,50 @@
+<section class="tab {{tab.cssClass}}" data-group="{{tab.group}}" data-tab="{{tab.id}}">
+
+  <div class="clef-block">
+    <header class="clef-block__header">
+      <h2>{{localize "STARMARX.Sheet.Sections.Clefs"}}</h2>
+      <div class="counter">{{clefs.length}} / {{system.clefsMax}}</div>
+      <button type="button" class="add-btn" data-action="itemCreate" data-item-type="clef">
+        <i class="fa-solid fa-plus"></i> {{localize "STARMARX.Sheet.Action.AddClef"}}
+      </button>
+    </header>
+
+    {{#if clefs.length}}
+      <ul class="item-list">
+        {{#each clefs}}
+          <li class="item-row" data-item-id="{{this.id}}">
+            <img class="item-img" src="{{this.img}}" alt="">
+            <div class="item-body">
+              <h4 class="item-name">{{this.name}}
+                {{#if this.system.racialOf}}
+                  <span class="badge badge--racial">{{localize "STARMARX.Clef.Racial"}}</span>
+                {{/if}}
+              </h4>
+              <div class="item-desc">{{{this.system.description}}}</div>
+              {{#if this.system.trigger}}
+                <div class="clef-trigger">
+                  <strong>{{localize "STARMARX.Clef.Fields.Trigger"}} :</strong>
+                  <span>{{{this.system.trigger}}}</span>
+                </div>
+              {{/if}}
+              <div class="clef-reward">
+                <i class="fa-solid fa-coins"></i>
+                {{this.system.zlotyReward}} {{localize "STARMARX.Actor.Zlotys.Label"}}
+              </div>
+            </div>
+            <div class="item-actions">
+              <button type="button" data-action="itemEdit"><i class="fa-solid fa-pen"></i></button>
+              <button type="button" data-action="itemDelete"><i class="fa-solid fa-trash"></i></button>
+            </div>
+          </li>
+        {{/each}}
+      </ul>
+    {{else}}
+      <div class="drop-zone">
+        <i class="fa-solid fa-key"></i>
+        <p>{{localize "STARMARX.Sheet.Action.DropClefHere"}}</p>
+      </div>
+    {{/if}}
+  </div>
+
+</section>

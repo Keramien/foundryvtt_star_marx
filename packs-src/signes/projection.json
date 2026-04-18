@@ -1,0 +1,20 @@
+{
+  "_id": "sgtprojectionAAA",
+  "name": "Projection",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait LUTTE.</p><p>Au lieu d'infliger des degats, le Kamarade peut <strong>envoyer son adversaire voler a quelques metres</strong>. La taille et le poids de la cible doivent rester raisonnables (pas de planchette japonaise sur un tank).</p>",
+    "category": "trait",
+    "traitLink": "marteau.lutte",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtprojectionAAA"
+}

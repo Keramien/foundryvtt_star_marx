@@ -1,0 +1,21 @@
+{
+  "_id": "clfreplistrategi",
+  "name": "Clef du Repli Stratégique",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>Le Kamarade évite les combats comme la peste. Cette Clef a un fonctionnement particulier, le personnage gagnant un Zloty quand il parvient à éviter un combat, en parlementant, en fuyant ou en se cachant.</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": "<p>1 Zloty quand le Kamarade parvient à éviter un combat, en parlementant, en fuyant ou en se cachant.</p>"
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clfreplistrategi"
+}

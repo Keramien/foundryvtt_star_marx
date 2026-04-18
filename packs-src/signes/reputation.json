@@ -1,0 +1,20 @@
+{
+  "_id": "sgtreputationAAA",
+  "name": "Reputation",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait CORRUPTION.</p><p>A chaque rencontre d'un nouveau PNJ, le Kamarade peut faire un <strong>jet de seuil 9</strong> :</p><ul><li><strong>Reussi :</strong> le PNJ a deja entendu parler du Kamarade dans les termes choisis par le joueur.</li><li><strong>Rate :</strong> le Secretaire General choisit ce que le PNJ a entendu (potentiellement defavorable).</li></ul>",
+    "category": "trait",
+    "traitLink": "faucille.corruption",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtreputationAAA"
+}

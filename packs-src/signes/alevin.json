@@ -1,0 +1,20 @@
+{
+  "_id": "sgralevinAAAAAAA",
+  "name": "Alevin",
+  "type": "signe",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Race Alevin.</p><p>L'Alevin <strong>accede a tous les Signes Raciaux des Robots</strong>, <strong>a l'exception de Defragmentation acceleree</strong>. Il ne peut pas non plus etre soigne par un DOPAGE ; il doit etre accompagne d'un <strong>MACHINISTE</strong>.</p><p><strong>Sortie du scaphandre :</strong></p><ul><li>Dans un <strong>milieu aquatique</strong>, peut operer comme un simple poisson</li><li><strong>Perd l'acces aux Traits lies au robot</strong></li><li><strong>Ne lui reste qu'1 point de vie</strong></li></ul>",
+    "category": "racial",
+    "traitLink": "",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsigneracialAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgralevinAAAAAAA"
+}

@@ -1,0 +1,21 @@
+{
+  "_id": "clfecologisteAAA",
+  "name": "Clef de l'Écologiste",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>Le Kamarade rêve d'océans verts de feuilles et de branches, de cités de pétales et de Nemtsyi vivant de photosynthèse. Dès qu'il peut respirer de la chlorophylle, il se sent revivre. Et s'il en a l'occasion, pour faire fonctionner le réacteur de son soyouz, il n'utilisera que du mazout sans gluten.</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": ""
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clfecologisteAAA"
+}

@@ -1,6 +1,17 @@
 {
+  "name": "star-marx",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "pack:build": "node tools/pack-build.mjs",
+    "pack:extract": "node tools/pack-extract.mjs"
+  },
   "dependencies": {
     "pdf-parse": "^2.4.5",
     "pdfjs-dist": "^5.6.205"
+  },
+  "devDependencies": {
+    "@foundryvtt/foundryvtt-cli": "^1.1.0"
   }
 }

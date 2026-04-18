@@ -1,0 +1,31 @@
+{
+  "_id": "racgryaznyAAAAAA",
+  "name": "Gryazny",
+  "type": "race",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>Creatures semblables a des rats, adaptees au vide, hirsutes, avec des composants electriques tresses dans des dreadlocks. Tous males, pas de femelles (une reine existe quelque part). Ferrailleurs tribaux. Vivent en meutes dans des cimetieres de vaisseaux spatiaux. Toujours joues en groupe d'au moins 3.</p><p><strong>Signe Racial :</strong> Adapte au vide spatial. Peut avoir jusqu'a 7 Kontrebandes (max normal : 5) - collectionneurs pathologiques de pieces mecaniques.</p>",
+    "traitBonuses": [],
+    "hpBonus": 0,
+    "zlotysBonus": 0,
+    "signesBonus": 0,
+    "traitPointsBonus": 0,
+    "restrictions": "<p>Doivent etre joues en <strong>groupe (minimum 3)</strong>. PV, Armure, Traits sont partages comme un pool collectif. Doctrine <strong>Etoile</strong> preferee, Faucille ou Marteau possibles.</p>",
+    "doctrinesAutorisees": {
+      "marteau": true,
+      "faucille": true,
+      "etoile": true
+    },
+    "signesRacialUuids": [
+      "Compendium.star_marx.signes.Item.sgrgryaznyAAAAAA"
+    ]
+  },
+  "effects": [],
+  "folder": "fldracecoreAAAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!racgryaznyAAAAAA"
+}

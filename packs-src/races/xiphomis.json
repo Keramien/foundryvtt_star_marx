@@ -1,0 +1,31 @@
+{
+  "_id": "racxiphomisAAAAA",
+  "name": "Xiphomis",
+  "type": "race",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>Insectoides psychopathes ressemblant a des mantes religieuses tordues avec des mandibules. Cauchemar des enfants de l'Union. Portent des colliers de tetes retrecies.</p><p><strong>Signe Racial :</strong> Possede des ailes repliables. Peut utiliser TCHERNOBYL pour tout ce qui est lie au vol, ou tout ce que le joueur peut improviser en utilisant ses ailes.</p>",
+    "traitBonuses": [],
+    "hpBonus": 0,
+    "zlotysBonus": 0,
+    "signesBonus": 0,
+    "traitPointsBonus": 0,
+    "restrictions": "",
+    "doctrinesAutorisees": {
+      "marteau": true,
+      "faucille": true,
+      "etoile": true
+    },
+    "signesRacialUuids": [
+      "Compendium.star_marx.signes.Item.sgrxiphomisAAAAA"
+    ]
+  },
+  "effects": [],
+  "folder": "fldraceotherAAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!racxiphomisAAAAA"
+}

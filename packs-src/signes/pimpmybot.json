@@ -1,0 +1,24 @@
+{
+  "_id": "sgnpimpmybotAAAA",
+  "name": "Pimp my bot",
+  "type": "signe",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Race Robot ; un MACHINISTE dans le groupe ; <strong>1 Zloty depense</strong> ; materiel disponible.</p><p><strong>Une fois par seance</strong>, un Kamarade mecanicien peut <strong>modifier le Robot</strong> :</p><ul><li>Deplacer des croix d'un Trait a un autre</li><li><strong>Dans la limite du score en MACHINISTE</strong> du Kamarade qui le trafique</li></ul><p><strong>Exemple :</strong> <em>Stein (MACHINISTE 4) greffe deux paraboles sur Zig 7 fois 2. Zig depense 1 Zloty, gagne +3 en KGB, perd 1 en LUTTE et 2 en PRISONNIER POLITIQUE (5 croix deplacees, dans la limite de MACHINISTE 4 - attention, dans l'exemple original, Stein a 4 en MACHINISTE, donc 5 croix deplacees serait refuse. Le Secretaire General reste arbitre.)</em></p>",
+    "category": "general",
+    "traitLink": "",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignegeneralA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "starmarx": {
+      "racialOnly": "robot"
+    }
+  },
+  "_key": "!items!sgnpimpmybotAAAA"
+}

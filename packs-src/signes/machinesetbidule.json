@@ -1,0 +1,20 @@
+{
+  "_id": "sgtmachinesetbid",
+  "name": "Machines et bidules",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait RECHERCHE ET CONCEPTION ; acces a du materiel.</p><p>Le Kamarade bricole une machine d'urgence ou un produit experimental. Il peut alors <strong>substituer son score en R&amp;C a tout autre Trait pour un test, une fois par session</strong>.</p><p>Pour une <strong>utilisation supplementaire de la meme invention</strong>, il lance <strong>1d6</strong> :</p><ul><li>2e Utilisation : l'invention rend l'ame sur <strong>1-2</strong></li><li>3e Utilisation : rend l'ame sur <strong>1-4</strong></li><li>Etc. (jet de durabilite comme une Kontrebande)</li></ul><p><strong>Les consequences catastrophiques quand la mecanique cede sont bien pires</strong> qu'une Kontrebande ordinaire (explosions, effets secondaires inattendus).</p>",
+    "category": "trait",
+    "traitLink": "etoile.rechercheConception",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtmachinesetbid"
+}

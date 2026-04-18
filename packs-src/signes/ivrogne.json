@@ -1,0 +1,20 @@
+{
+  "_id": "sgtivrogneAAAAAA",
+  "name": "Ivrogne",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait KARKASS. Disponibilite de vodka ou kvas ; l'interlocuteur doit accepter de boire avec le Kamarade.</p><p>S'il partage une cuite avec son interlocuteur, le Kamarade peut <strong>substituer son score en KARKASS a n'importe lequel de ses Traits en Faucille</strong> : <strong>CORRUPTION, ETRE AU PARFUM, POUPEE RUSSE ou PROPAGANDE</strong>.</p>",
+    "category": "trait",
+    "traitLink": "marteau.karkass",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtivrogneAAAAAA"
+}

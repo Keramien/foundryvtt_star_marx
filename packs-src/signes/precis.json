@@ -1,0 +1,20 @@
+{
+  "_id": "sgtprecisAAAAAAA",
+  "name": "Precis",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait AK 47.</p><p><strong>+1 aux degats avec AK 47.</strong></p>",
+    "category": "trait",
+    "traitLink": "marteau.ak47",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtprecisAAAAAAA"
+}

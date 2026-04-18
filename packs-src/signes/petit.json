@@ -1,0 +1,20 @@
+{
+  "_id": "sgnpetitAAAAAAAA",
+  "name": "Petit",
+  "type": "signe",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Aucune. (Signe racial obligatoire - et gratuit - pour les Simples.)</p><p>Le Kamarade est petit et menu :</p><ul><li><strong>+2 pour toute action de discretion</strong></li><li>Sur un <strong>1</strong> au d6, un coup qui lui est destine passe entre les gouttes (jetez un de a chaque attaque)</li><li><strong>Les degats qu'il inflige en LUTTE sont plafonnes a 2</strong></li><li>Sa taille peut servir de complication (scaphandre a ses mensurations, barreau trop haut, etc.)</li></ul>",
+    "category": "general",
+    "traitLink": "",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignegeneralA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgnpetitAAAAAAAA"
+}

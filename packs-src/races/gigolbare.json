@@ -1,0 +1,31 @@
+{
+  "_id": "racgigolbareAAAA",
+  "name": "Gigolbare",
+  "type": "race",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>Etres massifs avec des tetes en forme de beignet, dont les corps suintent du miel et de la frangipane. Colossaux et a l'odeur sucree. Obsedes par la patisserie, utilisant leurs propres fluides corporels. Ont failli commettre un genocide a cause d'un differend sur une Foret Noire surgelee.</p><p><strong>Signe Racial :</strong> Peut fabriquer des patisseries dopantes en utilisant ses fluides vitaux : ajoute un de supplementaire a un test, mais coute 1 PV si le de supplementaire montre un nombre impair, 2 PV si pair. Utilisable un nombre de fois par session egal au score de KARKASS.</p>",
+    "traitBonuses": [],
+    "hpBonus": 0,
+    "zlotysBonus": 0,
+    "signesBonus": 0,
+    "traitPointsBonus": 0,
+    "restrictions": "<p>Doctrine <strong>Faucille</strong> preferee (GROUILLOT et MARCHE NOIR pour se procurer des cerises confites). Des legendes existent de specimens Etoile ou Marteau.</p>",
+    "doctrinesAutorisees": {
+      "marteau": false,
+      "faucille": true,
+      "etoile": false
+    },
+    "signesRacialUuids": [
+      "Compendium.star_marx.signes.Item.sgrgigolbareAAAA"
+    ]
+  },
+  "effects": [],
+  "folder": "fldracecoreAAAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!racgigolbareAAAA"
+}

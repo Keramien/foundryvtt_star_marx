@@ -1,0 +1,20 @@
+{
+  "_id": "sgtveneneuxAAAAA",
+  "name": "Veneneux",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait DOPAGE ; la cible doit avoir pu ingerer/boire/toucher quelque chose que le Kamarade a manipule.</p><p>Jet en DOPAGE en <strong>opposition avec la difficulte de la victime</strong>. Le joueur choisit son seuil :</p><ul><li><strong>Seuil 9 :</strong> la cible perd <strong>2 PV dans les 24 heures</strong></li><li><strong>Seuil 12 :</strong> la cible perd <strong>4 PV</strong> et est <strong>alitee 24 heures</strong></li><li><strong>Echec :</strong> plusieurs personnes au choix du Secretaire General (<strong>y compris le Kamarade</strong>) perdent <strong>3 PV</strong></li></ul>",
+    "category": "trait",
+    "traitLink": "etoile.dopage",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtveneneuxAAAAA"
+}

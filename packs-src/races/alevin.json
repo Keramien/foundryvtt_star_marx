@@ -1,0 +1,31 @@
+{
+  "_id": "racalevinAAAAAAA",
+  "name": "Alevin",
+  "type": "race",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>Petit poisson pilotant un grand corps mecanique (poisson dans un bocal securise dans une armure mech).</p><p><strong>Signe Racial :</strong> Peut prendre les Signes Raciaux de Robot (sauf Defragmentation Acceleree). Memes regles de reparation que les robots (MACHINISTE). Peut sortir du mech pour operer comme simple poisson en milieu aquatique, mais perd tous les Traits dependants du mech et tombe a 1 PV.</p>",
+    "traitBonuses": [],
+    "hpBonus": 0,
+    "zlotysBonus": 0,
+    "signesBonus": 0,
+    "traitPointsBonus": 0,
+    "restrictions": "<p>Soins via <strong>MACHINISTE</strong> uniquement. Hors mech : tombe a 1 PV et perd les Traits dependants du mech.</p>",
+    "doctrinesAutorisees": {
+      "marteau": true,
+      "faucille": true,
+      "etoile": true
+    },
+    "signesRacialUuids": [
+      "Compendium.star_marx.signes.Item.sgralevinAAAAAAA"
+    ]
+  },
+  "effects": [],
+  "folder": "fldraceotherAAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!racalevinAAAAAAA"
+}

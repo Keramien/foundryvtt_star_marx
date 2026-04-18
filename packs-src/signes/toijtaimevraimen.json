@@ -1,0 +1,24 @@
+{
+  "_id": "sgntoijtaimevrai",
+  "name": "Toi, j't'aime vraiment pas",
+  "type": "signe",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Race Gonklin.</p><p><strong>Contre un nombre de Zlotys negocie avec le Secretaire General</strong>, le Gonklin peut <strong>reduire a neant n'importe quelle machine</strong> et se faire un collier de ses diodes.</p>",
+    "category": "general",
+    "traitLink": "",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignegeneralA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "starmarx": {
+      "racialOnly": "gonklin"
+    }
+  },
+  "_key": "!items!sgntoijtaimevrai"
+}

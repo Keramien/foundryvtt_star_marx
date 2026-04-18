@@ -113,6 +113,14 @@
   padding: 2px 4px;
 }
 
+.star-marx .kamarade-header__race {
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--sm-paper);
+  border: 1px solid var(--sm-gold);
+  padding: 2px 6px;
+  font-weight: 600;
+}
+
 /* -------- Tabs nav (pinned, always fully visible, inner text cropped) -------- */
 /* Override Foundry's default .tabs spacing (it ships with gap/margin/justify-content
    that leave empty strips around the items). */
@@ -649,4 +657,292 @@
   font-style: italic;
   text-align: center;
   padding: 0.5rem;
+}
+
+/* -------- Drop zones (Race / Signes / Clefs) -------- */
+.star-marx .drop-zone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 1.2rem;
+  border: 2px dashed var(--sm-muted);
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.02);
+  color: var(--sm-muted);
+  font-size: 0.85rem;
+  text-align: center;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.star-marx .drop-zone i {
+  font-size: 1.4rem;
+  opacity: 0.6;
+}
+
+.star-marx .drop-zone p {
+  margin: 0;
+}
+
+.star-marx .drop-zone.drop-hover,
+.star-marx .drop-zone:hover {
+  border-color: var(--sm-red);
+  color: var(--sm-red-dark);
+  background: rgba(166, 28, 28, 0.05);
+}
+
+/* -------- Race block (presentation tab) -------- */
+.star-marx .race-block {
+  margin-bottom: 1rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--sm-paper-alt);
+  border: 1px solid var(--sm-border);
+  border-radius: 4px;
+}
+
+.star-marx .race-block__header {
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--sm-border);
+  margin-bottom: 0.5rem;
+}
+
+.star-marx .race-block__header h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--sm-red-dark);
+}
+
+.star-marx .race-meta {
+  margin: 0.25rem 0;
+}
+
+.star-marx .race-meta .badge,
+.star-marx .badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 3px;
+  background: var(--sm-ink);
+  color: var(--sm-gold);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.star-marx .badge--racial {
+  background: var(--sm-red);
+  color: var(--sm-paper);
+  margin-left: 0.4rem;
+}
+
+.star-marx .badge--warning {
+  background: var(--sm-gold);
+  color: var(--sm-ink);
+  margin-left: 0.5rem;
+  cursor: help;
+}
+
+.star-marx .badge--warning i {
+  margin-right: 0.3rem;
+}
+
+.star-marx .doctrines-autorisees {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--sm-border);
+  border-radius: 4px;
+  background: var(--sm-paper-alt);
+  margin-bottom: 0.6rem;
+}
+
+.star-marx .doctrines-autorisees legend {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  color: var(--sm-muted);
+  padding: 0 0.3rem;
+}
+
+.star-marx .race-restrictions {
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+}
+
+.star-marx .race-restrictions summary {
+  cursor: pointer;
+  color: var(--sm-red-dark);
+  font-weight: 600;
+}
+
+/* -------- Clefs tab -------- */
+.star-marx .clef-block {
+  padding: 0.5rem 0.75rem;
+  background: var(--sm-paper-alt);
+  border: 1px solid var(--sm-border);
+  border-radius: 4px;
+}
+
+.star-marx .clef-block__header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--sm-border);
+  margin-bottom: 0.5rem;
+}
+
+.star-marx .clef-block__header h2 {
+  flex: 1;
+  margin: 0;
+  font-size: 1rem;
+  color: var(--sm-red-dark);
+  border: none;
+}
+
+.star-marx .clef-trigger {
+  margin-top: 0.3rem;
+  font-size: 0.78rem;
+  color: var(--sm-ink);
+  background: rgba(255, 255, 255, 0.4);
+  padding: 2px 6px;
+  border-left: 3px solid var(--sm-gold);
+}
+
+.star-marx .clef-reward {
+  margin-top: 0.3rem;
+  font-size: 0.8rem;
+  color: var(--sm-gold);
+  font-weight: 700;
+}
+
+.star-marx .clef-reward i {
+  margin-right: 0.3rem;
+}
+
+/* -------- Item sheet -------- */
+
+/* Pinned red/gold header, body scrolls. Mirrors the Kamarade layout:
+   window-content = flex column, header has flex-shrink:0, body fills the
+   remaining space and owns the only scrollbar. */
+.star-marx.item .window-content {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+}
+
+.star-marx.item .item-sheet__header {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(135deg, var(--sm-red) 0%, var(--sm-red-dark) 100%);
+  color: var(--sm-paper);
+  border-bottom: 3px solid var(--sm-gold);
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.star-marx.item .item-sheet__img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border: 2px solid var(--sm-gold);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.star-marx.item .item-sheet__heading {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+/* Same design as Kamarade's .charname so the item sheet's title input
+   matches the actor sheet visually. */
+.star-marx.item .item-sheet__name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--sm-gold);
+  color: var(--sm-paper);
+  padding: 2px 0;
+}
+
+.star-marx.item .item-sheet__name:focus {
+  outline: none;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.star-marx.item .item-sheet__type {
+  font-size: 0.75rem;
+  color: var(--sm-gold);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.star-marx.item .item-body {
+  padding: 0.75rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.star-marx.item .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.star-marx.item .form-group > label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  color: var(--sm-muted);
+}
+
+.star-marx.item .form-grid {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.star-marx.item .form-grid--2 { grid-template-columns: repeat(2, 1fr); }
+.star-marx.item .form-grid--4 { grid-template-columns: repeat(4, 1fr); }
+
+.star-marx.item .form-grid label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.75rem;
+  color: var(--sm-muted);
+  gap: 0.2rem;
+}
+
+.star-marx.item .checkbox-inline {
+  flex-direction: row !important;
+  align-items: center;
+  gap: 0.4rem !important;
+}
+
+/* Generic form inputs inside the item sheet — light-paper look. The header's
+   title input opts out via :not() so it keeps its red/gold underline style. */
+.star-marx.item input[type="text"]:not(.item-sheet__name),
+.star-marx.item input[type="number"],
+.star-marx.item select {
+  background: var(--sm-paper-alt);
+  border: 1px solid var(--sm-border);
+  padding: 3px 6px;
+}
+
+/* Hide the ProseMirror format toolbar (bold / italic / lists ...) when the
+   field is in view mode.  */
+.star-marx.item prose-mirror:has([contenteditable="false"]) .menu-container {
+  display: none;
 }

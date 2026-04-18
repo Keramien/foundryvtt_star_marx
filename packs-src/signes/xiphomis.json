@@ -1,0 +1,20 @@
+{
+  "_id": "sgrxiphomisAAAAA",
+  "name": "Xiphomis",
+  "type": "signe",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Race Xiphomis.</p><p>Le Kamarade a des <strong>ailes repliables</strong> et peut utiliser <strong>TCHERNOBYL</strong> pour tout ce qui touche au vol (ou a ce que le joueur imagine avec ses ailes).</p>",
+    "category": "racial",
+    "traitLink": "",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsigneracialAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgrxiphomisAAAAA"
+}

@@ -1,0 +1,33 @@
+<section class="item-body signe-body">
+
+  <div class="form-group">
+    <label>{{localize "STARMARX.Signe.Fields.Category"}}</label>
+    <select name="system.category">
+      <option value="general"     {{#if (eq system.category "general")}}selected{{/if}}>{{localize "STARMARX.Signe.Category.General"}}</option>
+      <option value="trait"       {{#if (eq system.category "trait")}}selected{{/if}}>{{localize "STARMARX.Signe.Category.Trait"}}</option>
+      <option value="racial"      {{#if (eq system.category "racial")}}selected{{/if}}>{{localize "STARMARX.Signe.Category.Racial"}}</option>
+      <option value="groupuscule" {{#if (eq system.category "groupuscule")}}selected{{/if}}>{{localize "STARMARX.Signe.Category.Groupuscule"}}</option>
+    </select>
+  </div>
+
+  {{#if (eq system.category "trait")}}
+    <div class="form-group">
+      <label>{{localize "STARMARX.Signe.Fields.TraitLink"}}</label>
+      <input type="text" name="system.traitLink" value="{{system.traitLink}}" placeholder="marteau.lutte">
+    </div>
+  {{/if}}
+
+  <div class="form-group">
+    <label class="checkbox-inline">
+      <input type="checkbox" name="system.bonus" {{#if system.bonus}}checked{{/if}}>
+      <span>{{localize "STARMARX.Signe.Fields.BonusLabel"}}</span>
+    </label>
+    <p class="hint">{{localize "STARMARX.Signe.Fields.BonusHint"}}</p>
+  </div>
+
+  <div class="form-group">
+    <label>{{localize "STARMARX.Sheet.Fields.Description"}}</label>
+    <prose-mirror name="system.description" value="{{system.description}}"></prose-mirror>
+  </div>
+
+</section>

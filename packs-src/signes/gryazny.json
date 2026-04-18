@@ -1,0 +1,20 @@
+{
+  "_id": "sgrgryaznyAAAAAA",
+  "name": "Gryazny",
+  "type": "signe",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Race Gryazny.</p><ul><li><strong>Adapte au vide</strong></li><li><strong>Jusqu'a 7 Kontrebandes maximum</strong> au lieu de 5 (collectionneur passionne)</li></ul><p><em>Note : les Gryaznyi sont tribaux et ne se jouent qu'en groupe. Points de vie, Armure et Traits sont un pot commun du groupe. Pour autonomiser les membres, prendre Acolyte, Larbin, etc.</em></p>",
+    "category": "racial",
+    "traitLink": "",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsigneracialAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgrgryaznyAAAAAA"
+}

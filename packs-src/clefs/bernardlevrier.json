@@ -1,0 +1,21 @@
+{
+  "_id": "clfbernardlevrie",
+  "name": "Clef de Bernard Lévrier",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>Le Kamarade est allé partout, il a tout vu, il a fait tous les métiers possibles et imaginables. Et bien évidemment, il sait tout faire mieux que les autres… Enfin, du moins, c'est ce qu'il prétend.</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": ""
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clfbernardlevrie"
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "sgtmemepaspeurAA",
+  "name": "Meme pas peur",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait BRISEUR DE GREVES.</p><p>Le Kamarade peut <strong>substituer son score en BRISEUR DE GREVE a celui de PRISONNIER POLITIQUE</strong> pour resister a la peur.</p>",
+    "category": "trait",
+    "traitLink": "marteau.briseurDeGreve",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtmemepaspeurAA"
+}

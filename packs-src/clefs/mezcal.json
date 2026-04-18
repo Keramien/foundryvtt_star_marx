@@ -1,0 +1,25 @@
+{
+  "_id": "clrmezcalAAAAAAA",
+  "name": "Clef du Mezcal",
+  "type": "clef",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Gusano.</p><p>Vous baignez dans l'alcool depuis la naissance, certes vous résistez mieux à l'éthanol qu'un moteur de tracteur Lada, mais tout n'est pas rose dans la vie d'un Gusano. Tout d'abord, vous risquez tout le temps de vous faire agresser par un alcoolique, qui vous extirpera de votre scaphandre pour vous abandonner, desséché, sur le bas-côté, tandis qu'il sifflera le fluide vital dans lequel vous baigniez. Ensuite il vous faut votre dose, c'est une nécessité qui ne saurait se faire oublier. Vous vous trouverez plus d'une fois à la recherche de n'importe quelle bouteille, vodka, alcool de cactus géant de Gardenishka 27, ou sang de Poulpot fermenté, peu vous importe tant que vous pouvez vous murger le milieu naturel, vous imbiber l'environnement immédiat et pocharder tout votre saoul.</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": ""
+  },
+  "effects": [],
+  "folder": "fldclefracialAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "starmarx": {
+      "racialOnly": "gusano"
+    }
+  },
+  "_key": "!items!clrmezcalAAAAAAA"
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "sgnrancunierAAAA",
+  "name": "Rancunier",
+  "type": "signe",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Historique du personnage justifiant ce Signe (a la discretion du Secretaire General).</p><p>Si un adversaire amene le Kamarade a <strong>0 PV</strong> en combat et que celui-ci <strong>survit</strong>, le personnage beneficie d'un <strong>+1 a tous ses jets en opposition</strong> contre cette personne, l'organisation qu'elle represente, ou le groupe auquel elle appartient. Le Secretaire General peut refuser si le joueur exagere l'extension.</p>",
+    "category": "general",
+    "traitLink": "",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignegeneralA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgnrancunierAAAA"
+}

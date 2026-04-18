@@ -1,0 +1,21 @@
+{
+  "_id": "clfdjAAAAAAAAAAA",
+  "name": "Clef du DJ",
+  "type": "clef",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "description": "<p>Le joueur prend le contrôle de la liste de lecture des musiques de la partie. Cette Clef lui rapporte un nombre de Zlotys à l'appréciation du Secrétaire Général. Ce dernier reste maître du bouton volume et il est libre de confisquer des Zlotys au joueur si celui-ci a décidé de sonoriser la scène de bagarre avec du Lana Fabiansk.</p>",
+    "active": true,
+    "racialOf": "",
+    "zlotyReward": 1,
+    "trigger": "<p>Zlotys attribués à l'appréciation du Secrétaire Général selon la pertinence de la bande-son ; il peut en confisquer pour une sonorisation ratée.</p>"
+  },
+  "effects": [],
+  "folder": "fldclefgeneralAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!clfdjAAAAAAAAAAA"
+}

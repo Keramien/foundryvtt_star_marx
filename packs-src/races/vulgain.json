@@ -1,0 +1,29 @@
+{
+  "_id": "racvulgainAAAAAA",
+  "name": "Vulgain",
+  "type": "race",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>Quasi-identiques aux humains sauf les oreilles pointues et une pilosite inversee (les poils poussent vers l'interieur). Pathologiquement timides. Expriment l'exact oppose de ce qu'ils pensent, enveloppe d'obscenites. Quasi-extermines apres avoir traduit l'Intersiderale.</p><p><strong>Signe Racial :</strong> Pas de Signe Racial specifique liste. La suggestion du MJ est de partir d'un template Humain et de personnaliser. Le pre-tire Vulgain utilise PRISONNIER POLITIQUE au lieu de KARKASS pour le calcul des PV et a \"La Fureur de Vivre\" comme Signe.</p>",
+    "traitBonuses": [],
+    "hpBonus": 0,
+    "zlotysBonus": 0,
+    "signesBonus": 0,
+    "traitPointsBonus": 0,
+    "restrictions": "<p>Clef Raciale Obligatoire (Logorrhee vulgaine) : le Vulgain doit exprimer l'oppose de ce qu'il pense, enveloppe dans des insultes originales.</p>",
+    "doctrinesAutorisees": {
+      "marteau": true,
+      "faucille": true,
+      "etoile": true
+    },
+    "signesRacialUuids": []
+  },
+  "effects": [],
+  "folder": "fldraceotherAAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!racvulgainAAAAAA"
+}

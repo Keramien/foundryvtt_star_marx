@@ -1,0 +1,31 @@
+{
+  "_id": "racduluskAAAAAAA",
+  "name": "Dulusk",
+  "type": "race",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>Heritage mixte issu de croisements passes avec toutes les races. Obsedes par la purete raciale et l'assortiment des couleurs.</p><p><strong>Signe Racial :</strong> Grace a leur heritage mixte, peuvent acceder au Signe Racial ou Clef Raciale de n'importe quelle autre race.</p>",
+    "traitBonuses": [],
+    "hpBonus": 0,
+    "zlotysBonus": 0,
+    "signesBonus": 0,
+    "traitPointsBonus": 0,
+    "restrictions": "<p>Clef Optionnelle (Clef du Nuancier) : juge les gens par leur couleur, pas par leurs actions.</p>",
+    "doctrinesAutorisees": {
+      "marteau": true,
+      "faucille": true,
+      "etoile": true
+    },
+    "signesRacialUuids": [
+      "Compendium.star_marx.signes.Item.sgrduluskAAAAAAA"
+    ]
+  },
+  "effects": [],
+  "folder": "fldraceotherAAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!racduluskAAAAAAA"
+}

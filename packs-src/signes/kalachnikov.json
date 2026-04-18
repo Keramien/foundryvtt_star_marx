@@ -1,0 +1,20 @@
+{
+  "_id": "sgtkalachnikovAA",
+  "name": "Kalachnikov",
+  "type": "signe",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "description": "<p><strong>Conditions requises :</strong> Trait AK 47.</p><p>Le Kamarade peut <strong>repartir les degats d'un tir entre plusieurs adversaires</strong>, a condition que la difficulte pour les toucher soit la meme (ou inferieure) que celle de la cible principale.</p><p><strong>Exemple :</strong> <em>Le soyouz de Dark Jack est envahi par des lapins de Ganymede. Avec 3 points de degats en AK 47, il peut en abattre 3 d'un coup (PV 1 chacun). Reste 97 rongeurs qui vont bientot se reproduire...</em></p>",
+    "category": "trait",
+    "traitLink": "marteau.ak47",
+    "racialOf": ""
+  },
+  "effects": [],
+  "folder": "fldsignetraitAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgtkalachnikovAA"
+}
