@@ -1,0 +1,19 @@
+{
+  "_id": "donprotectionAAA",
+  "name": "Protectionnisme",
+  "type": "don",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p>L'opposant n'est sensible qu'à certains Signes particuliers, à certaines technologies (électricité, champ magnétique, musique rock'n'roll à fond la caisse ou grosses poutrelles en fonte sur le coin du crâne).</p>",
+    "alias": "Immunité",
+    "rank": 1
+  },
+  "effects": [],
+  "folder": "fldongeneralAAAA",
+  "sort": 20,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!donprotectionAAA"
+}

@@ -45,7 +45,8 @@
       "clef":        {},
       "barda":       {},
       "faiblesse":   {},
-      "atout":       {}
+      "atout":       {},
+      "don":         {}
     }
   },
   "packs": [
@@ -67,6 +68,13 @@
       "name": "clefs",
       "label": "Clefs",
       "path": "packs/clefs",
+      "type": "Item",
+      "system": "star_marx"
+    },
+    {
+      "name": "dons",
+      "label": "Dons",
+      "path": "packs/dons",
       "type": "Item",
       "system": "star_marx"
     }

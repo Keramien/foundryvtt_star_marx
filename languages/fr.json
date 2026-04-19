@@ -174,7 +174,8 @@
         "clef": "Clef",
         "barda": "Barda",
         "faiblesse": "Faiblesse",
-        "atout": "Atout"
+        "atout": "Atout",
+        "don": "Don"
       },
       "Common": {
         "Description": "Description"
@@ -236,6 +237,13 @@
     "Atout": {
       "Bonus": "Bonus accordé",
       "Used": "Déjà utilisé ce scénario"
+    },
+    "Don": {
+      "Fields": {
+        "Alias": "Nom générique",
+        "Rank": "Rang"
+      },
+      "Hint": "Attribut réservé aux antagonistes (PNJ, monstres). Non achetable par un Kamarade."
     },
     "Notifications": {
       "RaceReplaced": "Race remplacée.",

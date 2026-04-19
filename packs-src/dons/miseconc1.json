@@ -1,0 +1,19 @@
+{
+  "_id": "donmiseconc1AAAA",
+  "name": "Mise en Concurrence 1",
+  "type": "don",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><strong>Effet au rang 1 :</strong> Cet opposant peut défier un des joueurs. Il obtient alors un bonus <strong>+1</strong> à sa dangerosité contre tout autre PJ qui l'attaquerait.</p>",
+    "alias": "Défi",
+    "rank": 1
+  },
+  "effects": [],
+  "folder": "fldongeneralAAAA",
+  "sort": 15,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!donmiseconc1AAAA"
+}

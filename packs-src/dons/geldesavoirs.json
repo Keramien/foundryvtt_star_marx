@@ -1,0 +1,19 @@
+{
+  "_id": "dongeldesavoirsA",
+  "name": "Gel des Avoirs",
+  "type": "don",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p>La cible de l'opposant est immobilisée et ne peut agir si elle rate son jet en MUSKLE avec un malus égal à la dangerosité de l'opposant. Une fois paralysée, la cible a droit à un jet en MUSKLE à chaque round pour se libérer. Un Kamarade paralysé est automatiquement touché par un opposant.</p>",
+    "alias": "Paralysie",
+    "rank": 1
+  },
+  "effects": [],
+  "folder": "fldongeneralAAAA",
+  "sort": 10,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!dongeldesavoirsA"
+}

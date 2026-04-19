@@ -1,0 +1,19 @@
+{
+  "_id": "dondeflationAAAA",
+  "name": "Déflation",
+  "type": "don",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p>Soit l'opposant est un mutant infectieux, soit c'est un sadique qui laisse des blessures qui handicapent le Kamarade. Si le personnage est blessé par l'opposant, il tombe malade ou souffre. Il subit un malus de –2 à tous ses jets jusqu'à sa guérison complète. La maladie ou le traumatisme dure (10 – KARKASS) jours. Il peut être soigné avec un jet réussi en DOPAGE avec un malus égal à la dangerosité de l'opposant.</p>",
+    "alias": "Maladie ou Traumatisme",
+    "rank": 1
+  },
+  "effects": [],
+  "folder": "fldongeneralAAAA",
+  "sort": 4,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!dondeflationAAAA"
+}

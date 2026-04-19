@@ -1,0 +1,19 @@
+{
+  "_id": "dondarwinismeAAA",
+  "name": "Darwinisme Social",
+  "type": "don",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p>L'opposant ignore l'armure des Kamarades.</p>",
+    "alias": "Brutal",
+    "rank": 1
+  },
+  "effects": [],
+  "folder": "fldongeneralAAAA",
+  "sort": 2,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!dondarwinismeAAA"
+}

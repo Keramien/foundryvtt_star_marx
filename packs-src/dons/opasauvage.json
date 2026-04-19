@@ -1,0 +1,19 @@
+{
+  "_id": "donopasauvageAAA",
+  "name": "O.P.A. Sauvage",
+  "type": "don",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p>Ce don peut être un pouvoir mutant, mais aussi, si le Secrétaire Général est adroit, être dû à un chantage ou tout autre moyen de pression… Le Kamarade doit réussir un jet en PRISONNIER POLITIQUE avec un malus égal à la dangerosité de l'opposant, sinon il doit obéir à ses ordres. L'opposant peut tenter cette action une fois par round, mais ne peut pas contrôler plusieurs personnes à la fois. L'opposant ne peut pas utiliser un autre don tant qu'il utilise celui-ci. Le Kamarade ne peut être forcé à se blesser lui-même, mais peut très bien aller briser les noix de ses compagnons.</p>",
+    "alias": "Domination",
+    "rank": 1
+  },
+  "effects": [],
+  "folder": "fldongeneralAAAA",
+  "sort": 18,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!donopasauvageAAA"
+}

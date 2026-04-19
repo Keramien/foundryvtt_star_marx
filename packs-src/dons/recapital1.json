@@ -1,0 +1,19 @@
+{
+  "_id": "donrecapital1AAA",
+  "name": "Recapitalisation Bancaire 1",
+  "type": "don",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><strong>Effet au rang 1 :</strong> L'opposant récupère <strong>1 point de vie</strong> à la fin de chaque round.</p>",
+    "alias": "Régénération",
+    "rank": 1
+  },
+  "effects": [],
+  "folder": "fldongeneralAAAA",
+  "sort": 21,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!donrecapital1AAA"
+}

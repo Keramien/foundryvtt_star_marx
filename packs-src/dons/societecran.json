@@ -1,0 +1,19 @@
+{
+  "_id": "donsocietecranAA",
+  "name": "Société Écran",
+  "type": "don",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p>L'opposant possède une Armure comme les Kamarades (qu'il peut utiliser 1, 2 voire 3 fois au bon vouloir du Secrétaire Général).</p>",
+    "alias": "Armure",
+    "rank": 1
+  },
+  "effects": [],
+  "folder": "fldongeneralAAAA",
+  "sort": 25,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!donsocietecranAA"
+}

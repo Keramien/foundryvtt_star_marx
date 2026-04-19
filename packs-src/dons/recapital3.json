@@ -1,0 +1,19 @@
+{
+  "_id": "donrecapital3AAA",
+  "name": "Recapitalisation Bancaire 3",
+  "type": "don",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><strong>Effet au rang 3 :</strong> L'opposant récupère <strong>3 points de vie</strong> à la fin de chaque round.</p>",
+    "alias": "Régénération",
+    "rank": 3
+  },
+  "effects": [],
+  "folder": "fldongeneralAAAA",
+  "sort": 23,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!donrecapital3AAA"
+}

@@ -1,0 +1,19 @@
+{
+  "_id": "donfluctuationsA",
+  "name": "Fluctuations Boursières",
+  "type": "don",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p>Les opposants bougent sans cesse et créent une horde d'individus indissociables. Les joueurs ne peuvent pas choisir de taper sur un tel ou un autre ; quand ils infligent des dégâts, le Secrétaire Général choisit au hasard sur quel ennemi ils les infligent.</p>",
+    "alias": "Chaos",
+    "rank": 1
+  },
+  "effects": [],
+  "folder": "fldongeneralAAAA",
+  "sort": 9,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!donfluctuationsA"
+}

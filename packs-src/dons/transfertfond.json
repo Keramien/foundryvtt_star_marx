@@ -1,0 +1,19 @@
+{
+  "_id": "dontransfertfond",
+  "name": "Transfert de Fonds",
+  "type": "don",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p>L'opposant est capable de filer un petit coup de main à ses complices. Soit il rend 2 points de vie à chacun d'eux à chaque tour, soit il peut rendre jusqu'à 4 points de vie qu'il peut distribuer où bon lui semble. Lui-même ne bénéficie pas des effets de ce don. La quantité de points de vie soignés peut bien sûr être modifiée par le Secrétaire Général selon la difficulté de la rencontre.</p>",
+    "alias": "Soin",
+    "rank": 1
+  },
+  "effects": [],
+  "folder": "fldongeneralAAAA",
+  "sort": 28,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!dontransfertfond"
+}

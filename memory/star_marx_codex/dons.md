@@ -35,19 +35,13 @@ Quand il passe à zéro point de vie, l'opposant prend la fuite, sans qu'il soit
 
 **Effet au rang 1 :** Tant que cet opposant est vivant et qu'il donne des ordres, les autres adversaires voient leur dangerosité et leurs dégâts augmentés de **+1**.
 
-Ce don est, hélas, cumulable. Chaque rang supplémentaire augmente le bonus d'encore +1.
-
 ### D.R.H. 2 (CAPITAINE)
 
 **Effet au rang 2 :** Tant que cet opposant est vivant et qu'il donne des ordres, les autres adversaires voient leur dangerosité et leurs dégâts augmentés de **+2**.
 
-Ce don est cumulable. Chaque rang supplémentaire augmente le bonus d'encore +1.
-
 ### D.R.H. 3 (CAPITAINE)
 
 **Effet au rang 3 :** Tant que cet opposant est vivant et qu'il donne des ordres, les autres adversaires voient leur dangerosité et leurs dégâts augmentés de **+3**.
-
-Ce don est cumulable. Chaque rang supplémentaire augmente le bonus d'encore +1.
 
 ### FLUCTUATIONS BOURSIÈRES (CHAOS)
 
@@ -77,19 +71,13 @@ Les opposants attaquent les Kamarades de tous les côtés. Tant qu'il y a plus d
 
 **Effet au rang 1 :** Cet opposant peut défier un des joueurs. Il obtient alors un bonus **+1** à sa dangerosité contre tout autre PJ qui l'attaquerait.
 
-Ce don est, hélas, cumulable. Chaque rang supplémentaire augmente le bonus d'encore +1.
-
 ### MISE EN CONCURRENCE 2 (DÉFI)
 
 **Effet au rang 2 :** Cet opposant peut défier un des joueurs. Il obtient alors un bonus **+2** à sa dangerosité contre tout autre PJ qui l'attaquerait.
 
-Ce don est cumulable. Chaque rang supplémentaire augmente le bonus d'encore +1.
-
 ### MISE EN CONCURRENCE 3 (DÉFI)
 
 **Effet au rang 3 :** Cet opposant peut défier un des joueurs. Il obtient alors un bonus **+3** à sa dangerosité contre tout autre PJ qui l'attaquerait.
-
-Ce don est cumulable. Chaque rang supplémentaire augmente le bonus d'encore +1.
 
 ### O.P.A. SAUVAGE (DOMINATION)
 
@@ -107,19 +95,13 @@ L'opposant n'est sensible qu'à certains Signes particuliers, à certaines techn
 
 **Effet au rang 1 :** L'opposant récupère **1 point de vie** à la fin de chaque round.
 
-Ce don peut évidemment être pris plusieurs fois. Chaque rang supplémentaire ajoute +1 point de vie regagné par round.
-
 ### RECAPITALISATION BANCAIRE 2 (RÉGÉNÉRATION)
 
 **Effet au rang 2 :** L'opposant récupère **2 points de vie** à la fin de chaque round.
 
-Ce don peut évidemment être pris plusieurs fois. Chaque rang supplémentaire ajoute +1 point de vie regagné par round.
-
 ### RECAPITALISATION BANCAIRE 3 (RÉGÉNÉRATION)
 
 **Effet au rang 3 :** L'opposant récupère **3 points de vie** à la fin de chaque round.
-
-Ce don peut évidemment être pris plusieurs fois. Chaque rang supplémentaire ajoute +1 point de vie regagné par round.
 
 ### RÉCESSION (TERRIFIANT)
 

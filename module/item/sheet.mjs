@@ -26,7 +26,8 @@ export class StarMarxItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
     const bodyByType = {
       race:  `systems/${SYSTEM_ID}/templates/item/parts/race.hbs`,
       signe: `systems/${SYSTEM_ID}/templates/item/parts/signe.hbs`,
-      clef:  `systems/${SYSTEM_ID}/templates/item/parts/clef.hbs`
+      clef:  `systems/${SYSTEM_ID}/templates/item/parts/clef.hbs`,
+      don:   `systems/${SYSTEM_ID}/templates/item/parts/don.hbs`
     };
     if (parts.body && bodyByType[type]) {
       parts.body = { ...parts.body, template: bodyByType[type] };

@@ -1,0 +1,19 @@
+{
+  "_id": "dontauxinteretAA",
+  "name": "Taux d'Intérêt",
+  "type": "don",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p>L'opposant est un colosse, ses coups sont impressionnants. Chaque fois qu'un Kamarade reçoit des dommages venant de ce géant, il doit faire un jet en KARKASS de seuil 12, s'il ne veut pas en plus gagner une Faiblesse (côtes brisées, épaule déboîtée, etc.), qui lui appliquera un malus de –2 lorsque le Secrétaire Général estimera que la situation l'exige.</p>",
+    "alias": "Briseur d'Os",
+    "rank": 1
+  },
+  "effects": [],
+  "folder": "fldongeneralAAAA",
+  "sort": 27,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!dontauxinteretAA"
+}

@@ -1,0 +1,19 @@
+{
+  "_id": "donmiseconc3AAAA",
+  "name": "Mise en Concurrence 3",
+  "type": "don",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><strong>Effet au rang 3 :</strong> Cet opposant peut défier un des joueurs. Il obtient alors un bonus <strong>+3</strong> à sa dangerosité contre tout autre PJ qui l'attaquerait.</p>",
+    "alias": "Défi",
+    "rank": 3
+  },
+  "effects": [],
+  "folder": "fldongeneralAAAA",
+  "sort": 17,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!donmiseconc3AAAA"
+}

@@ -1,0 +1,19 @@
+{
+  "_id": "dondrh1AAAAAAAAA",
+  "name": "D.R.H. 1",
+  "type": "don",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><strong>Effet au rang 1 :</strong> Tant que cet opposant est vivant et qu'il donne des ordres, les autres adversaires voient leur dangerosité et leurs dégâts augmentés de <strong>+1</strong>.</p>",
+    "alias": "Capitaine",
+    "rank": 1
+  },
+  "effects": [],
+  "folder": "fldongeneralAAAA",
+  "sort": 6,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!dondrh1AAAAAAAAA"
+}

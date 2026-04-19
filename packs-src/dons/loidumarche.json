@@ -1,0 +1,19 @@
+{
+  "_id": "donloidumarcheAA",
+  "name": "Loi du Marché",
+  "type": "don",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p>L'opposant ne pardonne aucune erreur, à la recherche de la moindre faille dans la défense du Kamarade, il exploite les faiblesses de nos héros pour porter des attaques fatales. Face à lui, le joueur obtient un échec critique sur un 2 (double 1), mais aussi sur un 3… (Rappel : nous préconisons qu'il encaisse alors le double des dégâts.)</p>",
+    "alias": "Sans Pitié",
+    "rank": 1
+  },
+  "effects": [],
+  "folder": "fldongeneralAAAA",
+  "sort": 12,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!donloidumarcheAA"
+}

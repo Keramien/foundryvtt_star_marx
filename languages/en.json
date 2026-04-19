@@ -174,7 +174,8 @@
         "clef": "Key",
         "barda": "Gear",
         "faiblesse": "Weakness",
-        "atout": "Trump"
+        "atout": "Trump",
+        "don": "Gift"
       },
       "Common": {
         "Description": "Description"
@@ -236,6 +237,13 @@
     "Atout": {
       "Bonus": "Bonus granted",
       "Used": "Used this scenario"
+    },
+    "Don": {
+      "Fields": {
+        "Alias": "Generic name",
+        "Rank": "Rank"
+      },
+      "Hint": "Antagonist-only attribute (NPCs, monsters). Cannot be bought by a Kamarade."
     },
     "Notifications": {
       "RaceReplaced": "Race replaced.",

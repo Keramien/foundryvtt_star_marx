@@ -1,0 +1,19 @@
+{
+  "_id": "donmanagementAAA",
+  "name": "Management",
+  "type": "don",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p>Une fois par tour, par ses encouragements, l'opposant permet à un autre de vos adversaires de doubler ses dégâts.</p>",
+    "alias": "Boost",
+    "rank": 1
+  },
+  "effects": [],
+  "folder": "fldongeneralAAAA",
+  "sort": 13,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!donmanagementAAA"
+}

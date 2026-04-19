@@ -1,0 +1,19 @@
+{
+  "_id": "dondrh3AAAAAAAAA",
+  "name": "D.R.H. 3",
+  "type": "don",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><strong>Effet au rang 3 :</strong> Tant que cet opposant est vivant et qu'il donne des ordres, les autres adversaires voient leur dangerosité et leurs dégâts augmentés de <strong>+3</strong>.</p>",
+    "alias": "Capitaine",
+    "rank": 3
+  },
+  "effects": [],
+  "folder": "fldongeneralAAAA",
+  "sort": 8,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!dondrh3AAAAAAAAA"
+}

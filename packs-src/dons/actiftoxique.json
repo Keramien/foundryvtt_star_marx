@@ -1,0 +1,19 @@
+{
+  "_id": "donactiftoxiqueA",
+  "name": "Actif Toxique",
+  "type": "don",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p>Les blessures du Kamarade ne guérissent pas et ne peuvent être soignées que par des soins avec beaucoup de matériel. Un monstre ou un opposant qui possède ce don est immunisé ou mithridatisé à tous les poisons.</p>",
+    "alias": "Poison",
+    "rank": 1
+  },
+  "effects": [],
+  "folder": "fldongeneralAAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!donactiftoxiqueA"
+}

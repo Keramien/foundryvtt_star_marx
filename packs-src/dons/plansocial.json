@@ -1,0 +1,19 @@
+{
+  "_id": "donplansocialAAA",
+  "name": "Plan Social",
+  "type": "don",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p>Plutôt que d'encaisser une blessure, cet opposant peut choisir de sacrifier un de ses subordonnés.</p>",
+    "alias": "Tyran",
+    "rank": 1
+  },
+  "effects": [],
+  "folder": "fldongeneralAAAA",
+  "sort": 19,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!donplansocialAAA"
+}

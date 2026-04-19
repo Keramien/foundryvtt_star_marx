@@ -1,0 +1,19 @@
+{
+  "_id": "dondelocalisatAA",
+  "name": "Délocalisation",
+  "type": "don",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p>Quand il passe à zéro point de vie, l'opposant prend la fuite, sans qu'il soit possible de le capturer. Parfait pour les méchants récurrents, même s'il vaut mieux prévoir une explication pour les Kamarades.</p>",
+    "alias": "Fuite",
+    "rank": 1
+  },
+  "effects": [],
+  "folder": "fldongeneralAAAA",
+  "sort": 5,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!dondelocalisatAA"
+}

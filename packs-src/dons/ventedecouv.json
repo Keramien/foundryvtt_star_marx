@@ -1,0 +1,19 @@
+{
+  "_id": "donventedecouvAA",
+  "name": "Vente à Découvert",
+  "type": "don",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p>L'opposant est vicieux et imprévisible, tout en feintes et en coups bas. Le Kamarade qui l'affronte ne jette plus deux dés mais trois, et il conserve les deux plus mauvais jets.</p>",
+    "alias": "Tricheur",
+    "rank": 1
+  },
+  "effects": [],
+  "folder": "fldongeneralAAAA",
+  "sort": 29,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!donventedecouvAA"
+}

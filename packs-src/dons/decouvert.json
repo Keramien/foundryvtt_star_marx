@@ -1,0 +1,19 @@
+{
+  "_id": "dondecouvertAAAA",
+  "name": "Découvert Autorisé",
+  "type": "don",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p>Une fois qu'il passe en dessous d'une certaine barre de points de vie (à définir), cet opposant gagne un bonus à ses dégâts et sa dangerosité.</p>",
+    "alias": "Second Souffle",
+    "rank": 1
+  },
+  "effects": [],
+  "folder": "fldongeneralAAAA",
+  "sort": 3,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!dondecouvertAAAA"
+}

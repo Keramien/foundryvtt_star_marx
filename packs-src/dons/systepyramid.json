@@ -1,0 +1,19 @@
+{
+  "_id": "donsystepyramidA",
+  "name": "Système Pyramidal",
+  "type": "don",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p>Lors du premier tour, l'opposant n'encaisse pas de blessures, même si les Kamarades réussissent leurs jets d'attaque.</p>",
+    "alias": "Embuscade",
+    "rank": 1
+  },
+  "effects": [],
+  "folder": "fldongeneralAAAA",
+  "sort": 26,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!donsystepyramidA"
+}

@@ -1,0 +1,19 @@
+{
+  "_id": "donrecessionAAAA",
+  "name": "Récession",
+  "type": "don",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p>L'opposant est très menaçant ou lourdement armé, etc. Un Kamarade qui voit cet adversaire doit faire un jet en PRISONNIER POLITIQUE avec un malus égal à la dangerosité de l'opposant. S'il échoue, il fuit le plus loin possible, sans combattre. Il a droit à un jet en PRISONNIER POLITIQUE par tour avec un malus égal à la dangerosité de l'opposant pour retrouver ses esprits.</p>",
+    "alias": "Terrifiant",
+    "rank": 1
+  },
+  "effects": [],
+  "folder": "fldongeneralAAAA",
+  "sort": 24,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!donrecessionAAAA"
+}
