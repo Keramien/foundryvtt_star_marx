@@ -1,0 +1,31 @@
+{
+  "_id": "enmchienssarkAAA",
+  "_key": "!actors!enmchienssarkAAA",
+  "name": "Chiens de Sark",
+  "type": "enemy",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "dangerosite": -2,
+    "degats": 2,
+    "health": {
+      "value": 4,
+      "max": 4
+    },
+    "description": "Meute de chiens à demi robotisés contrôlés par les I.A. Assiègent la machine de projection du planétarium où sont perchés les survivants de la milice anti-I.A.",
+    "notes": ""
+  },
+  "prototypeToken": {
+    "name": "Chiens de Sark",
+    "displayName": 0,
+    "actorLink": false,
+    "disposition": -1
+  },
+  "items": [],
+  "effects": [],
+  "folder": "fldenpetrogradAA",
+  "sort": 14,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

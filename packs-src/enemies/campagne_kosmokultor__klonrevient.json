@@ -1,0 +1,33 @@
+{
+  "_id": "enmklonrevientAA",
+  "_key": "!actors!enmklonrevientAA",
+  "name": "Klon revient (Acte 2)",
+  "type": "enemy",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "dangerosite": 5,
+    "degats": 1,
+    "health": {
+      "value": 8,
+      "max": 8
+    },
+    "description": "Le Klon, les crocs en moins, revient avec un presse-purée en guise de massue.",
+    "notes": ""
+  },
+  "prototypeToken": {
+    "name": "Klon revient (Acte 2)",
+    "displayName": 0,
+    "actorLink": false,
+    "disposition": -1
+  },
+  "items": [
+    "edntauxinteretAA"
+  ],
+  "effects": [],
+  "folder": "fldenkosmokultAA",
+  "sort": 23,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

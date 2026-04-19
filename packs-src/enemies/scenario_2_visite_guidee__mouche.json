@@ -1,0 +1,31 @@
+{
+  "_id": "enmmoucheAAAAAAA",
+  "_key": "!actors!enmmoucheAAAAAAA",
+  "name": "La mouche",
+  "type": "enemy",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "dangerosite": -2,
+    "degats": 0,
+    "health": {
+      "value": 1,
+      "max": 1
+    },
+    "description": "L'insecte qui tourmente les statues. PV=1 si attaquée en AK 47 / Lutte, sinon PV=15 sur d'autres terrains (Prisonnier Politique, Social Traître...). Dégâts variables — amenuisent la patience de la victime.",
+    "notes": ""
+  },
+  "prototypeToken": {
+    "name": "La mouche",
+    "displayName": 0,
+    "actorLink": false,
+    "disposition": -1
+  },
+  "items": [],
+  "effects": [],
+  "folder": "fldenmuseeAAAAAA",
+  "sort": 7,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

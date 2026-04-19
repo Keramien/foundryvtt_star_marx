@@ -2,7 +2,8 @@
   "STARMARX": {
     "Actor": {
       "Type": {
-        "kamarade": "Kamarade"
+        "kamarade": "Kamarade",
+        "enemy": "Ennemi"
       },
       "Details": {
         "Doctrine": "Doctrine",
@@ -65,6 +66,7 @@
         "Equipement": "Équipement"
       },
       "KamaradeLabel": "Fiche Kamarade",
+      "EnemyLabel": "Fiche Ennemi",
       "ItemLabel": "Fiche d'objet Star Marx",
       "Fields": {
         "Name": "Nom",
@@ -244,6 +246,20 @@
         "Rank": "Rang"
       },
       "Hint": "Attribut réservé aux antagonistes (PNJ, monstres). Non achetable par un Kamarade."
+    },
+    "Enemy": {
+      "NamePlaceholder": "Nom de l'ennemi",
+      "Fields": {
+        "Dangerosite": "Dangerosité",
+        "Degats": "Dégâts"
+      },
+      "Sections": {
+        "Dons": "Dons"
+      },
+      "Action": {
+        "AddDon": "Ajouter un don",
+        "DropDonHere": "Glissez un Don depuis le compendium"
+      }
     },
     "Notifications": {
       "RaceReplaced": "Race remplacée.",

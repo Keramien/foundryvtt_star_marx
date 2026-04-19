@@ -1,0 +1,33 @@
+{
+  "_id": "enmmolosseAAAAAA",
+  "_key": "!actors!enmmolosseAAAAAA",
+  "name": "Molosse",
+  "type": "enemy",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "dangerosite": -4,
+    "degats": 3,
+    "health": {
+      "value": 7,
+      "max": 7
+    },
+    "description": "Meneur optionnel de la meute de chiens de Sark.",
+    "notes": ""
+  },
+  "prototypeToken": {
+    "name": "Molosse",
+    "displayName": 0,
+    "actorLink": false,
+    "disposition": -1
+  },
+  "items": [
+    "edndrh1AAAAAAAAA"
+  ],
+  "effects": [],
+  "folder": "fldenpetrogradAA",
+  "sort": 15,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

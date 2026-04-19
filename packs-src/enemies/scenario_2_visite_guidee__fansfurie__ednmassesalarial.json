@@ -1,0 +1,17 @@
+{
+  "_id": "ednmassesalarial",
+  "name": "Masse Salariale",
+  "type": "don",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p>Les opposants attaquent les Kamarades de tous les côtés. Tant qu'il y a plus d'opposants que de Kamarades, ces derniers perdent soit 1 point de vie à la fin de chaque round, soit un point de vie par opposant surnuméraire ! Le choix incombe bien entendu au Secrétaire Général.</p>",
+    "alias": "Encerclement",
+    "rank": 1
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!actors.items!enmfansfurieAAAA.ednmassesalarial"
+}

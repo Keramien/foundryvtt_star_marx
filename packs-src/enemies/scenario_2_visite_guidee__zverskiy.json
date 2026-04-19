@@ -1,0 +1,38 @@
+{
+  "_id": "enmzverskiyAAAAA",
+  "_key": "!actors!enmzverskiyAAAAA",
+  "name": "Zverskiy",
+  "type": "enemy",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "dangerosite": 7,
+    "degats": 3,
+    "health": {
+      "value": 15,
+      "max": 15
+    },
+    "description": "Chef des gardiens du musée, chauve et brutal. Némésis d'un Kamarade désigné par le destin. Confrontation modulable en Zlotys (1/2/3 dés selon le coût).",
+    "notes": ""
+  },
+  "prototypeToken": {
+    "name": "Zverskiy",
+    "displayName": 0,
+    "actorLink": false,
+    "disposition": -1
+  },
+  "items": [
+    "edndarwinismeAAA",
+    "edndrh2AAAAAAAAA",
+    "ednmanagementAAA",
+    "ednmiseconc2AAAA",
+    "ednrecessionAAAA",
+    "ednventedecouvAA"
+  ],
+  "effects": [],
+  "folder": "fldenmuseeAAAAAA",
+  "sort": 8,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

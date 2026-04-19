@@ -1,0 +1,85 @@
+<section class="enemy-body">
+
+  <header class="kamarade-header">
+    <img class="kamarade-avatar" src="{{actor.img}}" data-edit="img" alt="{{actor.name}}">
+    <div class="kamarade-header__titles">
+      <input type="text" name="name" value="{{actor.name}}" placeholder="{{localize 'STARMARX.Enemy.NamePlaceholder'}}" class="charname">
+    </div>
+  </header>
+
+  <div class="enemy-content">
+
+  <div class="stats-row">
+    <div class="stat-block stat-danger">
+      <h3>{{localize "STARMARX.Enemy.Fields.Dangerosite"}}</h3>
+      <div class="stat-values">
+        <input type="number" name="system.dangerosite" value="{{system.dangerosite}}">
+      </div>
+    </div>
+
+    <div class="stat-block stat-damage">
+      <h3>{{localize "STARMARX.Enemy.Fields.Degats"}}</h3>
+      <div class="stat-values">
+        <input type="number" name="system.degats" value="{{system.degats}}" min="0">
+      </div>
+    </div>
+
+    <div class="stat-block stat-hp">
+      <h3>{{localize "STARMARX.Actor.Health.Label"}}</h3>
+      <div class="stat-values">
+        <input type="number" name="system.health.value" value="{{system.health.value}}" min="0">
+        <span class="sep">/</span>
+        <input type="number" name="system.health.max" value="{{system.health.max}}" min="0" class="stat-max">
+      </div>
+    </div>
+  </div>
+
+  <div class="signe-block">
+    <header class="signe-block__header">
+      <h2>{{localize "STARMARX.Enemy.Sections.Dons"}}</h2>
+      <div class="counter">{{dons.length}}</div>
+      <button type="button" class="add-btn" data-action="itemCreate" data-item-type="don">
+        <i class="fa-solid fa-plus"></i> {{localize "STARMARX.Enemy.Action.AddDon"}}
+      </button>
+    </header>
+    {{#if dons.length}}
+      <ul class="item-list">
+        {{#each dons}}
+          <li class="item-row" data-item-id="{{this.id}}">
+            <img class="item-img" src="{{this.img}}" alt="">
+            <div class="item-body">
+              <h4 class="item-name">
+                {{this.name}}
+                {{#if this.system.alias}}<span class="badge">{{this.system.alias}}</span>{{/if}}
+                {{#if (gt this.system.rank 1)}}<span class="badge">{{localize "STARMARX.Don.Fields.Rank"}} {{this.system.rank}}</span>{{/if}}
+              </h4>
+              <div class="item-desc">{{{this.system.description}}}</div>
+            </div>
+            <div class="item-actions">
+              <button type="button" data-action="itemEdit" title="{{localize 'STARMARX.Sheet.Action.Edit'}}"><i class="fa-solid fa-pen"></i></button>
+              <button type="button" data-action="itemDelete" title="{{localize 'STARMARX.Sheet.Action.Delete'}}"><i class="fa-solid fa-trash"></i></button>
+            </div>
+          </li>
+        {{/each}}
+      </ul>
+    {{else}}
+      <div class="drop-zone">
+        <i class="fa-solid fa-skull"></i>
+        <p>{{localize "STARMARX.Enemy.Action.DropDonHere"}}</p>
+      </div>
+    {{/if}}
+  </div>
+
+  <div class="narrative-block">
+    <h3>{{localize "STARMARX.Sheet.Fields.Description"}}</h3>
+    <textarea name="system.description" rows="4">{{system.description}}</textarea>
+  </div>
+
+  <div class="narrative-block">
+    <h3>{{localize "STARMARX.Actor.Details.Notes"}}</h3>
+    <textarea name="system.notes" rows="3">{{system.notes}}</textarea>
+  </div>
+
+  </div>
+
+</section>

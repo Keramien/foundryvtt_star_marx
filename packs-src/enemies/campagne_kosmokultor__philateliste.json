@@ -1,0 +1,31 @@
+{
+  "_id": "enmphilatelisteA",
+  "_key": "!actors!enmphilatelisteA",
+  "name": "Philatéliste drogué de Rakatansky 11",
+  "type": "enemy",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "dangerosite": 2,
+    "degats": 3,
+    "health": {
+      "value": 1,
+      "max": 1
+    },
+    "description": "Canarde les Kamarades à la cloueuse. Peut-être un fan de safari galactique en goguette.",
+    "notes": ""
+  },
+  "prototypeToken": {
+    "name": "Philatéliste drogué de Rakatansky 11",
+    "displayName": 0,
+    "actorLink": false,
+    "disposition": -1
+  },
+  "items": [],
+  "effects": [],
+  "folder": "fldenkosmokultAA",
+  "sort": 28,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

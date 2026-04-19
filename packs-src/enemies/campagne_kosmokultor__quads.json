@@ -1,0 +1,31 @@
+{
+  "_id": "enmquadsAAAAAAAA",
+  "_key": "!actors!enmquadsAAAAAAAA",
+  "name": "Quads avec lanceurs de brochettes",
+  "type": "enemy",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "dangerosite": 2,
+    "degats": 2,
+    "health": {
+      "value": 2,
+      "max": 2
+    },
+    "description": "Équipés de lanceurs de brochettes (dégâts directs). Manœuvre spéciale « Abordage » : convertissent leurs dégâts en 2 ou 3 dévoreurs qui sautent sur le tracteur des Kamarades.",
+    "notes": ""
+  },
+  "prototypeToken": {
+    "name": "Quads avec lanceurs de brochettes",
+    "displayName": 0,
+    "actorLink": false,
+    "disposition": -1
+  },
+  "items": [],
+  "effects": [],
+  "folder": "fldenkosmokultAA",
+  "sort": 29,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,33 @@
+{
+  "_id": "enmshamancroissA",
+  "_key": "!actors!enmshamancroissA",
+  "name": "Shaman de Croissance Non Jugulée",
+  "type": "enemy",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "dangerosite": 4,
+    "degats": 3,
+    "health": {
+      "value": 7,
+      "max": 7
+    },
+    "description": "Meneur des Troglobanquiers. Conduit la meute lors de la chasse finale dans l'épave.",
+    "notes": ""
+  },
+  "prototypeToken": {
+    "name": "Shaman de Croissance Non Jugulée",
+    "displayName": 0,
+    "actorLink": false,
+    "disposition": -1
+  },
+  "items": [
+    "edndrh1AAAAAAAAA"
+  ],
+  "effects": [],
+  "folder": "fldenvoiceAAAAAA",
+  "sort": 4,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

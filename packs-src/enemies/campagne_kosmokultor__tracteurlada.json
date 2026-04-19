@@ -1,0 +1,31 @@
+{
+  "_id": "enmtracteurladaA",
+  "_key": "!actors!enmtracteurladaA",
+  "name": "Vieux tracteur Lada",
+  "type": "enemy",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "dangerosite": 2,
+    "degats": 0,
+    "health": {
+      "value": 5,
+      "max": 5
+    },
+    "description": "Dégâts spéciaux : si le tracteur touche, gaz d'échappement — chaque Kamarade à bord teste en KARKASS ou perd 1 PV. Peut aussi éperonner le véhicule pour 2 dégâts.",
+    "notes": ""
+  },
+  "prototypeToken": {
+    "name": "Vieux tracteur Lada",
+    "displayName": 0,
+    "actorLink": false,
+    "disposition": -1
+  },
+  "items": [],
+  "effects": [],
+  "folder": "fldenkosmokultAA",
+  "sort": 31,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

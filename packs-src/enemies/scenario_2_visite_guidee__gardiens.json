@@ -1,0 +1,31 @@
+{
+  "_id": "enmgardiensAAAAA",
+  "_key": "!actors!enmgardiensAAAAA",
+  "name": "Gardiens du musée",
+  "type": "enemy",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "dangerosite": 2,
+    "degats": 2,
+    "health": {
+      "value": 8,
+      "max": 8
+    },
+    "description": "Un gardien par Kamarade. Armés de sarbacanes à fléchettes au curare de Rigel (paralysie). Mithridatisés contre leur propre poison. Sous l'effet de D.R.H. et Management de Zverskiy tant qu'il est présent.",
+    "notes": ""
+  },
+  "prototypeToken": {
+    "name": "Gardiens du musée",
+    "displayName": 0,
+    "actorLink": false,
+    "disposition": -1
+  },
+  "items": [],
+  "effects": [],
+  "folder": "fldenmuseeAAAAAA",
+  "sort": 9,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

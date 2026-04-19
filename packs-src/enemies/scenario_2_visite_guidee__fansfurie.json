@@ -1,0 +1,33 @@
+{
+  "_id": "enmfansfurieAAAA",
+  "_key": "!actors!enmfansfurieAAAA",
+  "name": "Fans en furie",
+  "type": "enemy",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "dangerosite": 0,
+    "degats": 1,
+    "health": {
+      "value": 1,
+      "max": 1
+    },
+    "description": "Foule d'ouvriers klonenbourg déchaînés par la bière à 63°. Quatre fois plus nombreux que les PJ.",
+    "notes": ""
+  },
+  "prototypeToken": {
+    "name": "Fans en furie",
+    "displayName": 0,
+    "actorLink": false,
+    "disposition": -1
+  },
+  "items": [
+    "ednmassesalarial"
+  ],
+  "effects": [],
+  "folder": "fldenmuseeAAAAAA",
+  "sort": 6,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

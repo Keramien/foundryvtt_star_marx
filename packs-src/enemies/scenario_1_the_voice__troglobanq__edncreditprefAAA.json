@@ -1,0 +1,17 @@
+{
+  "_id": "edncreditprefAAA",
+  "name": "Crédit Préférentiel",
+  "type": "don",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p>Une fois que l'opposant a mordu ou saisi sa proie, il ne la lâche plus et elle perd un point de vie par tour.</p>",
+    "alias": "Morsure",
+    "rank": 1
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!actors.items!enmtroglobanqAAA.edncreditprefAAA"
+}

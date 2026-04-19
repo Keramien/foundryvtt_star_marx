@@ -1,0 +1,33 @@
+{
+  "_id": "enmfansa1emeches",
+  "_key": "!actors!enmfansa1emeches",
+  "name": "Fans anonymes émêchés",
+  "type": "enemy",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "dangerosite": 0,
+    "degats": 1,
+    "health": {
+      "value": 1,
+      "max": 1
+    },
+    "description": "1D6 fans passablement émêchés et emplis de l'envie de saucisses.",
+    "notes": ""
+  },
+  "prototypeToken": {
+    "name": "Fans anonymes émêchés",
+    "displayName": 0,
+    "actorLink": false,
+    "disposition": -1
+  },
+  "items": [
+    "ednmassesalarial"
+  ],
+  "effects": [],
+  "folder": "fldenkosmokultAA",
+  "sort": 18,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

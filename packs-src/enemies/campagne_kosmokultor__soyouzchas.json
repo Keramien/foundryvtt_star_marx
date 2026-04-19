@@ -1,0 +1,31 @@
+{
+  "_id": "enmsoyouzchasAAA",
+  "_key": "!actors!enmsoyouzchasAAA",
+  "name": "Soyouz chasseur",
+  "type": "enemy",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "dangerosite": 3,
+    "degats": 0,
+    "health": {
+      "value": 3,
+      "max": 3
+    },
+    "description": "Dégâts spéciaux : pas d'armes, mais diffuse du Mijail Mathieu à toute berzingue. À chaque survol, les Kamarades testent en PRISONNIER POLITIQUE ou subissent -1 à leur prochain jet.",
+    "notes": ""
+  },
+  "prototypeToken": {
+    "name": "Soyouz chasseur",
+    "displayName": 0,
+    "actorLink": false,
+    "disposition": -1
+  },
+  "items": [],
+  "effects": [],
+  "folder": "fldenkosmokultAA",
+  "sort": 32,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,31 @@
+{
+  "_id": "enmtroglanonAAAA",
+  "_key": "!actors!enmtroglanonAAAA",
+  "name": "Troglobanquier anonyme",
+  "type": "enemy",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "dangerosite": 0,
+    "degats": 1,
+    "health": {
+      "value": 1,
+      "max": 1
+    },
+    "description": "Piétaille isolée de la tribu des Troglobanquiers.",
+    "notes": ""
+  },
+  "prototypeToken": {
+    "name": "Troglobanquier anonyme",
+    "displayName": 0,
+    "actorLink": false,
+    "disposition": -1
+  },
+  "items": [],
+  "effects": [],
+  "folder": "fldenvoiceAAAAAA",
+  "sort": 2,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

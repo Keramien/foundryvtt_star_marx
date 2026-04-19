@@ -1,0 +1,33 @@
+{
+  "_id": "enmkosmoroutierA",
+  "_key": "!actors!enmkosmoroutierA",
+  "name": "Kosmoroutier ivre",
+  "type": "enemy",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "dangerosite": 2,
+    "degats": 1,
+    "health": {
+      "value": 8,
+      "max": 8
+    },
+    "description": "Gros kosmoroutier vindicatif, ivre, lance-projectile à clous rouillés en main.",
+    "notes": ""
+  },
+  "prototypeToken": {
+    "name": "Kosmoroutier ivre",
+    "displayName": 0,
+    "actorLink": false,
+    "disposition": -1
+  },
+  "items": [
+    "edninflationAAAA"
+  ],
+  "effects": [],
+  "folder": "fldenvoiceAAAAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

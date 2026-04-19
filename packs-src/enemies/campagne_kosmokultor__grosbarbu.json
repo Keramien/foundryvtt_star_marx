@@ -1,0 +1,31 @@
+{
+  "_id": "enmgrosbarbuAAAA",
+  "_key": "!actors!enmgrosbarbuAAAA",
+  "name": "Gros barbu à la broche",
+  "type": "enemy",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "dangerosite": 2,
+    "degats": 1,
+    "health": {
+      "value": 3,
+      "max": 3
+    },
+    "description": "Un gros barbu qui a faim, une broche improvisée à la main.",
+    "notes": ""
+  },
+  "prototypeToken": {
+    "name": "Gros barbu à la broche",
+    "displayName": 0,
+    "actorLink": false,
+    "disposition": -1
+  },
+  "items": [],
+  "effects": [],
+  "folder": "fldenkosmokultAA",
+  "sort": 20,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

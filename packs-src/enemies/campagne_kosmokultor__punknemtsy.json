@@ -1,0 +1,31 @@
+{
+  "_id": "enmpunknemtsyAAA",
+  "_key": "!actors!enmpunknemtsyAAA",
+  "name": "Punk nemtsy à crête de coq",
+  "type": "enemy",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "dangerosite": 0,
+    "degats": 1,
+    "health": {
+      "value": 1,
+      "max": 1
+    },
+    "description": "Un punk nemtsy avec une crête de coq et un pot de moutarde.",
+    "notes": ""
+  },
+  "prototypeToken": {
+    "name": "Punk nemtsy à crête de coq",
+    "displayName": 0,
+    "actorLink": false,
+    "disposition": -1
+  },
+  "items": [],
+  "effects": [],
+  "folder": "fldenkosmokultAA",
+  "sort": 26,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -2,7 +2,8 @@
   "STARMARX": {
     "Actor": {
       "Type": {
-        "kamarade": "Kamarade"
+        "kamarade": "Kamarade",
+        "enemy": "Enemy"
       },
       "Details": {
         "Doctrine": "Doctrine",
@@ -65,6 +66,7 @@
         "Equipement": "Gear"
       },
       "KamaradeLabel": "Kamarade Sheet",
+      "EnemyLabel": "Enemy Sheet",
       "ItemLabel": "Star Marx Item Sheet",
       "Fields": {
         "Name": "Name",
@@ -244,6 +246,20 @@
         "Rank": "Rank"
       },
       "Hint": "Antagonist-only attribute (NPCs, monsters). Cannot be bought by a Kamarade."
+    },
+    "Enemy": {
+      "NamePlaceholder": "Enemy name",
+      "Fields": {
+        "Dangerosite": "Danger",
+        "Degats": "Damage"
+      },
+      "Sections": {
+        "Dons": "Gifts"
+      },
+      "Action": {
+        "AddDon": "Add gift",
+        "DropDonHere": "Drag a Gift from the compendium"
+      }
     },
     "Notifications": {
       "RaceReplaced": "Race replaced.",

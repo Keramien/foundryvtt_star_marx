@@ -1,0 +1,17 @@
+{
+  "_id": "edninflationAAAA",
+  "name": "Inflation",
+  "type": "don",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p>L'opposant est enivré par l'odeur de sang. Chaque fois qu'un Kamarade est blessé, les dégâts de l'opposant augmentent de 1.</p>",
+    "alias": "Soif de Sang",
+    "rank": 1
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!actors.items!enmkosmoroutierA.edninflationAAAA"
+}

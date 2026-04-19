@@ -1,0 +1,31 @@
+{
+  "_id": "enmvaisbicyclope",
+  "_key": "!actors!enmvaisbicyclope",
+  "name": "Vaisseau bicyclope",
+  "type": "enemy",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "dangerosite": 3,
+    "degats": 3,
+    "health": {
+      "value": 8,
+      "max": 8
+    },
+    "description": "Soyouz ennemi tenu par des Nemtsyi roulants psychorigides. Combat spatial sur la route de Cimetière.",
+    "notes": ""
+  },
+  "prototypeToken": {
+    "name": "Vaisseau bicyclope",
+    "displayName": 0,
+    "actorLink": false,
+    "disposition": -1
+  },
+  "items": [],
+  "effects": [],
+  "folder": "fldenvoiceAAAAAA",
+  "sort": 5,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

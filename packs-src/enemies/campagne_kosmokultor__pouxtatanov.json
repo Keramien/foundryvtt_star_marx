@@ -1,0 +1,33 @@
+{
+  "_id": "enmpouxtatanovAA",
+  "_key": "!actors!enmpouxtatanovAA",
+  "name": "Poux de Tatanov",
+  "type": "enemy",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "dangerosite": 0,
+    "degats": 1,
+    "health": {
+      "value": 1,
+      "max": 1
+    },
+    "description": "Parasites gélatineux verdâtres, réveillés avec le géant Tatanov. Sang acide : chaque blessure infligée à un pou renvoie autant de dégâts au Kamarade au contact. Nombre d'assaillants : 2D6. Point faible : les ondes sonores (explosent près des scènes de concert).",
+    "notes": ""
+  },
+  "prototypeToken": {
+    "name": "Poux de Tatanov",
+    "displayName": 0,
+    "actorLink": false,
+    "disposition": -1
+  },
+  "items": [
+    "ednmassesalarial"
+  ],
+  "effects": [],
+  "folder": "fldenkosmokultAA",
+  "sort": 33,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

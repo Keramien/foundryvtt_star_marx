@@ -36,7 +36,8 @@
   ],
   "documentTypes": {
     "Actor": {
-      "kamarade": {}
+      "kamarade": {},
+      "enemy":    {}
     },
     "Item": {
       "race":        {},
@@ -76,6 +77,13 @@
       "label": "Dons",
       "path": "packs/dons",
       "type": "Item",
+      "system": "star_marx"
+    },
+    {
+      "name": "enemies",
+      "label": "Ennemis",
+      "path": "packs/enemies",
+      "type": "Actor",
       "system": "star_marx"
     }
   ],

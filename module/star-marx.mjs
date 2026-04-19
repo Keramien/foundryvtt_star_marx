@@ -1,8 +1,10 @@
 import { StarMarxActor } from "./actor/actor.mjs";
 import { KamaradeSheet } from "./actor/sheet.mjs";
+import { EnemySheet } from "./actor/enemy-sheet.mjs";
 import { StarMarxItem } from "./item/item.mjs";
 import { StarMarxItemSheet } from "./item/sheet.mjs";
 import { KamaradeData } from "./data/actor-kamarade.mjs";
+import { EnemyData } from "./data/actor-enemy.mjs";
 import {
   RaceData, SigneData, KontrebandeData, ClefData,
   BardaData, FaiblesseData, AtoutData, DonData
@@ -18,7 +20,8 @@ Hooks.once("init", () => {
   // Register typed data models — replaces template.json (deprecated in v14,
   // removed in v16). Each entry wires a subtype to its schema class.
   CONFIG.Actor.dataModels = {
-    kamarade: KamaradeData
+    kamarade: KamaradeData,
+    enemy:    EnemyData
   };
   CONFIG.Item.dataModels = {
     race:        RaceData,
@@ -45,12 +48,21 @@ Hooks.once("init", () => {
   // Strict equality — replacement for `{{#if (eq a b)}}` patterns.
   Handlebars.registerHelper("eq", (a, b) => a === b);
 
+  // Strict greater-than — used to hide "Rank N" badges when N is the default 1.
+  Handlebars.registerHelper("gt", (a, b) => a > b);
+
   // Register the Kamarade sheet. Scoped to type "kamarade" so we don't collide
   // with the core sheet (no need to unregister).
   foundry.documents.collections.Actors.registerSheet(SYSTEM_ID, KamaradeSheet, {
     types: ["kamarade"],
     makeDefault: true,
     label: "STARMARX.Sheet.KamaradeLabel"
+  });
+
+  foundry.documents.collections.Actors.registerSheet(SYSTEM_ID, EnemySheet, {
+    types: ["enemy"],
+    makeDefault: true,
+    label: "STARMARX.Sheet.EnemyLabel"
   });
 
   // Our custom Item sheet handles race / signe / clef. Other item types keep

@@ -1,0 +1,33 @@
+{
+  "_id": "enmkosmosaoulAAA",
+  "_key": "!actors!enmkosmosaoulAAA",
+  "name": "Kosmoshniarf saoul",
+  "type": "enemy",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "dangerosite": -2,
+    "degats": 2,
+    "health": {
+      "value": 6,
+      "max": 6
+    },
+    "description": "Kosmoshniarf ivre. Rencontré si le retard de la poursuite sur les toits est entre 11 et 20 points.",
+    "notes": ""
+  },
+  "prototypeToken": {
+    "name": "Kosmoshniarf saoul",
+    "displayName": 0,
+    "actorLink": false,
+    "disposition": -1
+  },
+  "items": [
+    "ednactiftoxiqueA"
+  ],
+  "effects": [],
+  "folder": "fldenpetrogradAA",
+  "sort": 12,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

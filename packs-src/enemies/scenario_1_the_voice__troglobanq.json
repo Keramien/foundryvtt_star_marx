@@ -1,0 +1,33 @@
+{
+  "_id": "enmtroglobanqAAA",
+  "_key": "!actors!enmtroglobanqAAA",
+  "name": "Troglobanquier",
+  "type": "enemy",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "dangerosite": 5,
+    "degats": 4,
+    "health": {
+      "value": 10,
+      "max": 10
+    },
+    "description": "Silhouette décharnée aux yeux cousus de billets, adorateur de Croissance Non Jugulée. Si un Kamarade rate son jet, le Troglobanquier lui coince la tête dans son attaché-case.",
+    "notes": ""
+  },
+  "prototypeToken": {
+    "name": "Troglobanquier",
+    "displayName": 0,
+    "actorLink": false,
+    "disposition": -1
+  },
+  "items": [
+    "edncreditprefAAA"
+  ],
+  "effects": [],
+  "folder": "fldenvoiceAAAAAA",
+  "sort": 1,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,17 @@
+{
+  "_id": "ednmiseconc2AAAA",
+  "name": "Mise en Concurrence 2",
+  "type": "don",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><strong>Effet au rang 2 :</strong> Cet opposant peut défier un des joueurs. Il obtient alors un bonus <strong>+2</strong> à sa dangerosité contre tout autre PJ qui l'attaquerait.</p>",
+    "alias": "Défi",
+    "rank": 2
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!actors.items!enmzverskiyAAAAA.ednmiseconc2AAAA"
+}

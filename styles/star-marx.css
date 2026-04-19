@@ -180,6 +180,22 @@
   display: block;
 }
 
+/* -------- Enemy sheet: header pinned, rest scrolls (mirrors tab.active) -- */
+.star-marx .enemy-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+}
+
+.star-marx .enemy-content {
+  padding: 1rem;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
 /* -------- Tab 1 : Presentation -------- */
 .star-marx .stats-row {
   display: grid;

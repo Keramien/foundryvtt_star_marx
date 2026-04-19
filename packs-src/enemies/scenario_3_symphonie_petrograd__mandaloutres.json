@@ -1,0 +1,33 @@
+{
+  "_id": "enmmandaloutresA",
+  "_key": "!actors!enmmandaloutresA",
+  "name": "Deux brutes Mandaloutres",
+  "type": "enemy",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "dangerosite": -2,
+    "degats": 3,
+    "health": {
+      "value": 8,
+      "max": 8
+    },
+    "description": "Paire de Mandaloutres reliés par leur fil d'acier (faucilles-hameçons). Rencontrés si le retard de la poursuite sur les toits est entre 21 et 30 points.",
+    "notes": ""
+  },
+  "prototypeToken": {
+    "name": "Deux brutes Mandaloutres",
+    "displayName": 0,
+    "actorLink": false,
+    "disposition": -1
+  },
+  "items": [
+    "ednventedecouvAA"
+  ],
+  "effects": [],
+  "folder": "fldenpetrogradAA",
+  "sort": 13,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

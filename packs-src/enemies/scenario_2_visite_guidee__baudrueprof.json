@@ -1,0 +1,31 @@
+{
+  "_id": "enmbaudrueprofAA",
+  "_key": "!actors!enmbaudrueprofAA",
+  "name": "Grande Baudrue des profondeurs",
+  "type": "enemy",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "dangerosite": 5,
+    "degats": 2,
+    "health": {
+      "value": 12,
+      "max": 12
+    },
+    "description": "Dernière représentante de son espèce, enfermée dans l'aquarium géant du musée. Don spécifique non-listé « Polaroïd » : tous les 3 tours, elle déclenche son appendice lumineux ; les Kamarades qui ratent un jet de KARKASS sont aveuglés et ne peuvent pas agir le prochain tour.",
+    "notes": ""
+  },
+  "prototypeToken": {
+    "name": "Grande Baudrue des profondeurs",
+    "displayName": 0,
+    "actorLink": false,
+    "disposition": -1
+  },
+  "items": [],
+  "effects": [],
+  "folder": "fldenmuseeAAAAAA",
+  "sort": 10,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}
