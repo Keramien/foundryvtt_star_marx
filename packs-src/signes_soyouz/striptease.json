@@ -1,0 +1,18 @@
+{
+  "_id": "sgzstripteaseAAA",
+  "name": "Striptease Fatal",
+  "type": "signe_soyouz",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "description": "<p>Le vaisseau peut se delester de certains de ses elements pour gagner en vitesse et en manoeuvrabilite. En termes de regles, les joueurs peuvent faire passer des points de n'importe quel Trait du soyouz vers son TUPOLEV (toujours avec la limite de +2). Ce transfert est a sens unique.</p>",
+    "tag": "manoeuvre"
+  },
+  "effects": [],
+  "folder": "fldsignesoyouzAA",
+  "sort": 12,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgzstripteaseAAA"
+}

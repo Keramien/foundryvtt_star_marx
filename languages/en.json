@@ -177,7 +177,9 @@
         "barda": "Gear",
         "faiblesse": "Weakness",
         "atout": "Trump",
-        "don": "Gift"
+        "don": "Gift",
+        "signe_soyouz": "Ship Sign",
+        "don_soyouz": "Ship Gift"
       },
       "Common": {
         "Description": "Description"
@@ -246,6 +248,18 @@
         "Rank": "Rank"
       },
       "Hint": "Antagonist-only attribute (NPCs, monsters). Cannot be bought by a Kamarade."
+    },
+    "SigneSoyouz": {
+      "Banner": "Ship-only distinctive sign",
+      "Fields": {
+        "Tag": "Free-form category",
+        "TagPlaceholder": "model, narrative, weaponry...",
+        "TagHint": "Free-form field to group signs (optional)."
+      }
+    },
+    "DonSoyouz": {
+      "Banner": "Enemy-ship-only gift",
+      "Hint": "Attribute reserved for antagonist soyouz. Cannot be bought by the Kamarades' ship."
     },
     "Enemy": {
       "NamePlaceholder": "Enemy name",

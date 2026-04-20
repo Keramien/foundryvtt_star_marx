@@ -1,0 +1,18 @@
+{
+  "_id": "sgzdeuxtourelles",
+  "name": "Deux Tourelles",
+  "type": "signe_soyouz",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "description": "<p>A force de disputes et de jalousies, impropres a l'ideal communiste, l'equipage a decide de faire installer un deuxieme poste de tir pour que tout le monde puisse faire ratata ratata sur les ennemis. Les joueurs peuvent partager l'ORGUE DE STALINE en deux scores.</p>",
+    "tag": "armement"
+  },
+  "effects": [],
+  "folder": "fldsignesoyouzAA",
+  "sort": 4,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgzdeuxtourelles"
+}

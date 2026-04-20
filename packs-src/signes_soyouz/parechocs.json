@@ -1,0 +1,18 @@
+{
+  "_id": "sgzparechocsAAAA",
+  "name": "Pare-chocs en Titane",
+  "type": "signe_soyouz",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "description": "<p>Quand les Kamarades jouent a rentrer dedans avec les adversaires, les joueurs ajoutent le score en MUR DE FER au score en TETRIS pour calculer les degats.</p>",
+    "tag": "blindage"
+  },
+  "effects": [],
+  "folder": "fldsignesoyouzAA",
+  "sort": 8,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgzparechocsAAAA"
+}

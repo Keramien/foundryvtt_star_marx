@@ -1,0 +1,18 @@
+{
+  "_id": "sgzpashumainAAAA",
+  "name": "Pas Humain",
+  "type": "signe_soyouz",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "description": "<p>Ce modele n'a clairement pas ete concu pour des humains : trop grand, trop petit, trop etroit... Les consequences de son etrange conception n'ont de cesse d'influer sur les agissements de ses passagers. Le soyouz gagne des Zlotys lorsque les joueurs ou le Secretaire General jouent sur les affres de la vie a son bord liees a sa conception nemtsy.</p>",
+    "tag": "narratif"
+  },
+  "effects": [],
+  "folder": "fldsignesoyouzAA",
+  "sort": 9,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgzpashumainAAAA"
+}

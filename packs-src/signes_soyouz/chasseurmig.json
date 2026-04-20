@@ -1,0 +1,18 @@
+{
+  "_id": "sgzchasseurmigAA",
+  "name": "Modele Chasseur MIG",
+  "type": "signe_soyouz",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "description": "<p>Le bijou est carene comme un oiseau fin et race. En revanche, il n'est pas taille pour transporter beaucoup de choses ou de personnes. Son score en TUPOLEV peut monter a 3. Par contre son TETRIS est limite a 0.</p>",
+    "tag": "modele"
+  },
+  "effects": [],
+  "folder": "fldsignesoyouzAA",
+  "sort": 6,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgzchasseurmigAA"
+}

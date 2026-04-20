@@ -1,0 +1,18 @@
+{
+  "_id": "sgzdestroyerAAAA",
+  "name": "Modele Destroyer Udaloy",
+  "type": "signe_soyouz",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "description": "<p>L'avantage avec les gros engins poussifs, c'est qu'on peut mettre des gros canons dessus. Le score en ORGUE DE STALINE peut monter a 3. Par contre le TUPOLEV est limite a 1.</p>",
+    "tag": "modele"
+  },
+  "effects": [],
+  "folder": "fldsignesoyouzAA",
+  "sort": 7,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgzdestroyerAAAA"
+}

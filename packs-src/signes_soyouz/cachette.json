@@ -1,0 +1,18 @@
+{
+  "_id": "sgzcachetteAAAAA",
+  "name": "Cachette",
+  "type": "signe_soyouz",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "description": "<p>L'equipage a rachete le soyouz a un contrebandier. Il possede une cache secrete introuvable, tres pratique lors des controles de la kosmodouane.</p>",
+    "tag": "narratif"
+  },
+  "effects": [],
+  "folder": "fldsignesoyouzAA",
+  "sort": 2,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgzcachetteAAAAA"
+}

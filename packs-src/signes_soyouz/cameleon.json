@@ -1,0 +1,18 @@
+{
+  "_id": "sgzcameleonAAAAA",
+  "name": "Cameleon",
+  "type": "signe_soyouz",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "description": "<p>Le modele du vaisseau est tellement repandu, tellement decline a travers l'espace sovietique qu'il est difficilement identifiable, pour peu qu'on lui change sa plaque d'immatriculation. Avec un minimum de travaux dans un kosmodock, on peut facilement le faire passer pour un autre modele de la gamme. Les Kamarades pourraient meme le confondre, et ce serait bien embetant, surtout s'ils essayent de quitter le kosmodock en quatrieme vitesse.</p>",
+    "tag": "narratif"
+  },
+  "effects": [],
+  "folder": "fldsignesoyouzAA",
+  "sort": 3,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgzcameleonAAAAA"
+}

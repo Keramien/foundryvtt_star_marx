@@ -1,0 +1,18 @@
+{
+  "_id": "sgzaccroAAAAAAAA",
+  "name": "Accro",
+  "type": "signe_soyouz",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "description": "<p>A force de faire voler le vaisseau avec un moteur bricole et des substances alternatives, l'equipage en a fait un drogue, et ses tuyeres, devenues dependantes, ne ronronnent jamais aussi bien qu'avec de l'huile de colza transgenique. Le soyouz gagne des Zlotys lorsque ses joueurs jouent sa forte dependance aux carburants de toutes sortes.</p>",
+    "tag": "narratif"
+  },
+  "effects": [],
+  "folder": "fldsignesoyouzAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgzaccroAAAAAAAA"
+}

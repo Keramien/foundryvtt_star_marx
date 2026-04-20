@@ -40,14 +40,16 @@
       "enemy":    {}
     },
     "Item": {
-      "race":        {},
-      "signe":       {},
-      "kontrebande": {},
-      "clef":        {},
-      "barda":       {},
-      "faiblesse":   {},
-      "atout":       {},
-      "don":         {}
+      "race":          {},
+      "signe":         {},
+      "kontrebande":   {},
+      "clef":          {},
+      "barda":         {},
+      "faiblesse":     {},
+      "atout":         {},
+      "don":           {},
+      "signe_soyouz":  {},
+      "don_soyouz":    {}
     }
   },
   "packs": [
@@ -84,6 +86,20 @@
       "label": "Ennemis",
       "path": "packs/enemies",
       "type": "Actor",
+      "system": "star_marx"
+    },
+    {
+      "name": "signes_soyouz",
+      "label": "Signes Particuliers (Soyouz)",
+      "path": "packs/signes_soyouz",
+      "type": "Item",
+      "system": "star_marx"
+    },
+    {
+      "name": "dons_soyouz",
+      "label": "Dons (Soyouz)",
+      "path": "packs/dons_soyouz",
+      "type": "Item",
       "system": "star_marx"
     }
   ],

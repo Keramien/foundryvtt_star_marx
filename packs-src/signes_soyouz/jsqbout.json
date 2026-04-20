@@ -1,0 +1,18 @@
+{
+  "_id": "sgzjsqboutAAAAAA",
+  "name": "Jusqu'au-Boutiste",
+  "type": "signe_soyouz",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "description": "<p>L'engin est un dur, pas du genre a faire sa sucree. Il en a vu des batailles, il en a connu des avaries, mais jamais, jamais il n'a abandonne. Alors la casse, les ferrailleurs, les remorquages, ce n'est pas pour lui ! Peu importe ce qu'il encaisse ! Il ne connait des avaries graves et definitives (explosions, etc.) que lorsqu'un de ses scores atteint -4 au lieu de -3.</p>",
+    "tag": "blindage"
+  },
+  "effects": [],
+  "folder": "fldsignesoyouzAA",
+  "sort": 5,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgzjsqboutAAAAAA"
+}

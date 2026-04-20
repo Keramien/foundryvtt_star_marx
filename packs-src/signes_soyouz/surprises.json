@@ -1,0 +1,18 @@
+{
+  "_id": "sgzsurprisesAAAA",
+  "name": "Des Surprises sous le Capot",
+  "type": "signe_soyouz",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "description": "<p>L'engin ne paye pas de mine, c'est un vieux modele, ou bien il a un aspect ridicule, ou encore on se souvient toujours dans les kosmodocks du retour a l'usine de ces modeles pour un \"reglage anecdotique du systeme de mise a feu des reacteurs\". Mais, meme si a cause de ces incidents on continue d'appeler ces vaisseaux des \"KFP\" (Kolkhozian Fried Passagers), l'equipage l'a tellement customise qu'il n'a plus beaucoup de pieces d'origine, et sous son capot, c'est le meme moteur qu'un VeidelGrov. Lorsque les joueurs decident de se reveler, tous les scores impliquant l'engin se font avec un bonus de +1 durant un tour. Par contre, sa mauvaise reputation le limite a 0 dans son score en PARADE.</p>",
+    "tag": "modele"
+  },
+  "effects": [],
+  "folder": "fldsignesoyouzAA",
+  "sort": 11,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgzsurprisesAAAA"
+}

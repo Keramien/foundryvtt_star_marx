@@ -1,0 +1,18 @@
+{
+  "_id": "sgzpitoyableAAAA",
+  "name": "Pitoyable",
+  "type": "signe_soyouz",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "description": "<p>Le vehicule fait pitie. Il ressemble plus a un assemblage de pieces disparates qu'a un vrai vaisseau. Rouille par endroits, semant des debris inidentifiables dans son sillage, il ne paye vraiment pas de mine. Quel que soit votre ennemi, celui-ci ne donnera jamais le coup de grace a votre engin. En revanche, il ne fait pas pitie pour rien. Les degats qu'il encaisse lorsqu'il connait des avaries sont doubles.</p>",
+    "tag": "narratif"
+  },
+  "effects": [],
+  "folder": "fldsignesoyouzAA",
+  "sort": 10,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgzpitoyableAAAA"
+}

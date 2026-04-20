@@ -1,0 +1,18 @@
+{
+  "_id": "sgzviolentAAAAAA",
+  "name": "Violent",
+  "type": "signe_soyouz",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "description": "<p>Le vaisseau est surarme, les Kamarades bichonnent ses silos et connaissent meme un artificier bigouden qui booste ses torpilles avec un produit a base de lisier de proto-porc et de kouign-amann. Bref, ils sont prets a la guerre, peu importe contre qui. L'engin inflige 1 point de degats supplementaire. Mais un vaisseau trop bien arme, ca se remarque. Dans chaque kosmodock, l'equipage doit graisser des pattes pour ne pas qu'on le signale aux autorites. Difficile aussi d'etre discret. Bref, ca complique souvent la vie.</p>",
+    "tag": "armement"
+  },
+  "effects": [],
+  "folder": "fldsignesoyouzAA",
+  "sort": 13,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgzviolentAAAAAA"
+}

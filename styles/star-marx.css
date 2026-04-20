@@ -962,3 +962,36 @@
 .star-marx.item prose-mirror:has([contenteditable="false"]) .menu-container {
   display: none;
 }
+
+/* --- Soyouz items: steel-blue accent to visually distinguish ship-only items
+   (signe_soyouz, don_soyouz) from Kamarade-facing items. The header swaps its
+   red propaganda gradient for a spaceframe-blue one; the gold separator keeps
+   the soviet-sci-fi parodic tone. */
+.star-marx.item .item-sheet__header[data-item-type="signe_soyouz"],
+.star-marx.item .item-sheet__header[data-item-type="don_soyouz"] {
+  background: linear-gradient(135deg, #1b3a5f 0%, #0d2340 100%);
+}
+
+.star-marx.item .soyouz-banner {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.6rem;
+  background: rgba(27, 58, 95, 0.08);
+  border-left: 3px solid #1b3a5f;
+  color: #1b3a5f;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.star-marx.item .soyouz-banner i {
+  font-size: 0.9rem;
+}
+
+.star-marx.item .soyouz-banner--warning {
+  background: rgba(166, 28, 28, 0.08);
+  border-left-color: var(--sm-red);
+  color: var(--sm-red);
+}

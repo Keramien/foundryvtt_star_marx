@@ -1,0 +1,18 @@
+{
+  "_id": "sgzbruyantAAAAAA",
+  "name": "Bruyant",
+  "type": "signe_soyouz",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "description": "<p>Les Kamarades ont monte un systeme experimental sur leur joujou, un truc de leur fabrication et dont ils sont particulierement fiers. Ils peuvent augmenter un de ses scores d'un point (avec un maximum egal a 3). Mais il y a des problemes de reglage... des qu'ils utilisent ce Signe particulier (qu'ils peuvent activer et desactiver a loisir), cela devient tellement bruyant que les joueurs ne peuvent plus communiquer autour de la table de jeu que par gestes pour simuler le boucan infernal que produit leur invention.</p>",
+    "tag": "armement"
+  },
+  "effects": [],
+  "folder": "fldsignesoyouzAA",
+  "sort": 1,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!sgzbruyantAAAAAA"
+}

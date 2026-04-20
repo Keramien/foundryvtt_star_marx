@@ -177,7 +177,9 @@
         "barda": "Barda",
         "faiblesse": "Faiblesse",
         "atout": "Atout",
-        "don": "Don"
+        "don": "Don",
+        "signe_soyouz": "Signe de Soyouz",
+        "don_soyouz": "Don de Soyouz"
       },
       "Common": {
         "Description": "Description"
@@ -246,6 +248,18 @@
         "Rank": "Rang"
       },
       "Hint": "Attribut réservé aux antagonistes (PNJ, monstres). Non achetable par un Kamarade."
+    },
+    "SigneSoyouz": {
+      "Banner": "Signe particulier réservé aux vaisseaux",
+      "Fields": {
+        "Tag": "Catégorie libre",
+        "TagPlaceholder": "modele, narratif, armement...",
+        "TagHint": "Champ libre pour regrouper les signes (optionnel)."
+      }
+    },
+    "DonSoyouz": {
+      "Banner": "Don réservé aux vaisseaux ennemis",
+      "Hint": "Attribut destiné aux soyouz antagonistes. Non achetable pour le vaisseau des Kamarades."
     },
     "Enemy": {
       "NamePlaceholder": "Nom de l'ennemi",
