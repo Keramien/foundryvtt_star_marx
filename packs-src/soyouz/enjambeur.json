@@ -1,0 +1,46 @@
+{
+  "_id": "shpenjambeurAAAA",
+  "_key": "!actors!shpenjambeurAAAA",
+  "name": "Enjambeur",
+  "type": "soyouz",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "details": {
+      "description": "<p>Vieux tracteur-enjambeur abandonné dans un hangar de la cambrousse — retapable à la dernière minute pour fuir la horde de Morfals.</p><p><strong>Qualificatifs :</strong></p><ul><li><strong>TUPOLEV -1 :</strong> il est facile de se renverser dans les virages</li><li><strong>MUR DE FER 0 :</strong> malgré ses taches de rouille, sa structure reste solide</li></ul><p><strong>Signe particulier :</strong> bien qu'il soit déconseillé de jouer au bélier avec l'enjambeur, il peut utiliser sa taille particulière pour <strong>éviter</strong> des attaques ou <strong>enjamber</strong> des ennemis — considérez qu'il dispose de <strong>deux armures</strong>.</p><p><em>TÉTRIS et LEBEDEV considérés comme inapplicables par les règles du scénario (mis à 0).</em></p><p><em>Source : Campagne KOSMOKULTOR, Acte 3 — I rode a tank, p.21.</em></p>",
+      "notes": "<p>Véhicule agricole utilisable en remplacement de soyouz dans l'Acte 3. Les Kamarades peuvent booster un Trait via des jets MACHINISTE/SOYOUZ/MUSCLE/SOCIAL TRAÎTRE durant un tour de table.</p>"
+    },
+    "traits": {
+      "tupolev":        { "score": -1, "bonus": 0, "avaries": 0, "total": 0 },
+      "orgueDeStaline": { "score": -2, "bonus": 0, "avaries": 0, "total": 0 },
+      "parade":         { "score": -1, "bonus": 0, "avaries": 0, "total": 0 },
+      "lebedev":        { "score":  0, "bonus": 0, "avaries": 0, "total": 0 },
+      "datcha":         { "score": -1, "bonus": 0, "avaries": 0, "total": 0 },
+      "tetris":         { "score":  0, "bonus": 0, "avaries": 0, "total": 0 },
+      "murDeFer":       { "score":  0, "bonus": 0, "avaries": 0, "total": 0 }
+    },
+    "health": { "value": 5, "max": 5 },
+    "postes": {
+      "pilote":      [],
+      "artilleur":   [],
+      "operateur":   [],
+      "technicien":  [],
+      "beauParleur": [],
+      "bourrin":     [],
+      "passager":    []
+    },
+    "traitTotal": -5,
+    "damageFromOrgue": "0"
+  },
+  "prototypeToken": {
+    "name": "Enjambeur",
+    "displayName": 0,
+    "actorLink": true,
+    "disposition": 0
+  },
+  "items": [],
+  "effects": [],
+  "folder": "fldshpkosmokultA",
+  "sort": 0,
+  "ownership": { "default": 0 },
+  "flags": {}
+}

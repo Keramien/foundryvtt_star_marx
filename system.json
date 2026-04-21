@@ -89,6 +89,13 @@
       "system": "star_marx"
     },
     {
+      "name": "soyouz",
+      "label": "Soyouz",
+      "path": "packs/soyouz",
+      "type": "Actor",
+      "system": "star_marx"
+    },
+    {
       "name": "signes_soyouz",
       "label": "Signes Particuliers (Soyouz)",
       "path": "packs/signes_soyouz",

@@ -1,0 +1,31 @@
+{
+  "_id": "enmvaisseauklonA",
+  "_key": "!actors!enmvaisseauklonA",
+  "name": "Vaisseau klon (exemple)",
+  "type": "enemy",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "dangerosite": 3,
+    "degats": 3,
+    "health": {
+      "value": 8,
+      "max": 8
+    },
+    "description": "<p>Vaisseau klon standard utilisé comme opposition spatiale dans l'exemple de combat du manuel (face à l'U.R.S.S.S. Coopérative Kolkhozprise).</p><p>Armement spécial : torpilles artisanales à la lessive Ultrask (la mousse endommage le LEBEDEV de la cible en cas d'épuisement de ses PV).</p><p><strong>Difficulté (dangerosité) :</strong> 3 — appliquée en malus au jet des Kamarades (manuel : \"–3\").<br><strong>Dégâts :</strong> 3 par tir réussi.<br><strong>Points de vie :</strong> 8.</p><p><em>Source : Édition Augmentée p.84 (section \"Les combats spatiaux\"). Deux de ces vaisseaux sont utilisés dans l'exemple narratif ; dupliquer l'acteur si besoin d'en déployer plusieurs.</em></p>",
+    "notes": "<p>Traitement simple d'un vaisseau ennemi (Difficulté / Dégâts / PV) plutôt que les 7 Traits complets — suffit pour une scène rapide. Pour une scène épique, créer un soyouz complet à la place (voir pack Soyouz).</p>"
+  },
+  "prototypeToken": {
+    "name": "Vaisseau klon",
+    "displayName": 0,
+    "actorLink": false,
+    "disposition": -1
+  },
+  "items": [],
+  "effects": [],
+  "folder": "fldenexemplesAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

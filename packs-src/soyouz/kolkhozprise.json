@@ -1,0 +1,46 @@
+{
+  "_id": "shpkolkhozpriseA",
+  "_key": "!actors!shpkolkhozpriseA",
+  "name": "U.R.S.S.S. Coopérative Kolkhozprise",
+  "type": "soyouz",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "details": {
+      "description": "<p>Fleuron d'exploration de l'Armée Rouge, orgueil de la flotte. Gros vaisseau poussif, armé et blindé, célèbre dans toute l'Union — mais conditions de vie à bord au bord de la mutinerie.</p><p><strong>Plan Quinquennal :</strong> explorer de nouveaux mondes étranges, découvrir de nouvelles vies, d'autres civilisations et, au mépris du danger, faire avancer le Communisme vers l'inconnu.</p><p><strong>Qualificatifs narratifs :</strong></p><ul><li><strong>TUPOLEV :</strong> poussif</li><li><strong>ORGUE DE STALINE :</strong> canon à ions pulsés (technologie expérimentale initialement prévue pour limiter la consommation d'eau dans les douches des kosmodocks)</li><li><strong>PARADE :</strong> célèbre</li><li><strong>LEBEDEV :</strong> équipement monopolisé par l'officier Hourrah qui refuse de partager les informations</li><li><strong>DATCHA :</strong> lits-planches en bois anti-ronflements, fauteuils en ballons d'équilibre</li><li><strong>MUR DE FER :</strong> blindée avec parapluie déflecteur déployable</li></ul><p><em>Source : Édition Augmentée p.80, 84, 88.</em></p>",
+      "notes": "<p>Vaisseau équilibré (somme des Traits = 0). Équipage officiel : Capitaine Jaskirk Kirskier, pilote Ricardu Sulutarev, officier tactique Paul Anton Tchekhov (Précis), opératrice Hourrah, chef-ingénieur Miroslav Scottsky, lieutenant hjort Spot (Masochiste).</p>"
+    },
+    "traits": {
+      "tupolev":        { "score": -1, "bonus": 0, "avaries": 0, "total": 0 },
+      "orgueDeStaline": { "score":  1, "bonus": 0, "avaries": 0, "total": 0 },
+      "parade":         { "score":  1, "bonus": 0, "avaries": 0, "total": 0 },
+      "lebedev":        { "score": -1, "bonus": 0, "avaries": 0, "total": 0 },
+      "datcha":         { "score": -2, "bonus": 0, "avaries": 0, "total": 0 },
+      "tetris":         { "score":  0, "bonus": 0, "avaries": 0, "total": 0 },
+      "murDeFer":       { "score":  2, "bonus": 0, "avaries": 0, "total": 0 }
+    },
+    "health": { "value": 7, "max": 7 },
+    "postes": {
+      "pilote":      [],
+      "artilleur":   [],
+      "operateur":   [],
+      "technicien":  [],
+      "beauParleur": [],
+      "bourrin":     [],
+      "passager":    []
+    },
+    "traitTotal": 0,
+    "damageFromOrgue": "2"
+  },
+  "prototypeToken": {
+    "name": "U.R.S.S.S. Coopérative Kolkhozprise",
+    "displayName": 0,
+    "actorLink": true,
+    "disposition": 1
+  },
+  "items": [],
+  "effects": [],
+  "folder": "fldshpexemplesAA",
+  "sort": 0,
+  "ownership": { "default": 0 },
+  "flags": {}
+}

@@ -1,0 +1,46 @@
+{
+  "_id": "shpmoissonneuseA",
+  "_key": "!actors!shpmoissonneuseA",
+  "name": "Vieille moissonneuse batteuse",
+  "type": "soyouz",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "details": {
+      "description": "<p>Moissonneuse batteuse décatie retrouvée dans le même hangar que l'Enjambeur — moteur capricieux mais elle démarre.</p><p><strong>Qualificatifs :</strong></p><ul><li><strong>TUPOLEV 0 :</strong> elle démarre !</li><li><strong>PARADE 0 :</strong> couverte de vieux stickers <em>Hello Trotski</em></li><li><strong>MUR DE FER -2 :</strong> la colle des vieux autocollants a rongé la tôle</li></ul><p><strong>Signe particulier :</strong> attaque spéciale indépendante d'ORGUE DE STALINE — tous les <strong>trois tours</strong>, elle a amassé assez d'herbe pour tirer un <strong>ballot</strong> en projectile (dégâts 1, boostable à 2 en y mettant le feu mais le tireur doit réussir un jet pour ne pas se brûler).</p><p>Utilisée comme <strong>bélier</strong> contre des cibles plus petites (quads), inflige 2 points de dégâts mais en encaisse 1.</p><p><em>TÉTRIS et LEBEDEV considérés comme inapplicables par les règles du scénario (mis à 0).</em></p><p><em>Source : Campagne KOSMOKULTOR, Acte 3 — I rode a tank, p.21.</em></p>",
+      "notes": "<p>Alternative à l'Enjambeur pour l'Acte 3. Boostable par la table des Kamarades avant la scène de poursuite.</p>"
+    },
+    "traits": {
+      "tupolev":        { "score":  0, "bonus": 0, "avaries": 0, "total": 0 },
+      "orgueDeStaline": { "score": -2, "bonus": 0, "avaries": 0, "total": 0 },
+      "parade":         { "score":  0, "bonus": 0, "avaries": 0, "total": 0 },
+      "lebedev":        { "score":  0, "bonus": 0, "avaries": 0, "total": 0 },
+      "datcha":         { "score":  0, "bonus": 0, "avaries": 0, "total": 0 },
+      "tetris":         { "score":  0, "bonus": 0, "avaries": 0, "total": 0 },
+      "murDeFer":       { "score": -2, "bonus": 0, "avaries": 0, "total": 0 }
+    },
+    "health": { "value": 3, "max": 3 },
+    "postes": {
+      "pilote":      [],
+      "artilleur":   [],
+      "operateur":   [],
+      "technicien":  [],
+      "beauParleur": [],
+      "bourrin":     [],
+      "passager":    []
+    },
+    "traitTotal": -4,
+    "damageFromOrgue": "0"
+  },
+  "prototypeToken": {
+    "name": "Vieille moissonneuse batteuse",
+    "displayName": 0,
+    "actorLink": true,
+    "disposition": 0
+  },
+  "items": [],
+  "effects": [],
+  "folder": "fldshpkosmokultA",
+  "sort": 1,
+  "ownership": { "default": 0 },
+  "flags": {}
+}

@@ -1,0 +1,46 @@
+{
+  "_id": "shpmusor21AAAAAA",
+  "_key": "!actors!shpmusor21AAAAAA",
+  "name": "Musor 21",
+  "type": "soyouz",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "details": {
+      "description": "<p><strong>Modèle :</strong> benne à ordures customisée<br><strong>Numéro d'immatriculation :</strong> HKO5<br><strong>Classe :</strong> -3 points (vaisseau déclassé)</p><p><strong>Avis du contrôle technique :</strong> ce soyouz a vécu de multiples vies avant d'échouer dans les mains des Kamarades — benne à ordures, vaisseau de contrebande, trafic de migrants nemtsyi et distillerie clandestine. Il pensait l'heure de la retraite venue, mais le destin en a décidé autrement.</p><p><strong>Matériel en option (qualificatifs) :</strong></p><ul><li>Encombré de bouteilles vides</li><li>Système informatique à latence programmée</li><li>Massif</li><li>Peut projeter des poubelles propulsées par leur propre gaz de fermentation</li><li>Odeur tenace et nauséabonde</li><li>Rouillé</li></ul><p><em>Source : Édition Augmentée, Scénario 1 — The Voice, p.23.</em></p>",
+      "notes": "<p>Vaisseau de départ pour le scénario 1. Somme des Traits = -3 (volontairement déclassé).</p><p>À -1 en LEBEDEV : dégâts 0 ou 1, un tour sur deux (1d2-1). À 0 en ORGUE DE STALINE / TÉTRIS / TUPOLEV : dégâts 1.</p>"
+    },
+    "traits": {
+      "tupolev":        { "score":  0, "bonus": 0, "avaries": 0, "total": 0 },
+      "orgueDeStaline": { "score":  0, "bonus": 0, "avaries": 0, "total": 0 },
+      "parade":         { "score": -2, "bonus": 0, "avaries": 0, "total": 0 },
+      "lebedev":        { "score": -1, "bonus": 0, "avaries": 0, "total": 0 },
+      "datcha":         { "score": -1, "bonus": 0, "avaries": 0, "total": 0 },
+      "tetris":         { "score":  0, "bonus": 0, "avaries": 0, "total": 0 },
+      "murDeFer":       { "score":  1, "bonus": 0, "avaries": 0, "total": 0 }
+    },
+    "health": { "value": 6, "max": 6 },
+    "postes": {
+      "pilote":      [],
+      "artilleur":   [],
+      "operateur":   [],
+      "technicien":  [],
+      "beauParleur": [],
+      "bourrin":     [],
+      "passager":    []
+    },
+    "traitTotal": -3,
+    "damageFromOrgue": "1"
+  },
+  "prototypeToken": {
+    "name": "Musor 21",
+    "displayName": 0,
+    "actorLink": true,
+    "disposition": 1
+  },
+  "items": [],
+  "effects": [],
+  "folder": "fldshpscenario1A",
+  "sort": 0,
+  "ownership": { "default": 0 },
+  "flags": {}
+}
