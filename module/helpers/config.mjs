@@ -65,3 +65,41 @@ export const BASE_HP = 5;
 
 // Damage sources exposed on the sheet by default.
 export const DAMAGE_SOURCES = ["lutte", "ak47"];
+
+// Soyouz (ship actor) — 7 ship traits, ordered as printed on the char sheet.
+// Scores run from -2 to +2 at creation (sum must be 0); can drop to -3 once
+// PV are exhausted (avaries). See memory/star_marx_codex/soyouz/traits_soyouz.md
+export const SOYOUZ_TRAITS = [
+  "tupolev",
+  "orgueDeStaline",
+  "parade",
+  "lebedev",
+  "datcha",
+  "tetris",
+  "murDeFer"
+];
+
+// Crew posts. Each one holds a list of Kamarade UUIDs (drag-drop assignment).
+// The rules allow multiple Kamarades per post (two gunners, two pilots, etc.)
+// and the same Kamarade can reasonably occupy more than one post across turns,
+// so the sheet does not enforce caps or uniqueness.
+export const SOYOUZ_POSTES = [
+  "pilote",
+  "artilleur",
+  "operateur",
+  "technicien",
+  "beauParleur",
+  "bourrin",
+  "passager"
+];
+
+export const SOYOUZ_BASE_HP = 5;
+
+// Damage inflicted by the ship based on ORGUE DE STALINE score
+// (edition_augmentee_soyouz p.82). -1 rolls 1d2-1, so we surface it as a
+// string "1d2-1" — the rest are flat numbers.
+export function soyouzDamageFromOrgue(score) {
+  if (score <= -2) return "0";
+  if (score === -1) return "1d2-1";
+  return String(score + 1);
+}

@@ -996,3 +996,180 @@
   border-left-color: var(--sm-red);
   color: var(--sm-red);
 }
+
+/* ---------- Soyouz sheet ---------- */
+
+/* Swap the red propaganda palette of the Kamarade sheet for the spaceframe
+   blue used on signe_soyouz item headers (#1b3a5f → #0d2340). The gold
+   accents (borders, charname underline) stay as-is for visual continuity. */
+.star-marx.soyouz .kamarade-header {
+  background: linear-gradient(135deg, #1b3a5f 0%, #0d2340 100%);
+}
+
+.star-marx.soyouz nav.sheet-tabs .item:hover  { background: #0d2340; }
+.star-marx.soyouz nav.sheet-tabs .item.active { background: #1b3a5f; color: var(--sm-gold); }
+
+
+.star-marx .soyouz-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.star-marx .soyouz-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 0.75rem 0.75rem;
+}
+
+/* Readonly display (not an input): used for derived values like damage &
+   trait total. Shares the same size/weight as .stat-values input. */
+.star-marx .stat-readout {
+  font-size: 1.25rem;
+  font-weight: 700;
+  min-width: 3rem;
+  text-align: center;
+}
+
+/* Trait-total badge turns red when the sum is non-zero — reminds players
+   that a balanced ship sums to 0. */
+.star-marx .stat-trait-total--off .stat-readout {
+  color: var(--sm-red);
+}
+
+/* Soyouz traits banner reuses .trait-points-banner layout; when the total
+   drifts off zero, the main readout turns red to flag the imbalance. */
+.star-marx .soyouz-total-banner--off .pts-available {
+  color: var(--sm-red);
+}
+
+.star-marx .postes-block h2 {
+  font-size: 0.95rem;
+  margin: 0 0 0.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Soyouz traits row: same 8-column logic as Kamarade but with one extra
+   (score + bonus + avaries = total), so 10 slots total.
+   name | roll | help | score | + | bonus | + | avaries | = | total */
+.star-marx .soyouz-trait-row {
+  grid-template-columns: minmax(8rem, 1fr) auto auto auto auto auto auto auto auto 1.8rem;
+}
+
+/* The Kamarade .trait-list wraps at 340px per row, which is too tight for the
+   soyouz row (extra avaries column + longer labels like ORGUE DE STALINE).
+   Widen the outer grid so each row gets enough room. */
+.star-marx .soyouz-trait-group .trait-list {
+  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+}
+
+/* Section title uses the spaceframe-blue accent instead of the red propaganda
+   tone reserved for Kamarade doctrines. */
+.star-marx.soyouz .doctrine-header h2 {
+  color: #1b3a5f;
+}
+
+/* Matching blue hover for the roll button on soyouz traits (mirrors the
+   red-propaganda hover on Kamarade traits). */
+.star-marx.soyouz .trait-btn.trait-roll:hover {
+  background: #1b3a5f;
+  color: var(--sm-paper);
+  border-color: #1b3a5f;
+}
+
+/* Postes grid: 2 columns on wide, 1 on narrow. */
+.star-marx .postes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  gap: 0.6rem;
+}
+
+.star-marx .poste {
+  background: var(--sm-paper-alt);
+  border: 1px solid var(--sm-border);
+  border-radius: 8px;
+  padding: 0.4rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.star-marx .poste__header {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.star-marx .poste__header h3 {
+  margin: 0;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #000;
+  flex: 1;
+}
+
+.star-marx .poste__members {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.star-marx .poste__member {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.2rem 0.3rem;
+  background: var(--sm-paper);
+  border: 1px solid var(--sm-border);
+}
+
+.star-marx .poste__member-avatar {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid var(--sm-border);
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.star-marx .poste__member-name {
+  flex: 1;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.star-marx .poste__member-name:hover {
+  text-decoration: underline;
+}
+
+.star-marx .poste__member-remove {
+  background: transparent;
+  border: none;
+  color: var(--sm-muted);
+  cursor: pointer;
+  padding: 0 0.2rem;
+}
+
+.star-marx .poste__member-remove:hover {
+  color: var(--sm-red);
+}
+
+.star-marx .poste__member--missing .poste__member-name {
+  color: var(--sm-muted);
+  font-style: italic;
+}
+
+/* Smaller crew drop-zone than the default one — postes are compact. */
+.star-marx .drop-zone--crew {
+  padding: 0.35rem;
+  font-size: 0.7rem;
+}
+
+.star-marx .drop-zone--crew i {
+  font-size: 1rem;
+}

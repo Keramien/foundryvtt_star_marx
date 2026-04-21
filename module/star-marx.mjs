@@ -1,10 +1,12 @@
 import { StarMarxActor } from "./actor/actor.mjs";
 import { KamaradeSheet } from "./actor/sheet.mjs";
 import { EnemySheet } from "./actor/enemy-sheet.mjs";
+import { SoyouzSheet } from "./actor/soyouz-sheet.mjs";
 import { StarMarxItem } from "./item/item.mjs";
 import { StarMarxItemSheet } from "./item/sheet.mjs";
 import { KamaradeData } from "./data/actor-kamarade.mjs";
 import { EnemyData } from "./data/actor-enemy.mjs";
+import { SoyouzData } from "./data/actor-soyouz.mjs";
 import {
   RaceData, SigneData, KontrebandeData, ClefData,
   BardaData, FaiblesseData, AtoutData, DonData,
@@ -22,7 +24,8 @@ Hooks.once("init", () => {
   // removed in v16). Each entry wires a subtype to its schema class.
   CONFIG.Actor.dataModels = {
     kamarade: KamaradeData,
-    enemy:    EnemyData
+    enemy:    EnemyData,
+    soyouz:   SoyouzData
   };
   CONFIG.Item.dataModels = {
     race:          RaceData,
@@ -65,6 +68,12 @@ Hooks.once("init", () => {
     types: ["enemy"],
     makeDefault: true,
     label: "STARMARX.Sheet.EnemyLabel"
+  });
+
+  foundry.documents.collections.Actors.registerSheet(SYSTEM_ID, SoyouzSheet, {
+    types: ["soyouz"],
+    makeDefault: true,
+    label: "STARMARX.Sheet.SoyouzLabel"
   });
 
   // Our custom Item sheet handles race / signe / clef. Other item types keep

@@ -1,0 +1,38 @@
+<section class="tab {{tab.cssClass}}" data-group="{{tab.group}}" data-tab="{{tab.id}}">
+
+  <div class="signe-block">
+    <header class="signe-block__header">
+      <h2>{{localize "STARMARX.Soyouz.Sections.Signes"}}</h2>
+      <div class="counter">{{signes.length}}</div>
+      <button type="button" class="add-btn" data-action="itemCreate" data-item-type="signe_soyouz">
+        <i class="fa-solid fa-plus"></i> {{localize "STARMARX.Soyouz.Action.AddSigne"}}
+      </button>
+    </header>
+    {{#if signes.length}}
+      <ul class="item-list">
+        {{#each signes}}
+          <li class="item-row" data-item-id="{{this.id}}">
+            <img class="item-img" src="{{this.img}}" alt="">
+            <div class="item-body">
+              <h4 class="item-name">
+                {{this.name}}
+                {{#if this.system.tag}}<span class="badge">{{this.system.tag}}</span>{{/if}}
+              </h4>
+              <div class="item-desc">{{{this.system.description}}}</div>
+            </div>
+            <div class="item-actions">
+              <button type="button" data-action="itemEdit" title="{{localize 'STARMARX.Sheet.Action.Edit'}}"><i class="fa-solid fa-pen"></i></button>
+              <button type="button" data-action="itemDelete" title="{{localize 'STARMARX.Sheet.Action.Delete'}}"><i class="fa-solid fa-trash"></i></button>
+            </div>
+          </li>
+        {{/each}}
+      </ul>
+    {{else}}
+      <div class="drop-zone">
+        <i class="fa-solid fa-rocket"></i>
+        <p>{{localize "STARMARX.Soyouz.Action.DropSigneHere"}}</p>
+      </div>
+    {{/if}}
+  </div>
+
+</section>

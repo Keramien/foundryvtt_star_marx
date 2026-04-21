@@ -1,0 +1,34 @@
+<section class="tab {{tab.cssClass}}" data-group="{{tab.group}}" data-tab="{{tab.id}}">
+
+  <div class="postes-block">
+    <div class="postes-grid">
+      {{#each postes}}
+        <div class="poste" data-poste="{{this.id}}">
+          <header class="poste__header">
+            <h3>{{localize this.labelKey}}</h3>
+            <span class="counter">{{this.members.length}}</span>
+          </header>
+          {{#if this.members.length}}
+            <ul class="poste__members">
+              {{#each this.members}}
+                <li class="poste__member{{#if this.missing}} poste__member--missing{{/if}}" data-uuid="{{this.uuid}}">
+                  <img class="poste__member-avatar" src="{{this.img}}" alt="" data-action="crewOpen">
+                  <span class="poste__member-name" data-action="crewOpen">{{this.name}}</span>
+                  <button type="button" class="poste__member-remove" data-action="crewRemove"
+                          title="{{localize 'STARMARX.Soyouz.Action.RemoveCrew'}}">
+                    <i class="fa-solid fa-xmark"></i>
+                  </button>
+                </li>
+              {{/each}}
+            </ul>
+          {{/if}}
+          <div class="drop-zone drop-zone--crew">
+            <i class="fa-solid fa-user-plus"></i>
+            <p>{{localize "STARMARX.Soyouz.Action.DropKamaradeHere"}}</p>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+
+</section>

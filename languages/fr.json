@@ -3,7 +3,8 @@
     "Actor": {
       "Type": {
         "kamarade": "Kamarade",
-        "enemy": "Ennemi"
+        "enemy": "Ennemi",
+        "soyouz": "Soyouz"
       },
       "Details": {
         "Doctrine": "Doctrine",
@@ -67,6 +68,7 @@
       },
       "KamaradeLabel": "Fiche Kamarade",
       "EnemyLabel": "Fiche Ennemi",
+      "SoyouzLabel": "Fiche Soyouz",
       "ItemLabel": "Fiche d'objet Star Marx",
       "Fields": {
         "Name": "Nom",
@@ -268,6 +270,70 @@
       "Action": {
         "AddDon": "Ajouter un don",
         "DropDonHere": "Glissez un Don depuis le compendium"
+      }
+    },
+    "Soyouz": {
+      "NamePlaceholder": "Nom du vaisseau",
+      "Tabs": {
+        "Presentation": "Présentation",
+        "Equipage": "Équipage",
+        "Traits": "Traits",
+        "Signes": "Signes",
+        "Soute": "Soute"
+      },
+      "Fields": {
+        "TraitTotal": "Total Traits",
+        "TraitTotalHint": "Doit faire 0 à la création (équilibrage)",
+        "Damage": "Dégâts",
+        "DamageHint": "Depuis ORGUE DE STALINE (les Signes de l'artilleur s'y ajoutent)",
+        "HealthFormula": "PV = 5 + MUR DE FER",
+        "Score": "Score de base (rang)",
+        "Bonus": "Bonus (signes, équipement)",
+        "BonusPlaceholder": "bonus",
+        "Avaries": "Avaries (dégâts encaissés, généralement négatif)",
+        "AvariesPlaceholder": "avaries",
+        "Total": "Total effectif (score + bonus + avaries)"
+      },
+      "Sections": {
+        "Traits": "Traits du soyouz",
+        "Signes": "Signes particuliers",
+        "Postes": "Postes d'équipage",
+        "Soute": "Soute"
+      },
+      "Traits": {
+        "Tupolev": "TUPOLEV",
+        "OrgueDeStaline": "ORGUE DE STALINE",
+        "Parade": "PARADE",
+        "Lebedev": "LEBEDEV",
+        "Datcha": "DATCHA",
+        "Tetris": "TÉTRIS",
+        "MurDeFer": "MUR DE FER"
+      },
+      "Postes": {
+        "Pilote": "Pilote",
+        "Artilleur": "Artilleur",
+        "Operateur": "Opérateur",
+        "Technicien": "Technicien",
+        "BeauParleur": "Beau parleur",
+        "Bourrin": "Bourrin",
+        "Passager": "Passager"
+      },
+      "Crew": {
+        "Unknown": "Kamarade introuvable"
+      },
+      "Action": {
+        "AddSigne": "Ajouter un signe",
+        "DropSigneHere": "Glissez un Signe de Soyouz depuis le compendium",
+        "DropKamaradeHere": "Glissez un Kamarade ici",
+        "DropBardaHere": "Glissez un Barda depuis le compendium",
+        "RemoveCrew": "Retirer de ce poste",
+        "ResetTraitsHint": "Remettre tous les Traits à 0",
+        "ResetTraitsTitle": "Réinitialiser les Traits du soyouz",
+        "ResetTraitsConfirm": "Tous les scores de Traits passeront à 0. Les bonus et avaries sont conservés. Continuer ?"
+      },
+      "Notifications": {
+        "OnlyKamaradeCrew": "Seuls les Kamarades peuvent occuper un poste.",
+        "DropOnPoste": "Déposez l'acteur sur un poste précis."
       }
     },
     "Notifications": {

@@ -37,7 +37,8 @@
   "documentTypes": {
     "Actor": {
       "kamarade": {},
-      "enemy":    {}
+      "enemy":    {},
+      "soyouz":   {}
     },
     "Item": {
       "race":          {},

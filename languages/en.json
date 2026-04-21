@@ -3,7 +3,8 @@
     "Actor": {
       "Type": {
         "kamarade": "Kamarade",
-        "enemy": "Enemy"
+        "enemy": "Enemy",
+        "soyouz": "Soyouz"
       },
       "Details": {
         "Doctrine": "Doctrine",
@@ -67,6 +68,7 @@
       },
       "KamaradeLabel": "Kamarade Sheet",
       "EnemyLabel": "Enemy Sheet",
+      "SoyouzLabel": "Soyouz Sheet",
       "ItemLabel": "Star Marx Item Sheet",
       "Fields": {
         "Name": "Name",
@@ -268,6 +270,70 @@
       "Action": {
         "AddDon": "Add gift",
         "DropDonHere": "Drag a Gift from the compendium"
+      }
+    },
+    "Soyouz": {
+      "NamePlaceholder": "Ship name",
+      "Tabs": {
+        "Presentation": "Overview",
+        "Equipage": "Crew",
+        "Traits": "Traits",
+        "Signes": "Signs",
+        "Soute": "Hold"
+      },
+      "Fields": {
+        "TraitTotal": "Trait total",
+        "TraitTotalHint": "Must equal 0 at creation (balanced build)",
+        "Damage": "Damage",
+        "DamageHint": "From ORGUE DE STALINE (gunner's Signs apply on top)",
+        "HealthFormula": "HP = 5 + MUR DE FER",
+        "Score": "Base score (rank)",
+        "Bonus": "Bonus (signs, equipment)",
+        "BonusPlaceholder": "bonus",
+        "Avaries": "Damage / avaries (usually negative)",
+        "AvariesPlaceholder": "avaries",
+        "Total": "Effective total (score + bonus + avaries)"
+      },
+      "Sections": {
+        "Traits": "Ship traits",
+        "Signes": "Distinctive signs",
+        "Postes": "Crew posts",
+        "Soute": "Hold"
+      },
+      "Traits": {
+        "Tupolev": "TUPOLEV",
+        "OrgueDeStaline": "ORGUE DE STALINE",
+        "Parade": "PARADE",
+        "Lebedev": "LEBEDEV",
+        "Datcha": "DATCHA",
+        "Tetris": "TÉTRIS",
+        "MurDeFer": "MUR DE FER"
+      },
+      "Postes": {
+        "Pilote": "Pilot",
+        "Artilleur": "Gunner",
+        "Operateur": "Operator",
+        "Technicien": "Technician",
+        "BeauParleur": "Smooth talker",
+        "Bourrin": "Bruiser",
+        "Passager": "Passenger"
+      },
+      "Crew": {
+        "Unknown": "Missing Kamarade"
+      },
+      "Action": {
+        "AddSigne": "Add sign",
+        "DropSigneHere": "Drag a Ship Sign from the compendium",
+        "DropKamaradeHere": "Drag a Kamarade here",
+        "DropBardaHere": "Drag Gear from the compendium",
+        "RemoveCrew": "Remove from this post",
+        "ResetTraitsHint": "Reset all Traits to 0",
+        "ResetTraitsTitle": "Reset ship Traits",
+        "ResetTraitsConfirm": "All Trait scores will be set to 0. Bonuses and avaries are preserved. Continue?"
+      },
+      "Notifications": {
+        "OnlyKamaradeCrew": "Only Kamarades can occupy a crew post.",
+        "DropOnPoste": "Drop the actor onto a specific post."
       }
     },
     "Notifications": {
