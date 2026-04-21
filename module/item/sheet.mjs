@@ -28,8 +28,7 @@ export class StarMarxItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
       signe:         `systems/${SYSTEM_ID}/templates/item/parts/signe.hbs`,
       clef:          `systems/${SYSTEM_ID}/templates/item/parts/clef.hbs`,
       don:           `systems/${SYSTEM_ID}/templates/item/parts/don.hbs`,
-      signe_soyouz:  `systems/${SYSTEM_ID}/templates/item/parts/signe_soyouz.hbs`,
-      don_soyouz:    `systems/${SYSTEM_ID}/templates/item/parts/don_soyouz.hbs`
+      signe_soyouz:  `systems/${SYSTEM_ID}/templates/item/parts/signe_soyouz.hbs`
     };
     if (parts.body && bodyByType[type]) {
       parts.body = { ...parts.body, template: bodyByType[type] };

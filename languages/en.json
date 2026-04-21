@@ -178,8 +178,7 @@
         "faiblesse": "Weakness",
         "atout": "Trump",
         "don": "Gift",
-        "signe_soyouz": "Ship Sign",
-        "don_soyouz": "Ship Gift"
+        "signe_soyouz": "Ship Sign"
       },
       "Common": {
         "Description": "Description"
@@ -256,10 +255,6 @@
         "TagPlaceholder": "model, narrative, weaponry...",
         "TagHint": "Free-form field to group signs (optional)."
       }
-    },
-    "DonSoyouz": {
-      "Banner": "Enemy-ship-only gift",
-      "Hint": "Attribute reserved for antagonist soyouz. Cannot be bought by the Kamarades' ship."
     },
     "Enemy": {
       "NamePlaceholder": "Enemy name",

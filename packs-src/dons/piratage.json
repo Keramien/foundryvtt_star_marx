@@ -1,0 +1,19 @@
+{
+  "_id": "dnzpiratageAAAAA",
+  "name": "Piratage",
+  "type": "don",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "description": "<p>Le systeme informatique est oppose a un pirate ennemi. En debut de tour, le hackeur tente de controler les systemes des Kamarades. Pour le contrer, un Kamarade est oblige de lutter contre la difficulte de ce pirate (fixee par le Secretaire General) pour eviter des malus.</p>",
+    "alias": "",
+    "rank": 1
+  },
+  "effects": [],
+  "folder": "fldonsoyouzAAAAA",
+  "sort": 2,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!dnzpiratageAAAAA"
+}

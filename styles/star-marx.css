@@ -958,17 +958,18 @@
 }
 
 /* Hide the ProseMirror format toolbar (bold / italic / lists ...) when the
-   field is in view mode.  */
-.star-marx.item prose-mirror:has([contenteditable="false"]) .menu-container {
+   field is in view mode. Driven by a Handlebars-emitted class so it's
+   deterministic across re-renders (AppV2 replaces the body part on
+   re-open — `:has([contenteditable="false"])` raced the async init). */
+.star-marx.item .item-body--readonly prose-mirror .menu-container {
   display: none;
 }
 
 /* --- Soyouz items: steel-blue accent to visually distinguish ship-only items
-   (signe_soyouz, don_soyouz) from Kamarade-facing items. The header swaps its
-   red propaganda gradient for a spaceframe-blue one; the gold separator keeps
-   the soviet-sci-fi parodic tone. */
-.star-marx.item .item-sheet__header[data-item-type="signe_soyouz"],
-.star-marx.item .item-sheet__header[data-item-type="don_soyouz"] {
+   (signe_soyouz) from Kamarade-facing items. The header swaps its red
+   propaganda gradient for a spaceframe-blue one; the gold separator keeps the
+   soviet-sci-fi parodic tone. */
+.star-marx.item .item-sheet__header[data-item-type="signe_soyouz"] {
   background: linear-gradient(135deg, #1b3a5f 0%, #0d2340 100%);
 }
 

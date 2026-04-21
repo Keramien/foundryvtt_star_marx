@@ -1,10 +1,12 @@
 {
   "_id": "dnztireursAAAAAA",
   "name": "Plusieurs Tireurs",
-  "type": "don_soyouz",
+  "type": "don",
   "img": "icons/svg/explosion.svg",
   "system": {
-    "description": "<p>La presence de multiples postes de tir exige que l'on reussisse plusieurs jets consecutifs pour se defendre contre ce vaisseau.</p>"
+    "description": "<p>La presence de multiples postes de tir exige que l'on reussisse plusieurs jets consecutifs pour se defendre contre ce vaisseau.</p>",
+    "alias": "",
+    "rank": 1
   },
   "effects": [],
   "folder": "fldonsoyouzAAAAA",

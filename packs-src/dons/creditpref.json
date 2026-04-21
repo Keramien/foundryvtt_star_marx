@@ -4,7 +4,7 @@
   "type": "don",
   "img": "icons/svg/skull.svg",
   "system": {
-    "description": "<p>Une fois que l'opposant a mordu ou saisi sa proie, il ne la lâche plus et elle perd un point de vie par tour.</p>",
+    "description": "<p>Une fois que l'opposant a mordu ou saisi sa proie, il ne la lâche plus et elle perd un point de vie par tour.</p><p><strong>Variante Soyouz :</strong> le vaisseau ennemi est équipé d'un <strong>armement adhérent</strong> (mines qui s'accrochent à la carlingue et continuent à faire des ravages tour après tour, robot qu'il faudra aller décrocher en scaphandre, etc.) qui retire un point de vie au soyouz des Kamarades à chaque tour tant qu'il n'est pas neutralisé.</p>",
     "alias": "Morsure",
     "rank": 1
   },

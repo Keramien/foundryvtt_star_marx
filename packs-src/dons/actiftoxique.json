@@ -4,7 +4,7 @@
   "type": "don",
   "img": "icons/svg/skull.svg",
   "system": {
-    "description": "<p>Les blessures du Kamarade ne guérissent pas et ne peuvent être soignées que par des soins avec beaucoup de matériel. Un monstre ou un opposant qui possède ce don est immunisé ou mithridatisé à tous les poisons.</p>",
+    "description": "<p>Les blessures du Kamarade ne guérissent pas et ne peuvent être soignées que par des soins avec beaucoup de matériel. Un monstre ou un opposant qui possède ce don est immunisé ou mithridatisé à tous les poisons.</p><p><strong>Variante Soyouz :</strong> les dégâts infligés au vaisseau des Kamarades sont <strong>explosifs et irréparables</strong> par un mécano tant que le soyouz ne s'est pas posé.</p>",
     "alias": "Poison",
     "rank": 1
   },

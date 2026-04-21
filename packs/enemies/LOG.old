@@ -1,1 +1,5 @@
-2026/04/20-17:00:55.981 4594 Delete type=3 #1
+2026/04/21-10:23:41.428 4e1c Recovering log #3
+2026/04/21-10:23:41.428 4e1c Level-0 table #5: started
+2026/04/21-10:23:41.434 4e1c Level-0 table #5: 12506 bytes OK
+2026/04/21-10:23:41.450 4e1c Delete type=0 #3
+2026/04/21-10:23:41.450 4e1c Delete type=3 #2

@@ -48,8 +48,7 @@
       "faiblesse":     {},
       "atout":         {},
       "don":           {},
-      "signe_soyouz":  {},
-      "don_soyouz":    {}
+      "signe_soyouz":  {}
     }
   },
   "packs": [
@@ -92,13 +91,6 @@
       "name": "signes_soyouz",
       "label": "Signes Particuliers (Soyouz)",
       "path": "packs/signes_soyouz",
-      "type": "Item",
-      "system": "star_marx"
-    },
-    {
-      "name": "dons_soyouz",
-      "label": "Dons (Soyouz)",
-      "path": "packs/dons_soyouz",
       "type": "Item",
       "system": "star_marx"
     }

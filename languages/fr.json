@@ -178,8 +178,7 @@
         "faiblesse": "Faiblesse",
         "atout": "Atout",
         "don": "Don",
-        "signe_soyouz": "Signe de Soyouz",
-        "don_soyouz": "Don de Soyouz"
+        "signe_soyouz": "Signe de Soyouz"
       },
       "Common": {
         "Description": "Description"
@@ -256,10 +255,6 @@
         "TagPlaceholder": "modele, narratif, armement...",
         "TagHint": "Champ libre pour regrouper les signes (optionnel)."
       }
-    },
-    "DonSoyouz": {
-      "Banner": "Don réservé aux vaisseaux ennemis",
-      "Hint": "Attribut destiné aux soyouz antagonistes. Non achetable pour le vaisseau des Kamarades."
     },
     "Enemy": {
       "NamePlaceholder": "Nom de l'ennemi",

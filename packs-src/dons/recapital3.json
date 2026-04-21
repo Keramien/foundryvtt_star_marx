@@ -4,7 +4,7 @@
   "type": "don",
   "img": "icons/svg/skull.svg",
   "system": {
-    "description": "<p><strong>Effet au rang 3 :</strong> L'opposant récupère <strong>3 points de vie</strong> à la fin de chaque round.</p>",
+    "description": "<p><strong>Effet au rang 3 :</strong> L'opposant récupère <strong>3 points de vie</strong> à la fin de chaque round.</p><p><strong>Variante Soyouz :</strong> un <strong>mécano adverse</strong> est à bord et répare le vaisseau ennemi, lui rendant <strong>3 points de vie</strong> à la fin de chaque tour.</p>",
     "alias": "Régénération",
     "rank": 3
   },
