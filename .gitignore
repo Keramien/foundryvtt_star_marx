@@ -2,9 +2,6 @@
 # Foundry VTT — Star Marx System
 # ============================================================
 
-# Données utilisateur Foundry (jamais versionnées)
-Data/
-data/
 
 # Dossier de config local Foundry
 Config/
