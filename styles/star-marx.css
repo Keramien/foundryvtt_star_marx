@@ -114,11 +114,14 @@
 }
 
 .star-marx .kamarade-header__race {
+  display: inline-block;
+  line-height: 28px;
   background: rgba(255, 255, 255, 0.12);
   color: var(--sm-paper);
   border: 1px solid var(--sm-gold);
   padding: 2px 6px;
-  font-weight: 600;
+  height: 32px;
+  border-radius: 4px;
 }
 
 /* -------- Tabs nav (pinned, always fully visible, inner text cropped) -------- */
