@@ -3,6 +3,7 @@ import {
   TRAITS_BY_DOCTRINE,
   SYSTEM_ID
 } from "../helpers/config.mjs";
+import { openStarMarxImagePicker } from "../helpers/image-picker.mjs";
 
 const { ActorSheetV2 } = foundry.applications.sheets;
 const { HandlebarsApplicationMixin } = foundry.applications.api;
@@ -15,6 +16,7 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     window: { resizable: true, contentClasses: ["star-marx-content"] },
     form: { submitOnChange: true, closeOnSubmit: false },
     actions: {
+      editImage:        KamaradeSheet.#onEditImage,
       itemCreate:       KamaradeSheet.#onItemCreate,
       itemCreateBonus:  KamaradeSheet.#onItemCreateBonus,
       itemEdit:         KamaradeSheet.#onItemEdit,
@@ -231,6 +233,17 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   }
 
   // --- Actions ---
+
+  static async #onEditImage(event, target) {
+    event.preventDefault();
+    if (!this.isEditable) return;
+    const field = target.dataset.edit ?? "img";
+    return openStarMarxImagePicker({
+      document: this.actor,
+      field,
+      position: this.position
+    });
+  }
 
   static async #onItemCreate(event, target) {
     const type = target.dataset.itemType;

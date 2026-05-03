@@ -6,6 +6,7 @@
         "enemy": "Ennemi",
         "soyouz": "Soyouz"
       },
+      "NamePlaceholder": "Nom du Kamarade",
       "Details": {
         "Doctrine": "Doctrine",
         "Groupuscule": "Groupuscule",
@@ -341,6 +342,12 @@
       "SigneLimitReached": "Limite de Signes atteinte ({max}).",
       "ClefLimitReached": "Limite de Clefs atteinte ({max}).",
       "RacialSigneNotDroppable": "Les Signes raciaux s'acquièrent via une Race, pas directement."
+    },
+    "ImagePicker": {
+      "Change": "Changer l'image",
+      "ImageUpdated": "Image mise à jour.",
+      "NoBrowsePermission": "Vous n'avez pas la permission de parcourir les fichiers.",
+      "DirectoryFailed": "Impossible de préparer le dossier d'images ({path}). Le navigateur de fichiers va quand même s'ouvrir."
     },
     "Roll": {
       "Threshold": "Seuil",

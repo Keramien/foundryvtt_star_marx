@@ -6,6 +6,7 @@
         "enemy": "Enemy",
         "soyouz": "Soyouz"
       },
+      "NamePlaceholder": "Kamarade name",
       "Details": {
         "Doctrine": "Doctrine",
         "Groupuscule": "Faction",
@@ -341,6 +342,12 @@
       "SigneLimitReached": "Sign limit reached ({max}).",
       "ClefLimitReached": "Key limit reached ({max}).",
       "RacialSigneNotDroppable": "Racial Signs are acquired through a Race, not dropped directly."
+    },
+    "ImagePicker": {
+      "Change": "Change image",
+      "ImageUpdated": "Image updated.",
+      "NoBrowsePermission": "You do not have permission to browse files.",
+      "DirectoryFailed": "Could not prepare the image folder ({path}). The file picker will still open."
     },
     "Roll": {
       "Threshold": "Threshold",

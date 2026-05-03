@@ -1,7 +1,8 @@
 <header class="kamarade-header">
-  <img class="kamarade-avatar" src="{{actor.img}}" data-edit="img" alt="{{actor.name}}">
+  <img class="kamarade-avatar" src="{{actor.img}}" data-edit="img" data-action="editImage"
+       title="{{localize 'STARMARX.ImagePicker.Change'}}" alt="{{actor.name}}">
   <div class="kamarade-header__titles">
-    <input type="text" name="name" value="{{actor.name}}" placeholder="Nom du Kamarade" class="charname">
+    <input type="text" name="name" value="{{actor.name}}" placeholder="{{localize 'STARMARX.Actor.NamePlaceholder'}}" class="charname">
     <div class="kamarade-header__meta">
       <label>
         <span>{{localize "STARMARX.Sheet.Sections.Race"}}</span>

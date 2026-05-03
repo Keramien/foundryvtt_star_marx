@@ -1,4 +1,5 @@
 import { SYSTEM_ID, SOYOUZ_TRAITS, SOYOUZ_POSTES } from "../helpers/config.mjs";
+import { openStarMarxImagePicker } from "../helpers/image-picker.mjs";
 
 const { ActorSheetV2 } = foundry.applications.sheets;
 const { HandlebarsApplicationMixin } = foundry.applications.api;
@@ -22,6 +23,7 @@ export class SoyouzSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     window: { resizable: true, contentClasses: ["star-marx-content"] },
     form: { submitOnChange: true, closeOnSubmit: false },
     actions: {
+      editImage:    SoyouzSheet.#onEditImage,
       itemCreate:   SoyouzSheet.#onItemCreate,
       itemEdit:     SoyouzSheet.#onItemEdit,
       itemDelete:   SoyouzSheet.#onItemDelete,
@@ -151,6 +153,17 @@ export class SoyouzSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   }
 
   // --- Actions ---
+
+  static async #onEditImage(event, target) {
+    event.preventDefault();
+    if (!this.isEditable) return;
+    const field = target.dataset.edit ?? "img";
+    return openStarMarxImagePicker({
+      document: this.actor,
+      field,
+      position: this.position
+    });
+  }
 
   static async #onItemCreate(event, target) {
     const type = target.dataset.itemType ?? "signe_soyouz";

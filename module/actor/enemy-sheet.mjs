@@ -1,4 +1,5 @@
 import { SYSTEM_ID } from "../helpers/config.mjs";
+import { openStarMarxImagePicker } from "../helpers/image-picker.mjs";
 
 const { ActorSheetV2 } = foundry.applications.sheets;
 const { HandlebarsApplicationMixin } = foundry.applications.api;
@@ -15,6 +16,7 @@ export class EnemySheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     window: { resizable: true, contentClasses: ["star-marx-content"] },
     form: { submitOnChange: true, closeOnSubmit: false },
     actions: {
+      editImage:  EnemySheet.#onEditImage,
       itemCreate: EnemySheet.#onItemCreate,
       itemEdit:   EnemySheet.#onItemEdit,
       itemDelete: EnemySheet.#onItemDelete
@@ -40,6 +42,17 @@ export class EnemySheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     const item = await Item.implementation.fromDropData(data);
     if (!item) return;
     return this.actor.createEmbeddedDocuments("Item", [item.toObject()]);
+  }
+
+  static async #onEditImage(event, target) {
+    event.preventDefault();
+    if (!this.isEditable) return;
+    const field = target.dataset.edit ?? "img";
+    return openStarMarxImagePicker({
+      document: this.actor,
+      field,
+      position: this.position
+    });
   }
 
   static async #onItemCreate(event, target) {

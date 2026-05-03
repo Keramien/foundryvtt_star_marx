@@ -1,4 +1,5 @@
 import { DOCTRINES, TRAITS_BY_DOCTRINE, SYSTEM_ID } from "../helpers/config.mjs";
+import { openStarMarxImagePicker } from "../helpers/image-picker.mjs";
 
 const { ItemSheetV2 } = foundry.applications.sheets;
 const { HandlebarsApplicationMixin } = foundry.applications.api;
@@ -12,7 +13,10 @@ export class StarMarxItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
     classes: ["star-marx", "sheet", "item"],
     position: { width: 520, height: 560 },
     window: { resizable: true, contentClasses: ["star-marx-content"] },
-    form: { submitOnChange: true, closeOnSubmit: false }
+    form: { submitOnChange: true, closeOnSubmit: false },
+    actions: {
+      editImage: StarMarxItemSheet.#onEditImage
+    }
   };
 
   static PARTS = {
@@ -52,5 +56,16 @@ export class StarMarxItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
     // and handles serialization + editing itself.
 
     return context;
+  }
+
+  static async #onEditImage(event, target) {
+    event.preventDefault();
+    if (!this.isEditable) return;
+    const field = target.dataset.edit ?? "img";
+    return openStarMarxImagePicker({
+      document: this.item,
+      field,
+      position: this.position
+    });
   }
 }
