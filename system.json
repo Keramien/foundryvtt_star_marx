@@ -2,6 +2,9 @@
   "id": "star_marx",
   "title": "Star Marx",
   "description": "Système officieux pour Star Marx, le jeu de rôle parodique de science-fiction.",
+  "url": "https://github.com/Keramien/foundryvtt_star_marx",
+  "manifest": "https://raw.githubusercontent.com/Keramien/foundryvtt_star_marx/refs/tags/release_0.1.0/system.json",
+  "download": "https://raw.githubusercontent.com/Keramien/foundryvtt_star_marx/refs/tags/release_0.1.0/download/system.zip",
   "version": "0.1.0",
   "compatibility": {
     "minimum": "14",
@@ -111,7 +114,6 @@
     "units": "m"
   },
   "socket": false,
-  "url": "",
   "license": "",
   "bugs": "",
   "changelog": "",
