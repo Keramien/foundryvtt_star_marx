@@ -5,7 +5,10 @@
   "type": "module",
   "scripts": {
     "pack:build": "node tools/pack-build.mjs",
-    "pack:extract": "node tools/pack-extract.mjs"
+    "pack:extract": "node tools/pack-extract.mjs",
+    "unit:test:generate": "npm.cmd --prefix unit_test run generate",
+    "unit:test:coverage": "npm.cmd --prefix unit_test run check:coverage",
+    "unit:test": "npm.cmd --prefix unit_test run test"
   },
   "dependencies": {
     "pdf-parse": "^2.4.5",

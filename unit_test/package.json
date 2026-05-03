@@ -1,0 +1,11 @@
+{
+  "name": "star-marx-unit-test",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate": "node ./scripts/generate-test-skeletons.mjs",
+    "check:coverage": "node ./scripts/check-signes-coverage.mjs",
+    "test": "node --test \"./signs/**/*.test.mjs\"",
+    "test:coverage": "npm run check:coverage && npm test"
+  }
+}
