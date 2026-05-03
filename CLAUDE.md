@@ -18,13 +18,13 @@ Star Marx est un jeu de rôle sur table existant, à l'univers science-fiction p
 ## 2. Ressources de référence
 
 ### 📚 Règles officielles du jeu
-Les livres de règles complets au format PDF sont disponibles ici :
+Les livres de règles complets au format markdown sont disponibles ici :
 
 ```
 memory/star_marx_books/
 ```
 
-> ⚠️ **Note pour Claude Opus :** Avant d'intervenir sur les mécaniques de jeu, consulter les PDFs dans ce dossier pour connaître les règles officielles. Ne jamais inventer ou supposer une règle sans avoir vérifié dans ces sources.
+> ⚠️ **Note pour Claude Opus :** Avant d'intervenir sur les mécaniques de jeu, consulter les .md dans ce dossier pour connaître les règles officielles. Ne jamais inventer ou supposer une règle sans avoir vérifié dans ces sources.
 
 ---
 
@@ -48,7 +48,7 @@ memory/star_marx_books/
 - Affichage des résultats dans le chat Foundry
 
 ### 🔲 Priorité 2 — À définir
-> D'autres mécaniques seront ajoutées au fur et à mesure. Se référer aux PDFs pour identifier les modules à implémenter.
+> D'autres mécaniques seront ajoutées au fur et à mesure. Se référer aux markdown pour identifier les modules à implémenter.
 
 ---
 
@@ -89,14 +89,7 @@ star-marx/          ← dossier racine du game system Foundry
 |---|---|
 | 2026-04-16 | Initialisation du projet, choix de Foundry VTT comme plateforme |
 | 2026-04-16 | Priorité donnée au système de compétences |
-
----
-
-## 8. Questions ouvertes / À trancher
-
-- [ ] Quel est le système de dés utilisé dans Star Marx ? (voir PDFs)
-- [ ] Y a-t-il des factions ou des classes de personnages ? (voir PDFs)
-- [ ] Faut-il un module de combat dès la V1 ?
+| 2026-05-03 | Régles de base OK, priorité sur l'intégration des images et les effets des signes |
 
 ---
 
