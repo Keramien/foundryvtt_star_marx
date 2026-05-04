@@ -148,26 +148,6 @@ export class KamaradeActor extends Actor {
       .replace(/[^a-z0-9]+/g, "");
   }
 
-  // Current HP is stored as `health.offset` from max HP. If the sheet submits
-  // `health.value`, convert it to an offset and let prepareDerivedData rebuild
-  // the displayed value after max HP is recomputed.
-  async _preUpdate(changed, options, user) {
-    await super._preUpdate(changed, options, user);
-
-    if (this.type !== "kamarade") return;
-    if (!foundry.utils.hasProperty(changed, "system.health.value")) return;
-
-    const incomingValue = foundry.utils.getProperty(changed, "system.health.value");
-    const mergedSys = foundry.utils.mergeObject(
-      foundry.utils.deepClone(this.toObject().system),
-      changed.system ?? {}
-    );
-    const newMax = this._computeHealthMax(mergedSys);
-    const boundedValue = Math.max(0, Math.min(newMax, incomingValue ?? 0));
-    foundry.utils.setProperty(changed, "system.health.offset", boundedValue - newMax);
-    foundry.utils.deleteProperty(changed, "system.health.value");
-  }
-
   getRollData() {
     const data = super.getRollData();
     return data;

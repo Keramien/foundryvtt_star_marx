@@ -92,6 +92,13 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     return context;
   }
 
+  _onRender(context, options) {
+    super._onRender(context, options);
+    this.element
+      .querySelector("[data-health-value]")
+      ?.addEventListener("change", this.#onHealthValueChange.bind(this));
+  }
+
   // Build an ordered list of doctrine groups with chosen doctrine first.
   // Each trait exposes paths+values for points (editable), bonus (editable),
   // and total (computed, read-only).
@@ -132,6 +139,20 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
 
   #capitalize(s) {
     return s.charAt(0).toUpperCase() + s.slice(1);
+  }
+
+  async #onHealthValueChange(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    if (!this.isEditable) return;
+
+    const max = this.actor.system.health.max ?? 0;
+    const rawValue = Number(event.currentTarget.value);
+    const currentValue = Number.isFinite(rawValue) ? rawValue : 0;
+    const boundedValue = Math.max(0, Math.min(max, currentValue));
+    event.currentTarget.value = boundedValue;
+
+    await this.actor.update({ "system.health.offset": boundedValue - max });
   }
 
   // --- Drag & drop ---

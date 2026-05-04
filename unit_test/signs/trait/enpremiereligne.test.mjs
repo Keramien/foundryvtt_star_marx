@@ -57,21 +57,31 @@ describe("Kamarade Sign - En premiere ligne (enpremiereligne)", () => {
     assert.equal(actor.system.health.offset, -1);
   });
 
-  test("_preUpdate stores current HP edits as health offset", async () => {
+  test("health offset preserves wound count when KARKASS changes max HP", async () => {
     installActorStub();
-    installFoundryUtilsStub();
     const { KamaradeActor } = await import("../../../module/actor/kamarade.mjs");
 
     const actor = createRuntimeActor(KamaradeActor, {
-      system: makeSystem({ value: 5, max: 5, offset: 0 }),
+      system: makeSystem({ value: 4, max: 5, offset: -1 }),
       items: []
     });
-    const changed = { system: { health: { value: 3 } } };
 
-    await KamaradeActor.prototype._preUpdate.call(actor, changed, {}, "UNIT_TEST_USER");
+    KamaradeActor.prototype.prepareDerivedData.call(actor);
+    assert.equal(actor.system.health.max, 5);
+    assert.equal(actor.system.health.value, 4);
+    assert.equal(actor.system.health.offset, -1);
 
-    assert.equal(changed.system.health.offset, -2);
-    assert.equal("value" in changed.system.health, false);
+    actor.system.traits.marteau.karkass.points = 1;
+    KamaradeActor.prototype.prepareDerivedData.call(actor);
+    assert.equal(actor.system.health.max, 6);
+    assert.equal(actor.system.health.value, 5);
+    assert.equal(actor.system.health.offset, -1);
+
+    actor.system.traits.marteau.karkass.points = 0;
+    KamaradeActor.prototype.prepareDerivedData.call(actor);
+    assert.equal(actor.system.health.max, 5);
+    assert.equal(actor.system.health.value, 4);
+    assert.equal(actor.system.health.offset, -1);
   });
 });
 
@@ -81,42 +91,6 @@ function installActorStub() {
     async _preUpdate() {}
     getRollData() { return {}; }
   };
-}
-
-function installFoundryUtilsStub() {
-  globalThis.foundry ??= {};
-  globalThis.foundry.utils = {
-    deepClone: value => structuredClone(value),
-    deleteProperty: (object, path) => {
-      const parts = path.split(".");
-      const last = parts.pop();
-      const parent = parts.reduce((current, part) => current?.[part], object);
-      if (parent && last) delete parent[last];
-    },
-    getProperty: (object, path) => path.split(".").reduce((current, part) => current?.[part], object),
-    hasProperty: (object, path) => globalThis.foundry.utils.getProperty(object, path) !== undefined,
-    mergeObject: (original, other) => mergeObject(original, other),
-    setProperty: (object, path, value) => {
-      const parts = path.split(".");
-      const last = parts.pop();
-      const parent = parts.reduce((current, part) => {
-        current[part] ??= {};
-        return current[part];
-      }, object);
-      parent[last] = value;
-    }
-  };
-}
-
-function mergeObject(original, other) {
-  for (const [key, value] of Object.entries(other ?? {})) {
-    if (value && typeof value === "object" && !Array.isArray(value)) {
-      original[key] = mergeObject(original[key] ?? {}, value);
-    } else {
-      original[key] = value;
-    }
-  }
-  return original;
 }
 
 function makeSystem({ value, max, offset }) {

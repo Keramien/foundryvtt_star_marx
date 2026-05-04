@@ -4,7 +4,7 @@
     <div class="stat-block stat-hp">
       <h3>{{localize "STARMARX.Actor.Health.Label"}}</h3>
       <div class="stat-values">
-        <input type="number" name="system.health.value" value="{{system.health.value}}" min="0">
+        <input type="number" data-health-value value="{{system.health.value}}" min="0" max="{{system.health.max}}">
         <span class="sep">/</span>
         <span class="stat-max">{{system.health.max}}</span>
       </div>
