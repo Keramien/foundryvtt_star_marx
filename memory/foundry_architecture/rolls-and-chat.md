@@ -48,7 +48,7 @@ Les formules peuvent référencer des données de l'acteur avec `@` :
 
 ```javascript
 // Dans ton Document Actor
-export class StarMarxActor extends Actor {
+export class KamaradeActor extends Actor {
   getRollData() {
     const data = super.getRollData();
     // data contient déjà tout ce qui est dans system.*

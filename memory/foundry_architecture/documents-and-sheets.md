@@ -43,7 +43,7 @@ Un Document peut avoir **plusieurs Sheets** (fiches alternatives), mais une Shee
 ```javascript
 // module/actor/actor.mjs
 
-export class StarMarxActor extends Actor {
+export class KamaradeActor extends Actor {
 
   /** Données disponibles dans les formules de dés (@health, @attributes.strength...) */
   getRollData() {
@@ -69,7 +69,7 @@ export class StarMarxActor extends Actor {
 Enregistrement :
 ```javascript
 Hooks.once("init", () => {
-  CONFIG.Actor.documentClass = StarMarxActor;
+  CONFIG.Actor.documentClass = KamaradeActor;
 });
 ```
 

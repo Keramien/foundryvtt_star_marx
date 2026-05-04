@@ -57,6 +57,7 @@ export class KamaradeData extends foundry.abstract.TypeDataModel {
       health: new SchemaField({
         value: new NumberField({ required: true, integer: true, initial: 5, min: 0 }),
         max:   new NumberField({ required: true, integer: true, initial: 5 }),
+        offset: new NumberField({ required: true, integer: true, initial: 0 }),
         bonus: new NumberField({ required: true, integer: true, initial: 0 })
       }),
       damage: new SchemaField({
@@ -87,7 +88,7 @@ export class KamaradeData extends foundry.abstract.TypeDataModel {
         signes:      new NumberField({ required: true, integer: true, initial: 1, min: 0 })
       }),
 
-      // Derived values written by StarMarxActor.prepareDerivedData. Declared
+      // Derived values written by KamaradeActor.prepareDerivedData. Declared
       // as top-level Object/Number fields so assignments don't hit schema
       // validation. Keep these here rather than splitting into a separate
       // derived model — it's a small closed set.
