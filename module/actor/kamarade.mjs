@@ -48,8 +48,8 @@ export function prepareKamaradeDerivedData(actor) {
 
   sys.traitPoints = computeKamaradeTraitPoints(actor);
 
-  // Signes slots: creation base + 1 per 2 XP spent on signes.
-  sys.signesMax = (sys.limits?.signes ?? 2) + Math.floor(xpSignes / 2);
+  // Signes slots: creation base + racial/sign bonuses + 1 per 2 XP spent on signes.
+  sys.signesMax = computeKamaradeSignesMax(actor);
 
   // Clefs slots: 2 XP = 1 slot, capped by the rules' hard max (default 5).
   sys.clefsMax = Math.min(sys.limits?.clefs ?? 5, Math.floor(xpClefs / 2));
@@ -69,8 +69,16 @@ export function computeKamaradeTraitPoints(actor) {
     }
   }
 
-  const max = STARTING_TRAIT_POINTS + xpTraits;
+  const max = STARTING_TRAIT_POINTS + xpTraits + computeKamaradeTraitPointsBonus(actor);
   return { max, spent, available: max - spent };
+}
+
+export function computeKamaradeSignesMax(actor) {
+  const sys = actor.system;
+  const xpSignes = sys.details?.xp?.signes ?? 0;
+  return (sys.limits?.signes ?? 2)
+    + Math.floor(xpSignes / 2)
+    + computeKamaradeSignesMaxBonus(actor);
 }
 
 export function initializeKamaradeHealthOffset(actor) {
@@ -112,11 +120,37 @@ export function hasKamaradeItem(actor, name) {
   return found;
 }
 
+export function hasKamaradeSigne(actor, name) {
+  let found = false;
+  actor.items?.forEach(item => {
+    if (item?.type === "signe" && item.name && normalizeSignSlug(item.name) === name) {
+      found = true;
+    }
+  });
+  return found;
+}
+
+export function computeKamaradeTraitPointsBonus(actor) {
+  if (actor.type !== "kamarade") return 0;
+
+  let bonus = 0;
+  if (hasKamaradeSigne(actor, "humain")) bonus += 2;
+  return bonus;
+}
+
+export function computeKamaradeSignesMaxBonus(actor) {
+  if (actor.type !== "kamarade") return 0;
+
+  let bonus = 0;
+  if (hasKamaradeSigne(actor, "humain")) bonus += 1;
+  return bonus;
+}
+
 export function computeKamaradeSignHpBonus(actor) {
   if (actor.type !== "kamarade") return 0;
 
   let bonus = 0;
-  if (hasKamaradeItem(actor, "enpremiereligne")) bonus += 3;
+  if (hasKamaradeSigne(actor, "enpremiereligne")) bonus += 3;
   return bonus;
 }
 

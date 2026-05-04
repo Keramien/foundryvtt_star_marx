@@ -74,9 +74,7 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     context.kontrebandes = actor.items.filter(i => i.type === "kontrebande");
     context.bardas       = actor.items.filter(i => i.type === "barda");
 
-    // Signes slot cap includes the racial bonus from the current race, if any.
-    const signesBonus = context.race?.system?.signesBonus ?? 0;
-    context.signesMax = (sys.signesMax ?? sys.limits?.signes ?? 2) + signesBonus;
+    context.signesMax = sys.signesMax ?? sys.limits?.signes ?? 2;
 
     // Expose the primary tab list for the nav template. Individual content
     // parts receive their own `tab` context via _preparePartContext below.
@@ -227,9 +225,7 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       return false;
     }
 
-    const race = actor.itemTypes.race?.[0] ?? null;
-    const signesBonus = race?.system?.signesBonus ?? 0;
-    const max = (actor.system.signesMax ?? actor.system.limits?.signes ?? 1) + signesBonus;
+    const max = actor.system.signesMax ?? actor.system.limits?.signes ?? 1;
     // Cap applies only to player-chosen signes — racial and bonus ones are tracked separately.
     const current = actor.items.filter(i =>
       i.type === "signe" && i.system.category !== "racial" && !i.system.bonus
