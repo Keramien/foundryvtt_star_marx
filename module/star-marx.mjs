@@ -1,9 +1,9 @@
-import { KamaradeActor } from "./actor/kamarade.mjs";
-import { KamaradeSheet } from "./actor/sheet.mjs";
-import { EnemySheet } from "./actor/enemy-sheet.mjs";
-import { SoyouzSheet } from "./actor/soyouz-sheet.mjs";
+import { StarMarxActor } from "./actor/actor.mjs";
+import { KamaradeSheet } from "./actor/kamarde_sheet.mjs";
+import { EnemySheet } from "./actor/enemy_sheet.mjs";
+import { SoyouzSheet } from "./actor/soyouz_sheet.mjs";
 import { StarMarxItem } from "./item/item.mjs";
-import { StarMarxItemSheet } from "./item/sheet.mjs";
+import { StarMarxItemSheet } from "./item/item_sheet.mjs";
 import { KamaradeData } from "./data/kamarade_data.mjs";
 import { EnemyData } from "./data/enemy_data.mjs";
 import { SoyouzData } from "./data/soyouz_data.mjs";
@@ -17,7 +17,7 @@ import { SYSTEM_ID } from "./helpers/config.mjs";
 Hooks.once("init", () => {
   console.log("Star Marx | Initializing system");
 
-  CONFIG.Actor.documentClass = KamaradeActor;
+  CONFIG.Actor.documentClass = StarMarxActor;
   CONFIG.Item.documentClass = StarMarxItem;
 
   // Register typed data models — replaces template.json (deprecated in v14,

@@ -5,7 +5,7 @@
   "scripts": {
     "generate": "node ./scripts/generate-test-skeletons.mjs",
     "check:coverage": "node ./scripts/check-signes-coverage.mjs",
-    "test": "node --test \"./signs/**/*.test.mjs\"",
+    "test": "node --test \"./**/*.test.mjs\"",
     "test:coverage": "npm run check:coverage && npm test"
   }
 }

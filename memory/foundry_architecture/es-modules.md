@@ -16,21 +16,21 @@ Actor* a = new Actor();
 
 ```javascript
 // JavaScript ES Modules
-import { KamaradeActor } from "./actor/actor.mjs";   // Import nommé
-import KamaradeActor from "./actor/actor.mjs";        // Import par défaut
+import { StarMarxActor } from "./actor/actor.mjs";   // Import nommé
+import StarMarxActor from "./actor/actor.mjs";        // Import par défaut
 
-const a = new KamaradeActor();
+const a = new StarMarxActor();
 ```
 
 ### Exporter depuis un module
 
 ```javascript
 // actor.mjs — exports nommés (préféré dans Foundry)
-export class KamaradeActor extends Actor { /* ... */ }
+export class StarMarxActor extends Actor { /* ... */ }
 export function helper() { /* ... */ }
 
 // Importer
-import { KamaradeActor, helper } from "./actor/actor.mjs";
+import { StarMarxActor, helper } from "./actor/actor.mjs";
 ```
 
 ```javascript
@@ -145,7 +145,7 @@ await roll.evaluate();  // Génère le résultat aléatoire
 La syntaxe est proche mais il y a des différences :
 
 ```javascript
-class KamaradeActor extends Actor {
+class StarMarxActor extends Actor {
   // Pas de déclaration de membres à l'avance (pas de header)
   // Pas de types explicites
   // Pas de destructeur
@@ -248,7 +248,7 @@ module/
 │                              Imports + Hooks.once("init", ...)
 ├── actor/
 │   ├── data-models.mjs     ← Classes TypeDataModel (schémas)
-│   ├── actor.mjs           ← Classe KamaradeActor extends Actor
+│   ├── actor.mjs           ← Classe StarMarxActor extends Actor
 │   └── sheet.mjs           ← Classe StarMarxActorSheet extends ActorSheetV2
 ├── item/
 │   ├── data-models.mjs

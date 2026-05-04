@@ -1,6 +1,10 @@
 import { describe, test } from "node:test";
 import assert from "node:assert/strict";
 import catalog from "../../meta/signes-catalog.json" with { type: "json" };
+import {
+  computeKamaradeHealthMax,
+  prepareKamaradeDerivedData
+} from "../../../module/actor/kamarade.mjs";
 
 const SIGN = catalog.find(entry => entry.slug === "enpremiereligne");
 
@@ -10,88 +14,71 @@ describe("Kamarade Sign - En premiere ligne (enpremiereligne)", () => {
     assert.equal(SIGN.category, "trait");
   });
 
-  test("_computeHealthMax includes +3 when the sign is present", async () => {
-    installActorStub();
-    const { KamaradeActor } = await import("../../../module/actor/kamarade.mjs");
-
-    const actor = createRuntimeActor(KamaradeActor, {
+  test("computeKamaradeHealthMax includes +3 when the sign is present", () => {
+    const actor = createRuntimeActor({
       system: makeSystem({ value: 5, max: 5, offset: 0 }),
       items: []
     });
 
-    const withoutSign = KamaradeActor.prototype._computeHealthMax.call(actor, actor.system);
+    const withoutSign = computeKamaradeHealthMax(actor, actor.system);
     actor.items.push({ type: "signe", name: "En premiere ligne" });
-    const withSign = KamaradeActor.prototype._computeHealthMax.call(actor, actor.system);
+    const withSign = computeKamaradeHealthMax(actor, actor.system);
     actor.items.pop();
-    const afterRemoval = KamaradeActor.prototype._computeHealthMax.call(actor, actor.system);
+    const afterRemoval = computeKamaradeHealthMax(actor, actor.system);
 
     assert.equal(withoutSign, 5);
     assert.equal(withSign, 8);
     assert.equal(afterRemoval, 5);
   });
 
-  test("health offset preserves wound count when the sign changes max HP", async () => {
-    installActorStub();
-    const { KamaradeActor } = await import("../../../module/actor/kamarade.mjs");
-
-    const actor = createRuntimeActor(KamaradeActor, {
+  test("health offset preserves wound count when the sign changes max HP", () => {
+    const actor = createRuntimeActor({
       system: makeSystem({ value: 4, max: 5, offset: -1 }),
       items: []
     });
 
-    KamaradeActor.prototype.prepareDerivedData.call(actor);
+    prepareKamaradeDerivedData(actor);
     assert.equal(actor.system.health.max, 5);
     assert.equal(actor.system.health.value, 4);
     assert.equal(actor.system.health.offset, -1);
 
     actor.items.push({ id: "SIGN-1", type: "signe", name: "En premiere ligne" });
-    KamaradeActor.prototype.prepareDerivedData.call(actor);
+    prepareKamaradeDerivedData(actor);
     assert.equal(actor.system.health.max, 8);
     assert.equal(actor.system.health.value, 7);
     assert.equal(actor.system.health.offset, -1);
 
     actor.items = [];
-    KamaradeActor.prototype.prepareDerivedData.call(actor);
+    prepareKamaradeDerivedData(actor);
     assert.equal(actor.system.health.max, 5);
     assert.equal(actor.system.health.value, 4);
     assert.equal(actor.system.health.offset, -1);
   });
 
-  test("health offset preserves wound count when KARKASS changes max HP", async () => {
-    installActorStub();
-    const { KamaradeActor } = await import("../../../module/actor/kamarade.mjs");
-
-    const actor = createRuntimeActor(KamaradeActor, {
+  test("health offset preserves wound count when KARKASS changes max HP", () => {
+    const actor = createRuntimeActor({
       system: makeSystem({ value: 4, max: 5, offset: -1 }),
       items: []
     });
 
-    KamaradeActor.prototype.prepareDerivedData.call(actor);
+    prepareKamaradeDerivedData(actor);
     assert.equal(actor.system.health.max, 5);
     assert.equal(actor.system.health.value, 4);
     assert.equal(actor.system.health.offset, -1);
 
     actor.system.traits.marteau.karkass.points = 1;
-    KamaradeActor.prototype.prepareDerivedData.call(actor);
+    prepareKamaradeDerivedData(actor);
     assert.equal(actor.system.health.max, 6);
     assert.equal(actor.system.health.value, 5);
     assert.equal(actor.system.health.offset, -1);
 
     actor.system.traits.marteau.karkass.points = 0;
-    KamaradeActor.prototype.prepareDerivedData.call(actor);
+    prepareKamaradeDerivedData(actor);
     assert.equal(actor.system.health.max, 5);
     assert.equal(actor.system.health.value, 4);
     assert.equal(actor.system.health.offset, -1);
   });
 });
-
-function installActorStub() {
-  globalThis.Actor ??= class Actor {
-    prepareDerivedData() {}
-    async _preUpdate() {}
-    getRollData() { return {}; }
-  };
-}
 
 function makeSystem({ value, max, offset }) {
   return {
@@ -125,20 +112,13 @@ function makeSystem({ value, max, offset }) {
   };
 }
 
-function createRuntimeActor(KamaradeActor, { system, items }) {
+function createRuntimeActor({ system, items }) {
   return {
     type: "kamarade",
     system,
     items,
     toObject: function toObject() {
       return { system: structuredClone(this.system) };
-    },
-    _computeTraitPoints: KamaradeActor.prototype._computeTraitPoints,
-    _initializeHealthOffset: KamaradeActor.prototype._initializeHealthOffset,
-    _computeHealthMax: KamaradeActor.prototype._computeHealthMax,
-    _computeHealthValue: KamaradeActor.prototype._computeHealthValue,
-    _computeKamaradeSignHpBonus: KamaradeActor.prototype._computeKamaradeSignHpBonus,
-    _has_item: KamaradeActor.prototype._has_item,
-    _normalizeSignSlug: KamaradeActor.prototype._normalizeSignSlug
+    }
   };
 }

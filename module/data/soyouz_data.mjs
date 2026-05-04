@@ -56,11 +56,12 @@ export class SoyouzData extends foundry.abstract.TypeDataModel {
       traits: buildTraitsSchema(),
       health: new SchemaField({
         value: new NumberField({ required: true, integer: true, initial: 5, min: 0 }),
-        max:   new NumberField({ required: true, integer: true, initial: 5, min: 0 })
+        max:   new NumberField({ required: true, integer: true, initial: 5, min: 0 }),
+        offset: new NumberField({ required: true, integer: true, initial: 0 })
       }),
       postes: buildPostesSchema(),
 
-      // Derived, written by KamaradeActor.prepareDerivedData. Kept in schema
+      // Derived, written by StarMarxActor.prepareDerivedData. Kept in schema
       // to avoid validation noise on derivation writes.
       traitTotal:      new NumberField({ required: true, integer: true, initial: 0 }),
       damageFromOrgue: new StringField({ required: true, initial: "1" })

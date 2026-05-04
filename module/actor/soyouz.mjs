@@ -24,37 +24,34 @@ export function prepareSoyouzDerivedData(actor) {
   }
   sys.traitTotal = sumScore;
 
-  const murDeFerTotal = t.murDeFer?.total ?? 0;
-  sys.health.max = Math.max(0, SOYOUZ_BASE_HP + murDeFerTotal);
-  sys.health.value = Math.max(0, Math.min(sys.health.value ?? 0, sys.health.max));
+  initializeSoyouzHealthOffset(actor);
+  sys.health.max = computeSoyouzHealthMax(sys);
+  sys.health.value = computeSoyouzHealthValue(sys);
 
   sys.damageFromOrgue = soyouzDamageFromOrgue(t.orgueDeStaline?.total ?? 0);
 }
 
-// Shift Soyouz current HP by the same delta as max HP when MUR DE FER changes.
-// Returns true when the caller should stop processing update hooks.
-export function applySoyouzHealthPreUpdate(actor, changed) {
-  const watched = [
-    "system.traits.murDeFer.score",
-    "system.traits.murDeFer.bonus",
-    "system.traits.murDeFer.avaries"
-  ];
-  if (!watched.some(p => foundry.utils.hasProperty(changed, p))) return true;
+export function initializeSoyouzHealthOffset(actor) {
+  const sys = actor.system;
+  const sourceHealth = actor._source?.system?.health;
+  if (actor._source?.system) {
+    if (Number.isFinite(sourceHealth?.offset)) return;
+  } else if (Number.isFinite(sys.health?.offset)) {
+    return;
+  }
 
-  const currentMax = actor.system.health.max;
-  const mergedSys = foundry.utils.mergeObject(
-    foundry.utils.deepClone(actor.toObject().system),
-    changed.system ?? {}
-  );
-  const m = mergedSys.traits?.murDeFer ?? {};
-  const murTotal = (m.score ?? 0) + (m.bonus ?? 0) + (m.avaries ?? 0);
-  const newMax = Math.max(0, SOYOUZ_BASE_HP + murTotal);
-  const delta = newMax - currentMax;
-  if (delta === 0) return true;
+  const value = Number.isFinite(sourceHealth?.value) ? sourceHealth.value : (sys.health?.value ?? SOYOUZ_BASE_HP);
+  const max = Number.isFinite(sourceHealth?.max) ? sourceHealth.max : (sys.health?.max ?? SOYOUZ_BASE_HP);
+  sys.health.offset = value - max;
+}
 
-  const incomingValue = foundry.utils.getProperty(changed, "system.health.value");
-  const baseValue = (incomingValue !== undefined) ? incomingValue : (actor.system.health.value ?? 0);
-  const shifted = Math.max(0, Math.min(newMax, baseValue + delta));
-  foundry.utils.setProperty(changed, "system.health.value", shifted);
-  return true;
+export function computeSoyouzHealthMax(sys) {
+  const murDeFerTotal = sys.traits?.murDeFer?.total ?? 0;
+  return Math.max(0, SOYOUZ_BASE_HP + murDeFerTotal);
+}
+
+export function computeSoyouzHealthValue(sys) {
+  const max = sys.health?.max ?? computeSoyouzHealthMax(sys);
+  const offset = sys.health?.offset ?? 0;
+  return Math.max(0, Math.min(max, max + offset));
 }

@@ -1,4 +1,4 @@
-// KamaradeData — typed schema for the only Actor subtype in Star Marx.
+// KamaradeData — typed schema for the Kamarade Actor subtype.
 //
 // Replaces the legacy template.json entry for Actor.kamarade. Fields that
 // prepareDerivedData writes back (trait.total, health.max, damage.*.value,
@@ -88,7 +88,7 @@ export class KamaradeData extends foundry.abstract.TypeDataModel {
         signes:      new NumberField({ required: true, integer: true, initial: 1, min: 0 })
       }),
 
-      // Derived values written by KamaradeActor.prepareDerivedData. Declared
+      // Derived values written by StarMarxActor.prepareDerivedData. Declared
       // as top-level Object/Number fields so assignments don't hit schema
       // validation. Keep these here rather than splitting into a separate
       // derived model — it's a small closed set.

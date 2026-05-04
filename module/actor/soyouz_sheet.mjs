@@ -119,6 +119,27 @@ export class SoyouzSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     return context;
   }
 
+  _onRender(context, options) {
+    super._onRender(context, options);
+    this.element
+      .querySelector("[data-health-value]")
+      ?.addEventListener("change", this.#onHealthValueChange.bind(this));
+  }
+
+  async #onHealthValueChange(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    if (!this.isEditable) return;
+
+    const max = this.actor.system.health.max ?? 0;
+    const rawValue = Number(event.currentTarget.value);
+    const currentValue = Number.isFinite(rawValue) ? rawValue : 0;
+    const boundedValue = Math.max(0, Math.min(max, currentValue));
+    event.currentTarget.value = boundedValue;
+
+    await this.actor.update({ "system.health.offset": boundedValue - max });
+  }
+
   // --- Drag & drop ---
 
   async _onDropItem(event, data) {
