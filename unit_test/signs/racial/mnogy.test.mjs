@@ -1,9 +1,11 @@
 import { describe, test } from "node:test";
 import assert from "node:assert/strict";
 import { createKamaradeFixture } from "../../fixtures/kamarade.factory.mjs";
-import { createSigneFixture } from "../../fixtures/signe.factory.mjs";
-import { applySigneEffect } from "../../helpers/apply-signe.mjs";
 import catalog from "../../meta/signes-catalog.json" with { type: "json" };
+import {
+  computeKamaradeHealthMax,
+  prepareKamaradeDerivedData
+} from "../../../module/actor/kamarade.mjs";
 
 const SIGN = catalog.find(entry => entry.slug === "mnogy");
 
@@ -13,17 +15,62 @@ describe("Kamarade Sign - Mnogy (mnogy)", () => {
     assert.equal(SIGN.category, "racial");
   });
 
-  test.skip("applies the sign effect in nominal conditions", () => {
-    const kamarade = createKamaradeFixture();
-    const signe = createSigneFixture(SIGN);
-    const result = applySigneEffect({ kamarade, signe });
-    assert.equal(result.metadata.applied, true);
+  test("adds +1 to max HP when the racial sign is present", () => {
+    const actor = createActor();
+
+    const withoutSign = computeKamaradeHealthMax(actor, actor.system);
+    actor.items.push(createMnogySigne());
+    const withSign = computeKamaradeHealthMax(actor, actor.system);
+    actor.items = [];
+    const afterRemoval = computeKamaradeHealthMax(actor, actor.system);
+
+    assert.equal(withoutSign, 5);
+    assert.equal(withSign, 6);
+    assert.equal(afterRemoval, 5);
   });
 
-  test.skip("does not apply outside of required conditions", () => {
-    const kamarade = createKamaradeFixture({ system: { details: { doctrine: "marteau" } } });
-    const signe = createSigneFixture(SIGN);
-    const result = applySigneEffect({ kamarade, signe });
-    assert.equal(result.metadata.applied, false);
+  test("health offset preserves wound count when the sign changes max HP", () => {
+    const actor = createActor({
+      system: {
+        health: { value: 4, max: 5, offset: -1, bonus: 0 }
+      }
+    });
+
+    prepareKamaradeDerivedData(actor);
+    assert.equal(actor.system.health.max, 5);
+    assert.equal(actor.system.health.value, 4);
+    assert.equal(actor.system.health.offset, -1);
+
+    actor.items.push(createMnogySigne());
+    prepareKamaradeDerivedData(actor);
+    assert.equal(actor.system.health.max, 6);
+    assert.equal(actor.system.health.value, 5);
+    assert.equal(actor.system.health.offset, -1);
+
+    actor.items = [];
+    prepareKamaradeDerivedData(actor);
+    assert.equal(actor.system.health.max, 5);
+    assert.equal(actor.system.health.value, 4);
+    assert.equal(actor.system.health.offset, -1);
   });
 });
+
+function createActor(overrides = {}) {
+  const actor = createKamaradeFixture({
+    type: "kamarade",
+    ...overrides
+  });
+  actor.system.health.offset ??= 0;
+  return actor;
+}
+
+function createMnogySigne() {
+  return {
+    id: "sgrmnogyAAAAAAAA",
+    type: "signe",
+    name: SIGN.name,
+    system: {
+      category: "racial"
+    }
+  };
+}

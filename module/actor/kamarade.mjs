@@ -151,6 +151,7 @@ export function computeKamaradeSignHpBonus(actor) {
 
   let bonus = 0;
   if (hasKamaradeSigne(actor, "enpremiereligne")) bonus += 3;
+  if (hasKamaradeSigne(actor, "mnogy")) bonus += 1;
   return bonus;
 }
 
