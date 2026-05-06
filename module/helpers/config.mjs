@@ -63,6 +63,8 @@ export const STARTING_TRAIT_POINTS = 20;
 // Base HP formula: PV = 5 + KARKASS (+ bonuses from race and signes).
 export const BASE_HP = 5;
 
+export const BASE_ZLOTYS = 5;
+
 // Damage sources exposed on the sheet by default.
 export const DAMAGE_SOURCES = ["lutte", "ak47"];
 

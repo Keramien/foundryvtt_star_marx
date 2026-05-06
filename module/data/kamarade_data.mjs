@@ -1,22 +1,30 @@
 // KamaradeData — typed schema for the Kamarade Actor subtype.
 //
 // Replaces the legacy template.json entry for Actor.kamarade. Fields that
-// prepareDerivedData writes back (trait.total, health.max, damage.*.value,
-// traitPoints, signesMax, clefsMax, details.xp.total) are declared here with
-// sensible defaults so writes during derivation pass schema validation.
+// prepareDerivedData writes back (trait components, health.max,
+// damage.*.value, traitPoints, signesMax, clefsMax, details.xp.total) are
+// declared here with sensible defaults so writes during derivation pass schema
+// validation.
 
-import { DOCTRINES, TRAITS_BY_DOCTRINE } from "../helpers/config.mjs";
+import { BASE_ZLOTYS, DOCTRINES, TRAITS_BY_DOCTRINE } from "../helpers/config.mjs";
 
 const {
   SchemaField, StringField, NumberField, HTMLField, ObjectField
 } = foundry.data.fields;
 
-// One {points, bonus, total} block per Trait. `total` is derived but kept in
-// the schema so prepareDerivedData can write it without validation noise.
+// One Trait block. `points` is the editable purchased rank. The other rank
+// components are split so automatic bonuses, manual bonuses, and optional
+// rule overrides can be displayed and tested independently.
 function traitPairField() {
   return new SchemaField({
     points: new NumberField({ required: true, integer: true, initial: 0, min: 0 }),
-    bonus:  new NumberField({ required: true, integer: true, initial: 0 }),
+    base: new NumberField({ required: true, integer: true, initial: 0, min: 0 }),
+    autoBonus: new NumberField({ required: true, integer: true, initial: 0 }),
+    manualBonus: new NumberField({ required: true, integer: true, initial: 0 }),
+    // Legacy alias for worlds created before manualBonus existed. Kept in sync
+    // during prepareDerivedData so old actor data keeps working.
+    bonus: new NumberField({ required: true, integer: true, initial: 0 }),
+    optionalMax: new NumberField({ required: false, nullable: true, initial: null }),
     total:  new NumberField({ required: true, integer: true, initial: 0 })
   });
 }
@@ -78,7 +86,9 @@ export class KamaradeData extends foundry.abstract.TypeDataModel {
         })
       }),
       zlotys: new SchemaField({
-        value: new NumberField({ required: true, integer: true, initial: 5, min: 0 })
+        value: new NumberField({ required: true, integer: true, initial: BASE_ZLOTYS, min: 0 }),
+        base: new NumberField({ required: true, integer: true, initial: BASE_ZLOTYS, min: 0 }),
+        offset: new NumberField({ required: true, integer: true, initial: 0 })
       }),
       limits: new SchemaField({
         kontrebande: new NumberField({ required: true, integer: true, initial: 5, min: 0 }),

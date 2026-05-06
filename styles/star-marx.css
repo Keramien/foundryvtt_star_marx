@@ -449,14 +449,14 @@
   padding: 0;
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   gap: 0.3rem 0.75rem;
 }
 
-/* Row layout: name | roll | help | points | + | bonus | = | total (compact). */
+/* Row layout: name | roll | help | base | + | auto | + | manual | = | total. */
 .star-marx .trait-row {
   display: grid;
-  grid-template-columns: 1fr auto auto auto auto auto auto 1.8rem;
+  grid-template-columns: minmax(7rem, 1fr) auto auto auto auto auto auto auto auto 2.4rem;
   align-items: center;
   gap: 0.3rem;
   padding: 2px 6px;
@@ -500,15 +500,26 @@
 
 .star-marx .trait-field {
   width: 2.4rem;
+  height: 2.4rem;
+  box-sizing: border-box;
   text-align: center;
   background: var(--sm-paper);
   border: 1px solid var(--sm-border);
+  border-radius: 3px;
   font-weight: 700;
   padding: 1px 0;
 }
 
-.star-marx .trait-bonus {
-  color: var(--sm-muted);       /* muted so bonuses read as secondary */
+.star-marx .trait-auto {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--sm-muted);
+  background: color-mix(in srgb, var(--sm-paper), var(--sm-border) 18%);
+}
+
+.star-marx .trait-manual-bonus {
+  color: var(--sm-muted);
 }
 
 .star-marx .trait-op {
@@ -518,10 +529,16 @@
 }
 
 .star-marx .trait-total {
-  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: var(--sm-red-dark);    /* pop the final total in soviet red */
+}
+
+.star-marx .trait-total--limited {
+  color: var(--sm-red);
 }
 
 .star-marx .doctrine-sep {

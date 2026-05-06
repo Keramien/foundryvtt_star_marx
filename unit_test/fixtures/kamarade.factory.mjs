@@ -14,7 +14,7 @@ export function createKamaradeFixture(overrides = {}) {
         lutte: { value: 1, bonus: 0 },
         ak47: { value: 1, bonus: 0 }
       },
-      zlotys: { value: 5 },
+      zlotys: { value: 5, base: 5, offset: 0 },
       limits: { signes: 1, clefs: 5, kontrebande: 5 }
     },
     items: []

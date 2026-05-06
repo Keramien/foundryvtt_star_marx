@@ -48,18 +48,27 @@
             <input class="trait-field trait-points"
                    type="number"
                    name="{{pointsPath}}"
-                   value="{{points}}"
+                   value="{{base}}"
                    min="0"
-                   title="{{localize 'STARMARX.Trait.Points'}}">
+                   title="{{localize 'STARMARX.Trait.Base'}}">
             <span class="trait-op">+</span>
-            <input class="trait-field trait-bonus"
+            <span class="trait-field trait-auto"
+                  title="{{localize 'STARMARX.Trait.AutoBonus'}}">{{autoBonus}}</span>
+            <span class="trait-op">+</span>
+            <input class="trait-field trait-manual-bonus"
                    type="number"
-                   name="{{bonusPath}}"
-                   value="{{#if bonus}}{{bonus}}{{/if}}"
+                   name="{{manualBonusPath}}"
+                   value="{{#if manualBonus}}{{manualBonus}}{{/if}}"
                    placeholder="{{localize 'STARMARX.Trait.BonusPlaceholder'}}"
-                   title="{{localize 'STARMARX.Trait.Bonus'}}">
-            <span class="trait-op">=</span>
-            <span class="trait-total" title="{{localize 'STARMARX.Trait.Total'}}">{{total}}</span>
+                   title="{{localize 'STARMARX.Trait.ManualBonus'}}">
+            {{#if hasOptionalValue}}
+              <span class="trait-op">=</span>
+              <span class="trait-total trait-total--limited"
+                    title="{{localize 'STARMARX.Trait.OptionalMaxApplied' max=optionalMax}}">{{total}}*</span>
+            {{else}}
+              <span class="trait-op">=</span>
+              <span class="trait-total" title="{{localize 'STARMARX.Trait.Total'}}">{{total}}</span>
+            {{/if}}
           </li>
         {{/each}}
       </ul>

@@ -1,5 +1,6 @@
 import {
   BASE_HP,
+  BASE_ZLOTYS,
   DOCTRINES,
   STARTING_TRAIT_POINTS,
   TRAITS_BY_DOCTRINE,
@@ -11,19 +12,7 @@ export function prepareKamaradeDerivedData(actor) {
   if (actor.type !== "kamarade") return;
 
   const sys = actor.system;
-  const chosenDoctrine = sys.details?.doctrine ?? DOCTRINES[0];
-
-  // Compute the effective total for every trait:
-  //   total = points + bonus + (1 if the trait is in the chosen doctrine)
-  // The +1 is the free rank granted at creation by the chosen doctrine.
-  for (const d of DOCTRINES) {
-    const doctrineBonus = (d === chosenDoctrine) ? 1 : 0;
-    for (const tid of TRAITS_BY_DOCTRINE[d]) {
-      const t = sys.traits?.[d]?.[tid];
-      if (!t) continue;
-      t.total = (t.points ?? 0) + (t.bonus ?? 0) + doctrineBonus;
-    }
-  }
+  prepareKamaradeTraitTotals(actor);
 
   initializeKamaradeHealthOffset(actor);
 
@@ -31,6 +20,10 @@ export function prepareKamaradeDerivedData(actor) {
   // HP is stored as an offset from max so max changes keep wound count.
   sys.health.max = computeKamaradeHealthMax(actor, sys);
   sys.health.value = computeKamaradeHealthValue(actor, sys);
+
+  initializeKamaradeZlotysOffset(actor);
+  sys.zlotys.base = computeKamaradeZlotysBase(sys);
+  sys.zlotys.value = computeKamaradeZlotysValue(actor, sys);
 
   // Damage sources read their trait total too.
   sys.damage.lutte.value = damageFromRank(sys.traits?.marteau?.lutte?.total ?? 0)
@@ -64,8 +57,8 @@ export function computeKamaradeTraitPoints(actor) {
   for (const d of DOCTRINES) {
     const cost = (d === doctrine) ? TRAIT_COST.doctrine : TRAIT_COST.hors;
     for (const traitId of TRAITS_BY_DOCTRINE[d]) {
-      const points = sys.traits?.[d]?.[traitId]?.points ?? 0;
-      spent += points * cost;
+      const trait = sys.traits?.[d]?.[traitId] ?? {};
+      spent += computeKamaradeTraitBase(trait) * cost;
     }
   }
 
@@ -80,6 +73,75 @@ export function computeKamaradeSignesMax(actor) {
     + Math.floor(xpSignes / 2)
     + computeKamaradeSignesMaxBonus(actor);
 }
+
+export function prepareKamaradeTraitTotals(actor) {
+  const sys = actor.system;
+
+  for (const doctrine of DOCTRINES) {
+    for (const traitId of TRAITS_BY_DOCTRINE[doctrine]) {
+      const trait = sys.traits?.[doctrine]?.[traitId];
+      if (!trait) continue;
+
+      const breakdown = computeKamaradeTraitDetail(actor, doctrine, traitId, trait);
+      trait.base = breakdown.base;
+      trait.autoBonus = breakdown.autoBonus;
+      trait.manualBonus = breakdown.manualBonus;
+      trait.bonus = breakdown.manualBonus;
+      trait.optionalMax = breakdown.optionalMax;
+      trait.total = breakdown.total;
+    }
+  }
+}
+
+export function computeKamaradeTraitDetail(actor, doctrine, traitId, trait = {}) {
+  const base = computeKamaradeTraitBase(trait);
+  const autoBonus = computeKamaradeTraitAutoBonus(actor, doctrine, traitId);
+  const manualBonus = computeKamaradeTraitManualBonus(actor, doctrine, traitId, trait);
+  const rawTotal = base + autoBonus + manualBonus;
+  const optionalMax = computeKamaradeTraitOptionalMax(actor, doctrine, traitId, rawTotal);
+  const total = Number.isFinite(optionalMax) && rawTotal > optionalMax  ? optionalMax : rawTotal;
+
+  return { base, autoBonus, manualBonus, optionalMax, total };
+}
+
+export function computeKamaradeTraitTotal(actor, doctrine, traitId, trait = {}) {
+  return computeKamaradeTraitDetail(actor, doctrine, traitId, trait).total;
+}
+
+export function computeKamaradeTraitBase(trait = {}) {
+  if (Number.isFinite(trait.points)) return trait.points;
+  return Number.isFinite(trait.base) ? trait.base : 0;
+}
+
+export function computeKamaradeTraitManualBonus(actor, doctrine, traitId, trait = {}) {
+  const sourceTrait = actor._source?.system?.traits?.[doctrine]?.[traitId];
+  if (!Number.isFinite(sourceTrait?.manualBonus) && Number.isFinite(sourceTrait?.bonus)) {
+    return sourceTrait.bonus;
+  }
+  if (Number.isFinite(trait.manualBonus)) return trait.manualBonus;
+  return Number.isFinite(trait.bonus) ? trait.bonus : 0;
+}
+
+export function computeKamaradeTraitAutoBonus(actor, doctrine, traitId) {
+  const chosenDoctrine = actor.system.details?.doctrine ?? DOCTRINES[0];
+  const doctrineBonus = (doctrine === chosenDoctrine) ? 1 : 0;
+  return doctrineBonus + computeKamaradeSignTraitBonus(actor, doctrine, traitId);
+}
+
+export function computeKamaradeTraitOptionalMax(actor, doctrine, traitId, rawTotal) {
+  if (actor.type !== "kamarade") return null;
+
+  if (
+    hasKamaradeSigne(actor, "hjort")
+    && doctrine === "marteau"
+    && traitId === "prisonnierPolitique"
+  ) {
+    return 1;
+  }
+
+  return null;
+}
+
 
 export function initializeKamaradeHealthOffset(actor) {
   const sys = actor.system;
@@ -96,10 +158,8 @@ export function initializeKamaradeHealthOffset(actor) {
 }
 
 export function computeKamaradeHealthMax(actor, sys) {
-  const doctrine = sys.details?.doctrine ?? DOCTRINES[0];
   const k = sys.traits?.marteau?.karkass ?? {};
-  const doctrineBonus = (doctrine === "marteau") ? 1 : 0;
-  const karkassTotal = (k.points ?? 0) + (k.bonus ?? 0) + doctrineBonus;
+  const karkassTotal = computeKamaradeTraitTotal(actor, "marteau", "karkass", k);
   const signBonus = computeKamaradeSignHpBonus(actor);
   return BASE_HP + karkassTotal + (sys.health?.bonus ?? 0) + signBonus;
 }
@@ -108,6 +168,34 @@ export function computeKamaradeHealthValue(actor, sys) {
   const max = sys.health?.max ?? computeKamaradeHealthMax(actor, sys);
   const offset = sys.health?.offset ?? 0;
   return Math.max(0, Math.min(max, max + offset));
+}
+
+export function initializeKamaradeZlotysOffset(actor) {
+  const sys = actor.system;
+  sys.zlotys ??= { value: BASE_ZLOTYS, base: BASE_ZLOTYS, offset: 0 };
+
+  const sourceZlotys = actor._source?.system?.zlotys;
+  if (actor._source?.system) {
+    if (Number.isFinite(sourceZlotys?.offset)) return;
+  } else if (Number.isFinite(sys.zlotys?.offset)) {
+    return;
+  }
+
+  const base = Number.isFinite(sourceZlotys?.base) ? sourceZlotys.base : (sys.zlotys?.base ?? BASE_ZLOTYS);
+  const value = Number.isFinite(sourceZlotys?.value) ? sourceZlotys.value : (sys.zlotys?.value ?? base);
+  sys.zlotys.base = base;
+  sys.zlotys.offset = value - base;
+}
+
+export function computeKamaradeZlotysBase(sys) {
+  return sys.zlotys?.base ?? BASE_ZLOTYS;
+}
+
+export function computeKamaradeZlotysValue(actor, sys) {
+  const base = computeKamaradeZlotysBase(sys);
+  const bonus = computeKamaradeZlotysBonus(actor);
+  const offset = sys.zlotys?.offset ?? 0;
+  return Math.max(0, base + bonus + offset);
 }
 
 export function hasKamaradeItem(actor, name) {
@@ -143,6 +231,24 @@ export function computeKamaradeSignesMaxBonus(actor) {
 
   let bonus = 0;
   if (hasKamaradeSigne(actor, "humain")) bonus += 1;
+  return bonus;
+}
+
+export function computeKamaradeZlotysBonus(actor) {
+  if (actor.type !== "kamarade") return 0;
+
+  let bonus = 0;
+  if (hasKamaradeSigne(actor, "hjort")) bonus += 2;
+  return bonus;
+}
+
+export function computeKamaradeSignTraitBonus(actor, doctrine, traitId) {
+  if (actor.type !== "kamarade") return 0;
+
+  let bonus = 0;
+  if (hasKamaradeSigne(actor, "hjort") && doctrine === "faucille" && traitId === "corruption") {
+    bonus += 2;
+  }
   return bonus;
 }
 

@@ -4,6 +4,7 @@ import {
   SYSTEM_ID
 } from "../helpers/config.mjs";
 import { openStarMarxImagePicker } from "../helpers/image-picker.mjs";
+import { computeKamaradeZlotysBonus } from "./kamarade.mjs";
 
 const { ActorSheetV2 } = foundry.applications.sheets;
 const { HandlebarsApplicationMixin } = foundry.applications.api;
@@ -95,11 +96,14 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     this.element
       .querySelector("[data-health-value]")
       ?.addEventListener("change", this.#onHealthValueChange.bind(this));
+    this.element
+      .querySelector("[data-zlotys-value]")
+      ?.addEventListener("change", this.#onZlotysValueChange.bind(this));
   }
 
   // Build an ordered list of doctrine groups with chosen doctrine first.
-  // Each trait exposes paths+values for points (editable), bonus (editable),
-  // and total (computed, read-only).
+  // Each trait exposes purchased ranks, automatic bonuses, manual bonuses,
+  // optional rule overrides, and the final computed total.
   #buildTraitGroups(sys, chosen) {
     const ordered = [chosen, ...DOCTRINES.filter(d => d !== chosen)];
     return ordered.map(d => ({
@@ -112,10 +116,13 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
           id: tid,
           labelKey: `STARMARX.Trait.${this.#capitalize(d)}.${this.#capitalize(tid)}`,
           pointsPath: `system.traits.${d}.${tid}.points`,
-          bonusPath:  `system.traits.${d}.${tid}.bonus`,
-          points: t.points ?? 0,
-          bonus:  t.bonus  ?? 0,
-          total:  t.total  ?? 0
+          manualBonusPath: `system.traits.${d}.${tid}.manualBonus`,
+          base: t.points ?? t.base ?? 0,
+          autoBonus: t.autoBonus ?? 0,
+          manualBonus: t.manualBonus ?? t.bonus ?? 0,
+          optionalMax: t.optionalMax,
+          hasOptionalValue: Number.isFinite(t.optionalMax),
+          total: t.total ?? 0
         };
       })
     }));
@@ -151,6 +158,21 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     event.currentTarget.value = boundedValue;
 
     await this.actor.update({ "system.health.offset": boundedValue - max });
+  }
+
+  async #onZlotysValueChange(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    if (!this.isEditable) return;
+
+    const base = this.actor.system.zlotys?.base ?? 0;
+    const bonus = computeKamaradeZlotysBonus(this.actor);
+    const rawValue = Number(event.currentTarget.value);
+    const currentValue = Number.isFinite(rawValue) ? rawValue : 0;
+    const boundedValue = Math.max(0, currentValue);
+    event.currentTarget.value = boundedValue;
+
+    await this.actor.update({ "system.zlotys.offset": boundedValue - base - bonus });
   }
 
   // --- Drag & drop ---

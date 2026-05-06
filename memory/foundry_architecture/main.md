@@ -128,7 +128,7 @@ Ton `module/star-marx.mjs` est l'équivalent d'un `main()` :
 
 ```javascript
 // Imports (comme des #include)
-import { KamaradeActor } from "./actor/actor.mjs";
+import { StarMarxActor } from "./actor/actor.mjs";
 import { StarMarxActorSheet } from "./actor/sheet.mjs";
 import { CharacterData } from "./actor/data-models.mjs";
 
@@ -140,7 +140,7 @@ Hooks.once("init", () => {
   CONFIG.Actor.dataModels.character = CharacterData;
 
   // Enregistrer la classe Document custom
-  CONFIG.Actor.documentClass = KamaradeActor;
+  CONFIG.Actor.documentClass = StarMarxActor;
 
   // Enregistrer la fiche (Sheet) par défaut
   Actors.registerSheet("star-marx", StarMarxActorSheet, {
