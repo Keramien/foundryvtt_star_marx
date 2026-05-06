@@ -46,6 +46,9 @@ export function prepareKamaradeDerivedData(actor) {
 
   // Clefs slots: 2 XP = 1 slot, capped by the rules' hard max (default 5).
   sys.clefsMax = Math.min(sys.limits?.clefs ?? 5, Math.floor(xpClefs / 2));
+
+  // Kontrebande capacity can be raised by racial signs.
+  sys.kontrebandeMax = computeKamaradeKontrebandeMax(actor);
 }
 
 export function computeKamaradeTraitPoints(actor) {
@@ -72,6 +75,11 @@ export function computeKamaradeSignesMax(actor) {
   return (sys.limits?.signes ?? 2)
     + Math.floor(xpSignes / 2)
     + computeKamaradeSignesMaxBonus(actor);
+}
+
+export function computeKamaradeKontrebandeMax(actor) {
+  const base = actor.system.limits?.kontrebande ?? 5;
+  return base + computeKamaradeKontrebandeMaxBonus(actor);
 }
 
 export function prepareKamaradeTraitTotals(actor) {
@@ -231,6 +239,14 @@ export function computeKamaradeSignesMaxBonus(actor) {
 
   let bonus = 0;
   if (hasKamaradeSigne(actor, "humain")) bonus += 1;
+  return bonus;
+}
+
+export function computeKamaradeKontrebandeMaxBonus(actor) {
+  if (actor.type !== "kamarade") return 0;
+
+  let bonus = 0;
+  if (hasKamaradeSigne(actor, "gryazny")) bonus += 2;
   return bonus;
 }
 

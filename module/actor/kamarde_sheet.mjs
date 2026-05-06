@@ -76,6 +76,7 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     context.bardas       = actor.items.filter(i => i.type === "barda");
 
     context.signesMax = sys.signesMax ?? sys.limits?.signes ?? 2;
+    context.kontrebandeMax = sys.kontrebandeMax ?? sys.limits?.kontrebande ?? 5;
 
     // Expose the primary tab list for the nav template. Individual content
     // parts receive their own `tab` context via _preparePartContext below.
@@ -189,6 +190,7 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       case "race":  return this.#onDropRace(item);
       case "signe": return this.#onDropSigne(item);
       case "clef":  return this.#onDropClef(item);
+      case "kontrebande": return this.#onDropKontrebande(item);
       default:      return this.#createEmbedded(item);
     }
   }
@@ -271,6 +273,22 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     return this.#createEmbedded(item);
   }
 
+  async #onDropKontrebande(item) {
+    const actor = this.actor;
+    if (!this.#canAddKontrebande(actor)) return false;
+    return this.#createEmbedded(item);
+  }
+
+  #canAddKontrebande(actor) {
+    const max = actor.system.kontrebandeMax ?? actor.system.limits?.kontrebande ?? 5;
+    const current = actor.items.filter(i => i.type === "kontrebande").length;
+    if (current >= max) {
+      ui.notifications.warn(game.i18n.format("STARMARX.Notifications.KontrebandeLimitReached", { max }));
+      return false;
+    }
+    return true;
+  }
+
   // --- Actions ---
 
   static async #onEditImage(event, target) {
@@ -287,6 +305,7 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   static async #onItemCreate(event, target) {
     const type = target.dataset.itemType;
     if (!type) return;
+    if (type === "kontrebande" && !this.#canAddKontrebande(this.actor)) return;
     const name = game.i18n.format("DOCUMENT.New", {
       type: game.i18n.localize(`STARMARX.Item.Type.${type}`)
     });

@@ -345,6 +345,7 @@
       "RaceReplaced": "Race remplacée.",
       "SigneLimitReached": "Limite de Signes atteinte ({max}).",
       "ClefLimitReached": "Limite de Clefs atteinte ({max}).",
+      "KontrebandeLimitReached": "Limite de Kontrebandes atteinte ({max}).",
       "RacialSigneNotDroppable": "Les Signes raciaux s'acquièrent via une Race, pas directement."
     },
     "ImagePicker": {

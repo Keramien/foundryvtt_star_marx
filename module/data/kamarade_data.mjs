@@ -104,7 +104,8 @@ export class KamaradeData extends foundry.abstract.TypeDataModel {
       // derived model — it's a small closed set.
       traitPoints: new ObjectField({ required: false, nullable: true, initial: null }),
       signesMax:   new NumberField({ required: false, nullable: true, initial: null }),
-      clefsMax:    new NumberField({ required: false, nullable: true, initial: null })
+      clefsMax:    new NumberField({ required: false, nullable: true, initial: null }),
+      kontrebandeMax: new NumberField({ required: false, nullable: true, initial: null })
     };
   }
 }
