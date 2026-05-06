@@ -12,9 +12,8 @@ export function prepareKamaradeDerivedData(actor) {
   if (actor.type !== "kamarade") return;
 
   const sys = actor.system;
-  prepareKamaradeTraitTotals(actor);
-
   initializeKamaradeHealthOffset(actor);
+  prepareKamaradeTraitTotals(actor);
 
   // HP max is derived from KARKASS total + persistent/sign bonuses. Current
   // HP is stored as an offset from max so max changes keep wound count.
@@ -99,9 +98,10 @@ export function prepareKamaradeTraitTotals(actor) {
   }
 }
 
-export function computeKamaradeTraitDetail(actor, doctrine, traitId, trait = {}) {
+export function computeKamaradeTraitDetail(actor, doctrine, traitId, trait = {}, context = {}) {
+  const calculationContext = resolveKamaradeCalculationContext(actor, context);
   const base = computeKamaradeTraitBase(trait);
-  const autoBonus = computeKamaradeTraitAutoBonus(actor, doctrine, traitId);
+  const autoBonus = computeKamaradeTraitAutoBonus(actor, doctrine, traitId, calculationContext);
   const manualBonus = computeKamaradeTraitManualBonus(actor, doctrine, traitId, trait);
   const rawTotal = base + autoBonus + manualBonus;
   const optionalMax = computeKamaradeTraitOptionalMax(actor, doctrine, traitId, rawTotal);
@@ -110,8 +110,8 @@ export function computeKamaradeTraitDetail(actor, doctrine, traitId, trait = {})
   return { base, autoBonus, manualBonus, optionalMax, total };
 }
 
-export function computeKamaradeTraitTotal(actor, doctrine, traitId, trait = {}) {
-  return computeKamaradeTraitDetail(actor, doctrine, traitId, trait).total;
+export function computeKamaradeTraitTotal(actor, doctrine, traitId, trait = {}, context = {}) {
+  return computeKamaradeTraitDetail(actor, doctrine, traitId, trait, context).total;
 }
 
 export function computeKamaradeTraitBase(trait = {}) {
@@ -128,10 +128,10 @@ export function computeKamaradeTraitManualBonus(actor, doctrine, traitId, trait 
   return Number.isFinite(trait.bonus) ? trait.bonus : 0;
 }
 
-export function computeKamaradeTraitAutoBonus(actor, doctrine, traitId) {
+export function computeKamaradeTraitAutoBonus(actor, doctrine, traitId, context = {}) {
   const chosenDoctrine = actor.system.details?.doctrine ?? DOCTRINES[0];
   const doctrineBonus = (doctrine === chosenDoctrine) ? 1 : 0;
-  return doctrineBonus + computeKamaradeSignTraitBonus(actor, doctrine, traitId);
+  return doctrineBonus + computeKamaradeSignTraitBonus(actor, doctrine, traitId, context);
 }
 
 export function computeKamaradeTraitOptionalMax(actor, doctrine, traitId, rawTotal) {
@@ -148,11 +148,14 @@ export function computeKamaradeTraitOptionalMax(actor, doctrine, traitId, rawTot
   return null;
 }
 
-export function computeKamaradeDamageValue(actor, sys, source) {
+export function computeKamaradeDamageValue(actor, sys, source, context = {}) {
+  const calculationContext = resolveKamaradeCalculationContext(actor, context);
   const traitTotal = computeKamaradeDamageTraitTotal(sys, source);
-  return damageFromRank(traitTotal)
+  const value = damageFromRank(traitTotal)
     + (sys.damage?.[source]?.bonus ?? 0)
-    + computeKamaradeDamageBonus(actor, source);
+    + computeKamaradeDamageBonus(actor, source, calculationContext);
+  const cap = computeKamaradeDamageCap(actor, source);
+  return Number.isFinite(cap) && value > cap ? cap : value;
 }
 
 export function computeKamaradeDamageTraitTotal(sys, source) {
@@ -182,7 +185,7 @@ export function initializeKamaradeHealthOffset(actor) {
 
 export function computeKamaradeHealthMax(actor, sys) {
   const k = sys.traits?.marteau?.karkass ?? {};
-  const karkassTotal = computeKamaradeTraitTotal(actor, "marteau", "karkass", k);
+  const karkassTotal = computeKamaradeTraitTotal(actor, "marteau", "karkass", k, { dosAuMurActive: false });
   const signBonus = computeKamaradeSignHpBonus(actor);
   return BASE_HP + karkassTotal + (sys.health?.bonus ?? 0) + signBonus;
 }
@@ -273,10 +276,17 @@ export function computeKamaradeZlotysBonus(actor) {
   return bonus;
 }
 
-export function computeKamaradeSignTraitBonus(actor, doctrine, traitId) {
+export function computeKamaradeSignTraitBonus(actor, doctrine, traitId, context = {}) {
   if (actor.type !== "kamarade") return 0;
 
+  const calculationContext = resolveKamaradeCalculationContext(actor, context);
   let bonus = 0;
+  if (calculationContext.dosAuMurActive && doctrine === "marteau") {
+    bonus += 1;
+  }
+  if (hasActiveKamaradeSizeSigne(actor, "grand") && doctrine === "marteau" && traitId === "briseurDeGreve") {
+    bonus += 2;
+  }
   if (hasKamaradeSigne(actor, "bicyclope") && doctrine === "marteau" && traitId === "medailleOlympique") {
     bonus += 2;
   }
@@ -294,17 +304,58 @@ export function computeKamaradeSignHpBonus(actor) {
 
   let bonus = 0;
   if (hasKamaradeSigne(actor, "enpremiereligne")) bonus += 3;
+  if (hasActiveKamaradeSizeSigne(actor, "grand")) bonus += 2;
   if (hasKamaradeSigne(actor, "mnogy")) bonus += 1;
   if (hasKamaradeSigne(actor, "krolik")) bonus += 2;
   return bonus;
 }
 
-export function computeKamaradeDamageBonus(actor, source) {
+export function computeKamaradeDamageBonus(actor, source, context = {}) {
   if (actor.type !== "kamarade") return 0;
 
+  const calculationContext = resolveKamaradeCalculationContext(actor, context);
   let bonus = 0;
+  if (calculationContext.dosAuMurActive) bonus += 1;
+  if (hasKamaradeSigne(actor, "boucher") && source === "lutte") bonus += 1;
+  if (hasActiveKamaradeSizeSigne(actor, "grand") && source === "lutte") bonus += 1;
   if (hasKamaradeSigne(actor, "krolik") && source === "lutte") bonus += 1;
+  if (hasKamaradeSigne(actor, "precis") && source === "ak47") bonus += 1;
   return bonus;
+}
+
+export function computeKamaradeDamageCap(actor, source) {
+  if (actor.type !== "kamarade") return null;
+
+  if (hasActiveKamaradeSizeSigne(actor, "petit") && source === "lutte") return 2;
+  return null;
+}
+
+export function hasActiveKamaradeSizeSigne(actor, name) {
+  if (!hasKamaradeSigne(actor, name)) return false;
+  return !(hasKamaradeSigne(actor, "grand") && hasKamaradeSigne(actor, "petit"));
+}
+
+export function resolveKamaradeCalculationContext(actor, context = {}) {
+  return {
+    ...context,
+    dosAuMurActive: context?.dosAuMurActive ?? isKamaradeDosAuMurActive(actor)
+  };
+}
+
+export function isKamaradeDosAuMurActive(actor) {
+  if (actor.type !== "kamarade") return false;
+  if (!hasKamaradeSigne(actor, "dosaumur")) return false;
+  return computeKamaradeHealthValueForContext(actor, actor.system) === 1;
+}
+
+export function computeKamaradeHealthValueForContext(actor, sys) {
+  const max = computeKamaradeHealthMax(actor, sys);
+  const offset = sys.health?.offset;
+  if (Number.isFinite(offset)) return Math.max(0, Math.min(max, max + offset));
+
+  const value = sys.health?.value;
+  if (Number.isFinite(value)) return Math.max(0, Math.min(max, value));
+  return max;
 }
 
 export function normalizeSignSlug(value) {
