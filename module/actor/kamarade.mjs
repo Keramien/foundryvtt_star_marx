@@ -25,11 +25,9 @@ export function prepareKamaradeDerivedData(actor) {
   sys.zlotys.base = computeKamaradeZlotysBase(sys);
   sys.zlotys.value = computeKamaradeZlotysValue(actor, sys);
 
-  // Damage sources read their trait total too.
-  sys.damage.lutte.value = damageFromRank(sys.traits?.marteau?.lutte?.total ?? 0)
-    + (sys.damage.lutte.bonus ?? 0);
-  sys.damage.ak47.value = damageFromRank(sys.traits?.marteau?.ak47?.total ?? 0)
-    + (sys.damage.ak47.bonus ?? 0);
+  // Damage sources read their trait total, manual bonuses, and sign bonuses.
+  sys.damage.lutte.value = computeKamaradeDamageValue(actor, sys, "lutte");
+  sys.damage.ak47.value = computeKamaradeDamageValue(actor, sys, "ak47");
 
   // XP is split across 4 editable buckets. Total is computed for display.
   const xp = sys.details.xp;
@@ -150,6 +148,23 @@ export function computeKamaradeTraitOptionalMax(actor, doctrine, traitId, rawTot
   return null;
 }
 
+export function computeKamaradeDamageValue(actor, sys, source) {
+  const traitTotal = computeKamaradeDamageTraitTotal(sys, source);
+  return damageFromRank(traitTotal)
+    + (sys.damage?.[source]?.bonus ?? 0)
+    + computeKamaradeDamageBonus(actor, source);
+}
+
+export function computeKamaradeDamageTraitTotal(sys, source) {
+  switch (source) {
+    case "lutte":
+      return sys.traits?.marteau?.lutte?.total ?? 0;
+    case "ak47":
+      return sys.traits?.marteau?.ak47?.total ?? 0;
+    default:
+      return 0;
+  }
+}
 
 export function initializeKamaradeHealthOffset(actor) {
   const sys = actor.system;
@@ -262,8 +277,14 @@ export function computeKamaradeSignTraitBonus(actor, doctrine, traitId) {
   if (actor.type !== "kamarade") return 0;
 
   let bonus = 0;
+  if (hasKamaradeSigne(actor, "bicyclope") && doctrine === "marteau" && traitId === "medailleOlympique") {
+    bonus += 2;
+  }
   if (hasKamaradeSigne(actor, "hjort") && doctrine === "faucille" && traitId === "corruption") {
     bonus += 2;
+  }
+  if (hasKamaradeSigne(actor, "krolik") && doctrine === "marteau" && traitId === "briseurDeGreve") {
+    bonus -= 2;
   }
   return bonus;
 }
@@ -274,6 +295,15 @@ export function computeKamaradeSignHpBonus(actor) {
   let bonus = 0;
   if (hasKamaradeSigne(actor, "enpremiereligne")) bonus += 3;
   if (hasKamaradeSigne(actor, "mnogy")) bonus += 1;
+  if (hasKamaradeSigne(actor, "krolik")) bonus += 2;
+  return bonus;
+}
+
+export function computeKamaradeDamageBonus(actor, source) {
+  if (actor.type !== "kamarade") return 0;
+
+  let bonus = 0;
+  if (hasKamaradeSigne(actor, "krolik") && source === "lutte") bonus += 1;
   return bonus;
 }
 
