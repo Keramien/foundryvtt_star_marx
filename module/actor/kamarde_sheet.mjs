@@ -4,7 +4,10 @@ import {
   SYSTEM_ID
 } from "../helpers/config.mjs";
 import { openStarMarxImagePicker } from "../helpers/image-picker.mjs";
-import { computeKamaradeZlotysBonus } from "./kamarade.mjs";
+import {
+  computeKamaradeZlotysBonus,
+  getKamaradeHealthTraitId
+} from "./kamarade.mjs";
 
 const { ActorSheetV2 } = foundry.applications.sheets;
 const { HandlebarsApplicationMixin } = foundry.applications.api;
@@ -77,6 +80,7 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
 
     context.signesMax = sys.signesMax ?? sys.limits?.signes ?? 2;
     context.kontrebandeMax = sys.kontrebandeMax ?? sys.limits?.kontrebande ?? 5;
+    context.healthFormula = this.#buildHealthFormula(actor);
 
     // Expose the primary tab list for the nav template. Individual content
     // parts receive their own `tab` context via _preparePartContext below.
@@ -145,6 +149,12 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
 
   #capitalize(s) {
     return s.charAt(0).toUpperCase() + s.slice(1);
+  }
+
+  #buildHealthFormula(actor) {
+    const traitId = getKamaradeHealthTraitId(actor);
+    const trait = game.i18n.localize(`STARMARX.Trait.Marteau.${this.#capitalize(traitId)}`).toLocaleUpperCase();
+    return game.i18n.format("STARMARX.Actor.Health.Formula", { trait });
   }
 
   async #onHealthValueChange(event) {

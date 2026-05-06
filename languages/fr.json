@@ -30,7 +30,7 @@
         "Value": "PV actuels",
         "Max": "PV max",
         "Bonus": "Bonus PV",
-        "Formula": "5 + KARKASS"
+        "Formula": "5 + {trait}"
       },
       "Damage": {
         "Label": "Dégâts",

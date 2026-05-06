@@ -15,7 +15,8 @@ export function prepareKamaradeDerivedData(actor) {
   initializeKamaradeHealthOffset(actor);
   prepareKamaradeTraitTotals(actor);
 
-  // HP max is derived from KARKASS total + persistent/sign bonuses. Current
+  // HP max is derived from KARKASS, or PRISONNIER POLITIQUE with Never Give Up,
+  // plus persistent/sign bonuses. Current
   // HP is stored as an offset from max so max changes keep wound count.
   sys.health.max = computeKamaradeHealthMax(actor, sys);
   sys.health.value = computeKamaradeHealthValue(actor, sys);
@@ -184,10 +185,19 @@ export function initializeKamaradeHealthOffset(actor) {
 }
 
 export function computeKamaradeHealthMax(actor, sys) {
-  const k = sys.traits?.marteau?.karkass ?? {};
-  const karkassTotal = computeKamaradeTraitTotal(actor, "marteau", "karkass", k, { dosAuMurActive: false });
+  const healthTraitTotal = computeKamaradeHealthTraitTotal(actor, sys);
   const signBonus = computeKamaradeSignHpBonus(actor);
-  return BASE_HP + karkassTotal + (sys.health?.bonus ?? 0) + signBonus;
+  return BASE_HP + healthTraitTotal + (sys.health?.bonus ?? 0) + signBonus;
+}
+
+export function computeKamaradeHealthTraitTotal(actor, sys) {
+  const traitId = getKamaradeHealthTraitId(actor);
+  const trait = sys.traits?.marteau?.[traitId] ?? {};
+  return computeKamaradeTraitTotal(actor, "marteau", traitId, trait, { dosAuMurActive: false });
+}
+
+export function getKamaradeHealthTraitId(actor) {
+  return hasKamaradeSigne(actor, "nevergiveup") ? "prisonnierPolitique" : "karkass";
 }
 
 export function computeKamaradeHealthValue(actor, sys) {

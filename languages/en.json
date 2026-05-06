@@ -30,7 +30,7 @@
         "Value": "Current HP",
         "Max": "Max HP",
         "Bonus": "HP bonus",
-        "Formula": "5 + KARKASS"
+        "Formula": "5 + {trait}"
       },
       "Damage": {
         "Label": "Damage",
