@@ -19,7 +19,7 @@ Etats utilises :
 | Alevin | Manuel | Acces aux Signes de Robot sauf Defragmentation acceleree, soins par MACHINISTE et mode aquatique a 1 PV a cadrer. |
 | Bicyclope | Implemente | Bonus automatique de +2 en MEDAILLE OLYMPIQUE, en supposant le terrain favorable par defaut. |
 | Bourbasky | Narratif | Adaptation au vide, corps modulable et substitution narrative de TCHERNOBYL selon le recit. |
-| Dulusk | A faire | Donne acces a un Signe racial ou une Clef raciale au choix selon le metissage du personnage. |
+| Dulusk | Implemente | Donne acces a un Signe racial ou une Clef raciale au choix selon le metissage du personnage. |
 | Gigolbare | A faire | Gateaux dopants : ajout d'un de a un test, cout en PV selon le resultat et usages limites par KARKASS. |
 | Gonklin | Manuel | Bonus de +2 pour casser les machines et malus de -2 pour les utiliser. |
 | Gryazny | Implemente | Maximum de Kontrebandes augmente de 5 a 7. |
@@ -30,7 +30,7 @@ Etats utilises :
 | Mnogy | Implemente | +1 PV est automatise ; le +2 pour resister a la peur reste a integrer avec les contextes de peur. |
 | Reflexe Pavlovien | Manuel | Pouvoir TCHERNOBYL contre la dangerosite ennemie, avec effet d'interruption de l'affrontement. |
 | Robot | Narratif | Absence de respiration, resistance au vide et contraintes de reparation gerees a la table pour l'instant. |
-| Roi du Pogo | A faire | Toute interaction physique au contact inflige automatiquement 1 PV a la cible. |
+| Roi du Pogo | Manuel | Toute interaction physique au contact inflige automatiquement 1 PV a la cible. |
 | Simple | Manuel | Signe Petit gratuit et emprunt ponctuel du Trait d'un Kamarade contre 1 Zloty. |
 | Truizyk | Narratif | Lecture des pensees via la transpiration avec TCHERNOBYL, fortement dependante du contexte. |
 | Vynoslivy | Narratif | Quasi-invulnerabilite au vide, manque d'air, temperature et faim ; ressort surtout narratif. |
@@ -64,7 +64,7 @@ Etats utilises :
 | Pimp my bot | Manuel | Deplacement temporaire de croix de Traits par un MACHINISTE contre 1 Zloty. |
 | Proces et menaces | Manuel | Jet de CORRUPTION chaque round pour empecher un adversaire d'attaquer. |
 | Radar a Nouba | Narratif | Detection des fetes et soirees contre un cout en Zlotys fixe par le Secretaire General. |
-| Rancunier | A faire | Apres survie a 0 PV, +1 contre un adversaire, son organisation ou son groupe. |
+| Rancunier | Manuel | Apres survie a 0 PV, +1 contre un adversaire, son organisation ou son groupe. |
 | Roue de la Fortune | A faire | Echecs critiques sur 2 et 3, avec gain d'XP toutes les cinq catastrophes. |
 | Talent cache | Manuel | Depense d'XP en pleine partie pour acquerir un Trait utile. |
 | Toi, j't'aime pas | Manuel | Intimidation ou pression sur les machines par un Gonklin via BRISEUR DE GREVE. |
@@ -100,27 +100,27 @@ Etats utilises :
 | Dos au mur | Implemente | A 1 PV, +1 aux Traits de Marteau et +1 aux degats, sans boucle sur le calcul de PV. |
 | Embuscade | A faire | Apres preparation, +1 aux scores et degats allies au premier round. |
 | En premiere ligne | Implemente | +3 PV maximum via le calcul central de sante. |
-| Esprit de meute | A faire | Contre 1 Zloty, attaque supplementaire contre une cible blessee par un allie. |
+| Esprit de meute | Manuel | Contre 1 Zloty, attaque supplementaire contre une cible blessee par un allie. |
 | Fichier central | Narratif | Acces a des informations sensibles via ETRE AU PARFUM, contenu arbitre par le Secretaire General. |
-| Filature | A faire | Ajout de KGB ou PROPAGANDE a SOCIAL TRAITRE pour suivre ou surveiller discretement. |
+| Filature | Manuel | Ajout de KGB ou PROPAGANDE a SOCIAL TRAITRE pour suivre ou surveiller discretement. |
 | Garde du corps | Manuel | Interception des degats destines a des compagnons et usage possible de l'Armure. |
-| Gladiator | A faire | Une fois par combat, contre 1 Zloty, ajoute BOLCHOI aux degats. |
-| IA de l'amour dans l'air | A faire | Jet de debut de scenario pour gagner 3 Zlotys informatiques ou subir des ennuis numeriques. |
+| Gladiator | Manuel | Une fois par combat, contre 1 Zloty, ajoute BOLCHOI aux degats. |
+| IA de l'amour dans l'air | Manuel | Jet de debut de scenario pour gagner 3 Zlotys informatiques ou subir des ennuis numeriques. |
 | Implant K | Narratif | Bibliotheque mentale accessible apres une heure de concentration. |
 | Insomniaque | Narratif | Sommeil reduit a quatre heures, mais impossible a reveiller pendant ce repos. |
 | Interrogatoire muscle | Manuel | Relances d'interrogatoire illimitees, chaque nouvel essai coutant 1d2 PV a la cible. |
-| Ivrogne | A faire | Substitution de KARKASS aux Traits de Faucille lors d'une cuite partagee. |
+| Ivrogne | Manuel | Substitution de KARKASS aux Traits de Faucille lors d'une cuite partagee. |
 | Je garde une balle a ton nom | Manuel ? | Bonus de degats ou de Trait accorde par le Secretaire General selon la preparation. |
-| Kalachnikov | A faire | Repartition des degats d'AK 47 entre plusieurs adversaires. |
-| La Fureur de Vivre | A faire | En bataille spatiale, ajoute PRISONNIER POLITIQUE aux jets de pilotage contre 1 Zloty. |
+| Kalachnikov | Manuel | Repartition des degats d'AK 47 entre plusieurs adversaires. |
+| La Fureur de Vivre | Manuel | En bataille spatiale, ajoute PRISONNIER POLITIQUE aux jets de pilotage contre 1 Zloty. |
 | Lire sur les levres | Narratif | Comprend une personne visible qui parle une langue connue. |
-| Machines et bidules | A faire | Substitution de RECHERCHE ET CONCEPTION a un Trait, avec usure progressive de l'invention. |
+| Machines et bidules | Manuel | Substitution de RECHERCHE ET CONCEPTION a un Trait, avec usure progressive de l'invention. |
 | Mage du scotch | Manuel ? | Repare une Kontrebande cassee ou fait tenir une machine contre Zlotys. |
 | Maitre chanteur | Narratif | Service impose a un PNJ innocent contre 1 Zloty et une pression narrative. |
 | Maitre d'armes | Manuel | Repartition manuelle des degats de LUTTE entre plusieurs adversaires. |
 | Masochiste | A faire | Gagne 1 Zloty temporaire par tranche de 3 PV perdus en combat. |
-| Massacre artistique | A faire | Une fois par combat, jet d'intimidation sanglante pour annuler l'attaque adverse. |
-| Meme pas peur | A faire | Substitution de BRISEUR DE GREVE a PRISONNIER POLITIQUE pour resister a la peur. |
+| Massacre artistique | Manuel | Une fois par combat, jet d'intimidation sanglante pour annuler l'attaque adverse. |
+| Meme pas peur | Implemente | Substitution de BRISEUR DE GREVE a PRISONNIER POLITIQUE pour resister a la peur. |
 | Memoire eidetique | Narratif | Permet de demander au Secretaire General des details oublies. |
 | Minorite clandestine | Narratif | Reseau d'aide contre Zlotys, avec contraintes et risques narratifs. |
 | Monsieur Propre | Manuel | Efface temoins et traces d'un crime avec un jet de GROUILLOT. |
@@ -131,11 +131,11 @@ Etats utilises :
 | O mon vaisseau 2 | A faire | Bonus du vaisseau designe porte a +2, malus de -1 avec les autres vehicules et exclusivite d'equipe. |
 | Ombre de l'ombre | Manuel | Indetectable tant que le Kamarade reste immobile dans une zone d'ombre. |
 | Pangalactic Market | Narratif | Cuisine locale transformee en illusion culinaire exotique ou familiere. |
-| Perfidie | A faire | Une fois par combat, contre 1 Zloty, ajoute SOCIAL TRAITRE aux degats. |
-| Petit debrouillard | A faire | Recherche d'objet avec qualites choisies selon le resultat du jet de MARCHE NOIR. |
+| Perfidie | Manuel | Une fois par combat, contre 1 Zloty, ajoute SOCIAL TRAITRE aux degats. |
+| Petit debrouillard | Manuel | Recherche d'objet avec qualites choisies selon le resultat du jet de MARCHE NOIR. |
 | Physionomiste | Narratif | Reconnait immediatement une personne deja rencontree. |
 | Piqure | A faire | Ajoute 1d6 a un test au prix de 1d2 PV pour la cible injectee. |
-| Point faible | A faire | Une fois par combat, contre 1 Zloty, ajoute KGB aux degats. |
+| Point faible | Manuel | Une fois par combat, contre 1 Zloty, ajoute KGB aux degats. |
 | Precis | Implemente | +1 degat en AK 47. |
 | Projection | Manuel | Remplace les degats par une projection physique de l'adversaire. |
 | Que d'un oeil | Narratif | Impossible a surprendre pendant le sommeil. |
@@ -143,13 +143,13 @@ Etats utilises :
 | Regeneration | A faire | Recupere 3 PV a la fin de chaque combat. |
 | Reputation | A faire | Jet de seuil 9 a chaque nouveau PNJ pour definir ce qu'il a entendu sur le Kamarade. |
 | Roentgenizdat | Narratif | Gain de Zloty quand le Secretaire General utilise les musiques fournies par le joueur. |
-| Roi de la combine | A faire | Obtention temporaire d'une ou deux Kontrebandes en debut de scenario selon les jets. |
+| Roi de la combine | Manuel | Obtention temporaire d'une ou deux Kontrebandes en debut de scenario selon les jets. |
 | Sabir | Narratif | Se fait comprendre partout pour l'essentiel. |
-| Serial Lover | A faire | Contre 1 Zloty, fait intervenir un ancien amour utile ou problematique selon le jet. |
-| Serment d'hypocrite | A faire | Une fois par combat, contre 1 Zloty, ajoute DOPAGE aux degats. |
+| Serial Lover | Manuel | Contre 1 Zloty, fait intervenir un ancien amour utile ou problematique selon le jet. |
+| Serment d'hypocrite | Manuel | Une fois par combat, contre 1 Zloty, ajoute DOPAGE aux degats. |
 | Sous la ceinture | A faire | Sur un jet de combat a trois des paye en Zlotys, les 1 comptent comme des 6. |
-| Star de la propagande mediatique | A faire | Une fois par aventure, substitue BOLCHOI a un autre Trait en presence d'un public. |
-| Ton professoral | A faire | Substitution d'UNIVERSITET a BRISEUR DE GREVE pour intimider un personnage scolarise. |
-| Toujours la au bon endroit | A faire | Jet de debut de scenario donnant 1 a 3 apparitions utiles avec les outils. |
+| Star de la propagande mediatique | Manuel | Une fois par aventure, substitue BOLCHOI a un autre Trait en presence d'un public. |
+| Ton professoral | Manuel | Substitution d'UNIVERSITET a BRISEUR DE GREVE pour intimider un personnage scolarise. |
+| Toujours la au bon endroit | Manuel | Jet de debut de scenario donnant 1 a 3 apparitions utiles avec les outils. |
 | Tout en attaque | A faire | Abandon de l'Armure et degats de contact egaux au Trait MUSKLE. |
 | Veneneux | A faire | Poison par DOPAGE avec pertes de PV selon le seuil choisi et consequences en cas d'echec. |
