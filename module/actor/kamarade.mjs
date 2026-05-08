@@ -60,20 +60,27 @@ export function prepareKamaradeDerivedData(actor) {
 
 export function computeKamaradeTraitPoints(actor) {
   const sys = actor.system;
-  const doctrine = sys.details?.doctrine ?? DOCTRINES[0];
   const xpTraits = sys.details?.xp?.traits ?? 0;
 
   let spent = 0;
   for (const d of DOCTRINES) {
-    const cost = (d === doctrine) ? TRAIT_COST.doctrine : TRAIT_COST.hors;
     for (const traitId of TRAITS_BY_DOCTRINE[d]) {
       const trait = sys.traits?.[d]?.[traitId] ?? {};
-      spent += computeKamaradeTraitBase(trait) * cost;
+      spent += computeKamaradeTraitBase(trait) * computeKamaradeTraitCost(actor, d, traitId);
     }
   }
 
   const max = STARTING_TRAIT_POINTS + xpTraits + computeKamaradeTraitPointsBonus(actor);
   return { max, spent, available: max - spent };
+}
+
+export function computeKamaradeTraitCost(actor, doctrine, traitId) {
+  const chosenDoctrine = actor.system.details?.doctrine ?? DOCTRINES[0];
+  if (doctrine === chosenDoctrine) return TRAIT_COST.doctrine;
+  if (hasKamaradeSigneTargetingTrait(actor, "derogation", doctrine, traitId)) {
+    return TRAIT_COST.doctrine;
+  }
+  return TRAIT_COST.hors;
 }
 
 export function computeKamaradeSignesMax(actor) {
@@ -341,6 +348,9 @@ export function computeKamaradeSignTraitBonus(actor, doctrine, traitId, context 
   if (hasKamaradeSigne(actor, "krolik") && doctrine === "marteau" && traitId === "briseurDeGreve") {
     bonus -= 2;
   }
+  if (getFirstKamaradeSigneTargetTrait(actor, "monprecieux") === `${doctrine}.${traitId}`) {
+    bonus += 1;
+  }
   return bonus;
 }
 
@@ -378,6 +388,35 @@ export function computeKamaradeDamageCap(actor, source) {
 export function hasActiveKamaradeSizeSigne(actor, name) {
   if (!hasKamaradeSigne(actor, name)) return false;
   return !(hasKamaradeSigne(actor, "grand") && hasKamaradeSigne(actor, "petit"));
+}
+
+export function hasKamaradeSigneTargetingTrait(actor, name, doctrine, traitId) {
+  let found = false;
+  actor.items?.forEach(item => {
+    if (found) return;
+    if (item?.type !== "signe" || !item.name) return;
+    if (normalizeSignSlug(item.name) !== name) return;
+    found = normalizeTargetTrait(item.system?.targetTrait) === `${doctrine}.${traitId}`;
+  });
+  return found;
+}
+
+export function getFirstKamaradeSigneTargetTrait(actor, name) {
+  let targetTrait = "";
+  actor.items?.forEach(item => {
+    if (targetTrait) return;
+    if (item?.type !== "signe" || !item.name) return;
+    if (normalizeSignSlug(item.name) !== name) return;
+
+    const target = normalizeTargetTrait(item.system?.targetTrait);
+    if (target) targetTrait = target;
+  });
+  return targetTrait;
+}
+
+export function normalizeTargetTrait(value) {
+  if (typeof value !== "string") return "";
+  return value.trim();
 }
 
 export function resolveKamaradeCalculationContext(actor, context = {}) {

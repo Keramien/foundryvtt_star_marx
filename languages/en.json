@@ -221,6 +221,9 @@
       "Fields": {
         "Category": "Category",
         "TraitLink": "Linked Trait",
+        "TargetTrait": "Target Trait",
+        "TargetTraitEmpty": "No target Trait",
+        "TargetTraitHint": "Choose the Trait affected by this Sign on this sheet.",
         "Bonus": "Bonus",
         "BonusLabel": "Bonus sign (equipment / scenario)",
         "BonusHint": "A bonus sign does not count against the chosen-signs cap."

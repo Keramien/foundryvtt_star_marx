@@ -50,6 +50,8 @@ export class StarMarxItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
 
     context.doctrines = DOCTRINES;
     context.traitsByDoctrine = TRAITS_BY_DOCTRINE;
+    context.requiresTraitTarget = !!item.flags?.starmarx?.requiresTraitTarget;
+    context.targetTraitGroups = this.#buildTargetTraitGroups();
 
     // No need to pre-enrich HTML here: we render HTML fields with the
     // <prose-mirror> custom element, which takes the raw value via `value="…"`
@@ -67,5 +69,21 @@ export class StarMarxItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
       field,
       position: this.position
     });
+  }
+
+  #buildTargetTraitGroups() {
+    return DOCTRINES.map(doctrine => ({
+      id: doctrine,
+      labelKey: `STARMARX.Doctrine.${this.#capitalize(doctrine)}`,
+      traits: TRAITS_BY_DOCTRINE[doctrine].map(trait => ({
+        id: trait,
+        value: `${doctrine}.${trait}`,
+        labelKey: `STARMARX.Trait.${this.#capitalize(doctrine)}.${this.#capitalize(trait)}`
+      }))
+    }));
+  }
+
+  #capitalize(value) {
+    return value.charAt(0).toUpperCase() + value.slice(1);
   }
 }
