@@ -202,7 +202,7 @@
 /* -------- Tab 1 : Presentation -------- */
 .star-marx .stats-row {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 0.75rem;
   margin-bottom: 1rem;
 }
@@ -213,6 +213,7 @@
   border-radius: 4px;
   padding: 0.5rem;
   text-align: center;
+  min-width: 0;
 }
 
 .star-marx .stat-block h3 {
@@ -255,6 +256,38 @@
   flex-direction: column;
   gap: 0.15rem;
   font-size: 0.9rem;
+}
+
+.star-marx .stat-roll-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  min-width: 4.2rem;
+  height: 2rem;
+  padding: 0 0.5rem;
+  background: var(--sm-paper);
+  border: 1px solid var(--sm-border);
+  border-radius: 3px;
+  color: var(--sm-ink);
+  cursor: pointer;
+}
+
+.star-marx .stat-roll-btn strong {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.star-marx .stat-roll-btn:hover {
+  background: var(--sm-red);
+  color: var(--sm-paper);
+  border-color: var(--sm-red);
+}
+
+@media (max-width: 720px) {
+  .star-marx .stats-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 /* XP block gets its own full-width row below the identity row. The 4 XP

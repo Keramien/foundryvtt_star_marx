@@ -53,6 +53,11 @@
         "Label": "Zlotys",
         "Hint": "Meta-currency. Spend to add dice, reroll, or activate a Sign."
       },
+      "FearResistance": {
+        "Label": "Fear resistance",
+        "Roll": "Roll fear resistance",
+        "Formula": "{trait} + bonus"
+      },
       "Limits": {
         "Kontrebande": "Max Kontrebande",
         "Clefs": "Max Keys",
@@ -358,6 +363,7 @@
       "Threshold": "Threshold",
       "ThresholdDefault": "Default threshold: 9",
       "Dangerosite": "Enemy Danger",
+      "FearResistanceDangerositeHint": "apply Danger as a penalty",
       "CriticalSuccess": "Critical success",
       "CriticalFailure": "Critical failure"
     }

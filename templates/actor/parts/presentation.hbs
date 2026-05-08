@@ -11,6 +11,15 @@
       <p class="hint">{{healthFormula}}</p>
     </div>
 
+    <div class="stat-block stat-fear-resistance">
+      <h3>{{localize "STARMARX.Actor.FearResistance.Label"}}</h3>
+      <button type="button" class="stat-roll-btn" data-action="rollFearResistance" title="{{localize 'STARMARX.Actor.FearResistance.Roll'}}">
+        <i class="fa-solid fa-dice-d6"></i>
+        <strong>{{system.fearResistance.value}}</strong>
+      </button>
+      <p class="hint">{{fearResistanceFormula}}</p>
+    </div>
+
     <div class="stat-block stat-damage">
       <h3>{{localize "STARMARX.Actor.Damage.Label"}}</h3>
       <div class="damage-sources">

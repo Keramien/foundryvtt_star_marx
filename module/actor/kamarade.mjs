@@ -29,6 +29,15 @@ export function prepareKamaradeDerivedData(actor) {
   sys.damage.lutte.value = computeKamaradeDamageValue(actor, sys, "lutte");
   sys.damage.ak47.value = computeKamaradeDamageValue(actor, sys, "ak47");
 
+  // Fear resistance is a derived roll stat. It normally uses PRISONNIER
+  // POLITIQUE, but specific signs can swap the base trait or add bonuses.
+  sys.fearResistance ??= {};
+  const fearResistance = computeKamaradeFearResistance(actor, sys);
+  sys.fearResistance.base = fearResistance.base;
+  sys.fearResistance.bonus = fearResistance.bonus;
+  sys.fearResistance.value = fearResistance.value;
+  sys.fearResistance.trait = fearResistance.trait;
+
   // XP is split across 4 editable buckets. Total is computed for display.
   const xp = sys.details.xp;
   const xpTraits = xp.traits ?? 0;
@@ -168,6 +177,32 @@ export function computeKamaradeDamageTraitTotal(sys, source) {
     default:
       return 0;
   }
+}
+
+export function computeKamaradeFearResistance(actor, sys) {
+  const traitId = getKamaradeFearResistanceTraitId(actor);
+  const trait = sys.traits?.marteau?.[traitId] ?? {};
+  const base = computeKamaradeTraitTotal(actor, "marteau", traitId, trait);
+  const bonus = computeKamaradeFearResistanceBonus(actor);
+  return {
+    trait: traitId,
+    base,
+    bonus,
+    value: base + bonus
+  };
+}
+
+export function getKamaradeFearResistanceTraitId(actor) {
+  return hasKamaradeSigne(actor, "memepaspeur") ? "briseurDeGreve" : "prisonnierPolitique";
+}
+
+export function computeKamaradeFearResistanceBonus(actor) {
+  if (actor.type !== "kamarade") return 0;
+
+  let bonus = 0;
+  if (hasKamaradeSigne(actor, "klon")) bonus += 2;
+  if (hasKamaradeSigne(actor, "mnogy")) bonus += 2;
+  return bonus;
 }
 
 export function initializeKamaradeHealthOffset(actor) {

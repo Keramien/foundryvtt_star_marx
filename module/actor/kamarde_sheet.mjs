@@ -6,6 +6,7 @@ import {
 import { openStarMarxImagePicker } from "../helpers/image-picker.mjs";
 import {
   computeKamaradeZlotysBonus,
+  getKamaradeFearResistanceTraitId,
   getKamaradeHealthTraitId
 } from "./kamarade.mjs";
 
@@ -26,6 +27,7 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       itemEdit:         KamaradeSheet.#onItemEdit,
       itemDelete:       KamaradeSheet.#onItemDelete,
       resetTraits:      KamaradeSheet.#onResetTraits,
+      rollFearResistance: KamaradeSheet.#onRollFearResistance,
       rollTrait:        KamaradeSheet.#onRollTrait,
       helpTrait:        KamaradeSheet.#onHelpTrait
     }
@@ -81,6 +83,7 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     context.signesMax = sys.signesMax ?? sys.limits?.signes ?? 2;
     context.kontrebandeMax = sys.kontrebandeMax ?? sys.limits?.kontrebande ?? 5;
     context.healthFormula = this.#buildHealthFormula(actor);
+    context.fearResistanceFormula = this.#buildFearResistanceFormula(actor);
 
     // Expose the primary tab list for the nav template. Individual content
     // parts receive their own `tab` context via _preparePartContext below.
@@ -155,6 +158,12 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     const traitId = getKamaradeHealthTraitId(actor);
     const trait = game.i18n.localize(`STARMARX.Trait.Marteau.${this.#capitalize(traitId)}`).toLocaleUpperCase();
     return game.i18n.format("STARMARX.Actor.Health.Formula", { trait });
+  }
+
+  #buildFearResistanceFormula(actor) {
+    const traitId = getKamaradeFearResistanceTraitId(actor);
+    const trait = game.i18n.localize(`STARMARX.Trait.Marteau.${this.#capitalize(traitId)}`).toLocaleUpperCase();
+    return game.i18n.format("STARMARX.Actor.FearResistance.Formula", { trait });
   }
 
   async #onHealthValueChange(event) {
@@ -349,6 +358,22 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     const item = this.actor.items.get(id);
     if (!item) return;
     await item.deleteDialog();
+  }
+
+  static async #onRollFearResistance(event, target) {
+    const total = this.actor.system.fearResistance?.value ?? 0;
+    const roll = await new Roll("2d6 + @total", { total }).evaluate();
+
+    const label = game.i18n.localize("STARMARX.Actor.FearResistance.Label");
+    const threshold = game.i18n.localize("STARMARX.Roll.Threshold");
+    const hint = game.i18n.localize("STARMARX.Roll.FearResistanceDangerositeHint");
+    const flavor = `<strong>${label}</strong>
+      <small>(${threshold} 9 - ${hint})</small>`;
+
+    await roll.toMessage({
+      speaker: ChatMessage.getSpeaker({ actor: this.actor }),
+      flavor
+    });
   }
 
   // Roll 2d6 + trait.total for a given trait, post to chat with a

@@ -53,6 +53,11 @@
         "Label": "Zlotys",
         "Hint": "Méta-monnaie. Permet d'ajouter des dés, relancer, activer un Signe."
       },
+      "FearResistance": {
+        "Label": "Résistance à la peur",
+        "Roll": "Lancer la résistance à la peur",
+        "Formula": "{trait} + bonus"
+      },
       "Limits": {
         "Kontrebande": "Kontrebandes max",
         "Clefs": "Clefs max",
@@ -358,6 +363,7 @@
       "Threshold": "Seuil",
       "ThresholdDefault": "Seuil par défaut : 9",
       "Dangerosite": "Dangerosité de l'ennemi",
+      "FearResistanceDangerositeHint": "appliquez la Dangerosité comme malus",
       "CriticalSuccess": "Succès critique",
       "CriticalFailure": "Échec critique"
     }

@@ -90,6 +90,12 @@ export class KamaradeData extends foundry.abstract.TypeDataModel {
         base: new NumberField({ required: true, integer: true, initial: BASE_ZLOTYS, min: 0 }),
         offset: new NumberField({ required: true, integer: true, initial: 0 })
       }),
+      fearResistance: new SchemaField({
+        value: new NumberField({ required: true, integer: true, initial: 0 }),
+        base: new NumberField({ required: true, integer: true, initial: 0 }),
+        bonus: new NumberField({ required: true, integer: true, initial: 0 }),
+        trait: new StringField({ required: true, initial: "prisonnierPolitique" })
+      }),
       limits: new SchemaField({
         kontrebande: new NumberField({ required: true, integer: true, initial: 5, min: 0 }),
         clefs:       new NumberField({ required: true, integer: true, initial: 5, min: 0 }),
