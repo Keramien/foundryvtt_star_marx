@@ -37,6 +37,17 @@
     </div>
   {{/if}}
 
+  {{#if requiresTeamMode}}
+    <div class="form-group">
+      <label>{{localize "STARMARX.Signe.Fields.TeamMode"}}</label>
+      <select name="system.teamMode">
+        <option value="group" {{#if (eq system.teamMode "group")}}selected{{/if}}>{{localize "STARMARX.Signe.Fields.TeamModeGroup"}}</option>
+        <option value="alone" {{#if (eq system.teamMode "alone")}}selected{{/if}}>{{localize "STARMARX.Signe.Fields.TeamModeAlone"}}</option>
+      </select>
+      <p class="hint">{{localize "STARMARX.Signe.Fields.TeamModeHint"}}</p>
+    </div>
+  {{/if}}
+
   <div class="form-group">
     <label class="checkbox-inline">
       <input type="checkbox" name="system.bonus" {{#if system.bonus}}checked{{/if}}>

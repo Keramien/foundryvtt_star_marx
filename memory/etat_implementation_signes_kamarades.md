@@ -70,7 +70,7 @@ Etats utilises :
 | Toi, j't'aime pas | Manuel | Intimidation ou pression sur les machines par un Gonklin via BRISEUR DE GREVE. |
 | Toi, j't'aime vraiment pas | Manuel | Destruction d'une machine contre un cout en Zlotys negocie. |
 | Tous dessus | A faire | Petits Klons immobilisant une cible et abaissant le seuil pour la toucher a 9. |
-| Un seul esprit pour toute une equipe ! | A faire | +1 en LUTTE, PRISONNIER POLITIQUE et BRISEUR DE GREVE avec un compagnon, -1 si seul. |
+| Un seul esprit pour toute une equipe ! | Implemente | Mode configurable sur l'instance du Signe ; +1 en LUTTE, PRISONNIER POLITIQUE et BRISEUR DE GREVE en groupe, -1 si seul. |
 | Veteran of Psychic War | Manuel | Captive un public avec ses recits ; jet en KARKASS ou LUTTE selon la mise en scene. |
 | Vieille connaissance | Manuel | Une fois par partie, contre 1 Zloty, declare connaitre un PNJ utile. |
 

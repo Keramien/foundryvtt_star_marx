@@ -62,6 +62,11 @@ export class SigneData extends foundry.abstract.TypeDataModel {
       }),
       traitLink: new StringField({ required: true, initial: "" }),
       targetTrait: new StringField({ required: true, initial: "" }),
+      teamMode: new StringField({
+        required: true,
+        initial: "group",
+        choices: ["group", "alone"]
+      }),
       racialOf:  new StringField({ required: true, initial: "" }),
       // Flag indicating this signe is granted by something external to
       // character creation (equipment, scenario reward, GM fiat). Bonus

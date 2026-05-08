@@ -7,6 +7,8 @@
     "description": "<p><strong>Conditions requises :</strong> Aucune.</p><ul><li>Accompagne d'<strong>au moins un compagnon</strong> : <strong>+1 en LUTTE, PRISONNIER POLITIQUE et BRISEUR DE GREVE</strong></li><li><strong>Seul</strong> : <strong>-1</strong> a ces memes Traits</li></ul>",
     "category": "general",
     "traitLink": "",
+    "targetTrait": "",
+    "teamMode": "group",
     "racialOf": ""
   },
   "effects": [],
@@ -15,6 +17,10 @@
   "ownership": {
     "default": 0
   },
-  "flags": {},
+  "flags": {
+    "starmarx": {
+      "requiresTeamMode": true
+    }
+  },
   "_key": "!items!sgnunseulespritA"
 }

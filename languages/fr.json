@@ -225,6 +225,10 @@
         "TargetTrait": "Trait ciblé",
         "TargetTraitEmpty": "Aucun Trait ciblé",
         "TargetTraitHint": "Choisissez le Trait affecté par ce Signe sur cette fiche.",
+        "TeamMode": "Situation d'équipe",
+        "TeamModeGroup": "En groupe",
+        "TeamModeAlone": "Seul",
+        "TeamModeHint": "Indiquez si le Kamarade est accompagné ou livré à sa solitude idéologiquement suspecte.",
         "Bonus": "Bonus",
         "BonusLabel": "Signe bonus (équipement / scénario)",
         "BonusHint": "Un signe bonus ne compte pas dans la limite des signes au choix."

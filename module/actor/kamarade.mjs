@@ -8,6 +8,11 @@ import {
   damageFromRank
 } from "../helpers/config.mjs";
 
+const UN_SEUL_ESPRIT_TRAITS = new Set(["lutte", "prisonnierPolitique", "briseurDeGreve"]);
+const SIGN_NAME_ALIASES = {
+  unseulesprit: new Set(["unseulespritpourtouteuneequipe"])
+};
+
 export function prepareKamaradeDerivedData(actor) {
   if (actor.type !== "kamarade") return;
 
@@ -289,7 +294,7 @@ export function hasKamaradeItem(actor, name) {
 export function hasKamaradeSigne(actor, name) {
   let found = false;
   actor.items?.forEach(item => {
-    if (item?.type === "signe" && item.name && normalizeSignSlug(item.name) === name) {
+    if (item?.type === "signe" && isMatchingKamaradeSigne(item, name)) {
       found = true;
     }
   });
@@ -328,6 +333,15 @@ export function computeKamaradeZlotysBonus(actor) {
   return bonus;
 }
 
+export function computeKamaradeUnSeulEspritTraitBonus(actor) {
+  if (actor.type !== "kamarade") return 0;
+
+  const mode = getFirstKamaradeSigneTeamMode(actor, "unseulesprit");
+  if (mode === "group") return 1;
+  if (mode === "alone") return -1;
+  return 0;
+}
+
 export function computeKamaradeSignTraitBonus(actor, doctrine, traitId, context = {}) {
   if (actor.type !== "kamarade") return 0;
 
@@ -347,6 +361,9 @@ export function computeKamaradeSignTraitBonus(actor, doctrine, traitId, context 
   }
   if (hasKamaradeSigne(actor, "krolik") && doctrine === "marteau" && traitId === "briseurDeGreve") {
     bonus -= 2;
+  }
+  if (doctrine === "marteau" && UN_SEUL_ESPRIT_TRAITS.has(traitId)) {
+    bonus += computeKamaradeUnSeulEspritTraitBonus(actor);
   }
   if (getFirstKamaradeSigneTargetTrait(actor, "monprecieux") === `${doctrine}.${traitId}`) {
     bonus += 1;
@@ -395,7 +412,7 @@ export function hasKamaradeSigneTargetingTrait(actor, name, doctrine, traitId) {
   actor.items?.forEach(item => {
     if (found) return;
     if (item?.type !== "signe" || !item.name) return;
-    if (normalizeSignSlug(item.name) !== name) return;
+    if (!isMatchingKamaradeSigne(item, name)) return;
     found = normalizeTargetTrait(item.system?.targetTrait) === `${doctrine}.${traitId}`;
   });
   return found;
@@ -406,7 +423,7 @@ export function getFirstKamaradeSigneTargetTrait(actor, name) {
   actor.items?.forEach(item => {
     if (targetTrait) return;
     if (item?.type !== "signe" || !item.name) return;
-    if (normalizeSignSlug(item.name) !== name) return;
+    if (!isMatchingKamaradeSigne(item, name)) return;
 
     const target = normalizeTargetTrait(item.system?.targetTrait);
     if (target) targetTrait = target;
@@ -414,9 +431,36 @@ export function getFirstKamaradeSigneTargetTrait(actor, name) {
   return targetTrait;
 }
 
+export function getFirstKamaradeSigneTeamMode(actor, name) {
+  let teamMode = "";
+  actor.items?.forEach(item => {
+    if (teamMode) return;
+    if (item?.type !== "signe" || !item.name) return;
+    if (!isMatchingKamaradeSigne(item, name)) return;
+
+    teamMode = normalizeSigneTeamMode(item.system?.teamMode) || "group";
+  });
+  return teamMode;
+}
+
 export function normalizeTargetTrait(value) {
   if (typeof value !== "string") return "";
   return value.trim();
+}
+
+export function normalizeSigneTeamMode(value) {
+  if (typeof value !== "string") return "";
+  const normalized = normalizeSignSlug(value);
+  if (normalized === "group" || normalized === "groupe" || normalized === "engroupe") return "group";
+  if (normalized === "alone" || normalized === "solo" || normalized === "seul") return "alone";
+  return "";
+}
+
+function isMatchingKamaradeSigne(item, name) {
+  if (!item?.name) return false;
+  const normalizedName = normalizeSignSlug(item.name);
+  if (normalizedName === name) return true;
+  return SIGN_NAME_ALIASES[name]?.has(normalizedName) ?? false;
 }
 
 export function resolveKamaradeCalculationContext(actor, context = {}) {

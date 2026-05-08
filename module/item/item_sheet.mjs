@@ -51,6 +51,7 @@ export class StarMarxItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
     context.doctrines = DOCTRINES;
     context.traitsByDoctrine = TRAITS_BY_DOCTRINE;
     context.requiresTraitTarget = !!item.flags?.starmarx?.requiresTraitTarget;
+    context.requiresTeamMode = !!item.flags?.starmarx?.requiresTeamMode;
     context.targetTraitGroups = this.#buildTargetTraitGroups();
 
     // No need to pre-enrich HTML here: we render HTML fields with the
