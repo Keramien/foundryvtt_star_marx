@@ -10,7 +10,7 @@ const SIGN = catalog.find(entry => entry.slug === "attaquebondissan");
 describe("Kamarade Sign - Attaque Bondissante (attaquebondissan)", () => {
   test("catalog entry is available", () => {
     assert.ok(SIGN);
-    assert.equal(SIGN.category, "general");
+    assert.equal(SIGN.category, "race");
   });
 
   test.skip("applies the sign effect in nominal conditions", () => {

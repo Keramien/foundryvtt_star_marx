@@ -5,12 +5,12 @@ import { createSigneFixture } from "../../fixtures/signe.factory.mjs";
 import { applySigneEffect } from "../../helpers/apply-signe.mjs";
 import catalog from "../../meta/signes-catalog.json" with { type: "json" };
 
-const SIGN = catalog.find(entry => entry.slug === "toijtaimevraimen");
+const SIGN = catalog.find(entry => entry.slug === "toijtaimepas");
 
-describe("Kamarade Sign - Toi, j't'aime vraiment pas (toijtaimevraimen)", () => {
+describe("Kamarade Sign - Toi, j't'aime pas (toijtaimepas)", () => {
   test("catalog entry is available", () => {
     assert.ok(SIGN);
-    assert.equal(SIGN.category, "general");
+    assert.equal(SIGN.category, "race");
   });
 
   test.skip("applies the sign effect in nominal conditions", () => {

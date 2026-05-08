@@ -5,12 +5,12 @@
   "img": "icons/svg/upgrade.svg",
   "system": {
     "description": "<p><strong>Conditions requises :</strong></p><ul><li>Race Klon</li><li><strong>Posseder Famille nombreuse</strong></li></ul><p>Le Kamarade peut <strong>sacrifier un Petit Klon</strong> pour <strong>eviter la moitie des degats</strong> qu'on lui inflige. Le Petit Klon, evidemment, <strong>ne survit pas a la manoeuvre</strong>.</p>",
-    "category": "general",
+    "category": "race",
     "traitLink": "",
     "racialOf": ""
   },
   "effects": [],
-  "folder": "fldsignegeneralA",
+  "folder": "fldsraceklonAAAA",
   "sort": 0,
   "ownership": {
     "default": 0

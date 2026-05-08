@@ -222,6 +222,7 @@
         "General": "General",
         "Trait": "Trait-linked",
         "Racial": "Racial",
+        "Race": "Race-restricted",
         "Groupuscule": "Faction"
       }
     },

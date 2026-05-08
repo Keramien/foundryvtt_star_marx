@@ -13,4 +13,4 @@ export const PATHS = {
   signsCatalogPath: path.join(thisDir, "meta", "signes-catalog.json")
 };
 
-export const SIGN_CATEGORIES = ["general", "trait", "racial", "groupuscule"];
+export const SIGN_CATEGORIES = ["general", "trait", "racial", "race", "groupuscule"];

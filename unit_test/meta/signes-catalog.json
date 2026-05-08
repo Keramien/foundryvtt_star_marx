@@ -1,978 +1,978 @@
 [
-    {
-        "slug":  "acolyte",
-        "name":  "Acolyte, Larbin, etc.",
-        "category":  "general",
-        "traitLink":  "",
-        "description":  "Conditions requises : Aucune. Le Kamarade est suivi par un personnage secondaire a son service, interprete par le joueur. Ce suiveur dispose de 10 croix a repartir librement dans ses propres Traits, sans pouvoir depasser 3 croix par score. Si le larbin meurt, le Secretaire General lui trouve un remplacant des la partie suivante. Les XP du Kamarade peuvent etre investis dans ce suivant : 1 XP pour une croix dans un Trait choisi a la creation du larbin, 2 XP pour une croix dans tout autre Trait.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\acolyte.json"
-    },
-    {
-        "slug":  "alepreuvedesbal",
-        "name":  "A l\u0027epreuve des balles",
-        "category":  "trait",
-        "traitLink":  "faucille.grouillot",
-        "description":  "Conditions requises : Trait GROUILLOT. Le Kamarade est immunise a tous les poisons et nourritures bizarres : son estomac supporte les cuisines extra-terrestres et les pires toxiques.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\alepreuvedesbal.json"
-    },
-    {
-        "slug":  "alevin",
-        "name":  "Alevin",
-        "category":  "racial",
-        "traitLink":  "",
-        "description":  "Conditions requises : Race Alevin. L\u0027Alevin accede a tous les Signes Raciaux des Robots , a l\u0027exception de Defragmentation acceleree . Il ne peut pas non plus etre soigne par un DOPAGE ; il doit etre accompagne d\u0027un MACHINISTE . Sortie du scaphandre : Dans un milieu aquatique , peut operer comme un simple poisson Perd l\u0027acces aux Traits lies au robot Ne lui reste qu\u00271 point de vie",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\alevin.json"
-    },
-    {
-        "slug":  "angora",
-        "name":  "Angora",
-        "category":  "general",
-        "traitLink":  "",
-        "description":  "Conditions requises : Race Krolik ; specimen a poil soyeux et allergene. Pour 1 Zloty : un personnage expose a un malus de -1 pendant une scene a cause d\u0027une allergie passagere, ou la dangerosite d\u0027un mechant baisse de 1 . Pour 3 Zlotys (et avec accord du Secretaire General) : un personnage expose rate une action a cause d\u0027une crise d\u0027eternuement.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\angora.json"
-    },
-    {
-        "slug":  "armurier",
-        "name":  "Armurier",
-        "category":  "general",
-        "traitLink":  "",
-        "description":  "Conditions requises : Aucune. Le Kamarade est un passionne des armes. Si le joueur decrit comment son personnage bichonne et modifie son arme, il beneficie, au premier jet, d\u0027un +1 en LUTTE ou en AK 47 et d\u0027un +1 au score de degats . Il peut egalement faire profiter toute l\u0027equipe de son talent (entretien d\u0027une arme d\u0027un compagnon).",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\armurier.json"
-    },
-    {
-        "slug":  "attaquebondissan",
-        "name":  "Attaque Bondissante",
-        "category":  "general",
-        "traitLink":  "",
-        "description":  "Conditions requises : Race Krolik. Une fois par combat, pour 1 Zloty , le Kamarade ajoute son score en MEDAILLE OLYMPIQUE a ses degats en LUTTE . Attention au decor : si l\u0027espace est trop etroit ou le plafond trop bas, le Secretaire General peut infliger au Kamarade ses propres degats a la place .",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\attaquebondissan.json"
-    },
-    {
-        "slug":  "autonomie",
-        "name":  "Autonomie",
-        "category":  "general",
-        "traitLink":  "",
-        "description":  "Conditions requises : Race Robot. Le Robot est quasi-autonome energetiquement : panneau solaire, eolienne, poele a combustion, capteur a foudre, etc. (au choix du joueur). Sans source d\u0027energie ni batterie supplementaire, l\u0027autonomie moyenne est de 72 heures hors veille. S\u0027il s\u0027eteint par manque d\u0027energie, il peut toujours etre redemarre en lui fournissant a nouveau de l\u0027energie.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\autonomie.json"
-    },
-    {
-        "slug":  "bibliothequeambu",
-        "name":  "Bibliotheque ambulante",
-        "category":  "groupuscule",
-        "traitLink":  "",
-        "description":  "Conditions requises : Appartenance au Kollectif Bradbourichque (groupuscule clandestin de libraires et lettres resistant a la censure) Le joueur doit citer un livre existant se rapportant au sujet qu\u0027il n\u0027a pas encore evoque dans la partie Contre 1 Zloty , le Kamarade peut echanger un de ses Traits avec UNIVERSITET le temps d\u0027une scene. Exemple : J\u0027ai lu Premier de Cordee, je fais ma survie en montagne avec mon 4 en UNIVERSITET. Cout croissant : chaque nouvelle utilisation du Signe dans la meme partie double le cout en Zlotys : 1re utilisation : 1 Zloty 2e utilisation : 2 Zlotys 3e utilisation : 3 Zlotys ...et ainsi de suite",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\bibliothequeambu.json"
-    },
-    {
-        "slug":  "bicyclope",
-        "name":  "Bicyclope",
-        "category":  "racial",
-        "traitLink":  "",
-        "description":  "Conditions requises : Race Bicyclope. Sur terrain favorable (routes, surfaces lisses) : +2 en MEDAILLE OLYMPIQUE Sur terrain defavorable (eau, terrain accidente) : malus a determiner par le Secretaire General Les Bicyclopes peuvent monter des pneus tout-terrain en quelques minutes",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\bicyclope.json"
-    },
-    {
-        "slug":  "bienoutille",
-        "name":  "Bien Outille",
-        "category":  "general",
-        "traitLink":  "",
-        "description":  "Conditions requises : Aucune. Le Kamarade choisit sa Kontrebande avec meticulosite (ou appartient a la Nomenklatura qui ne manque de rien) : sa Kontrebande donne un bonus de +4 au lieu du +2 standard.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\bienoutille.json"
-    },
-    {
-        "slug":  "bluffeur",
-        "name":  "Bluffeur",
-        "category":  "trait",
-        "traitLink":  "etoile.jeuxEtParis",
-        "description":  "Conditions requises : Trait JEUX ET PARIS. Ne peut pas etre utilise sur un obstacle collectif. Une fois par partie , le Kamarade substitue son score en JEUX ET PARIS a celui de PROPAGANDE pour mentir. Contre un nombre de Zlotys negocie avec le Secretaire General , il peut meme cacher son resultat de des et annoncer que le jet est reussi.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\bluffeur.json"
-    },
-    {
-        "slug":  "boucher",
-        "name":  "Boucher",
-        "category":  "trait",
-        "traitLink":  "marteau.lutte",
-        "description":  "Conditions requises : Trait LUTTE. +1 aux degats au contact.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\boucher.json"
-    },
-    {
-        "slug":  "bourbasky",
-        "name":  "Bourbasky",
-        "category":  "racial",
-        "traitLink":  "",
-        "description":  "Conditions requises : Race Bourbasky. Adapte au vide (pas besoin de scaphandre) Corps protoplasmique modulable : couleur, forme, nageoires, ventouses, membranes, follicules, etc. TCHERNOBYL peut se substituer a MEDAILLE OLYMPIQUE ou a SOCIAL TRAITRE , a condition que le joueur etaye son recit Limitations de Kontrebande : les Bourbaskyi n\u0027ont pas de possessions materielles ; leurs Kontrebandes sont soit des PNJ, soit des formules mathematiques qu\u0027ils reemploient jusqu\u0027a s\u0027en lasser puis revisent pour les reparer.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\bourbasky.json"
-    },
-    {
-        "slug":  "cadavreexquis",
-        "name":  "Cadavre exquis",
-        "category":  "trait",
-        "traitLink":  "faucille.grouillot",
-        "description":  "Conditions requises : Trait GROUILLOT. Les talents culinaires du Kamarade lui permettent de faire disparaitre n\u0027importe quel cadavre sans laisser de trace. Les restes ne refont jamais surface et sont servis comme des petits pains.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\cadavreexquis.json"
-    },
-    {
-        "slug":  "cestmarubrique",
-        "name":  "C\u0027est ma rubrique",
-        "category":  "trait",
-        "traitLink":  "etoile.samizdats",
-        "description":  "Conditions requises : Trait SAMIZDATS ; choisir a la prise du Signe une specialite journalistique (chiens ecrases, coeurs solitaires, critique gastronomique, histoire du Parti, etc.). Le Kamarade peut utiliser son Trait en SAMIZDATS pour tout jet en lien avec sa rubrique (corruption d\u0027un membre du Politburo pour un specialiste du Parti, drague pour un courrier du coeur, cuisine pour un critique gastronomique, etc.).",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\cestmarubrique.json"
-    },
-    {
-        "slug":  "chernyirynok",
-        "name":  "Chernyi Rynok",
-        "category":  "trait",
-        "traitLink":  "faucille.marcheNoir",
-        "description":  "Conditions requises : Trait MARCHE NOIR. Contre 1 Zloty en debut de partie , le Secretaire General offre au Kamarade une cargaison composite dont au moins une des denrees pourra servir au scenario .",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\chernyirynok.json"
-    },
-    {
-        "slug":  "commeunchat",
-        "name":  "Comme un chat",
-        "category":  "trait",
-        "traitLink":  "marteau.medailleOlympique",
-        "description":  "Conditions requises : Trait MEDAILLE OLYMPIQUE OU Trait ACROBATE. Le Kamarade ne prend jamais de degats de chute , sauf sadisme flagrant du Secretaire General. Note : les Signes applicables a ACROBATE sont les memes que ceux de MEDAILLE OLYMPIQUE.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\commeunchat.json"
-    },
-    {
-        "slug":  "confidenceoreil",
-        "name":  "Confidence sur l\u0027oreiller",
-        "category":  "trait",
-        "traitLink":  "faucille.poupeeRusse",
-        "description":  "Conditions requises : Trait POUPEE RUSSE. Apres une nuit de plaisir ou d\u0027ivresse partagee avec une personne, le Kamarade peut obtenir n\u0027importe quelle information de celle-ci.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\confidenceoreil.json"
-    },
-    {
-        "slug":  "cuistotroboratif",
-        "name":  "Cuistot roboratif",
-        "category":  "trait",
-        "traitLink":  "faucille.grouillot",
-        "description":  "Conditions requises : Trait GROUILLOT ; temps de cuisiner et ingredients de bonne qualite. Les repas du Kamarade rendent des points de vie . Il dispose d\u0027un pool de soins egal a son score en GROUILLOT , a repartir entre lui et ses compagnons.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\cuistotroboratif.json"
-    },
-    {
-        "slug":  "deduction",
-        "name":  "Deduction",
-        "category":  "trait",
-        "traitLink":  "etoile.kgb",
-        "description":  "Conditions requises : Trait KGB. Le Kamarade expose un raisonnement a haute voix et peut demander au Secretaire General d\u0027en confirmer la justesse , contre un nombre de Zlotys fixe par ce dernier . Le Secretaire ne donne pas d\u0027informations nouvelles, il se contente de confirmer ou infirmer. Des que le Secretaire annonce qu\u0027un raisonnement est faux , le Kamarade paie le double de Zlotys et perd l\u0027usage de la capacite jusqu\u0027a la fin de la partie . Tant qu\u0027il raisonne juste, utilisation a volonte.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\deduction.json"
-    },
-    {
-        "slug":  "defragmentaccele",
-        "name":  "Defragmentation acceleree",
-        "category":  "general",
-        "traitLink":  "",
-        "description":  "Conditions requises : Race Robot. Le Robot reste operationnel 24h/24 (pas de mise en veille pour defragmentation). Note : indisponible pour les Alevins.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\defragmentaccele.json"
-    },
-    {
-        "slug":  "derogation",
-        "name":  "Derogation",
-        "category":  "general",
-        "traitLink":  "",
-        "description":  "Conditions requises : Aucune, mais le choix doit etre justifie par l\u0027historique ou le peuple du Kamarade. Le Secretaire General peut refuser si la justification est insuffisante ou si ce Signe prolifere dans le groupe. Le Kamarade peut progresser dans un Trait choisi comme s\u0027il etait place sous sa Doctrine : 1 point de creation ou d\u0027XP pour une croix (au lieu de 2). Exemples : Kronen le Hjort a survecu enchaine a une noria puis devenu gladiateur pour MIR TV : il a choisi Marteau comme Doctrine mais son joueur obtient une Derogation en CORRUPTION pour rappeler son passe de comptable. Bishibo le savant fou voudrait une Derogation en AK 47 - sans justification solide, refus (quelle que soit la quantite de barres Marx offertes).",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\derogation.json"
-    },
-    {
-        "slug":  "disparition",
-        "name":  "Disparition",
-        "category":  "trait",
-        "traitLink":  "faucille.socialTraitre",
-        "description":  "Conditions requises : Trait SOCIAL TRAITRE. Une fois par seance , sur un simple clignement de paupieres, le Kamarade disparait du champ de vision d\u0027un tiers. Jet oppose : son score en SOCIAL TRAITRE contre la difficulte du PNJ (ou son score en KGB). Succes : son opposant le croit perdu ; le Kamarade peut s\u0027echapper ou reattaquer par surprise.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\disparition.json"
-    },
-    {
-        "slug":  "dissimulation",
-        "name":  "Dissimulation",
-        "category":  "trait",
-        "traitLink":  "faucille.socialTraitre",
-        "description":  "Conditions requises : Trait SOCIAL TRAITRE. Le Kamarade peut toujours dissimuler sur lui un objet pas plus grand qu\u0027une dague ; celui-ci echappe a toutes les fouilles .",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\dissimulation.json"
-    },
-    {
-        "slug":  "dosaumur",
-        "name":  "Dos au mur",
-        "category":  "trait",
-        "traitLink":  "marteau.lutte",
-        "description":  "Conditions requises : Trait LUTTE. Quand le Kamarade tombe a 1 point de vie , il beneficie de +1 a tous ses scores en Marteau et +1 aux degats qu\u0027il inflige.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\dosaumur.json"
-    },
-    {
-        "slug":  "dulusk",
-        "name":  "Dulusk",
-        "category":  "racial",
-        "traitLink":  "",
-        "description":  "Conditions requises : Race Dulusk ; le joueur justifie le metissage du personnage. Le Kamarade a acces au Signe Racial ou a la Clef Raciale de son choix parmi les autres races (issu de ses sangs meles). La Clef du Nuancier est optionnelle (RP uniquement, pas un Signe).",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\dulusk.json"
-    },
-    {
-        "slug":  "egalitemonc",
-        "name":  "Egalite mon c...",
-        "category":  "general",
-        "traitLink":  "",
-        "description":  "Conditions requises : Aucune (fiction : chance genetique ou membre d\u0027une societe ecran du Grand Ancien Kthulhuw). Le Kamarade ne subit jamais les consequences de ses echecs critiques : la malchance se reporte sur ses compagnons, qui en paient le prix. Le hasard ne peut pas non plus le designer comme victime d\u0027un evenement aleatoire.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\egalitemonc.json"
-    },
-    {
-        "slug":  "embuscade",
-        "name":  "Embuscade",
-        "category":  "trait",
-        "traitLink":  "faucille.actionPartisane",
-        "description":  "Conditions requises : Trait ACTION PARTISANE ; 1 minute de preparation du terrain avant l\u0027affrontement. Les allies du Kamarade recoivent +1 a leurs jets et +1 a leurs degats pour le premier round de l\u0027affrontement.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\embuscade.json"
-    },
-    {
-        "slug":  "enpremiereligne",
-        "name":  "En premiere ligne",
-        "category":  "trait",
-        "traitLink":  "marteau.karkass",
-        "description":  "Conditions requises : Trait KARKASS. +3 points de vie supplementaires.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\enpremiereligne.json"
-    },
-    {
-        "slug":  "espritdemeute",
-        "name":  "Esprit de meute",
-        "category":  "trait",
-        "traitLink":  "marteau.lutte",
-        "description":  "Conditions requises : Trait LUTTE. Pour 1 Zloty , le Kamarade porte une attaque supplementaire a une cible qu\u0027un de ses allies vient de blesser.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\espritdemeute.json"
-    },
-    {
-        "slug":  "famillenombreuse",
-        "name":  "Famille nombreuse",
-        "category":  "general",
-        "traitLink":  "",
-        "description":  "Conditions requises : Race Klon. Le Kamarade est accompagne d\u0027une horde de Petits Klons bavant et degeneres (neveux, cousins, freres). Fonctionne comme le Signe Acolyte, Larbin, etc., mais chaque Trait est associe a un Petit Klon different . Quand un neveu meurt, ses points de Traits peuvent, a la fin de l\u0027aventure, servir a creer un nouveau mioche (dans un Trait different au besoin) ou etre reattribues aux survivants. Famille nombreuse est le pre-requis pour les trois Signes Klon suivants : La dure Loi de l\u0027Evolution, La Fessee, Tous dessus.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\famillenombreuse.json"
-    },
-    {
-        "slug":  "fichiercentral",
-        "name":  "Fichier central",
-        "category":  "trait",
-        "traitLink":  "faucille.etreAuParfum",
-        "description":  "Conditions requises : Trait ETRE AU PARFUM. Sur un jet d\u0027ETRE AU PARFUM modifie par la difficulte de la cible , le Kamarade accede aux informations que celle-ci souhaite cacher. Le Secretaire General a le dernier mot sur le contenu et l\u0027exactitude des donnees.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\fichiercentral.json"
-    },
-    {
-        "slug":  "filature",
-        "name":  "Filature",
-        "category":  "trait",
-        "traitLink":  "etoile.kgb",
-        "description":  "Conditions requises : Trait KGB ; situation de surveillance/planque. Le Kamarade peut ajouter son score en KGB ou en PROPAGANDE a son Trait SOCIAL TRAITRE pour rester discret en filature.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\filature.json"
-    },
-    {
-        "slug":  "gardeducorps",
-        "name":  "Garde du corps",
-        "category":  "trait",
-        "traitLink":  "marteau.karkass",
-        "description":  "Conditions requises : Trait KARKASS. Le Kamarade peut s\u0027interposer entre ses compagnons et l\u0027ennemi pour encaisser les degats a leur place. Il peut alors utiliser son Armure pour absorber la totalite des attaques interceptees s\u0027il le souhaite. Exemple : Stein et Siva ont rate leurs defenses et subissent 2 points de degats chacun (total 4). Myasnik s\u0027interpose et utilise son Armure : il ignore l\u0027integralite des degats grace a ses organes vitaux deplaces apres m\u0027etre fait quasiment couper en deux par un Bolchok a Grelots.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\gardeducorps.json"
-    },
-    {
-        "slug":  "gigolbare",
-        "name":  "Gigolbare",
-        "category":  "racial",
-        "traitLink":  "",
-        "description":  "Conditions requises : Race Gigolbare. Le Kamarade peut cuisiner des gateaux dopants en y mettant une part de ses sucs vitaux. Chaque gateau ajoute 1 de a un test , mais coute : 1 PV si le de supplementaire donne un resultat impair 2 PV s\u0027il donne un resultat pair Le Kamarade peut preparer ce genre de cuisine un nombre de fois par partie egal a son score en KARKASS .",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\gigolbare.json"
-    },
-    {
-        "slug":  "gladiator",
-        "name":  "Gladiator",
-        "category":  "trait",
-        "traitLink":  "faucille.bolchoi",
-        "description":  "Conditions requises : Trait BOLCHOI. Une fois par combat, pour 1 Zloty , le Kamarade ajoute son score en BOLCHOI a ses degats .",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\gladiator.json"
-    },
-    {
-        "slug":  "gonklin",
-        "name":  "Gonklin",
-        "category":  "racial",
-        "traitLink":  "",
-        "description":  "Conditions requises : Race Gonklin. +2 pour casser une machine -2 pour utiliser une machine",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\gonklin.json"
-    },
-    {
-        "slug":  "grand",
-        "name":  "Grand",
-        "category":  "general",
-        "traitLink":  "",
-        "description":  "Conditions requises : Aucune. (Signe racial obligatoire - et gratuit - pour les Klons.) Le Kamarade est imposant : +1 aux degats au contact +2 croix en BRISEUR DE GREVE +2 points de vie -2 des qu\u0027il s\u0027agit d\u0027etre discret Sa taille/son poids peuvent servir de complications scenaristiques (passages etroits, planchers fragiles).",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\grand.json"
-    },
-    {
-        "slug":  "gryazny",
-        "name":  "Gryazny",
-        "category":  "racial",
-        "traitLink":  "",
-        "description":  "Conditions requises : Race Gryazny. Adapte au vide Jusqu\u0027a 7 Kontrebandes maximum au lieu de 5 (collectionneur passionne) Note : les Gryaznyi sont tribaux et ne se jouent qu\u0027en groupe. Points de vie, Armure et Traits sont un pot commun du groupe. Pour autonomiser les membres, prendre Acolyte, Larbin, etc.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\gryazny.json"
-    },
-    {
-        "slug":  "herosmalgrelui",
-        "name":  "Heros malgre lui",
-        "category":  "general",
-        "traitLink":  "",
-        "description":  "Conditions requises : Aucune. Une fois par partie , le Kamarade peut declarer que les consequences d\u0027un echec critique ont finalement un effet benefique.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\herosmalgrelui.json"
-    },
-    {
-        "slug":  "hjort",
-        "name":  "Hjort",
-        "category":  "racial",
-        "traitLink":  "",
-        "description":  "Conditions requises : Race Hjort. +2 points en CORRUPTION +2 Zlotys supplementaires en debut de partie pour corrompre le Secretaire General PRISONNIER POLITIQUE plafonne a 1 (depassable uniquement avec justification et longues negociations avec le Secretaire General)",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\hjort.json"
-    },
-    {
-        "slug":  "humain",
-        "name":  "Humain",
-        "category":  "racial",
-        "traitLink":  "",
-        "description":  "Conditions requises : Race Humain. Le signe racial Humain cumule deux effets : En plus des 20 points de Traits standards, le Kamarade beneficie de 2 points surnumeraires a repartir dans les Traits de son choix, meme hors de sa Doctrine (ces 2 points peuvent etre cumules sur un seul Trait). Il dispose d\u0027un signe au choix supplementaire (racial + 2 au choix au lieu de racial + 1).",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\humain.json"
-    },
-    {
-        "slug":  "iadelamourdansl",
-        "name":  "IA de l\u0027amour dans l\u0027air",
-        "category":  "trait",
-        "traitLink":  "etoile.operateurCodeur",
-        "description":  "Conditions requises : Trait OPERATEUR CODEUR. A chaque debut de scenario , le joueur fait un jet en POUPEE RUSSE, seuil 12 : Reussi : le Kamarade gagne 3 Zlotys utilisables uniquement dans des situations liees a l\u0027informatique. Echec : la dulcinee numerique est fachee (oubli du retrait securise du plug USB) ; le Secretaire General doit pourrir la vie du Kamarade avec des tracas numeriques.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\iadelamourdansl.json"
-    },
-    {
-        "slug":  "implantk",
-        "name":  "Implant K",
-        "category":  "trait",
-        "traitLink":  "etoile.universitet",
-        "description":  "Conditions requises : Trait UNIVERSITET. Le Kamarade a une bibliotheque telechargee dans son cerveau via implant neocortical. La science sovietique etant ce qu\u0027elle est, il lui faut 1 heure de concentration pour obtenir l\u0027information recherchee.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\implantk.json"
-    },
-    {
-        "slug":  "insomniaque",
-        "name":  "Insomniaque",
-        "category":  "trait",
-        "traitLink":  "marteau.karkass",
-        "description":  "Conditions requises : Trait KARKASS. Le Kamarade se contente de 4 heures de sommeil par jour. En contrepartie, lorsqu\u0027il dort, rien ne peut l\u0027eveiller .",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\insomniaque.json"
-    },
-    {
-        "slug":  "interrogatoiremu",
-        "name":  "Interrogatoire muscle",
-        "category":  "trait",
-        "traitLink":  "etoile.kgb",
-        "description":  "Conditions requises : Trait KGB. En interrogatoire, le Kamarade peut relancer ses jets rates indefiniment , mais chaque nouvelle tentative coute 1d2 PV a la cible . (Les morts ne parlent pas.)",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\interrogatoiremu.json"
-    },
-    {
-        "slug":  "ivrogne",
-        "name":  "Ivrogne",
-        "category":  "trait",
-        "traitLink":  "marteau.karkass",
-        "description":  "Conditions requises : Trait KARKASS. Disponibilite de vodka ou kvas ; l\u0027interlocuteur doit accepter de boire avec le Kamarade. S\u0027il partage une cuite avec son interlocuteur, le Kamarade peut substituer son score en KARKASS a n\u0027importe lequel de ses Traits en Faucille : CORRUPTION, ETRE AU PARFUM, POUPEE RUSSE ou PROPAGANDE .",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\ivrogne.json"
-    },
-    {
-        "slug":  "jegardeunballeat",
-        "name":  "Je garde une balle a ton nom",
-        "category":  "trait",
-        "traitLink":  "marteau.ak47",
-        "description":  "Conditions requises : Trait AK 47 ; l\u0027adversaire vise doit etre connu a l\u0027avance. Le Kamarade profile ses munitions en fonction d\u0027un ennemi identifie. Le Secretaire General accorde alors un bonus aux degats ou au Trait AK 47 en fonction des preparations et des recherches du joueur.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\jegardeunballeat.json"
-    },
-    {
-        "slug":  "kalachnikov",
-        "name":  "Kalachnikov",
-        "category":  "trait",
-        "traitLink":  "marteau.ak47",
-        "description":  "Conditions requises : Trait AK 47. Le Kamarade peut repartir les degats d\u0027un tir entre plusieurs adversaires , a condition que la difficulte pour les toucher soit la meme (ou inferieure) que celle de la cible principale. Exemple : Le soyouz de Dark Jack est envahi par des lapins de Ganymede. Avec 3 points de degats en AK 47, il peut en abattre 3 d\u0027un coup (PV 1 chacun). Reste 97 rongeurs qui vont bientot se reproduire...",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\kalachnikov.json"
-    },
-    {
-        "slug":  "klon",
-        "name":  "Klon",
-        "category":  "racial",
-        "traitLink":  "",
-        "description":  "Conditions requises : Race Klon. +2 pour resister a la peur (sous PRISONNIER POLITIQUE) Signe General Grand gratuit (voir signes generaux)",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\klon.json"
-    },
-    {
-        "slug":  "krolik",
-        "name":  "Krolik",
-        "category":  "racial",
-        "traitLink":  "",
-        "description":  "Conditions requises : Race Krolik. +1 aux degats en LUTTE +2 points de vie +2 pour tout bond (cuisses lapinesques) -2 en BRISEUR DE GREVE (le Krolik ressemble a une grosse peluche)",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\krolik.json"
-    },
-    {
-        "slug":  "laduredelevoluti",
-        "name":  "La dure Loi de l\u0027Evolution",
-        "category":  "general",
-        "traitLink":  "",
-        "description":  "Conditions requises : Race Klon Posseder Famille nombreuse Le Kamarade peut sacrifier un Petit Klon pour eviter la moitie des degats qu\u0027on lui inflige. Le Petit Klon, evidemment, ne survit pas a la manoeuvre .",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\laduredelevoluti.json"
-    },
-    {
-        "slug":  "lafessee",
-        "name":  "La Fessee",
-        "category":  "general",
-        "traitLink":  "",
-        "description":  "Conditions requises : Race Klon Posseder Famille nombreuse Le Kamarade devore un de ses Petits Klons devant ses cousins terrifies. Les attardes survivants sont motives par cette demonstration d\u0027amour paternel : leur prochain jet beneficie d\u0027un bonus de +2 par marmot englouti .",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\lafessee.json"
-    },
-    {
-        "slug":  "lafureurdevivre",
-        "name":  "La Fureur de Vivre",
-        "category":  "trait",
-        "traitLink":  "marteau.soyouz",
-        "description":  "Conditions requises : Trait SOYOUZ ; le Kamarade doit etre aux commandes d\u0027un engin lors d\u0027une bataille spatiale. Dans chaque bataille spatiale, pour 1 Zloty , le joueur peut ajouter son score en PRISONNIER POLITIQUE a ses jets de pilotage .",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\lafureurdevivre.json"
-    },
-    {
-        "slug":  "liresurleslevres",
-        "name":  "Lire sur les levres",
-        "category":  "trait",
-        "traitLink":  "etoile.kgb",
-        "description":  "Conditions requises : Trait KGB ; voir la personne parler dans une langue connue du Kamarade. Le Kamarade lit sur les levres dans toute langue qu\u0027il connait.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\liresurleslevres.json"
-    },
-    {
-        "slug":  "machinesetbidule",
-        "name":  "Machines et bidules",
-        "category":  "trait",
-        "traitLink":  "etoile.rechercheConception",
-        "description":  "Conditions requises : Trait RECHERCHE ET CONCEPTION ; acces a du materiel. Le Kamarade bricole une machine d\u0027urgence ou un produit experimental. Il peut alors substituer son score en R\u0026amp;C a tout autre Trait pour un test, une fois par session . Pour une utilisation supplementaire de la meme invention , il lance 1d6 : 2e Utilisation : l\u0027invention rend l\u0027ame sur 1-2 3e Utilisation : rend l\u0027ame sur 1-4 Etc. (jet de durabilite comme une Kontrebande) Les consequences catastrophiques quand la mecanique cede sont bien pires qu\u0027une Kontrebande ordinaire (explosions, effets secondaires inattendus).",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\machinesetbidule.json"
-    },
-    {
-        "slug":  "magedusotch",
-        "name":  "Mage du scotch",
-        "category":  "trait",
-        "traitLink":  "etoile.machiniste",
-        "description":  "Conditions requises : Trait MACHINISTE. Pour 1 Zloty , le Kamarade repare un objet de Kontrebande casse . Pour un nombre de Zlotys negocie , il peut faire tenir une machine au-dela de ses limites .",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\magedusotch.json"
-    },
-    {
-        "slug":  "maitrechanteur",
-        "name":  "Maitre chanteur",
-        "category":  "trait",
-        "traitLink":  "faucille.etreAuParfum",
-        "description":  "Conditions requises : Trait ETRE AU PARFUM. Une fois par partie, pour 1 Zloty , le Kamarade peut faire chanter une personne innocente pour obtenir un service, a condition que cela ne mette pas sa vie ou celles de ses proches en jeu.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\maitrechanteur.json"
-    },
-    {
-        "slug":  "maitredarmes",
-        "name":  "Maitre d\u0027armes",
-        "category":  "trait",
-        "traitLink":  "marteau.lutte",
-        "description":  "Conditions requises : Trait LUTTE. Le Kamarade peut repartir les degats d\u0027une attaque LUTTE entre plusieurs adversaires , a condition que la difficulte pour les toucher soit la meme (ou inferieure). Exemple : Kronen le Hjort affronte un molosse pouilleux de Mabrouk 28 (gros comme une Novye Trabant, difficulte -4) entoure de puces (difficulte normale). Avec 5 en degats, Kronen ecrase le molosse (3 PV) et peut, dans le meme mouvement, tuer 2 puces (1 PV chacune). S\u0027il avait attaque les puces, il n\u0027aurait pas pu atteindre le molosse (plus dur a toucher), mais aurait eclate 5 puces.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\maitredarmes.json"
-    },
-    {
-        "slug":  "mamanetaitunpoel",
-        "name":  "Maman etait un poele en fonte",
-        "category":  "general",
-        "traitLink":  "",
-        "description":  "Conditions requises : Race Robot. Blindage lourd. Pour 1 Zloty , une creature qui frappe le Robot avec des armes naturelles subit en retour la moitie des degats infliges . Contrepartie : le Robot est bien plus pesant qu\u0027un Kamarade ordinaire ; le Secretaire General peut en faire un levier a histoires (planchers fragiles, cales fragiles, etc.).",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\mamanetaitunpoel.json"
-    },
-    {
-        "slug":  "masochiste",
-        "name":  "Masochiste",
-        "category":  "trait",
-        "traitLink":  "marteau.lutte",
-        "description":  "Conditions requises : Trait LUTTE. Pour chaque tranche de 3 points de vie perdus en combat, le Kamarade gagne 1 Zloty , a utiliser avant la fin de l\u0027affrontement ou avant d\u0027etre soigne (sinon perdu).",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\masochiste.json"
-    },
-    {
-        "slug":  "massacreartistiq",
-        "name":  "Massacre artistique",
-        "category":  "trait",
-        "traitLink":  "marteau.lutte",
-        "description":  "Conditions requises : Trait LUTTE. Une fois par combat , le Kamarade peut tenter un jet avec, en bonus, le nombre de personnages qu\u0027il a tues et en malus, la dangerosite de son ennemi . Si le jet reussit, l\u0027attaque de l\u0027adversaire est annulee (comme une Armure) : les ennemis ont trop peur pour attaquer.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\massacreartistiq.json"
-    },
-    {
-        "slug":  "memepaspeur",
-        "name":  "Meme pas peur",
-        "category":  "trait",
-        "traitLink":  "marteau.briseurDeGreve",
-        "description":  "Conditions requises : Trait BRISEUR DE GREVES. Le Kamarade peut substituer son score en BRISEUR DE GREVE a celui de PRISONNIER POLITIQUE pour resister a la peur.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\memepaspeur.json"
-    },
-    {
-        "slug":  "memoireeidetique",
-        "name":  "Memoire eidetique",
-        "category":  "trait",
-        "traitLink":  "etoile.universitet",
-        "description":  "Conditions requises : Trait UNIVERSITET. Le Kamarade peut toujours demander au Secretaire General des details oublies : adresses, noms, horaires, dates.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\memoireeidetique.json"
-    },
-    {
-        "slug":  "methodique",
-        "name":  "Methodique",
-        "category":  "general",
-        "traitLink":  "",
-        "description":  "Conditions requises : Aucune. Le Kamarade aime planifier. Une fois par scene , s\u0027il reussit un jet depassant le seuil 9 , tous les points excedentaires sont verses dans une reserve commune dans laquelle chaque joueur du groupe peut puiser a discretion pour completer ses propres jets (tant que les actions suivent le plan). Exemple : (9 9), un Truizyk ex-agent du KGB dote de ce Signe, fait un jet en TCHERNOBYL et obtient 12, soit 3 points au-dessus du seuil 9. Il verse ces 3 points dans la reserve. Arsena Lapin, cambrioleur krolik, fait 10 en SOCIAL TRAITRE contre un seuil a 12 : il pioche 2 points dans la reserve pour atteindre 12. Il reste 1 point pour un autre membre de l\u0027equipe.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\methodique.json"
-    },
-    {
-        "slug":  "minoriteclandest",
-        "name":  "Minorite clandestine",
-        "category":  "trait",
-        "traitLink":  "marteau.prisonnierPolitique",
-        "description":  "Conditions requises : Trait PRISONNIER POLITIQUE ; appartenance a une minorite persecutee (religieuse, independantiste, capitaliste...). Contre des Zlotys , le Kamarade accede a tout un reseau (informateurs, materiel) pret a l\u0027aider, surtout pour defendre La Cause. Contrepartie : il doit suivre des preceptes et pratiques risquant de le trahir aupres des autorites.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\minoriteclandest.json"
-    },
-    {
-        "slug":  "mnogy",
-        "name":  "Mnogy",
-        "category":  "racial",
-        "traitLink":  "",
-        "description":  "Conditions requises : Race Mnogy. +1 point de vie (coque incassable) +2 pour resister a la peur Meme mort, la coque reste intacte et les occupants survivent en attendant qu\u0027un autre Mnogy les ramasse Le Mnogy est contraint par la Clef raciale de la Loi de l\u0027Audimat : ses actions suivent les votes des residents. Regle RP, pas un Signe.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\mnogy.json"
-    },
-    {
-        "slug":  "monprecieux",
-        "name":  "Mon precieux !",
-        "category":  "general",
-        "traitLink":  "",
-        "description":  "Conditions requises : Aucune. Un seul precieux par Kamarade. Un objet fetiche accorde un bonus permanent de +1 a un Trait du Kamarade, a justifier narrativement (couverture fetiche pour PRISONNIER POLITIQUE, guide de l\u0027aventurier pour PIONNIER, etc.). L\u0027objet ne peut pas etre perdu : si cela devait arriver, le Secretaire General doit reintroduire un objet aux memes caracteristiques a la session suivante. Seul le Kamarade beneficie du bonus ; pour tout autre personnage, c\u0027est un objet ordinaire.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\monprecieux.json"
-    },
-    {
-        "slug":  "monsieurpropre",
-        "name":  "Monsieur Propre",
-        "category":  "trait",
-        "traitLink":  "faucille.grouillot",
-        "description":  "Conditions requises : Trait GROUILLOT. Sur un jet de GROUILLOT reussi (difficulte fixee par le Secretaire General), le Kamarade fait disparaitre temoins genants et traces d\u0027un crime .",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\monsieurpropre.json"
-    },
-    {
-        "slug":  "nepassefierauxa",
-        "name":  "Ne pas se fier aux apparences",
-        "category":  "trait",
-        "traitLink":  "marteau.lutte",
-        "description":  "Conditions requises : Trait LUTTE ; fiction justifiant la sous-estimation (taille, sexe, allure faible). Le Kamarade beneficie d\u0027un +2 au debut de tout conflit car ses adversaires le sous-estiment.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\nepassefierauxa.json"
-    },
-    {
-        "slug":  "nevergiveup",
-        "name":  "Never Give Up !",
-        "category":  "trait",
-        "traitLink":  "marteau.prisonnierPolitique",
-        "description":  "Conditions requises : Trait PRISONNIER POLITIQUE. Les points de vie du Kamarade = PRISONNIER POLITIQUE + 5 (au lieu de KARKASS + 5).",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\nevergiveup.json"
-    },
-    {
-        "slug":  "noyadeverbale",
-        "name":  "Noyade verbale",
-        "category":  "trait",
-        "traitLink":  "faucille.propagande",
-        "description":  "Conditions requises : Trait PROPAGANDE. Le Kamarade accapare une personne par son debit verbal. Duree (en secondes) pendant laquelle la victime ne peut rien faire d\u0027autre qu\u0027ecouter = resultat du jet de des.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\noyadeverbale.json"
-    },
-    {
-        "slug":  "ombredelombre",
-        "name":  "Ombre de l\u0027ombre",
-        "category":  "trait",
-        "traitLink":  "faucille.socialTraitre",
-        "description":  "Conditions requises : Trait SOCIAL TRAITRE. Tant qu\u0027il reste immobile dans une zone d\u0027ombre , le Kamarade est indetectable .",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\ombredelombre.json"
-    },
-    {
-        "slug":  "omonvaisseau1",
-        "name":  "O mon vaisseau 1",
-        "category":  "trait",
-        "traitLink":  "marteau.soyouz",
-        "description":  "Conditions requises : Trait SOYOUZ ; designation d\u0027un vaisseau specifique auquel le Kamarade est lie. Le Kamarade a un +1 a tous les jets effectues avec ce vaisseau designe , qu\u0027il s\u0027agisse de le piloter (SOYOUZ), d\u0027utiliser ses ordinateurs/sonars (OPERATEUR CODEUR), son artillerie (AK 47) ou de le reparer (MACHINISTE).",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\omonvaisseau1.json"
-    },
-    {
-        "slug":  "omonvaisseau2",
-        "name":  "O mon vaisseau 2",
-        "category":  "trait",
-        "traitLink":  "marteau.soyouz",
-        "description":  "Conditions requises : Trait SOYOUZ Posseder O mon vaisseau 1 (pre-requis explicite : ce Signe est une seconde prise de O mon vaisseau) Aucun autre membre de l\u0027equipe ne peut prendre ce Signe (exclusif) Le bonus avec le vaisseau designe passe a +2 , mais le Kamarade subit -1 avec tous les autres vehicules .",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\omonvaisseau2.json"
-    },
-    {
-        "slug":  "oupsdesole",
-        "name":  "Oups ! Desole...",
-        "category":  "general",
-        "traitLink":  "",
-        "description":  "Conditions requises : Aucune. Une fois par combat , le Kamarade peut decider qu\u0027un coup qui lui est destine le loupe. Les degats ne sont pas perdus : quelqu\u0027un d\u0027autre au hasard (PJ ou PNJ) les encaisse a sa place.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\oupsdesole.json"
-    },
-    {
-        "slug":  "pangalacticmarke",
-        "name":  "Pangalactic Market",
-        "category":  "trait",
-        "traitLink":  "faucille.grouillot",
-        "description":  "Conditions requises : Trait GROUILLOT. Avec uniquement des produits locaux , le Kamarade peut soit donner l\u0027illusion d\u0027utiliser des produits de sa planete d\u0027origine, soit faire naitre l\u0027exotisme galactique a partir d\u0027ingredients du quotidien.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\pangalacticmarke.json"
-    },
-    {
-        "slug":  "passagerhallucin",
-        "name":  "Passager Hallucinatoire",
-        "category":  "general",
-        "traitLink":  "",
-        "description":  "Source : Kosmokultor p.16 Conditions requises : Aucune. (Fiction : le Kamarade souffre du syndrome d\u0027Holdenmillersky suite a l\u0027absorption d\u0027une copromolecule pas fraiche.) Le Kamarade recoit la visite d\u0027un personnage qu\u0027il est seul a percevoir , qui lui prodigue des conseils (salvateurs ou nefastes). Concretement, le Kamarade voit le Secretaire General , qui peut lui mentir, le manipuler a loisir et le traiter comme sa marionnette plus ou moins volontaire.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\passagerhallucin.json"
-    },
-    {
-        "slug":  "perfidie",
-        "name":  "Perfidie",
-        "category":  "trait",
-        "traitLink":  "faucille.socialTraitre",
-        "description":  "Conditions requises : Trait SOCIAL TRAITRE. Une fois par combat, pour 1 Zloty , le Kamarade ajoute son score en SOCIAL TRAITRE a ses degats .",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\perfidie.json"
-    },
-    {
-        "slug":  "petit",
-        "name":  "Petit",
-        "category":  "general",
-        "traitLink":  "",
-        "description":  "Conditions requises : Aucune. (Signe racial obligatoire - et gratuit - pour les Simples.) Le Kamarade est petit et menu : +2 pour toute action de discretion Sur un 1 au d6, un coup qui lui est destine passe entre les gouttes (jetez un de a chaque attaque) Les degats qu\u0027il inflige en LUTTE sont plafonnes a 2 Sa taille peut servir de complication (scaphandre a ses mensurations, barreau trop haut, etc.)",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\petit.json"
-    },
-    {
-        "slug":  "petitdebrouillar",
-        "name":  "Petit debrouillard",
-        "category":  "trait",
-        "traitLink":  "faucille.marcheNoir",
-        "description":  "Conditions requises : Trait MARCHE NOIR. En debut de session (ou en cours de partie quand il a le temps), le joueur annonce ce qu\u0027il cherche et fait un jet en MARCHE NOIR : 12 ou plus : 3 qualites au choix dans la liste 9, 10 ou 11 : 2 qualites Echec : 1 qualite Liste des qualites : Cette chose fonctionne. C\u0027est plus ou moins ce que le joueur recherche. Cela sert a quelque chose de puissant. Ce n\u0027est a personne (ou personne ne viendra le reclamer). Le Secretaire General utilise les qualites non choisies pour pimenter la suite.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\petitdebrouillar.json"
-    },
-    {
-        "slug":  "physionomiste",
-        "name":  "Physionomiste",
-        "category":  "trait",
-        "traitLink":  "etoile.kgb",
-        "description":  "Conditions requises : Trait KGB. Le Kamarade reconnait immediatement toute personne deja rencontree (visage, demarche, voix).",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\physionomiste.json"
-    },
-    {
-        "slug":  "piecesautonomes",
-        "name":  "Pieces autonomes",
-        "category":  "general",
-        "traitLink":  "",
-        "description":  "Conditions requises : Race Robot. Le Kamarade peut se scinder en plusieurs unites individuelles : envoyer un oeil et une main dans un conduit, laisser sa tete sur le tableau de bord pendant que son corps repare une breche, etc. Contrepartie : le Secretaire General peut accorder un bonus aux ennemis en embuscade (oeil parti se promener) ou faire se perdre le corps prive de ses senseurs.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\piecesautonomes.json"
-    },
-    {
-        "slug":  "pimpmybot",
-        "name":  "Pimp my bot",
-        "category":  "general",
-        "traitLink":  "",
-        "description":  "Conditions requises : Race Robot ; un MACHINISTE dans le groupe ; 1 Zloty depense ; materiel disponible. Une fois par seance , un Kamarade mecanicien peut modifier le Robot : Deplacer des croix d\u0027un Trait a un autre Dans la limite du score en MACHINISTE du Kamarade qui le trafique Exemple : Stein (MACHINISTE 4) greffe deux paraboles sur Zig 7 fois 2. Zig depense 1 Zloty, gagne +3 en KGB, perd 1 en LUTTE et 2 en PRISONNIER POLITIQUE (5 croix deplacees, dans la limite de MACHINISTE 4 - attention, dans l\u0027exemple original, Stein a 4 en MACHINISTE, donc 5 croix deplacees serait refuse. Le Secretaire General reste arbitre.)",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\pimpmybot.json"
-    },
-    {
-        "slug":  "piqure",
-        "name":  "Piqure",
-        "category":  "trait",
-        "traitLink":  "etoile.dopage",
-        "description":  "Conditions requises : Trait DOPAGE ; etre au contact de la cible ; le joueur decrit l\u0027effet. Le Kamarade injecte un compose qui ajoute 1d6 a un test (de lui-meme ou d\u0027un compagnon). La cible perd 1d2 PV du fait de l\u0027injection.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\piqure.json"
-    },
-    {
-        "slug":  "pointfaible",
-        "name":  "Point faible",
-        "category":  "trait",
-        "traitLink":  "etoile.kgb",
-        "description":  "Conditions requises : Trait KGB. Une fois par combat, pour 1 Zloty , le Kamarade ajoute son score en KGB a ses degats . (Je devine a son teint jaune qu\u0027il a une cirrhose au foie. C\u0027est donc la que je frappe !)",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\pointfaible.json"
-    },
-    {
-        "slug":  "precis",
-        "name":  "Precis",
-        "category":  "trait",
-        "traitLink":  "marteau.ak47",
-        "description":  "Conditions requises : Trait AK 47. +1 aux degats avec AK 47.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\precis.json"
-    },
-    {
-        "slug":  "procesetmenaces",
-        "name":  "Proces et menaces",
-        "category":  "general",
-        "traitLink":  "",
-        "description":  "Conditions requises : Race Hjort. A chaque round de combat, le joueur fait un jet en CORRUPTION modifie par la dangerosite de l\u0027ennemi . Sur un succes, l\u0027opposant n\u0027attaque pas pendant le round, de peur de passer en justice. L\u0027effet est rompu si le Hjort est agresse entre-temps.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\procesetmenaces.json"
-    },
-    {
-        "slug":  "projection",
-        "name":  "Projection",
-        "category":  "trait",
-        "traitLink":  "marteau.lutte",
-        "description":  "Conditions requises : Trait LUTTE. Au lieu d\u0027infliger des degats, le Kamarade peut envoyer son adversaire voler a quelques metres . La taille et le poids de la cible doivent rester raisonnables (pas de planchette japonaise sur un tank).",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\projection.json"
-    },
-    {
-        "slug":  "quedunoeil",
-        "name":  "Que d\u0027un oeil",
-        "category":  "trait",
-        "traitLink":  "marteau.goulag",
-        "description":  "Conditions requises : Trait GOULAG. Le Kamarade a le sommeil leger : on ne le surprend jamais pendant qu\u0027il dort . Au moindre bruit, il est debout et pret a l\u0027action.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\quedunoeil.json"
-    },
-    {
-        "slug":  "radaranouba",
-        "name":  "Radar a Nouba",
-        "category":  "general",
-        "traitLink":  "",
-        "description":  "Source : Kosmokultor p.16 Conditions requises : Aucune. Le Kamarade detecte a distance les fetes, soirees clandestines, boums etudiantes et beuveries. Il declenche son pouvoir quand il le souhaite , pour un nombre de Zlotys fixe par le Secretaire General selon la situation. Il percoit la direction de la bamboche mais pas sa nature (barmitsva cannibale, cantina, etc.) et ne peut pas s\u0027y teleporter : encore faut-il l\u0027atteindre.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\radaranouba.json"
-    },
-    {
-        "slug":  "rancunier",
-        "name":  "Rancunier",
-        "category":  "general",
-        "traitLink":  "",
-        "description":  "Conditions requises : Historique du personnage justifiant ce Signe (a la discretion du Secretaire General). Si un adversaire amene le Kamarade a 0 PV en combat et que celui-ci survit , le personnage beneficie d\u0027un +1 a tous ses jets en opposition contre cette personne, l\u0027organisation qu\u0027elle represente, ou le groupe auquel elle appartient. Le Secretaire General peut refuser si le joueur exagere l\u0027extension.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\rancunier.json"
-    },
-    {
-        "slug":  "realitevirtuelle",
-        "name":  "Realite virtuelle",
-        "category":  "trait",
-        "traitLink":  "etoile.operateurCodeur",
-        "description":  "Conditions requises : Trait OPERATEUR CODEUR ; machine VR disponible. Le Kamarade possede une machine capable de projeter le groupe dans un univers de jeu video . Les joueurs mettent les casques et changent d\u0027univers de jeu ( Alone in the Bank , Kommissaire of Persia , Kolkhoze of Duty , etc.).",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\realitevirtuelle.json"
-    },
-    {
-        "slug":  "reflexepavlovien",
-        "name":  "Reflexe Pavlovien",
-        "category":  "racial",
-        "traitLink":  "",
-        "description":  "Source : Kosmokultor p.14 Conditions requises : Race Tsvetok. Le Kamarade declenche un reflexe urinaire chez son ennemi sur un jet en TCHERNOBYL pondere par la dangerosite de l\u0027ennemi . L\u0027effet met souvent fin a l\u0027affrontement (ou offre un bref intermede). Les citoyens de l\u0027Union sont conditionnes par la fragrance des Tsvetok dans les toilettes publiques.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\reflexepavlovien.json"
-    },
-    {
-        "slug":  "regeneration",
-        "name":  "Regeneration",
-        "category":  "trait",
-        "traitLink":  "marteau.karkass",
-        "description":  "Conditions requises : Trait KARKASS. A la fin de chaque combat, le Kamarade recupere 3 points de vie . Aussi connu sous Juste une egratignure.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\regeneration.json"
-    },
-    {
-        "slug":  "reputation",
-        "name":  "Reputation",
-        "category":  "trait",
-        "traitLink":  "faucille.corruption",
-        "description":  "Conditions requises : Trait CORRUPTION. A chaque rencontre d\u0027un nouveau PNJ, le Kamarade peut faire un jet de seuil 9 : Reussi : le PNJ a deja entendu parler du Kamarade dans les termes choisis par le joueur. Rate : le Secretaire General choisit ce que le PNJ a entendu (potentiellement defavorable).",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\reputation.json"
-    },
-    {
-        "slug":  "robot",
-        "name":  "Robot",
-        "category":  "racial",
-        "traitLink":  "",
-        "description":  "Conditions requises : Race Robot. Le Robot ne respire pas : il n\u0027a besoin ni d\u0027oxygene ni d\u0027autre chose. Il est resistant au vide et peut operer dans l\u0027espace sans scaphandre , sous l\u0027eau, ou dans tout autre milieu similaire. Un traitement antirouille peut etre necessaire par la suite.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\robot.json"
-    },
-    {
-        "slug":  "roentgenizdat",
-        "name":  "Roentgenizdat",
-        "category":  "trait",
-        "traitLink":  "etoile.samizdats",
-        "description":  "Conditions requises : Trait SAMIZDATS ; le joueur fournit au Secretaire General 3 enregistrements musicaux . Le Kamarade collectionne les roentgenizdats (enregistrements clandestins sur radiographies medicales). Le joueur gagne 1 Zloty chaque fois que le Secretaire General utilise un des enregistrements pour sonoriser la partie .",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\roentgenizdat.json"
-    },
-    {
-        "slug":  "roidelacombine",
-        "name":  "Roi de la combine",
-        "category":  "trait",
-        "traitLink":  "faucille.marcheNoir",
-        "description":  "Conditions requises : Trait MARCHE NOIR. En debut de scenario, sur un premier jet en MARCHE NOIR reussi , le Kamarade obtient 1 Kontrebande gratuite pour l\u0027equipe (acquise en une demi-journee). Avec un deuxieme jet en CORRUPTION a difficulte -2 , il peut obtenir 2 Kontrebandes , mais sombre dans la frange illegale. Echec sur l\u0027un des deux jets : ennuis garantis. La Kontrebande obtenue disparait a la fin de l\u0027aventure .",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\roidelacombine.json"
-    },
-    {
-        "slug":  "roidupogo",
-        "name":  "Roi du Pogo",
-        "category":  "racial",
-        "traitLink":  "",
-        "description":  "Source : Kosmokultor p.13-14 Conditions requises : Race Morskoyzeh. Des que quelqu\u0027un a une interaction physique au contact avec le Morskoyzeh - pour le soigner, danser avec lui ou l\u0027attaquer -, il perd automatiquement 1 point de vie (epines naturelles).",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\roidupogo.json"
-    },
-    {
-        "slug":  "rouedelafortune",
-        "name":  "Roue de la Fortune",
-        "category":  "general",
-        "traitLink":  "",
-        "description":  "Conditions requises : Aucune. Le destin s\u0027acharne : Echecs critiques sur 2 ET 3 (au lieu de seulement 2) Toutes les 5 catastrophes , le Kamarade gagne 1 XP a depenser immediatement",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\rouedelafortune.json"
-    },
-    {
-        "slug":  "sabir",
-        "name":  "Sabir",
-        "category":  "trait",
-        "traitLink":  "etoile.pionnier",
-        "description":  "Conditions requises : Trait PIONNIER. Le Kamarade n\u0027est pas polyglotte, mais ou qu\u0027il soit il se fait comprendre pour l\u0027essentiel : demander le plein, un verre de vodka, ou les toilettes.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\sabir.json"
-    },
-    {
-        "slug":  "seriallover",
-        "name":  "Serial Lover",
-        "category":  "trait",
-        "traitLink":  "faucille.poupeeRusse",
-        "description":  "Conditions requises : Trait POUPEE RUSSE. Pour 1 Zloty , le Kamarade fait un jet en POUPEE RUSSE (seuil a la discretion du Secretaire General) : Reussi : il connait un(e) ancien(ne) amant(e) avec un Trait utile a la situation. Echec : il connait toujours un(e) ex competent(e), mais les retrouvailles tournent mal (enfant cache, parents furieux, secte des Barbapapask, etc.).",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\seriallover.json"
-    },
-    {
-        "slug":  "sermentdhypocri",
-        "name":  "Serment d\u0027hypocrite",
-        "category":  "trait",
-        "traitLink":  "etoile.dopage",
-        "description":  "Conditions requises : Trait DOPAGE. Une fois par combat, pour 1 Zloty , le Kamarade ajoute son score en DOPAGE a ses degats .",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\sermentdhypocri.json"
-    },
-    {
-        "slug":  "simple",
-        "name":  "Simple",
-        "category":  "racial",
-        "traitLink":  "",
-        "description":  "Conditions requises : Race Simple. Signe General Petit gratuit (voir signes generaux) Pour 1 Zloty , le Simple peut emprunter, le temps d\u0027un test, le score d\u0027un Kamarade dans le Trait de son choix (talent naturel pour l\u0027imitation) Note : le Simple ne connait a la creation que 10 mots au choix du joueur. Son vocabulaire s\u0027agrandit de 5 mots par partie.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\simple.json"
-    },
-    {
-        "slug":  "souslaceinture",
-        "name":  "Sous la ceinture",
-        "category":  "trait",
-        "traitLink":  "marteau.lutte",
-        "description":  "Conditions requises : Trait LUTTE. Quand le joueur depense des Zlotys pour un jet de combat a 3 des , il peut considerer les 1 comme des 6 .",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\souslaceinture.json"
-    },
-    {
-        "slug":  "stardelapropaga",
-        "name":  "Star de la propagande mediatique",
-        "category":  "trait",
-        "traitLink":  "faucille.bolchoi",
-        "description":  "Conditions requises : Trait BOLCHOI ; presence d\u0027un public. Une fois par aventure , le Kamarade peut substituer son score en BOLCHOI a n\u0027importe quel autre Trait . (Facile ! J\u0027ai joue le commissaire Navaritch pendant 5 ans !)",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\stardelapropaga.json"
-    },
-    {
-        "slug":  "talentcache",
-        "name":  "Talent cache",
-        "category":  "general",
-        "traitLink":  "",
-        "description":  "Conditions requises : Aucune. Le joueur peut depenser ses XP en pleine partie pour acquerir un Trait necessaire au scenario ou a une action. S\u0027il n\u0027a pas assez d\u0027XP, les autres joueurs peuvent en donner (remboursement possible plus tard ; les interets sont proscrits - goulag immediat).",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\talentcache.json"
-    },
-    {
-        "slug":  "toijtaimepas",
-        "name":  "Toi, j\u0027t\u0027aime pas",
-        "category":  "general",
-        "traitLink":  "",
-        "description":  "Conditions requises : Race Gonklin. Le Kamarade peut, sur un simple jet en BRISEUR DE GREVES (seuil impose par le Secretaire General), intimider une machine : faire baisser les yeux a une camera, arreter une rame de metro, racketter une pompe a Hyper-Fioul, etc.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\toijtaimepas.json"
-    },
-    {
-        "slug":  "toijtaimevraimen",
-        "name":  "Toi, j\u0027t\u0027aime vraiment pas",
-        "category":  "general",
-        "traitLink":  "",
-        "description":  "Conditions requises : Race Gonklin. Contre un nombre de Zlotys negocie avec le Secretaire General , le Gonklin peut reduire a neant n\u0027importe quelle machine et se faire un collier de ses diodes.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\toijtaimevraimen.json"
-    },
-    {
-        "slug":  "tonprofessoral",
-        "name":  "Ton professoral",
-        "category":  "trait",
-        "traitLink":  "etoile.universitet",
-        "description":  "Conditions requises : Trait UNIVERSITET ; le PNJ vise doit avoir ete scolarise. Le Kamarade peut substituer son score en UNIVERSITET a celui de BRISEUR DE GREVE pour intimider tout personnage ayant tremble un jour devant un enseignant.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\tonprofessoral.json"
-    },
-    {
-        "slug":  "toujourslaaubon",
-        "name":  "Toujours la au bon endroit",
-        "category":  "trait",
-        "traitLink":  "etoile.machiniste",
-        "description":  "Conditions requises : Trait MACHINISTE. En debut de scenario , le Kamarade fait un jet en MACHINISTE en annoncant son seuil : Seuil 9 reussi : il pourra se trouver ou on a besoin de lui avec ses outils 1 fois dans la partie. Seuil 12 reussi : 2 fois Seuil 15 reussi : 3 fois",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\toujourslaaubon.json"
-    },
-    {
-        "slug":  "tousdessus",
-        "name":  "Tous dessus",
-        "category":  "general",
-        "traitLink":  "",
-        "description":  "Conditions requises : Race Klon Posseder Famille nombreuse Au signal du Kamarade, les Petits Klons se jettent dans les pattes de l\u0027adversaire et l\u0027immobilisent : le seuil pour toucher cette cible tombe a 9 . Un des mioches deficients y laisse la peau (au pire, on en fera un sac a main).",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\tousdessus.json"
-    },
-    {
-        "slug":  "toutenattaque",
-        "name":  "Tout en attaque",
-        "category":  "trait",
-        "traitLink":  "marteau.muskle",
-        "description":  "Conditions requises : Trait MUSKLE. Le Kamarade perd definitivement l\u0027usage de son Armure , mais ses degats au contact deviennent egaux a son score en MUSKLE .",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\toutenattaque.json"
-    },
-    {
-        "slug":  "truizyk",
-        "name":  "Truizyk",
-        "category":  "racial",
-        "traitLink":  "",
-        "description":  "Conditions requises : Race Truizyk. Le Kamarade possede un pouvoir quasi-telepathique via la transpiration (score en TCHERNOBYL) : il lit les pensees enfouies dans la sueur de ses cibles. Limites : La cible doit transpirer (certaines races ne transpirent pas) Il doit faire assez chaud Un stick deodorant epais peut bloquer la lecture Certains individus puent tellement des pieds qu\u0027on ne peut lire que des gros mots dans leur sueur",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\truizyk.json"
-    },
-    {
-        "slug":  "tulaslaissetomb",
-        "name":  "Tu l\u0027as laisse tomber par terre",
-        "category":  "groupuscule",
-        "traitLink":  "",
-        "description":  "Conditions requises : Appartenance aux Kosmoroms (nomades de l\u0027espace, kontrebandiers et braconniers de faisandromede) Le Kamarade peut utiliser la Kontrebande d\u0027un autre Personnage Joueur comme si c\u0027etait la sienne.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\tulaslaissetomb.json"
-    },
-    {
-        "slug":  "unseulesprit",
-        "name":  "Un seul esprit pour toute une equipe !",
-        "category":  "general",
-        "traitLink":  "",
-        "description":  "Conditions requises : Aucune. Accompagne d\u0027 au moins un compagnon : +1 en LUTTE, PRISONNIER POLITIQUE et BRISEUR DE GREVE Seul : -1 a ces memes Traits",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\unseulesprit.json"
-    },
-    {
-        "slug":  "veneneux",
-        "name":  "Veneneux",
-        "category":  "trait",
-        "traitLink":  "etoile.dopage",
-        "description":  "Conditions requises : Trait DOPAGE ; la cible doit avoir pu ingerer/boire/toucher quelque chose que le Kamarade a manipule. Jet en DOPAGE en opposition avec la difficulte de la victime . Le joueur choisit son seuil : Seuil 9 : la cible perd 2 PV dans les 24 heures Seuil 12 : la cible perd 4 PV et est alitee 24 heures Echec : plusieurs personnes au choix du Secretaire General ( y compris le Kamarade ) perdent 3 PV",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\veneneux.json"
-    },
-    {
-        "slug":  "veteranofpsychic",
-        "name":  "Veteran of Psychic War",
-        "category":  "general",
-        "traitLink":  "",
-        "description":  "Conditions requises : Aucune. Le Kamarade capte l\u0027attention d\u0027un large public en racontant ses exploits (Novye Afghanistan, baie des Gros Klons...). L\u0027auditoire est si captive qu\u0027il ne remarque plus ce qui l\u0027entoure. Le jet se fait en KARKASS si le veteran montre ses blessures, ou en LUTTE s\u0027il decrit ses hauts faits sanglants (ex. j\u0027ai eviscere les petits Ponalchky de Gully 27 pour en faire des lasagnes).",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\veteranofpsychic.json"
-    },
-    {
-        "slug":  "vieilleconnaiss",
-        "name":  "Vieille connaissance",
-        "category":  "general",
-        "traitLink":  "",
-        "description":  "Conditions requises : Aucune. Une fois par partie, pour 1 Zloty , le joueur peut decreter que son Kamarade connait une personne en rapport avec l\u0027un de ses Traits, qui pourra lui rendre un petit service.",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\vieilleconnaiss.json"
-    },
-    {
-        "slug":  "vynoslivy",
-        "name":  "Vynoslivy",
-        "category":  "racial",
-        "traitLink":  "",
-        "description":  "Source : Kosmokultor p.15 Conditions requises : Race Gusano. Le Kamarade est quasi-invulnerable : ni le vide, ni le manque d\u0027air, ni les temperatures extremes, ni le manque de nourriture ne sauraient l\u0027achever . Seules menaces mortelles : Dessechement (extraction du scaphandre et abandon au sec) Degrisement fatal des cellules",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\vynoslivy.json"
-    },
-    {
-        "slug":  "xiphomis",
-        "name":  "Xiphomis",
-        "category":  "racial",
-        "traitLink":  "",
-        "description":  "Conditions requises : Race Xiphomis. Le Kamarade a des ailes repliables et peut utiliser TCHERNOBYL pour tout ce qui touche au vol (ou a ce que le joueur imagine avec ses ailes).",
-        "sourcePath":  "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\xiphomis.json"
-    }
+  {
+    "slug": "acolyte",
+    "name": "Acolyte, Larbin, etc.",
+    "category": "general",
+    "traitLink": "",
+    "description": "Conditions requises : Aucune. Le Kamarade est suivi par un personnage secondaire a son service, interprete par le joueur. Ce suiveur dispose de 10 croix a repartir librement dans ses propres Traits, sans pouvoir depasser 3 croix par score. Si le larbin meurt, le Secretaire General lui trouve un remplacant des la partie suivante. Les XP du Kamarade peuvent etre investis dans ce suivant : 1 XP pour une croix dans un Trait choisi a la creation du larbin, 2 XP pour une croix dans tout autre Trait.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\acolyte.json"
+  },
+  {
+    "slug": "alepreuvedesbal",
+    "name": "A l'epreuve des balles",
+    "category": "trait",
+    "traitLink": "faucille.grouillot",
+    "description": "Conditions requises : Trait GROUILLOT. Le Kamarade est immunise a tous les poisons et nourritures bizarres : son estomac supporte les cuisines extra-terrestres et les pires toxiques.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\alepreuvedesbal.json"
+  },
+  {
+    "slug": "alevin",
+    "name": "Alevin",
+    "category": "racial",
+    "traitLink": "",
+    "description": "Conditions requises : Race Alevin. L'Alevin accede a tous les Signes Raciaux des Robots , a l'exception de Defragmentation acceleree . Il ne peut pas non plus etre soigne par un DOPAGE ; il doit etre accompagne d'un MACHINISTE . Sortie du scaphandre : Dans un milieu aquatique , peut operer comme un simple poisson Perd l'acces aux Traits lies au robot Ne lui reste qu'1 point de vie",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\alevin.json"
+  },
+  {
+    "slug": "angora",
+    "name": "Angora",
+    "category": "race",
+    "traitLink": "",
+    "description": "Conditions requises : Race Krolik ; specimen a poil soyeux et allergene. Pour 1 Zloty : un personnage expose a un malus de -1 pendant une scene a cause d'une allergie passagere, ou la dangerosite d'un mechant baisse de 1 . Pour 3 Zlotys (et avec accord du Secretaire General) : un personnage expose rate une action a cause d'une crise d'eternuement.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\angora.json"
+  },
+  {
+    "slug": "armurier",
+    "name": "Armurier",
+    "category": "general",
+    "traitLink": "",
+    "description": "Conditions requises : Aucune. Le Kamarade est un passionne des armes. Si le joueur decrit comment son personnage bichonne et modifie son arme, il beneficie, au premier jet, d'un +1 en LUTTE ou en AK 47 et d'un +1 au score de degats . Il peut egalement faire profiter toute l'equipe de son talent (entretien d'une arme d'un compagnon).",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\armurier.json"
+  },
+  {
+    "slug": "attaquebondissan",
+    "name": "Attaque Bondissante",
+    "category": "race",
+    "traitLink": "",
+    "description": "Conditions requises : Race Krolik. Une fois par combat, pour 1 Zloty , le Kamarade ajoute son score en MEDAILLE OLYMPIQUE a ses degats en LUTTE . Attention au decor : si l'espace est trop etroit ou le plafond trop bas, le Secretaire General peut infliger au Kamarade ses propres degats a la place .",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\attaquebondissan.json"
+  },
+  {
+    "slug": "autonomie",
+    "name": "Autonomie",
+    "category": "race",
+    "traitLink": "",
+    "description": "Conditions requises : Race Robot. Le Robot est quasi-autonome energetiquement : panneau solaire, eolienne, poele a combustion, capteur a foudre, etc. (au choix du joueur). Sans source d'energie ni batterie supplementaire, l'autonomie moyenne est de 72 heures hors veille. S'il s'eteint par manque d'energie, il peut toujours etre redemarre en lui fournissant a nouveau de l'energie.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\autonomie.json"
+  },
+  {
+    "slug": "bibliothequeambu",
+    "name": "Bibliotheque ambulante",
+    "category": "groupuscule",
+    "traitLink": "",
+    "description": "Conditions requises : Appartenance au Kollectif Bradbourichque (groupuscule clandestin de libraires et lettres resistant a la censure) Le joueur doit citer un livre existant se rapportant au sujet qu'il n'a pas encore evoque dans la partie Contre 1 Zloty , le Kamarade peut echanger un de ses Traits avec UNIVERSITET le temps d'une scene. Exemple : J'ai lu Premier de Cordee, je fais ma survie en montagne avec mon 4 en UNIVERSITET. Cout croissant : chaque nouvelle utilisation du Signe dans la meme partie double le cout en Zlotys : 1re utilisation : 1 Zloty 2e utilisation : 2 Zlotys 3e utilisation : 3 Zlotys ...et ainsi de suite",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\bibliothequeambu.json"
+  },
+  {
+    "slug": "bicyclope",
+    "name": "Bicyclope",
+    "category": "racial",
+    "traitLink": "",
+    "description": "Conditions requises : Race Bicyclope. Sur terrain favorable (routes, surfaces lisses) : +2 en MEDAILLE OLYMPIQUE Sur terrain defavorable (eau, terrain accidente) : malus a determiner par le Secretaire General Les Bicyclopes peuvent monter des pneus tout-terrain en quelques minutes",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\bicyclope.json"
+  },
+  {
+    "slug": "bienoutille",
+    "name": "Bien Outille",
+    "category": "general",
+    "traitLink": "",
+    "description": "Conditions requises : Aucune. Le Kamarade choisit sa Kontrebande avec meticulosite (ou appartient a la Nomenklatura qui ne manque de rien) : sa Kontrebande donne un bonus de +4 au lieu du +2 standard.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\bienoutille.json"
+  },
+  {
+    "slug": "bluffeur",
+    "name": "Bluffeur",
+    "category": "trait",
+    "traitLink": "etoile.jeuxEtParis",
+    "description": "Conditions requises : Trait JEUX ET PARIS. Ne peut pas etre utilise sur un obstacle collectif. Une fois par partie , le Kamarade substitue son score en JEUX ET PARIS a celui de PROPAGANDE pour mentir. Contre un nombre de Zlotys negocie avec le Secretaire General , il peut meme cacher son resultat de des et annoncer que le jet est reussi.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\bluffeur.json"
+  },
+  {
+    "slug": "boucher",
+    "name": "Boucher",
+    "category": "trait",
+    "traitLink": "marteau.lutte",
+    "description": "Conditions requises : Trait LUTTE. +1 aux degats au contact.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\boucher.json"
+  },
+  {
+    "slug": "bourbasky",
+    "name": "Bourbasky",
+    "category": "racial",
+    "traitLink": "",
+    "description": "Conditions requises : Race Bourbasky. Adapte au vide (pas besoin de scaphandre) Corps protoplasmique modulable : couleur, forme, nageoires, ventouses, membranes, follicules, etc. TCHERNOBYL peut se substituer a MEDAILLE OLYMPIQUE ou a SOCIAL TRAITRE , a condition que le joueur etaye son recit Limitations de Kontrebande : les Bourbaskyi n'ont pas de possessions materielles ; leurs Kontrebandes sont soit des PNJ, soit des formules mathematiques qu'ils reemploient jusqu'a s'en lasser puis revisent pour les reparer.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\bourbasky.json"
+  },
+  {
+    "slug": "cadavreexquis",
+    "name": "Cadavre exquis",
+    "category": "trait",
+    "traitLink": "faucille.grouillot",
+    "description": "Conditions requises : Trait GROUILLOT. Les talents culinaires du Kamarade lui permettent de faire disparaitre n'importe quel cadavre sans laisser de trace. Les restes ne refont jamais surface et sont servis comme des petits pains.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\cadavreexquis.json"
+  },
+  {
+    "slug": "cestmarubrique",
+    "name": "C'est ma rubrique",
+    "category": "trait",
+    "traitLink": "etoile.samizdats",
+    "description": "Conditions requises : Trait SAMIZDATS ; choisir a la prise du Signe une specialite journalistique (chiens ecrases, coeurs solitaires, critique gastronomique, histoire du Parti, etc.). Le Kamarade peut utiliser son Trait en SAMIZDATS pour tout jet en lien avec sa rubrique (corruption d'un membre du Politburo pour un specialiste du Parti, drague pour un courrier du coeur, cuisine pour un critique gastronomique, etc.).",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\cestmarubrique.json"
+  },
+  {
+    "slug": "chernyirynok",
+    "name": "Chernyi Rynok",
+    "category": "trait",
+    "traitLink": "faucille.marcheNoir",
+    "description": "Conditions requises : Trait MARCHE NOIR. Contre 1 Zloty en debut de partie , le Secretaire General offre au Kamarade une cargaison composite dont au moins une des denrees pourra servir au scenario .",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\chernyirynok.json"
+  },
+  {
+    "slug": "commeunchat",
+    "name": "Comme un chat",
+    "category": "trait",
+    "traitLink": "marteau.medailleOlympique",
+    "description": "Conditions requises : Trait MEDAILLE OLYMPIQUE OU Trait ACROBATE. Le Kamarade ne prend jamais de degats de chute , sauf sadisme flagrant du Secretaire General. Note : les Signes applicables a ACROBATE sont les memes que ceux de MEDAILLE OLYMPIQUE.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\commeunchat.json"
+  },
+  {
+    "slug": "confidenceoreil",
+    "name": "Confidence sur l'oreiller",
+    "category": "trait",
+    "traitLink": "faucille.poupeeRusse",
+    "description": "Conditions requises : Trait POUPEE RUSSE. Apres une nuit de plaisir ou d'ivresse partagee avec une personne, le Kamarade peut obtenir n'importe quelle information de celle-ci.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\confidenceoreil.json"
+  },
+  {
+    "slug": "cuistotroboratif",
+    "name": "Cuistot roboratif",
+    "category": "trait",
+    "traitLink": "faucille.grouillot",
+    "description": "Conditions requises : Trait GROUILLOT ; temps de cuisiner et ingredients de bonne qualite. Les repas du Kamarade rendent des points de vie . Il dispose d'un pool de soins egal a son score en GROUILLOT , a repartir entre lui et ses compagnons.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\cuistotroboratif.json"
+  },
+  {
+    "slug": "deduction",
+    "name": "Deduction",
+    "category": "trait",
+    "traitLink": "etoile.kgb",
+    "description": "Conditions requises : Trait KGB. Le Kamarade expose un raisonnement a haute voix et peut demander au Secretaire General d'en confirmer la justesse , contre un nombre de Zlotys fixe par ce dernier . Le Secretaire ne donne pas d'informations nouvelles, il se contente de confirmer ou infirmer. Des que le Secretaire annonce qu'un raisonnement est faux , le Kamarade paie le double de Zlotys et perd l'usage de la capacite jusqu'a la fin de la partie . Tant qu'il raisonne juste, utilisation a volonte.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\deduction.json"
+  },
+  {
+    "slug": "defragmentaccele",
+    "name": "Defragmentation acceleree",
+    "category": "race",
+    "traitLink": "",
+    "description": "Conditions requises : Race Robot. Le Robot reste operationnel 24h/24 (pas de mise en veille pour defragmentation). Note : indisponible pour les Alevins.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\defragmentaccele.json"
+  },
+  {
+    "slug": "derogation",
+    "name": "Derogation",
+    "category": "general",
+    "traitLink": "",
+    "description": "Conditions requises : Aucune, mais le choix doit etre justifie par l'historique ou le peuple du Kamarade. Le Secretaire General peut refuser si la justification est insuffisante ou si ce Signe prolifere dans le groupe. Le Kamarade peut progresser dans un Trait choisi comme s'il etait place sous sa Doctrine : 1 point de creation ou d'XP pour une croix (au lieu de 2). Exemples : Kronen le Hjort a survecu enchaine a une noria puis devenu gladiateur pour MIR TV : il a choisi Marteau comme Doctrine mais son joueur obtient une Derogation en CORRUPTION pour rappeler son passe de comptable. Bishibo le savant fou voudrait une Derogation en AK 47 - sans justification solide, refus (quelle que soit la quantite de barres Marx offertes).",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\derogation.json"
+  },
+  {
+    "slug": "disparition",
+    "name": "Disparition",
+    "category": "trait",
+    "traitLink": "faucille.socialTraitre",
+    "description": "Conditions requises : Trait SOCIAL TRAITRE. Une fois par seance , sur un simple clignement de paupieres, le Kamarade disparait du champ de vision d'un tiers. Jet oppose : son score en SOCIAL TRAITRE contre la difficulte du PNJ (ou son score en KGB). Succes : son opposant le croit perdu ; le Kamarade peut s'echapper ou reattaquer par surprise.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\disparition.json"
+  },
+  {
+    "slug": "dissimulation",
+    "name": "Dissimulation",
+    "category": "trait",
+    "traitLink": "faucille.socialTraitre",
+    "description": "Conditions requises : Trait SOCIAL TRAITRE. Le Kamarade peut toujours dissimuler sur lui un objet pas plus grand qu'une dague ; celui-ci echappe a toutes les fouilles .",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\dissimulation.json"
+  },
+  {
+    "slug": "dosaumur",
+    "name": "Dos au mur",
+    "category": "trait",
+    "traitLink": "marteau.lutte",
+    "description": "Conditions requises : Trait LUTTE. Quand le Kamarade tombe a 1 point de vie , il beneficie de +1 a tous ses scores en Marteau et +1 aux degats qu'il inflige.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\dosaumur.json"
+  },
+  {
+    "slug": "dulusk",
+    "name": "Dulusk",
+    "category": "racial",
+    "traitLink": "",
+    "description": "Conditions requises : Race Dulusk ; le joueur justifie le metissage du personnage. Le Kamarade a acces au Signe Racial ou a la Clef Raciale de son choix parmi les autres races (issu de ses sangs meles). La Clef du Nuancier est optionnelle (RP uniquement, pas un Signe).",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\dulusk.json"
+  },
+  {
+    "slug": "egalitemonc",
+    "name": "Egalite mon c...",
+    "category": "general",
+    "traitLink": "",
+    "description": "Conditions requises : Aucune (fiction : chance genetique ou membre d'une societe ecran du Grand Ancien Kthulhuw). Le Kamarade ne subit jamais les consequences de ses echecs critiques : la malchance se reporte sur ses compagnons, qui en paient le prix. Le hasard ne peut pas non plus le designer comme victime d'un evenement aleatoire.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\egalitemonc.json"
+  },
+  {
+    "slug": "embuscade",
+    "name": "Embuscade",
+    "category": "trait",
+    "traitLink": "faucille.actionPartisane",
+    "description": "Conditions requises : Trait ACTION PARTISANE ; 1 minute de preparation du terrain avant l'affrontement. Les allies du Kamarade recoivent +1 a leurs jets et +1 a leurs degats pour le premier round de l'affrontement.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\embuscade.json"
+  },
+  {
+    "slug": "enpremiereligne",
+    "name": "En premiere ligne",
+    "category": "trait",
+    "traitLink": "marteau.karkass",
+    "description": "Conditions requises : Trait KARKASS. +3 points de vie supplementaires.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\enpremiereligne.json"
+  },
+  {
+    "slug": "espritdemeute",
+    "name": "Esprit de meute",
+    "category": "trait",
+    "traitLink": "marteau.lutte",
+    "description": "Conditions requises : Trait LUTTE. Pour 1 Zloty , le Kamarade porte une attaque supplementaire a une cible qu'un de ses allies vient de blesser.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\espritdemeute.json"
+  },
+  {
+    "slug": "famillenombreuse",
+    "name": "Famille nombreuse",
+    "category": "race",
+    "traitLink": "",
+    "description": "Conditions requises : Race Klon. Le Kamarade est accompagne d'une horde de Petits Klons bavant et degeneres (neveux, cousins, freres). Fonctionne comme le Signe Acolyte, Larbin, etc., mais chaque Trait est associe a un Petit Klon different . Quand un neveu meurt, ses points de Traits peuvent, a la fin de l'aventure, servir a creer un nouveau mioche (dans un Trait different au besoin) ou etre reattribues aux survivants. Famille nombreuse est le pre-requis pour les trois Signes Klon suivants : La dure Loi de l'Evolution, La Fessee, Tous dessus.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\famillenombreuse.json"
+  },
+  {
+    "slug": "fichiercentral",
+    "name": "Fichier central",
+    "category": "trait",
+    "traitLink": "faucille.etreAuParfum",
+    "description": "Conditions requises : Trait ETRE AU PARFUM. Sur un jet d'ETRE AU PARFUM modifie par la difficulte de la cible , le Kamarade accede aux informations que celle-ci souhaite cacher. Le Secretaire General a le dernier mot sur le contenu et l'exactitude des donnees.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\fichiercentral.json"
+  },
+  {
+    "slug": "filature",
+    "name": "Filature",
+    "category": "trait",
+    "traitLink": "etoile.kgb",
+    "description": "Conditions requises : Trait KGB ; situation de surveillance/planque. Le Kamarade peut ajouter son score en KGB ou en PROPAGANDE a son Trait SOCIAL TRAITRE pour rester discret en filature.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\filature.json"
+  },
+  {
+    "slug": "gardeducorps",
+    "name": "Garde du corps",
+    "category": "trait",
+    "traitLink": "marteau.karkass",
+    "description": "Conditions requises : Trait KARKASS. Le Kamarade peut s'interposer entre ses compagnons et l'ennemi pour encaisser les degats a leur place. Il peut alors utiliser son Armure pour absorber la totalite des attaques interceptees s'il le souhaite. Exemple : Stein et Siva ont rate leurs defenses et subissent 2 points de degats chacun (total 4). Myasnik s'interpose et utilise son Armure : il ignore l'integralite des degats grace a ses organes vitaux deplaces apres m'etre fait quasiment couper en deux par un Bolchok a Grelots.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\gardeducorps.json"
+  },
+  {
+    "slug": "gigolbare",
+    "name": "Gigolbare",
+    "category": "racial",
+    "traitLink": "",
+    "description": "Conditions requises : Race Gigolbare. Le Kamarade peut cuisiner des gateaux dopants en y mettant une part de ses sucs vitaux. Chaque gateau ajoute 1 de a un test , mais coute : 1 PV si le de supplementaire donne un resultat impair 2 PV s'il donne un resultat pair Le Kamarade peut preparer ce genre de cuisine un nombre de fois par partie egal a son score en KARKASS .",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\gigolbare.json"
+  },
+  {
+    "slug": "gladiator",
+    "name": "Gladiator",
+    "category": "trait",
+    "traitLink": "faucille.bolchoi",
+    "description": "Conditions requises : Trait BOLCHOI. Une fois par combat, pour 1 Zloty , le Kamarade ajoute son score en BOLCHOI a ses degats .",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\gladiator.json"
+  },
+  {
+    "slug": "gonklin",
+    "name": "Gonklin",
+    "category": "racial",
+    "traitLink": "",
+    "description": "Conditions requises : Race Gonklin. +2 pour casser une machine -2 pour utiliser une machine",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\gonklin.json"
+  },
+  {
+    "slug": "grand",
+    "name": "Grand",
+    "category": "general",
+    "traitLink": "",
+    "description": "Conditions requises : Aucune. (Signe racial obligatoire - et gratuit - pour les Klons.) Le Kamarade est imposant : +1 aux degats au contact +2 croix en BRISEUR DE GREVE +2 points de vie -2 des qu'il s'agit d'etre discret Sa taille/son poids peuvent servir de complications scenaristiques (passages etroits, planchers fragiles).",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\grand.json"
+  },
+  {
+    "slug": "gryazny",
+    "name": "Gryazny",
+    "category": "racial",
+    "traitLink": "",
+    "description": "Conditions requises : Race Gryazny. Adapte au vide Jusqu'a 7 Kontrebandes maximum au lieu de 5 (collectionneur passionne) Note : les Gryaznyi sont tribaux et ne se jouent qu'en groupe. Points de vie, Armure et Traits sont un pot commun du groupe. Pour autonomiser les membres, prendre Acolyte, Larbin, etc.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\gryazny.json"
+  },
+  {
+    "slug": "herosmalgrelui",
+    "name": "Heros malgre lui",
+    "category": "general",
+    "traitLink": "",
+    "description": "Conditions requises : Aucune. Une fois par partie , le Kamarade peut declarer que les consequences d'un echec critique ont finalement un effet benefique.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\herosmalgrelui.json"
+  },
+  {
+    "slug": "hjort",
+    "name": "Hjort",
+    "category": "racial",
+    "traitLink": "",
+    "description": "Conditions requises : Race Hjort. +2 points en CORRUPTION +2 Zlotys supplementaires en debut de partie pour corrompre le Secretaire General PRISONNIER POLITIQUE plafonne a 1 (depassable uniquement avec justification et longues negociations avec le Secretaire General)",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\hjort.json"
+  },
+  {
+    "slug": "humain",
+    "name": "Humain",
+    "category": "racial",
+    "traitLink": "",
+    "description": "Conditions requises : Race Humain. Le signe racial Humain cumule deux effets : En plus des 20 points de Traits standards, le Kamarade beneficie de 2 points surnumeraires a repartir dans les Traits de son choix, meme hors de sa Doctrine (ces 2 points peuvent etre cumules sur un seul Trait). Il dispose d'un signe au choix supplementaire (racial + 2 au choix au lieu de racial + 1).",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\humain.json"
+  },
+  {
+    "slug": "iadelamourdansl",
+    "name": "IA de l'amour dans l'air",
+    "category": "trait",
+    "traitLink": "etoile.operateurCodeur",
+    "description": "Conditions requises : Trait OPERATEUR CODEUR. A chaque debut de scenario , le joueur fait un jet en POUPEE RUSSE, seuil 12 : Reussi : le Kamarade gagne 3 Zlotys utilisables uniquement dans des situations liees a l'informatique. Echec : la dulcinee numerique est fachee (oubli du retrait securise du plug USB) ; le Secretaire General doit pourrir la vie du Kamarade avec des tracas numeriques.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\iadelamourdansl.json"
+  },
+  {
+    "slug": "implantk",
+    "name": "Implant K",
+    "category": "trait",
+    "traitLink": "etoile.universitet",
+    "description": "Conditions requises : Trait UNIVERSITET. Le Kamarade a une bibliotheque telechargee dans son cerveau via implant neocortical. La science sovietique etant ce qu'elle est, il lui faut 1 heure de concentration pour obtenir l'information recherchee.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\implantk.json"
+  },
+  {
+    "slug": "insomniaque",
+    "name": "Insomniaque",
+    "category": "trait",
+    "traitLink": "marteau.karkass",
+    "description": "Conditions requises : Trait KARKASS. Le Kamarade se contente de 4 heures de sommeil par jour. En contrepartie, lorsqu'il dort, rien ne peut l'eveiller .",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\insomniaque.json"
+  },
+  {
+    "slug": "interrogatoiremu",
+    "name": "Interrogatoire muscle",
+    "category": "trait",
+    "traitLink": "etoile.kgb",
+    "description": "Conditions requises : Trait KGB. En interrogatoire, le Kamarade peut relancer ses jets rates indefiniment , mais chaque nouvelle tentative coute 1d2 PV a la cible . (Les morts ne parlent pas.)",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\interrogatoiremu.json"
+  },
+  {
+    "slug": "ivrogne",
+    "name": "Ivrogne",
+    "category": "trait",
+    "traitLink": "marteau.karkass",
+    "description": "Conditions requises : Trait KARKASS. Disponibilite de vodka ou kvas ; l'interlocuteur doit accepter de boire avec le Kamarade. S'il partage une cuite avec son interlocuteur, le Kamarade peut substituer son score en KARKASS a n'importe lequel de ses Traits en Faucille : CORRUPTION, ETRE AU PARFUM, POUPEE RUSSE ou PROPAGANDE .",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\ivrogne.json"
+  },
+  {
+    "slug": "jegardeunballeat",
+    "name": "Je garde une balle a ton nom",
+    "category": "trait",
+    "traitLink": "marteau.ak47",
+    "description": "Conditions requises : Trait AK 47 ; l'adversaire vise doit etre connu a l'avance. Le Kamarade profile ses munitions en fonction d'un ennemi identifie. Le Secretaire General accorde alors un bonus aux degats ou au Trait AK 47 en fonction des preparations et des recherches du joueur.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\jegardeunballeat.json"
+  },
+  {
+    "slug": "kalachnikov",
+    "name": "Kalachnikov",
+    "category": "trait",
+    "traitLink": "marteau.ak47",
+    "description": "Conditions requises : Trait AK 47. Le Kamarade peut repartir les degats d'un tir entre plusieurs adversaires , a condition que la difficulte pour les toucher soit la meme (ou inferieure) que celle de la cible principale. Exemple : Le soyouz de Dark Jack est envahi par des lapins de Ganymede. Avec 3 points de degats en AK 47, il peut en abattre 3 d'un coup (PV 1 chacun). Reste 97 rongeurs qui vont bientot se reproduire...",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\kalachnikov.json"
+  },
+  {
+    "slug": "klon",
+    "name": "Klon",
+    "category": "racial",
+    "traitLink": "",
+    "description": "Conditions requises : Race Klon. +2 pour resister a la peur (sous PRISONNIER POLITIQUE) Signe General Grand gratuit (voir signes generaux)",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\klon.json"
+  },
+  {
+    "slug": "krolik",
+    "name": "Krolik",
+    "category": "racial",
+    "traitLink": "",
+    "description": "Conditions requises : Race Krolik. +1 aux degats en LUTTE +2 points de vie +2 pour tout bond (cuisses lapinesques) -2 en BRISEUR DE GREVE (le Krolik ressemble a une grosse peluche)",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\krolik.json"
+  },
+  {
+    "slug": "laduredelevoluti",
+    "name": "La dure Loi de l'Evolution",
+    "category": "race",
+    "traitLink": "",
+    "description": "Conditions requises : Race Klon Posseder Famille nombreuse Le Kamarade peut sacrifier un Petit Klon pour eviter la moitie des degats qu'on lui inflige. Le Petit Klon, evidemment, ne survit pas a la manoeuvre .",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\laduredelevoluti.json"
+  },
+  {
+    "slug": "lafessee",
+    "name": "La Fessee",
+    "category": "race",
+    "traitLink": "",
+    "description": "Conditions requises : Race Klon Posseder Famille nombreuse Le Kamarade devore un de ses Petits Klons devant ses cousins terrifies. Les attardes survivants sont motives par cette demonstration d'amour paternel : leur prochain jet beneficie d'un bonus de +2 par marmot englouti .",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\lafessee.json"
+  },
+  {
+    "slug": "lafureurdevivre",
+    "name": "La Fureur de Vivre",
+    "category": "trait",
+    "traitLink": "marteau.soyouz",
+    "description": "Conditions requises : Trait SOYOUZ ; le Kamarade doit etre aux commandes d'un engin lors d'une bataille spatiale. Dans chaque bataille spatiale, pour 1 Zloty , le joueur peut ajouter son score en PRISONNIER POLITIQUE a ses jets de pilotage .",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\lafureurdevivre.json"
+  },
+  {
+    "slug": "liresurleslevres",
+    "name": "Lire sur les levres",
+    "category": "trait",
+    "traitLink": "etoile.kgb",
+    "description": "Conditions requises : Trait KGB ; voir la personne parler dans une langue connue du Kamarade. Le Kamarade lit sur les levres dans toute langue qu'il connait.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\liresurleslevres.json"
+  },
+  {
+    "slug": "machinesetbidule",
+    "name": "Machines et bidules",
+    "category": "trait",
+    "traitLink": "etoile.rechercheConception",
+    "description": "Conditions requises : Trait RECHERCHE ET CONCEPTION ; acces a du materiel. Le Kamarade bricole une machine d'urgence ou un produit experimental. Il peut alors substituer son score en R&amp;C a tout autre Trait pour un test, une fois par session . Pour une utilisation supplementaire de la meme invention , il lance 1d6 : 2e Utilisation : l'invention rend l'ame sur 1-2 3e Utilisation : rend l'ame sur 1-4 Etc. (jet de durabilite comme une Kontrebande) Les consequences catastrophiques quand la mecanique cede sont bien pires qu'une Kontrebande ordinaire (explosions, effets secondaires inattendus).",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\machinesetbidule.json"
+  },
+  {
+    "slug": "magedusotch",
+    "name": "Mage du scotch",
+    "category": "trait",
+    "traitLink": "etoile.machiniste",
+    "description": "Conditions requises : Trait MACHINISTE. Pour 1 Zloty , le Kamarade repare un objet de Kontrebande casse . Pour un nombre de Zlotys negocie , il peut faire tenir une machine au-dela de ses limites .",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\magedusotch.json"
+  },
+  {
+    "slug": "maitrechanteur",
+    "name": "Maitre chanteur",
+    "category": "trait",
+    "traitLink": "faucille.etreAuParfum",
+    "description": "Conditions requises : Trait ETRE AU PARFUM. Une fois par partie, pour 1 Zloty , le Kamarade peut faire chanter une personne innocente pour obtenir un service, a condition que cela ne mette pas sa vie ou celles de ses proches en jeu.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\maitrechanteur.json"
+  },
+  {
+    "slug": "maitredarmes",
+    "name": "Maitre d'armes",
+    "category": "trait",
+    "traitLink": "marteau.lutte",
+    "description": "Conditions requises : Trait LUTTE. Le Kamarade peut repartir les degats d'une attaque LUTTE entre plusieurs adversaires , a condition que la difficulte pour les toucher soit la meme (ou inferieure). Exemple : Kronen le Hjort affronte un molosse pouilleux de Mabrouk 28 (gros comme une Novye Trabant, difficulte -4) entoure de puces (difficulte normale). Avec 5 en degats, Kronen ecrase le molosse (3 PV) et peut, dans le meme mouvement, tuer 2 puces (1 PV chacune). S'il avait attaque les puces, il n'aurait pas pu atteindre le molosse (plus dur a toucher), mais aurait eclate 5 puces.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\maitredarmes.json"
+  },
+  {
+    "slug": "mamanetaitunpoel",
+    "name": "Maman etait un poele en fonte",
+    "category": "race",
+    "traitLink": "",
+    "description": "Conditions requises : Race Robot. Blindage lourd. Pour 1 Zloty , une creature qui frappe le Robot avec des armes naturelles subit en retour la moitie des degats infliges . Contrepartie : le Robot est bien plus pesant qu'un Kamarade ordinaire ; le Secretaire General peut en faire un levier a histoires (planchers fragiles, cales fragiles, etc.).",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\mamanetaitunpoel.json"
+  },
+  {
+    "slug": "masochiste",
+    "name": "Masochiste",
+    "category": "trait",
+    "traitLink": "marteau.lutte",
+    "description": "Conditions requises : Trait LUTTE. Pour chaque tranche de 3 points de vie perdus en combat, le Kamarade gagne 1 Zloty , a utiliser avant la fin de l'affrontement ou avant d'etre soigne (sinon perdu).",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\masochiste.json"
+  },
+  {
+    "slug": "massacreartistiq",
+    "name": "Massacre artistique",
+    "category": "trait",
+    "traitLink": "marteau.lutte",
+    "description": "Conditions requises : Trait LUTTE. Une fois par combat , le Kamarade peut tenter un jet avec, en bonus, le nombre de personnages qu'il a tues et en malus, la dangerosite de son ennemi . Si le jet reussit, l'attaque de l'adversaire est annulee (comme une Armure) : les ennemis ont trop peur pour attaquer.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\massacreartistiq.json"
+  },
+  {
+    "slug": "memepaspeur",
+    "name": "Meme pas peur",
+    "category": "trait",
+    "traitLink": "marteau.briseurDeGreve",
+    "description": "Conditions requises : Trait BRISEUR DE GREVES. Le Kamarade peut substituer son score en BRISEUR DE GREVE a celui de PRISONNIER POLITIQUE pour resister a la peur.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\memepaspeur.json"
+  },
+  {
+    "slug": "memoireeidetique",
+    "name": "Memoire eidetique",
+    "category": "trait",
+    "traitLink": "etoile.universitet",
+    "description": "Conditions requises : Trait UNIVERSITET. Le Kamarade peut toujours demander au Secretaire General des details oublies : adresses, noms, horaires, dates.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\memoireeidetique.json"
+  },
+  {
+    "slug": "methodique",
+    "name": "Methodique",
+    "category": "general",
+    "traitLink": "",
+    "description": "Conditions requises : Aucune. Le Kamarade aime planifier. Une fois par scene , s'il reussit un jet depassant le seuil 9 , tous les points excedentaires sont verses dans une reserve commune dans laquelle chaque joueur du groupe peut puiser a discretion pour completer ses propres jets (tant que les actions suivent le plan). Exemple : (9 9), un Truizyk ex-agent du KGB dote de ce Signe, fait un jet en TCHERNOBYL et obtient 12, soit 3 points au-dessus du seuil 9. Il verse ces 3 points dans la reserve. Arsena Lapin, cambrioleur krolik, fait 10 en SOCIAL TRAITRE contre un seuil a 12 : il pioche 2 points dans la reserve pour atteindre 12. Il reste 1 point pour un autre membre de l'equipe.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\methodique.json"
+  },
+  {
+    "slug": "minoriteclandest",
+    "name": "Minorite clandestine",
+    "category": "trait",
+    "traitLink": "marteau.prisonnierPolitique",
+    "description": "Conditions requises : Trait PRISONNIER POLITIQUE ; appartenance a une minorite persecutee (religieuse, independantiste, capitaliste...). Contre des Zlotys , le Kamarade accede a tout un reseau (informateurs, materiel) pret a l'aider, surtout pour defendre La Cause. Contrepartie : il doit suivre des preceptes et pratiques risquant de le trahir aupres des autorites.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\minoriteclandest.json"
+  },
+  {
+    "slug": "mnogy",
+    "name": "Mnogy",
+    "category": "racial",
+    "traitLink": "",
+    "description": "Conditions requises : Race Mnogy. +1 point de vie (coque incassable) +2 pour resister a la peur Meme mort, la coque reste intacte et les occupants survivent en attendant qu'un autre Mnogy les ramasse Le Mnogy est contraint par la Clef raciale de la Loi de l'Audimat : ses actions suivent les votes des residents. Regle RP, pas un Signe.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\mnogy.json"
+  },
+  {
+    "slug": "monprecieux",
+    "name": "Mon precieux !",
+    "category": "general",
+    "traitLink": "",
+    "description": "Conditions requises : Aucune. Un seul precieux par Kamarade. Un objet fetiche accorde un bonus permanent de +1 a un Trait du Kamarade, a justifier narrativement (couverture fetiche pour PRISONNIER POLITIQUE, guide de l'aventurier pour PIONNIER, etc.). L'objet ne peut pas etre perdu : si cela devait arriver, le Secretaire General doit reintroduire un objet aux memes caracteristiques a la session suivante. Seul le Kamarade beneficie du bonus ; pour tout autre personnage, c'est un objet ordinaire.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\monprecieux.json"
+  },
+  {
+    "slug": "monsieurpropre",
+    "name": "Monsieur Propre",
+    "category": "trait",
+    "traitLink": "faucille.grouillot",
+    "description": "Conditions requises : Trait GROUILLOT. Sur un jet de GROUILLOT reussi (difficulte fixee par le Secretaire General), le Kamarade fait disparaitre temoins genants et traces d'un crime .",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\monsieurpropre.json"
+  },
+  {
+    "slug": "nepassefierauxa",
+    "name": "Ne pas se fier aux apparences",
+    "category": "trait",
+    "traitLink": "marteau.lutte",
+    "description": "Conditions requises : Trait LUTTE ; fiction justifiant la sous-estimation (taille, sexe, allure faible). Le Kamarade beneficie d'un +2 au debut de tout conflit car ses adversaires le sous-estiment.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\nepassefierauxa.json"
+  },
+  {
+    "slug": "nevergiveup",
+    "name": "Never Give Up !",
+    "category": "trait",
+    "traitLink": "marteau.prisonnierPolitique",
+    "description": "Conditions requises : Trait PRISONNIER POLITIQUE. Les points de vie du Kamarade = PRISONNIER POLITIQUE + 5 (au lieu de KARKASS + 5).",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\nevergiveup.json"
+  },
+  {
+    "slug": "noyadeverbale",
+    "name": "Noyade verbale",
+    "category": "trait",
+    "traitLink": "faucille.propagande",
+    "description": "Conditions requises : Trait PROPAGANDE. Le Kamarade accapare une personne par son debit verbal. Duree (en secondes) pendant laquelle la victime ne peut rien faire d'autre qu'ecouter = resultat du jet de des.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\noyadeverbale.json"
+  },
+  {
+    "slug": "ombredelombre",
+    "name": "Ombre de l'ombre",
+    "category": "trait",
+    "traitLink": "faucille.socialTraitre",
+    "description": "Conditions requises : Trait SOCIAL TRAITRE. Tant qu'il reste immobile dans une zone d'ombre , le Kamarade est indetectable .",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\ombredelombre.json"
+  },
+  {
+    "slug": "omonvaisseau1",
+    "name": "O mon vaisseau 1",
+    "category": "trait",
+    "traitLink": "marteau.soyouz",
+    "description": "Conditions requises : Trait SOYOUZ ; designation d'un vaisseau specifique auquel le Kamarade est lie. Le Kamarade a un +1 a tous les jets effectues avec ce vaisseau designe , qu'il s'agisse de le piloter (SOYOUZ), d'utiliser ses ordinateurs/sonars (OPERATEUR CODEUR), son artillerie (AK 47) ou de le reparer (MACHINISTE).",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\omonvaisseau1.json"
+  },
+  {
+    "slug": "omonvaisseau2",
+    "name": "O mon vaisseau 2",
+    "category": "trait",
+    "traitLink": "marteau.soyouz",
+    "description": "Conditions requises : Trait SOYOUZ Posseder O mon vaisseau 1 (pre-requis explicite : ce Signe est une seconde prise de O mon vaisseau) Aucun autre membre de l'equipe ne peut prendre ce Signe (exclusif) Le bonus avec le vaisseau designe passe a +2 , mais le Kamarade subit -1 avec tous les autres vehicules .",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\omonvaisseau2.json"
+  },
+  {
+    "slug": "oupsdesole",
+    "name": "Oups ! Desole...",
+    "category": "general",
+    "traitLink": "",
+    "description": "Conditions requises : Aucune. Une fois par combat , le Kamarade peut decider qu'un coup qui lui est destine le loupe. Les degats ne sont pas perdus : quelqu'un d'autre au hasard (PJ ou PNJ) les encaisse a sa place.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\oupsdesole.json"
+  },
+  {
+    "slug": "pangalacticmarke",
+    "name": "Pangalactic Market",
+    "category": "trait",
+    "traitLink": "faucille.grouillot",
+    "description": "Conditions requises : Trait GROUILLOT. Avec uniquement des produits locaux , le Kamarade peut soit donner l'illusion d'utiliser des produits de sa planete d'origine, soit faire naitre l'exotisme galactique a partir d'ingredients du quotidien.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\pangalacticmarke.json"
+  },
+  {
+    "slug": "passagerhallucin",
+    "name": "Passager Hallucinatoire",
+    "category": "general",
+    "traitLink": "",
+    "description": "Source : Kosmokultor p.16 Conditions requises : Aucune. (Fiction : le Kamarade souffre du syndrome d'Holdenmillersky suite a l'absorption d'une copromolecule pas fraiche.) Le Kamarade recoit la visite d'un personnage qu'il est seul a percevoir , qui lui prodigue des conseils (salvateurs ou nefastes). Concretement, le Kamarade voit le Secretaire General , qui peut lui mentir, le manipuler a loisir et le traiter comme sa marionnette plus ou moins volontaire.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\passagerhallucin.json"
+  },
+  {
+    "slug": "perfidie",
+    "name": "Perfidie",
+    "category": "trait",
+    "traitLink": "faucille.socialTraitre",
+    "description": "Conditions requises : Trait SOCIAL TRAITRE. Une fois par combat, pour 1 Zloty , le Kamarade ajoute son score en SOCIAL TRAITRE a ses degats .",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\perfidie.json"
+  },
+  {
+    "slug": "petit",
+    "name": "Petit",
+    "category": "general",
+    "traitLink": "",
+    "description": "Conditions requises : Aucune. (Signe racial obligatoire - et gratuit - pour les Simples.) Le Kamarade est petit et menu : +2 pour toute action de discretion Sur un 1 au d6, un coup qui lui est destine passe entre les gouttes (jetez un de a chaque attaque) Les degats qu'il inflige en LUTTE sont plafonnes a 2 Sa taille peut servir de complication (scaphandre a ses mensurations, barreau trop haut, etc.)",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\petit.json"
+  },
+  {
+    "slug": "petitdebrouillar",
+    "name": "Petit debrouillard",
+    "category": "trait",
+    "traitLink": "faucille.marcheNoir",
+    "description": "Conditions requises : Trait MARCHE NOIR. En debut de session (ou en cours de partie quand il a le temps), le joueur annonce ce qu'il cherche et fait un jet en MARCHE NOIR : 12 ou plus : 3 qualites au choix dans la liste 9, 10 ou 11 : 2 qualites Echec : 1 qualite Liste des qualites : Cette chose fonctionne. C'est plus ou moins ce que le joueur recherche. Cela sert a quelque chose de puissant. Ce n'est a personne (ou personne ne viendra le reclamer). Le Secretaire General utilise les qualites non choisies pour pimenter la suite.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\petitdebrouillar.json"
+  },
+  {
+    "slug": "physionomiste",
+    "name": "Physionomiste",
+    "category": "trait",
+    "traitLink": "etoile.kgb",
+    "description": "Conditions requises : Trait KGB. Le Kamarade reconnait immediatement toute personne deja rencontree (visage, demarche, voix).",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\physionomiste.json"
+  },
+  {
+    "slug": "piecesautonomes",
+    "name": "Pieces autonomes",
+    "category": "race",
+    "traitLink": "",
+    "description": "Conditions requises : Race Robot. Le Kamarade peut se scinder en plusieurs unites individuelles : envoyer un oeil et une main dans un conduit, laisser sa tete sur le tableau de bord pendant que son corps repare une breche, etc. Contrepartie : le Secretaire General peut accorder un bonus aux ennemis en embuscade (oeil parti se promener) ou faire se perdre le corps prive de ses senseurs.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\piecesautonomes.json"
+  },
+  {
+    "slug": "pimpmybot",
+    "name": "Pimp my bot",
+    "category": "race",
+    "traitLink": "",
+    "description": "Conditions requises : Race Robot ; un MACHINISTE dans le groupe ; 1 Zloty depense ; materiel disponible. Une fois par seance , un Kamarade mecanicien peut modifier le Robot : Deplacer des croix d'un Trait a un autre Dans la limite du score en MACHINISTE du Kamarade qui le trafique Exemple : Stein (MACHINISTE 4) greffe deux paraboles sur Zig 7 fois 2. Zig depense 1 Zloty, gagne +3 en KGB, perd 1 en LUTTE et 2 en PRISONNIER POLITIQUE (5 croix deplacees, dans la limite de MACHINISTE 4 - attention, dans l'exemple original, Stein a 4 en MACHINISTE, donc 5 croix deplacees serait refuse. Le Secretaire General reste arbitre.)",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\pimpmybot.json"
+  },
+  {
+    "slug": "piqure",
+    "name": "Piqure",
+    "category": "trait",
+    "traitLink": "etoile.dopage",
+    "description": "Conditions requises : Trait DOPAGE ; etre au contact de la cible ; le joueur decrit l'effet. Le Kamarade injecte un compose qui ajoute 1d6 a un test (de lui-meme ou d'un compagnon). La cible perd 1d2 PV du fait de l'injection.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\piqure.json"
+  },
+  {
+    "slug": "pointfaible",
+    "name": "Point faible",
+    "category": "trait",
+    "traitLink": "etoile.kgb",
+    "description": "Conditions requises : Trait KGB. Une fois par combat, pour 1 Zloty , le Kamarade ajoute son score en KGB a ses degats . (Je devine a son teint jaune qu'il a une cirrhose au foie. C'est donc la que je frappe !)",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\pointfaible.json"
+  },
+  {
+    "slug": "precis",
+    "name": "Precis",
+    "category": "trait",
+    "traitLink": "marteau.ak47",
+    "description": "Conditions requises : Trait AK 47. +1 aux degats avec AK 47.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\precis.json"
+  },
+  {
+    "slug": "procesetmenaces",
+    "name": "Proces et menaces",
+    "category": "race",
+    "traitLink": "",
+    "description": "Conditions requises : Race Hjort. A chaque round de combat, le joueur fait un jet en CORRUPTION modifie par la dangerosite de l'ennemi . Sur un succes, l'opposant n'attaque pas pendant le round, de peur de passer en justice. L'effet est rompu si le Hjort est agresse entre-temps.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\procesetmenaces.json"
+  },
+  {
+    "slug": "projection",
+    "name": "Projection",
+    "category": "trait",
+    "traitLink": "marteau.lutte",
+    "description": "Conditions requises : Trait LUTTE. Au lieu d'infliger des degats, le Kamarade peut envoyer son adversaire voler a quelques metres . La taille et le poids de la cible doivent rester raisonnables (pas de planchette japonaise sur un tank).",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\projection.json"
+  },
+  {
+    "slug": "quedunoeil",
+    "name": "Que d'un oeil",
+    "category": "trait",
+    "traitLink": "marteau.goulag",
+    "description": "Conditions requises : Trait GOULAG. Le Kamarade a le sommeil leger : on ne le surprend jamais pendant qu'il dort . Au moindre bruit, il est debout et pret a l'action.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\quedunoeil.json"
+  },
+  {
+    "slug": "radaranouba",
+    "name": "Radar a Nouba",
+    "category": "general",
+    "traitLink": "",
+    "description": "Source : Kosmokultor p.16 Conditions requises : Aucune. Le Kamarade detecte a distance les fetes, soirees clandestines, boums etudiantes et beuveries. Il declenche son pouvoir quand il le souhaite , pour un nombre de Zlotys fixe par le Secretaire General selon la situation. Il percoit la direction de la bamboche mais pas sa nature (barmitsva cannibale, cantina, etc.) et ne peut pas s'y teleporter : encore faut-il l'atteindre.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\radaranouba.json"
+  },
+  {
+    "slug": "rancunier",
+    "name": "Rancunier",
+    "category": "general",
+    "traitLink": "",
+    "description": "Conditions requises : Historique du personnage justifiant ce Signe (a la discretion du Secretaire General). Si un adversaire amene le Kamarade a 0 PV en combat et que celui-ci survit , le personnage beneficie d'un +1 a tous ses jets en opposition contre cette personne, l'organisation qu'elle represente, ou le groupe auquel elle appartient. Le Secretaire General peut refuser si le joueur exagere l'extension.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\rancunier.json"
+  },
+  {
+    "slug": "realitevirtuelle",
+    "name": "Realite virtuelle",
+    "category": "trait",
+    "traitLink": "etoile.operateurCodeur",
+    "description": "Conditions requises : Trait OPERATEUR CODEUR ; machine VR disponible. Le Kamarade possede une machine capable de projeter le groupe dans un univers de jeu video . Les joueurs mettent les casques et changent d'univers de jeu ( Alone in the Bank , Kommissaire of Persia , Kolkhoze of Duty , etc.).",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\realitevirtuelle.json"
+  },
+  {
+    "slug": "reflexepavlovien",
+    "name": "Reflexe Pavlovien",
+    "category": "racial",
+    "traitLink": "",
+    "description": "Source : Kosmokultor p.14 Conditions requises : Race Tsvetok. Le Kamarade declenche un reflexe urinaire chez son ennemi sur un jet en TCHERNOBYL pondere par la dangerosite de l'ennemi . L'effet met souvent fin a l'affrontement (ou offre un bref intermede). Les citoyens de l'Union sont conditionnes par la fragrance des Tsvetok dans les toilettes publiques.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\reflexepavlovien.json"
+  },
+  {
+    "slug": "regeneration",
+    "name": "Regeneration",
+    "category": "trait",
+    "traitLink": "marteau.karkass",
+    "description": "Conditions requises : Trait KARKASS. A la fin de chaque combat, le Kamarade recupere 3 points de vie . Aussi connu sous Juste une egratignure.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\regeneration.json"
+  },
+  {
+    "slug": "reputation",
+    "name": "Reputation",
+    "category": "trait",
+    "traitLink": "faucille.corruption",
+    "description": "Conditions requises : Trait CORRUPTION. A chaque rencontre d'un nouveau PNJ, le Kamarade peut faire un jet de seuil 9 : Reussi : le PNJ a deja entendu parler du Kamarade dans les termes choisis par le joueur. Rate : le Secretaire General choisit ce que le PNJ a entendu (potentiellement defavorable).",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\reputation.json"
+  },
+  {
+    "slug": "robot",
+    "name": "Robot",
+    "category": "racial",
+    "traitLink": "",
+    "description": "Conditions requises : Race Robot. Le Robot ne respire pas : il n'a besoin ni d'oxygene ni d'autre chose. Il est resistant au vide et peut operer dans l'espace sans scaphandre , sous l'eau, ou dans tout autre milieu similaire. Un traitement antirouille peut etre necessaire par la suite.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\robot.json"
+  },
+  {
+    "slug": "roentgenizdat",
+    "name": "Roentgenizdat",
+    "category": "trait",
+    "traitLink": "etoile.samizdats",
+    "description": "Conditions requises : Trait SAMIZDATS ; le joueur fournit au Secretaire General 3 enregistrements musicaux . Le Kamarade collectionne les roentgenizdats (enregistrements clandestins sur radiographies medicales). Le joueur gagne 1 Zloty chaque fois que le Secretaire General utilise un des enregistrements pour sonoriser la partie .",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\roentgenizdat.json"
+  },
+  {
+    "slug": "roidelacombine",
+    "name": "Roi de la combine",
+    "category": "trait",
+    "traitLink": "faucille.marcheNoir",
+    "description": "Conditions requises : Trait MARCHE NOIR. En debut de scenario, sur un premier jet en MARCHE NOIR reussi , le Kamarade obtient 1 Kontrebande gratuite pour l'equipe (acquise en une demi-journee). Avec un deuxieme jet en CORRUPTION a difficulte -2 , il peut obtenir 2 Kontrebandes , mais sombre dans la frange illegale. Echec sur l'un des deux jets : ennuis garantis. La Kontrebande obtenue disparait a la fin de l'aventure .",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\roidelacombine.json"
+  },
+  {
+    "slug": "roidupogo",
+    "name": "Roi du Pogo",
+    "category": "racial",
+    "traitLink": "",
+    "description": "Source : Kosmokultor p.13-14 Conditions requises : Race Morskoyzeh. Des que quelqu'un a une interaction physique au contact avec le Morskoyzeh - pour le soigner, danser avec lui ou l'attaquer -, il perd automatiquement 1 point de vie (epines naturelles).",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\roidupogo.json"
+  },
+  {
+    "slug": "rouedelafortune",
+    "name": "Roue de la Fortune",
+    "category": "general",
+    "traitLink": "",
+    "description": "Conditions requises : Aucune. Le destin s'acharne : Echecs critiques sur 2 ET 3 (au lieu de seulement 2) Toutes les 5 catastrophes , le Kamarade gagne 1 XP a depenser immediatement",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\rouedelafortune.json"
+  },
+  {
+    "slug": "sabir",
+    "name": "Sabir",
+    "category": "trait",
+    "traitLink": "etoile.pionnier",
+    "description": "Conditions requises : Trait PIONNIER. Le Kamarade n'est pas polyglotte, mais ou qu'il soit il se fait comprendre pour l'essentiel : demander le plein, un verre de vodka, ou les toilettes.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\sabir.json"
+  },
+  {
+    "slug": "seriallover",
+    "name": "Serial Lover",
+    "category": "trait",
+    "traitLink": "faucille.poupeeRusse",
+    "description": "Conditions requises : Trait POUPEE RUSSE. Pour 1 Zloty , le Kamarade fait un jet en POUPEE RUSSE (seuil a la discretion du Secretaire General) : Reussi : il connait un(e) ancien(ne) amant(e) avec un Trait utile a la situation. Echec : il connait toujours un(e) ex competent(e), mais les retrouvailles tournent mal (enfant cache, parents furieux, secte des Barbapapask, etc.).",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\seriallover.json"
+  },
+  {
+    "slug": "sermentdhypocri",
+    "name": "Serment d'hypocrite",
+    "category": "trait",
+    "traitLink": "etoile.dopage",
+    "description": "Conditions requises : Trait DOPAGE. Une fois par combat, pour 1 Zloty , le Kamarade ajoute son score en DOPAGE a ses degats .",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\sermentdhypocri.json"
+  },
+  {
+    "slug": "simple",
+    "name": "Simple",
+    "category": "racial",
+    "traitLink": "",
+    "description": "Conditions requises : Race Simple. Signe General Petit gratuit (voir signes generaux) Pour 1 Zloty , le Simple peut emprunter, le temps d'un test, le score d'un Kamarade dans le Trait de son choix (talent naturel pour l'imitation) Note : le Simple ne connait a la creation que 10 mots au choix du joueur. Son vocabulaire s'agrandit de 5 mots par partie.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\simple.json"
+  },
+  {
+    "slug": "souslaceinture",
+    "name": "Sous la ceinture",
+    "category": "trait",
+    "traitLink": "marteau.lutte",
+    "description": "Conditions requises : Trait LUTTE. Quand le joueur depense des Zlotys pour un jet de combat a 3 des , il peut considerer les 1 comme des 6 .",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\souslaceinture.json"
+  },
+  {
+    "slug": "stardelapropaga",
+    "name": "Star de la propagande mediatique",
+    "category": "trait",
+    "traitLink": "faucille.bolchoi",
+    "description": "Conditions requises : Trait BOLCHOI ; presence d'un public. Une fois par aventure , le Kamarade peut substituer son score en BOLCHOI a n'importe quel autre Trait . (Facile ! J'ai joue le commissaire Navaritch pendant 5 ans !)",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\stardelapropaga.json"
+  },
+  {
+    "slug": "talentcache",
+    "name": "Talent cache",
+    "category": "general",
+    "traitLink": "",
+    "description": "Conditions requises : Aucune. Le joueur peut depenser ses XP en pleine partie pour acquerir un Trait necessaire au scenario ou a une action. S'il n'a pas assez d'XP, les autres joueurs peuvent en donner (remboursement possible plus tard ; les interets sont proscrits - goulag immediat).",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\talentcache.json"
+  },
+  {
+    "slug": "toijtaimepas",
+    "name": "Toi, j't'aime pas",
+    "category": "race",
+    "traitLink": "",
+    "description": "Conditions requises : Race Gonklin. Le Kamarade peut, sur un simple jet en BRISEUR DE GREVES (seuil impose par le Secretaire General), intimider une machine : faire baisser les yeux a une camera, arreter une rame de metro, racketter une pompe a Hyper-Fioul, etc.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\toijtaimepas.json"
+  },
+  {
+    "slug": "toijtaimevraimen",
+    "name": "Toi, j't'aime vraiment pas",
+    "category": "race",
+    "traitLink": "",
+    "description": "Conditions requises : Race Gonklin. Contre un nombre de Zlotys negocie avec le Secretaire General , le Gonklin peut reduire a neant n'importe quelle machine et se faire un collier de ses diodes.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\toijtaimevraimen.json"
+  },
+  {
+    "slug": "tonprofessoral",
+    "name": "Ton professoral",
+    "category": "trait",
+    "traitLink": "etoile.universitet",
+    "description": "Conditions requises : Trait UNIVERSITET ; le PNJ vise doit avoir ete scolarise. Le Kamarade peut substituer son score en UNIVERSITET a celui de BRISEUR DE GREVE pour intimider tout personnage ayant tremble un jour devant un enseignant.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\tonprofessoral.json"
+  },
+  {
+    "slug": "toujourslaaubon",
+    "name": "Toujours la au bon endroit",
+    "category": "trait",
+    "traitLink": "etoile.machiniste",
+    "description": "Conditions requises : Trait MACHINISTE. En debut de scenario , le Kamarade fait un jet en MACHINISTE en annoncant son seuil : Seuil 9 reussi : il pourra se trouver ou on a besoin de lui avec ses outils 1 fois dans la partie. Seuil 12 reussi : 2 fois Seuil 15 reussi : 3 fois",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\toujourslaaubon.json"
+  },
+  {
+    "slug": "tousdessus",
+    "name": "Tous dessus",
+    "category": "race",
+    "traitLink": "",
+    "description": "Conditions requises : Race Klon Posseder Famille nombreuse Au signal du Kamarade, les Petits Klons se jettent dans les pattes de l'adversaire et l'immobilisent : le seuil pour toucher cette cible tombe a 9 . Un des mioches deficients y laisse la peau (au pire, on en fera un sac a main).",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\tousdessus.json"
+  },
+  {
+    "slug": "toutenattaque",
+    "name": "Tout en attaque",
+    "category": "trait",
+    "traitLink": "marteau.muskle",
+    "description": "Conditions requises : Trait MUSKLE. Le Kamarade perd definitivement l'usage de son Armure , mais ses degats au contact deviennent egaux a son score en MUSKLE .",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\toutenattaque.json"
+  },
+  {
+    "slug": "truizyk",
+    "name": "Truizyk",
+    "category": "racial",
+    "traitLink": "",
+    "description": "Conditions requises : Race Truizyk. Le Kamarade possede un pouvoir quasi-telepathique via la transpiration (score en TCHERNOBYL) : il lit les pensees enfouies dans la sueur de ses cibles. Limites : La cible doit transpirer (certaines races ne transpirent pas) Il doit faire assez chaud Un stick deodorant epais peut bloquer la lecture Certains individus puent tellement des pieds qu'on ne peut lire que des gros mots dans leur sueur",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\truizyk.json"
+  },
+  {
+    "slug": "tulaslaissetomb",
+    "name": "Tu l'as laisse tomber par terre",
+    "category": "groupuscule",
+    "traitLink": "",
+    "description": "Conditions requises : Appartenance aux Kosmoroms (nomades de l'espace, kontrebandiers et braconniers de faisandromede) Le Kamarade peut utiliser la Kontrebande d'un autre Personnage Joueur comme si c'etait la sienne.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\tulaslaissetomb.json"
+  },
+  {
+    "slug": "unseulesprit",
+    "name": "Un seul esprit pour toute une equipe !",
+    "category": "general",
+    "traitLink": "",
+    "description": "Conditions requises : Aucune. Accompagne d' au moins un compagnon : +1 en LUTTE, PRISONNIER POLITIQUE et BRISEUR DE GREVE Seul : -1 a ces memes Traits",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\unseulesprit.json"
+  },
+  {
+    "slug": "veneneux",
+    "name": "Veneneux",
+    "category": "trait",
+    "traitLink": "etoile.dopage",
+    "description": "Conditions requises : Trait DOPAGE ; la cible doit avoir pu ingerer/boire/toucher quelque chose que le Kamarade a manipule. Jet en DOPAGE en opposition avec la difficulte de la victime . Le joueur choisit son seuil : Seuil 9 : la cible perd 2 PV dans les 24 heures Seuil 12 : la cible perd 4 PV et est alitee 24 heures Echec : plusieurs personnes au choix du Secretaire General ( y compris le Kamarade ) perdent 3 PV",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\veneneux.json"
+  },
+  {
+    "slug": "veteranofpsychic",
+    "name": "Veteran of Psychic War",
+    "category": "general",
+    "traitLink": "",
+    "description": "Conditions requises : Aucune. Le Kamarade capte l'attention d'un large public en racontant ses exploits (Novye Afghanistan, baie des Gros Klons...). L'auditoire est si captive qu'il ne remarque plus ce qui l'entoure. Le jet se fait en KARKASS si le veteran montre ses blessures, ou en LUTTE s'il decrit ses hauts faits sanglants (ex. j'ai eviscere les petits Ponalchky de Gully 27 pour en faire des lasagnes).",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\veteranofpsychic.json"
+  },
+  {
+    "slug": "vieilleconnaiss",
+    "name": "Vieille connaissance",
+    "category": "general",
+    "traitLink": "",
+    "description": "Conditions requises : Aucune. Une fois par partie, pour 1 Zloty , le joueur peut decreter que son Kamarade connait une personne en rapport avec l'un de ses Traits, qui pourra lui rendre un petit service.",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\vieilleconnaiss.json"
+  },
+  {
+    "slug": "vynoslivy",
+    "name": "Vynoslivy",
+    "category": "racial",
+    "traitLink": "",
+    "description": "Source : Kosmokultor p.15 Conditions requises : Race Gusano. Le Kamarade est quasi-invulnerable : ni le vide, ni le manque d'air, ni les temperatures extremes, ni le manque de nourriture ne sauraient l'achever . Seules menaces mortelles : Dessechement (extraction du scaphandre et abandon au sec) Degrisement fatal des cellules",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\vynoslivy.json"
+  },
+  {
+    "slug": "xiphomis",
+    "name": "Xiphomis",
+    "category": "racial",
+    "traitLink": "",
+    "description": "Conditions requises : Race Xiphomis. Le Kamarade a des ailes repliables et peut utiliser TCHERNOBYL pour tout ce qui touche au vol (ou a ce que le joueur imagine avec ses ailes).",
+    "sourcePath": "C:\\Users\\damie\\AppData\\Local\\FoundryVTT\\Data\\systems\\star_marx\\packs-src\\signes\\xiphomis.json"
+  }
 ]

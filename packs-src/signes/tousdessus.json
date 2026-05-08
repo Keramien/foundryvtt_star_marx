@@ -5,12 +5,12 @@
   "img": "icons/svg/upgrade.svg",
   "system": {
     "description": "<p><strong>Conditions requises :</strong></p><ul><li>Race Klon</li><li><strong>Posseder Famille nombreuse</strong></li></ul><p>Au signal du Kamarade, les Petits Klons se jettent dans les pattes de l'adversaire et l'immobilisent : <strong>le seuil pour toucher cette cible tombe a 9</strong>. <strong>Un des mioches deficients y laisse la peau</strong> (au pire, on en fera un sac a main).</p>",
-    "category": "general",
+    "category": "race",
     "traitLink": "",
     "racialOf": ""
   },
   "effects": [],
-  "folder": "fldsignegeneralA",
+  "folder": "fldsraceklonAAAA",
   "sort": 0,
   "ownership": {
     "default": 0

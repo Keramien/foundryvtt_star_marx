@@ -5,12 +5,12 @@
   "img": "icons/svg/upgrade.svg",
   "system": {
     "description": "<p><strong>Conditions requises :</strong> Race Krolik.</p><p><strong>Une fois par combat, pour 1 Zloty</strong>, le Kamarade <strong>ajoute son score en MEDAILLE OLYMPIQUE a ses degats en LUTTE</strong>. <strong>Attention au decor :</strong> si l'espace est trop etroit ou le plafond trop bas, le Secretaire General peut <strong>infliger au Kamarade ses propres degats a la place</strong>.</p>",
-    "category": "general",
+    "category": "race",
     "traitLink": "",
     "racialOf": ""
   },
   "effects": [],
-  "folder": "fldsignegeneralA",
+  "folder": "fldsracekrolikAA",
   "sort": 0,
   "ownership": {
     "default": 0

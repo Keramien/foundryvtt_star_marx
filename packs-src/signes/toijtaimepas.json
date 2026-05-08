@@ -5,12 +5,12 @@
   "img": "icons/svg/upgrade.svg",
   "system": {
     "description": "<p><strong>Conditions requises :</strong> Race Gonklin.</p><p>Le Kamarade peut, sur un simple jet en <strong>BRISEUR DE GREVES</strong> (seuil impose par le Secretaire General), <strong>intimider une machine</strong> : faire baisser les yeux a une camera, arreter une rame de metro, racketter une pompe a Hyper-Fioul, etc.</p>",
-    "category": "general",
+    "category": "race",
     "traitLink": "",
     "racialOf": ""
   },
   "effects": [],
-  "folder": "fldsignegeneralA",
+  "folder": "fldsracegonklinA",
   "sort": 0,
   "ownership": {
     "default": 0

@@ -10,7 +10,7 @@ const SIGN = catalog.find(entry => entry.slug === "famillenombreuse");
 describe("Kamarade Sign - Famille nombreuse (famillenombreuse)", () => {
   test("catalog entry is available", () => {
     assert.ok(SIGN);
-    assert.equal(SIGN.category, "general");
+    assert.equal(SIGN.category, "race");
   });
 
   test.skip("applies the sign effect in nominal conditions", () => {

@@ -5,12 +5,12 @@
   "img": "icons/svg/upgrade.svg",
   "system": {
     "description": "<p><strong>Conditions requises :</strong> Race Krolik ; specimen a poil soyeux et allergene.</p><ul><li><strong>Pour 1 Zloty</strong> : un personnage expose a un <strong>malus de -1 pendant une scene</strong> a cause d'une allergie passagere, ou la dangerosite d'un mechant <strong>baisse de 1</strong>.</li><li><strong>Pour 3 Zlotys</strong> (et avec accord du Secretaire General) : un personnage expose <strong>rate une action</strong> a cause d'une crise d'eternuement.</li></ul>",
-    "category": "general",
+    "category": "race",
     "traitLink": "",
     "racialOf": ""
   },
   "effects": [],
-  "folder": "fldsignegeneralA",
+  "folder": "fldsracekrolikAA",
   "sort": 0,
   "ownership": {
     "default": 0

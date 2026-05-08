@@ -54,7 +54,7 @@ export class SigneData extends foundry.abstract.TypeDataModel {
       category: new StringField({
         required: true,
         initial: "general",
-        choices: ["general", "trait", "racial", "groupuscule"]
+        choices: ["general", "trait", "racial", "race", "groupuscule"]
       }),
       traitLink: new StringField({ required: true, initial: "" }),
       racialOf:  new StringField({ required: true, initial: "" }),

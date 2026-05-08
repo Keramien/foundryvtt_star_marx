@@ -5,12 +5,12 @@
   "img": "icons/svg/upgrade.svg",
   "system": {
     "description": "<p><strong>Conditions requises :</strong> Race Robot.</p><p>Le Kamarade peut <strong>se scinder en plusieurs unites individuelles</strong> : envoyer un oeil et une main dans un conduit, laisser sa tete sur le tableau de bord pendant que son corps repare une breche, etc.</p><p><strong>Contrepartie :</strong> le Secretaire General peut accorder un bonus aux ennemis en embuscade (oeil parti se promener) ou faire se perdre le corps prive de ses senseurs.</p>",
-    "category": "general",
+    "category": "race",
     "traitLink": "",
     "racialOf": ""
   },
   "effects": [],
-  "folder": "fldsignegeneralA",
+  "folder": "fldsracerobotAAA",
   "sort": 0,
   "ownership": {
     "default": 0

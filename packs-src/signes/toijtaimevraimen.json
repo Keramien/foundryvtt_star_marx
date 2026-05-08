@@ -5,12 +5,12 @@
   "img": "icons/svg/upgrade.svg",
   "system": {
     "description": "<p><strong>Conditions requises :</strong> Race Gonklin.</p><p><strong>Contre un nombre de Zlotys negocie avec le Secretaire General</strong>, le Gonklin peut <strong>reduire a neant n'importe quelle machine</strong> et se faire un collier de ses diodes.</p>",
-    "category": "general",
+    "category": "race",
     "traitLink": "",
     "racialOf": ""
   },
   "effects": [],
-  "folder": "fldsignegeneralA",
+  "folder": "fldsracegonklinA",
   "sort": 0,
   "ownership": {
     "default": 0

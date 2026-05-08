@@ -5,12 +5,12 @@
   "img": "icons/svg/upgrade.svg",
   "system": {
     "description": "<p><strong>Conditions requises :</strong></p><ul><li>Race Klon</li><li><strong>Posseder Famille nombreuse</strong></li></ul><p>Le Kamarade <strong>devore un de ses Petits Klons</strong> devant ses cousins terrifies. Les attardes survivants sont motives par cette demonstration d'amour paternel : leur <strong>prochain jet beneficie d'un bonus de +2 par marmot englouti</strong>.</p>",
-    "category": "general",
+    "category": "race",
     "traitLink": "",
     "racialOf": ""
   },
   "effects": [],
-  "folder": "fldsignegeneralA",
+  "folder": "fldsraceklonAAAA",
   "sort": 0,
   "ownership": {
     "default": 0

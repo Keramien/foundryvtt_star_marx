@@ -1,5 +1,5 @@
-2026/05/03-17:55:41.548 4a28 Recovering log #3
-2026/05/03-17:55:41.548 4a28 Level-0 table #5: started
-2026/05/03-17:55:41.555 4a28 Level-0 table #5: 14618 bytes OK
-2026/05/03-17:55:41.570 4a28 Delete type=0 #3
-2026/05/03-17:55:41.570 4a28 Delete type=3 #2
+2026/05/08-10:26:11.062 1bec Recovering log #3
+2026/05/08-10:26:11.062 1bec Level-0 table #5: started
+2026/05/08-10:26:11.070 1bec Level-0 table #5: 14618 bytes OK
+2026/05/08-10:26:11.088 1bec Delete type=0 #3
+2026/05/08-10:26:11.088 1bec Delete type=3 #2

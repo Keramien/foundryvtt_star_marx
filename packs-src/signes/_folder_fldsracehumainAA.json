@@ -1,0 +1,12 @@
+{
+  "_id": "fldsracehumainAA",
+  "_key": "!folders!fldsracehumainAA",
+  "name": "Humain",
+  "type": "Item",
+  "sorting": "a",
+  "folder": "fldsigneracialAA",
+  "sort": 1000000,
+  "color": "",
+  "description": "",
+  "flags": {}
+}

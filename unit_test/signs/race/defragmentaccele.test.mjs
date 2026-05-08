@@ -5,12 +5,12 @@ import { createSigneFixture } from "../../fixtures/signe.factory.mjs";
 import { applySigneEffect } from "../../helpers/apply-signe.mjs";
 import catalog from "../../meta/signes-catalog.json" with { type: "json" };
 
-const SIGN = catalog.find(entry => entry.slug === "laduredelevoluti");
+const SIGN = catalog.find(entry => entry.slug === "defragmentaccele");
 
-describe("Kamarade Sign - La dure Loi de l'Evolution (laduredelevoluti)", () => {
+describe("Kamarade Sign - Defragmentation acceleree (defragmentaccele)", () => {
   test("catalog entry is available", () => {
     assert.ok(SIGN);
-    assert.equal(SIGN.category, "general");
+    assert.equal(SIGN.category, "race");
   });
 
   test.skip("applies the sign effect in nominal conditions", () => {

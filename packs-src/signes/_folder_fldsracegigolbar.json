@@ -1,0 +1,12 @@
+{
+  "_id": "fldsracegigolbar",
+  "_key": "!folders!fldsracegigolbar",
+  "name": "Gigolbare",
+  "type": "Item",
+  "sorting": "a",
+  "folder": "fldsigneracialAA",
+  "sort": 500000,
+  "color": "",
+  "description": "",
+  "flags": {}
+}

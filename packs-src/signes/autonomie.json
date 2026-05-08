@@ -5,12 +5,12 @@
   "img": "icons/svg/upgrade.svg",
   "system": {
     "description": "<p><strong>Conditions requises :</strong> Race Robot.</p><p>Le Robot est <strong>quasi-autonome energetiquement</strong> : panneau solaire, eolienne, poele a combustion, capteur a foudre, etc. (au choix du joueur).</p><p>Sans source d'energie ni batterie supplementaire, <strong>l'autonomie moyenne est de 72 heures</strong> hors veille. S'il s'eteint par manque d'energie, il peut <strong>toujours etre redemarre</strong> en lui fournissant a nouveau de l'energie.</p>",
-    "category": "general",
+    "category": "race",
     "traitLink": "",
     "racialOf": ""
   },
   "effects": [],
-  "folder": "fldsignegeneralA",
+  "folder": "fldsracerobotAAA",
   "sort": 0,
   "ownership": {
     "default": 0

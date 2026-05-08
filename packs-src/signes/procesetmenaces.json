@@ -5,12 +5,12 @@
   "img": "icons/svg/upgrade.svg",
   "system": {
     "description": "<p><strong>Conditions requises :</strong> Race Hjort.</p><p>A chaque round de combat, le joueur fait un <strong>jet en CORRUPTION modifie par la dangerosite de l'ennemi</strong>. Sur un succes, <strong>l'opposant n'attaque pas</strong> pendant le round, de peur de passer en justice. <strong>L'effet est rompu si le Hjort est agresse</strong> entre-temps.</p>",
-    "category": "general",
+    "category": "race",
     "traitLink": "",
     "racialOf": ""
   },
   "effects": [],
-  "folder": "fldsignegeneralA",
+  "folder": "fldsracehjortAAA",
   "sort": 0,
   "ownership": {
     "default": 0
