@@ -18,6 +18,25 @@
     </div>
   {{/if}}
 
+  {{#if requiresTraitTarget}}
+    <div class="form-group">
+      <label>{{localize "STARMARX.Signe.Fields.TargetTrait"}}</label>
+      <select name="system.targetTrait">
+        <option value="">{{localize "STARMARX.Signe.Fields.TargetTraitEmpty"}}</option>
+        {{#each targetTraitGroups}}
+          <optgroup label="{{localize this.labelKey}}">
+            {{#each this.traits}}
+              <option value="{{this.value}}" {{#if (eq @root.system.targetTrait this.value)}}selected{{/if}}>
+                {{localize this.labelKey}}
+              </option>
+            {{/each}}
+          </optgroup>
+        {{/each}}
+      </select>
+      <p class="hint">{{localize "STARMARX.Signe.Fields.TargetTraitHint"}}</p>
+    </div>
+  {{/if}}
+
   <div class="form-group">
     <label class="checkbox-inline">
       <input type="checkbox" name="system.bonus" {{#if system.bonus}}checked{{/if}}>
