@@ -77,6 +77,9 @@
   <div class="race-block">
     <header class="race-block__header">
       <h3>{{localize "STARMARX.Sheet.Sections.Race"}}</h3>
+      <button type="button" class="compendium-btn" data-action="openCompendium" data-pack="races" title="{{localize 'STARMARX.Sheet.Action.OpenRacesCompendium'}}">
+        <i class="fa-solid fa-folder-open"></i>
+      </button>
     </header>
     {{#if race}}
       <div class="item-row" data-item-id="{{race.id}}">
