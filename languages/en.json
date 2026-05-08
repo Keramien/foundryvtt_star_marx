@@ -102,8 +102,12 @@
         "SignesGeneraux": "Distinctive signs",
         "SignesBonus": "Bonus signs",
         "SignesBonusVide": "No bonus signs. Equipment or the GM may grant some.",
+        "ClefsRaciales": "Racial keys",
+        "ClefsRacialesVide": "No racial key set",
         "Clefs": "Keys",
         "ClefsVide": "Drag a Key from the compendium",
+        "ClefsBonus": "Bonus keys",
+        "ClefsBonusVide": "No bonus keys. Equipment or the GM may grant some.",
         "Armure": "Armor",
         "Kontrebandes": "Kontrebande",
         "Bardas": "Gear"
@@ -115,6 +119,9 @@
         "AddSigne": "Add sign",
         "AddSigneBonus": "Add bonus sign",
         "AddClef": "Add key",
+        "AddClefBonus": "Add bonus key",
+        "OpenSignesCompendium": "Open the signs compendium",
+        "OpenClefsCompendium": "Open the keys compendium",
         "AddKontrebande": "Add kontrebande",
         "AddBarda": "Add gear",
         "DropHere": "Drop an item here",
@@ -229,9 +236,13 @@
     "Clef": {
       "Fields": {
         "ZlotyReward": "Reward (Zlotys)",
-        "Trigger": "Trigger"
+        "Trigger": "Trigger",
+        "Bonus": "Bonus",
+        "BonusLabel": "Bonus key (equipment / scenario)",
+        "BonusHint": "A bonus key does not count against the chosen-keys cap."
       },
       "Racial": "Racial",
+      "RaceLinked": "Race-linked",
       "Hint": "Grants Zlotys when played at the table."
     },
     "Kontrebande": {
@@ -347,13 +358,14 @@
         "DropOnPoste": "Drop the actor onto a specific post."
       }
     },
-    "Notifications": {
-      "RaceReplaced": "Race replaced.",
-      "SigneLimitReached": "Sign limit reached ({max}).",
-      "ClefLimitReached": "Key limit reached ({max}).",
-      "KontrebandeLimitReached": "Kontrebande limit reached ({max}).",
-      "RacialSigneNotDroppable": "Racial Signs are acquired through a Race, not dropped directly."
-    },
+      "Notifications": {
+        "RaceReplaced": "Race replaced.",
+        "SigneLimitReached": "Sign limit reached ({max}).",
+        "ClefLimitReached": "Key limit reached ({max}).",
+        "KontrebandeLimitReached": "Kontrebande limit reached ({max}).",
+        "RacialSigneNotDroppable": "Racial Signs are acquired through a Race, not dropped directly.",
+        "CompendiumUnavailable": "Compendium not found: {pack}."
+      },
     "ImagePicker": {
       "Change": "Change image",
       "ImageUpdated": "Image updated.",

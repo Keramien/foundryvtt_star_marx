@@ -15,4 +15,12 @@
     <prose-mirror name="system.trigger" value="{{system.trigger}}"></prose-mirror>
   </div>
 
+  <div class="form-group">
+    <label class="checkbox-inline">
+      <input type="checkbox" name="system.bonus" {{#if system.bonus}}checked{{/if}}>
+      <span>{{localize "STARMARX.Clef.Fields.BonusLabel"}}</span>
+    </label>
+    <p class="hint">{{localize "STARMARX.Clef.Fields.BonusHint"}}</p>
+  </div>
+
 </section>

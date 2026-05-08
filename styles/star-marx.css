@@ -629,6 +629,25 @@
 .star-marx .add-btn:hover { background: var(--sm-red-dark); }
 .star-marx .add-btn i { margin-right: 4px; }
 
+.star-marx .compendium-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 24px;
+  padding: 0;
+  background: var(--sm-paper);
+  color: var(--sm-red-dark);
+  border: 1px solid var(--sm-border);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.star-marx .compendium-btn:hover {
+  border-color: var(--sm-red);
+  background: rgba(166, 28, 28, 0.06);
+}
+
 .star-marx .item-list {
   list-style: none;
   padding: 0;
@@ -847,6 +866,7 @@
 
 /* -------- Clefs tab -------- */
 .star-marx .clef-block {
+  margin-bottom: 1rem;
   padding: 0.5rem 0.75rem;
   background: var(--sm-paper-alt);
   border: 1px solid var(--sm-border);

@@ -32,6 +32,9 @@
       <button type="button" class="add-btn" data-action="itemCreate" data-item-type="signe">
         <i class="fa-solid fa-plus"></i> {{localize "STARMARX.Sheet.Action.AddSigne"}}
       </button>
+      <button type="button" class="compendium-btn" data-action="openCompendium" data-pack="signes" title="{{localize 'STARMARX.Sheet.Action.OpenSignesCompendium'}}">
+        <i class="fa-solid fa-folder-open"></i>
+      </button>
     </header>
     {{#if signes.generaux.length}}
       <ul class="item-list">
@@ -61,8 +64,11 @@
     <header class="signe-block__header">
       <h2>{{localize "STARMARX.Sheet.Sections.SignesBonus"}}</h2>
       <div class="counter">{{signes.bonus.length}}</div>
-      <button type="button" class="add-btn" data-action="itemCreateBonus">
+      <button type="button" class="add-btn" data-action="itemCreateBonus" data-item-type="signe">
         <i class="fa-solid fa-plus"></i> {{localize "STARMARX.Sheet.Action.AddSigneBonus"}}
+      </button>
+      <button type="button" class="compendium-btn" data-action="openCompendium" data-pack="signes" title="{{localize 'STARMARX.Sheet.Action.OpenSignesCompendium'}}">
+        <i class="fa-solid fa-folder-open"></i>
       </button>
     </header>
     {{#if signes.bonus.length}}

@@ -16,7 +16,10 @@
       "faucille": true,
       "etoile": true
     },
-    "signesRacialUuids": []
+    "signesRacialUuids": [],
+    "clefsRacialUuids": [
+      "Compendium.star_marx.clefs.Item.clrlogorrheevulg"
+    ]
   },
   "effects": [],
   "folder": "fldraceotherAAAA",

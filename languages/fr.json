@@ -102,8 +102,12 @@
         "SignesGeneraux": "Signes particuliers",
         "SignesBonus": "Signes bonus",
         "SignesBonusVide": "Aucun signe bonus. Les équipements ou le Secrétaire Général peuvent en octroyer.",
+        "ClefsRaciales": "Clefs raciales",
+        "ClefsRacialesVide": "Aucune clef raciale définie",
         "Clefs": "Clefs",
         "ClefsVide": "Glissez une Clef depuis le compendium",
+        "ClefsBonus": "Clefs bonus",
+        "ClefsBonusVide": "Aucune clef bonus. Les équipements ou le Secrétaire Général peuvent en octroyer.",
         "Armure": "Armure",
         "Kontrebandes": "Kontrebandes",
         "Bardas": "Barda"
@@ -115,6 +119,9 @@
         "AddSigne": "Ajouter un signe",
         "AddSigneBonus": "Ajouter un signe bonus",
         "AddClef": "Ajouter une clef",
+        "AddClefBonus": "Ajouter une clef bonus",
+        "OpenSignesCompendium": "Ouvrir le compendium des signes",
+        "OpenClefsCompendium": "Ouvrir le compendium des clefs",
         "AddKontrebande": "Ajouter une kontrebande",
         "AddBarda": "Ajouter un barda",
         "DropHere": "Glissez un item ici",
@@ -229,9 +236,13 @@
     "Clef": {
       "Fields": {
         "ZlotyReward": "Récompense (Zlotys)",
-        "Trigger": "Déclencheur"
+        "Trigger": "Déclencheur",
+        "Bonus": "Bonus",
+        "BonusLabel": "Clef bonus (équipement / scénario)",
+        "BonusHint": "Une clef bonus ne compte pas dans la limite des clefs au choix."
       },
       "Racial": "Raciale",
+      "RaceLinked": "Liée à une race",
       "Hint": "Rapporte des Zlotys quand jouée à table."
     },
     "Kontrebande": {
@@ -347,13 +358,14 @@
         "DropOnPoste": "Déposez l'acteur sur un poste précis."
       }
     },
-    "Notifications": {
-      "RaceReplaced": "Race remplacée.",
-      "SigneLimitReached": "Limite de Signes atteinte ({max}).",
-      "ClefLimitReached": "Limite de Clefs atteinte ({max}).",
-      "KontrebandeLimitReached": "Limite de Kontrebandes atteinte ({max}).",
-      "RacialSigneNotDroppable": "Les Signes raciaux s'acquièrent via une Race, pas directement."
-    },
+      "Notifications": {
+        "RaceReplaced": "Race remplacée.",
+        "SigneLimitReached": "Limite de Signes atteinte ({max}).",
+        "ClefLimitReached": "Limite de Clefs atteinte ({max}).",
+        "KontrebandeLimitReached": "Limite de Kontrebandes atteinte ({max}).",
+        "RacialSigneNotDroppable": "Les Signes raciaux s'acquièrent via une Race, pas directement.",
+        "CompendiumUnavailable": "Compendium introuvable : {pack}."
+      },
     "ImagePicker": {
       "Change": "Changer l'image",
       "ImageUpdated": "Image mise à jour.",

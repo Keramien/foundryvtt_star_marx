@@ -25,6 +25,10 @@ export class RaceData extends foundry.abstract.TypeDataModel {
       // the player UI. A race may have 1 (most races), 2 (Klon → Klon + Grand,
       // Simple → Simple + Petit), or 0 (edge case) racial signes.
       signesRacialUuids: new ArrayField(new StringField()),
+      // Mandatory racial-key UUIDs in the compendium. Works like racial
+      // signes: when the race is dropped on a Kamarade, each key is copied
+      // and linked back with system.racialOf.
+      clefsRacialUuids: new ArrayField(new StringField()),
       // Which Doctrines this race is compatible with. A player CAN still pick
       // a disallowed doctrine on their Kamarade — the sheet will just flag it
       // with a warning next to the race. Defaults to "all three allowed".
@@ -88,7 +92,10 @@ export class ClefData extends foundry.abstract.TypeDataModel {
       description: description(),
       racialOf:    new StringField({ required: true, initial: "" }),
       zlotyReward: new NumberField({ required: true, integer: true, initial: 1, min: 0 }),
-      trigger:     new HTMLField()
+      trigger:     new HTMLField(),
+      // Bonus keys are granted externally and don't count against the
+      // player-chosen keys cap.
+      bonus:       new BooleanField({ required: true, initial: false })
     };
   }
 }
