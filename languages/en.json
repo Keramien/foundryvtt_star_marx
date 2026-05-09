@@ -372,7 +372,9 @@
         "ClefLimitReached": "Key limit reached ({max}).",
         "KontrebandeLimitReached": "Kontrebande limit reached ({max}).",
         "RacialSigneNotDroppable": "Racial Signs are acquired through a Race, not dropped directly.",
-        "CompendiumUnavailable": "Compendium not found: {pack}."
+        "CompendiumUnavailable": "Compendium not found: {pack}.",
+        "RegenerationApplied": "{actor} recovers {healed} HP thanks to Regeneration.",
+        "RegenerationAlreadyFull": "{actor} benefits from Regeneration, but their HP is already full."
       },
     "ImagePicker": {
       "Change": "Change image",

@@ -1,9 +1,11 @@
 import { StarMarxActor } from "./actor/actor.mjs";
+import { StarMarxCombat } from "./combat/combat.mjs";
 import { KamaradeSheet } from "./actor/kamarde_sheet.mjs";
 import { EnemySheet } from "./actor/enemy_sheet.mjs";
 import { SoyouzSheet } from "./actor/soyouz_sheet.mjs";
 import { StarMarxItem } from "./item/item.mjs";
 import { StarMarxItemSheet } from "./item/item_sheet.mjs";
+import { StarMarxTokenDocument, ensureLinkedActorPrototypeTokensLinked } from "./token/token_document.mjs";
 import { KamaradeData } from "./data/kamarade_data.mjs";
 import { EnemyData } from "./data/enemy_data.mjs";
 import { SoyouzData } from "./data/soyouz_data.mjs";
@@ -18,7 +20,9 @@ Hooks.once("init", () => {
   console.log("Star Marx | Initializing system");
 
   CONFIG.Actor.documentClass = StarMarxActor;
+  CONFIG.Combat.documentClass = StarMarxCombat;
   CONFIG.Item.documentClass = StarMarxItem;
+  CONFIG.Token.documentClass = StarMarxTokenDocument;
 
   // Register typed data models — replaces template.json (deprecated in v14,
   // removed in v16). Each entry wires a subtype to its schema class.
@@ -87,4 +91,7 @@ Hooks.once("init", () => {
 
 Hooks.once("ready", () => {
   console.log("Star Marx | Ready");
+  ensureLinkedActorPrototypeTokensLinked().catch(error => {
+    console.error("Star Marx | Failed to link actor prototype tokens", error);
+  });
 });

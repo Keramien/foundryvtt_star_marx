@@ -15,7 +15,8 @@ export class EnemyData extends foundry.abstract.TypeDataModel {
       degats:      new NumberField({ required: true, integer: true, initial: 1, min: 0 }),
       health: new SchemaField({
         value: new NumberField({ required: true, integer: true, initial: 5, min: 0 }),
-        max:   new NumberField({ required: true, integer: true, initial: 5, min: 0 })
+        max:   new NumberField({ required: true, integer: true, initial: 5, min: 0 }),
+        offset: new NumberField({ required: true, integer: true, initial: 0 })
       }),
       description: new HTMLField(),
       notes:       new HTMLField()

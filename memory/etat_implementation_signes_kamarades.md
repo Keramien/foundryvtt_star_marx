@@ -140,7 +140,7 @@ Etats utilises :
 | Projection | Manuel | Remplace les degats par une projection physique de l'adversaire. |
 | Que d'un oeil | Narratif | Impossible a surprendre pendant le sommeil. |
 | Realite virtuelle | Narratif | Permet de projeter le groupe dans un univers de jeu video. |
-| Regeneration | A faire | Recupere 3 PV a la fin de chaque combat. |
+| Regeneration | Implemente | Recupere 3 PV a la fin de chaque combat via StarMarxCombat, avec notification de succes. |
 | Reputation | A faire | Jet de seuil 9 a chaque nouveau PNJ pour definir ce qu'il a entendu sur le Kamarade. |
 | Roentgenizdat | Narratif | Gain de Zloty quand le Secretaire General utilise les musiques fournies par le joueur. |
 | Roi de la combine | Manuel | Obtention temporaire d'une ou deux Kontrebandes en debut de scenario selon les jets. |

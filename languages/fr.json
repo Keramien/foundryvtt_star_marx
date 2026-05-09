@@ -372,7 +372,9 @@
         "ClefLimitReached": "Limite de Clefs atteinte ({max}).",
         "KontrebandeLimitReached": "Limite de Kontrebandes atteinte ({max}).",
         "RacialSigneNotDroppable": "Les Signes raciaux s'acquièrent via une Race, pas directement.",
-        "CompendiumUnavailable": "Compendium introuvable : {pack}."
+        "CompendiumUnavailable": "Compendium introuvable : {pack}.",
+        "RegenerationApplied": "{actor} récupère {healed} PV grâce à Régénération.",
+        "RegenerationAlreadyFull": "{actor} profite de Régénération, mais ses PV sont déjà au maximum."
       },
     "ImagePicker": {
       "Change": "Changer l'image",
