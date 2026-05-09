@@ -48,6 +48,35 @@
     </div>
   {{/if}}
 
+  {{#if requiresArmurierTargets}}
+    <div class="form-group armurier-targets" data-armurier-kamarade-drop>
+      <label>{{localize "STARMARX.Signe.Armurier.OtherAffectedKamarades"}}</label>
+      {{#if armurierOtherAffectedKamarades.length}}
+        <ul class="item-list">
+          {{#each armurierOtherAffectedKamarades}}
+            <li class="item-row" data-uuid="{{this.uuid}}">
+              <img class="item-img" src="{{this.img}}" alt="">
+              <div class="item-body">
+                <h4 class="item-name">{{this.name}}</h4>
+              </div>
+              <div class="item-actions">
+                <button type="button" data-action="armurierKamaradeRemove" title="{{localize 'STARMARX.Signe.Armurier.RemoveKamarade'}}">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+              </div>
+            </li>
+          {{/each}}
+        </ul>
+      {{else}}
+        <div class="drop-zone drop-zone--compact">
+          <i class="fa-solid fa-user-plus"></i>
+          <p>{{localize "STARMARX.Signe.Armurier.DropKamaradeHere"}}</p>
+        </div>
+      {{/if}}
+      <p class="hint">{{localize "STARMARX.Signe.Armurier.OtherAffectedKamaradesHint"}}</p>
+    </div>
+  {{/if}}
+
   <div class="form-group">
     <label class="checkbox-inline">
       <input type="checkbox" name="system.bonus" {{#if system.bonus}}checked{{/if}}>

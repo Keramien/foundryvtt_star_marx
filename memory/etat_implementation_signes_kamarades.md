@@ -42,7 +42,7 @@ Etats utilises :
 |---|---|---|
 | Acolyte, Larbin, etc. | A faire | Suivant secondaire avec ses propres Traits, gerable comme PNJ ou note de personnage. |
 | Angora | Manuel ? | Depense de Zlotys pour imposer un malus allergique ou baisser la dangerosite d'un adversaire. |
-| Armurier | A faire | Premier jet avec arme entretenue : +1 au Trait LUTTE ou AK 47 et +1 aux degats. |
+| Armurier | Implemente | Premier jet de LUTTE ou AK 47 en combat : +1 au jet et +1 aux degats, consomme par Kamarade via les flags du combat ; le proprietaire est toujours affecte et peut ajouter d'autres Kamarades. |
 | Attaque Bondissante | Manuel ? | Une fois par combat, contre 1 Zloty, ajoute MEDAILLE OLYMPIQUE aux degats de LUTTE. |
 | Autonomie | Narratif | Gestion de l'autonomie energetique du Robot sans compteur systeme dedie pour l'instant. |
 | Bien Outille | A faire | La Kontrebande donne +4 au lieu du bonus standard de +2. |
@@ -141,7 +141,7 @@ Etats utilises :
 | Que d'un oeil | Narratif | Impossible a surprendre pendant le sommeil. |
 | Realite virtuelle | Narratif | Permet de projeter le groupe dans un univers de jeu video. |
 | Regeneration | Implemente | Recupere 3 PV a la fin de chaque combat via StarMarxCombat, avec notification de succes. |
-| Reputation | A faire | Jet de seuil 9 a chaque nouveau PNJ pour definir ce qu'il a entendu sur le Kamarade. |
+| Reputation | Manuel | Jet de seuil 9 a chaque nouveau PNJ pour definir ce qu'il a entendu sur le Kamarade. |
 | Roentgenizdat | Narratif | Gain de Zloty quand le Secretaire General utilise les musiques fournies par le joueur. |
 | Roi de la combine | Manuel | Obtention temporaire d'une ou deux Kontrebandes en debut de scenario selon les jets. |
 | Sabir | Narratif | Se fait comprendre partout pour l'essentiel. |

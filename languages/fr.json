@@ -239,6 +239,15 @@
         "Racial": "Racial",
         "Race": "Réservé à une race",
         "Groupuscule": "Groupuscule"
+      },
+      "Armurier": {
+        "Label": "Armurier",
+        "OtherAffectedKamarades": "Autres Kamarades prepares",
+        "OtherAffectedKamaradesHint": "Le proprietaire du Signe profite toujours d'Armurier. Ajoutez ici les autres Kamarades dont l'arme a ete bichonnee.",
+        "DropKamaradeHere": "Glissez un Kamarade ici",
+        "RemoveKamarade": "Retirer ce Kamarade",
+        "UnknownKamarade": "Kamarade introuvable ({uuid})",
+        "OnlyKamarade": "Armurier ne peut preparer que les armes d'un Kamarade."
       }
     },
     "Clef": {
@@ -366,16 +375,16 @@
         "DropOnPoste": "Déposez l'acteur sur un poste précis."
       }
     },
-      "Notifications": {
-        "RaceReplaced": "Race remplacée.",
-        "SigneLimitReached": "Limite de Signes atteinte ({max}).",
-        "ClefLimitReached": "Limite de Clefs atteinte ({max}).",
-        "KontrebandeLimitReached": "Limite de Kontrebandes atteinte ({max}).",
-        "RacialSigneNotDroppable": "Les Signes raciaux s'acquièrent via une Race, pas directement.",
-        "CompendiumUnavailable": "Compendium introuvable : {pack}.",
-        "RegenerationApplied": "{actor} récupère {healed} PV grâce à Régénération.",
-        "RegenerationAlreadyFull": "{actor} profite de Régénération, mais ses PV sont déjà au maximum."
-      },
+    "Notifications": {
+      "RaceReplaced": "Race remplacée.",
+      "SigneLimitReached": "Limite de Signes atteinte ({max}).",
+      "ClefLimitReached": "Limite de Clefs atteinte ({max}).",
+      "KontrebandeLimitReached": "Limite de Kontrebandes atteinte ({max}).",
+      "RacialSigneNotDroppable": "Les Signes raciaux s'acquièrent via une Race, pas directement.",
+      "CompendiumUnavailable": "Compendium introuvable : {pack}.",
+      "RegenerationApplied": "{actor} récupère {healed} PV grâce à Régénération.",
+      "RegenerationAlreadyFull": "{actor} profite de Régénération, mais ses PV sont déjà au maximum."
+    },
     "ImagePicker": {
       "Change": "Changer l'image",
       "ImageUpdated": "Image mise à jour.",
@@ -388,7 +397,8 @@
       "Dangerosite": "Dangerosité de l'ennemi",
       "FearResistanceDangerositeHint": "appliquez la Dangerosité comme malus",
       "CriticalSuccess": "Succès critique",
-      "CriticalFailure": "Échec critique"
+      "CriticalFailure": "Échec critique",
+      "ModifierSummary": "{source} +{rollBonus} au jet, +{damageBonus} aux degats"
     }
   }
 }

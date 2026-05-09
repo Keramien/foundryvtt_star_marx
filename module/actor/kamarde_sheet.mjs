@@ -4,6 +4,7 @@ import {
   SYSTEM_ID
 } from "../helpers/config.mjs";
 import { openStarMarxImagePicker } from "../helpers/image-picker.mjs";
+import { resolveKamaradeTraitRollModifiers } from "./kamarade-roll-modifiers.mjs";
 import {
   computeKamaradeZlotysBonus,
   getKamaradeFearResistanceTraitId,
@@ -450,7 +451,14 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     if (!trait) return;
 
     const total = trait.total ?? 0;
-    const roll = await new Roll("2d6 + @total", { total }).evaluate();
+    const modifiers = await resolveKamaradeTraitRollModifiers(this.actor, {
+      doctrine,
+      traitId,
+      combat: game.combat,
+      consume: true
+    });
+    const rollBonus = modifiers.rollBonus ?? 0;
+    const roll = await new Roll("2d6 + @total + @rollBonus", { total, rollBonus }).evaluate();
 
     const threshold = 9;
     const success = roll.total >= threshold;
@@ -462,7 +470,8 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     const color = success ? "#2e6b2e" : "#a61c1c";
     const flavor = `<strong>${traitLabel}</strong>
       <span style="color:${color}">— ${verdict}</span>
-      <small>(${game.i18n.localize("STARMARX.Roll.Threshold")} ${threshold})</small>`;
+      <small>(${game.i18n.localize("STARMARX.Roll.Threshold")} ${threshold})</small>
+      ${KamaradeSheet.#buildRollModifierFlavor(modifiers)}`;
 
     await roll.toMessage({
       speaker: ChatMessage.getSpeaker({ actor: this.actor }),
@@ -473,6 +482,20 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   // Help roll — placeholder until the mechanic is designed.
   static async #onHelpTrait(event, target) {
     ui.notifications.info(game.i18n.localize("STARMARX.Sheet.Action.HelpTraitTodo"));
+  }
+
+  static #buildRollModifierFlavor(modifiers) {
+    if (!modifiers?.sources?.length) return "";
+
+    const lines = modifiers.sources.map(source => {
+      const label = game.i18n.localize(source.labelKey);
+      return game.i18n.format("STARMARX.Roll.ModifierSummary", {
+        source: label,
+        rollBonus: source.rollBonus ?? 0,
+        damageBonus: source.damageBonus ?? 0
+      });
+    });
+    return `<small>${lines.join("<br>")}</small>`;
   }
 
   // Reset every Trait rank to 0. Traits points spent drop to 0 as a result.

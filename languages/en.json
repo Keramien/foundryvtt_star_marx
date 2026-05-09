@@ -239,6 +239,15 @@
         "Racial": "Racial",
         "Race": "Race-restricted",
         "Groupuscule": "Faction"
+      },
+      "Armurier": {
+        "Label": "Armorer",
+        "OtherAffectedKamarades": "Other prepared Kamarades",
+        "OtherAffectedKamaradesHint": "The Sign owner always benefits from Armorer. Add the other Kamarades whose weapons were prepared here.",
+        "DropKamaradeHere": "Drop a Kamarade here",
+        "RemoveKamarade": "Remove this Kamarade",
+        "UnknownKamarade": "Missing Kamarade ({uuid})",
+        "OnlyKamarade": "Armorer can only prepare a Kamarade's weapons."
       }
     },
     "Clef": {
@@ -366,16 +375,16 @@
         "DropOnPoste": "Drop the actor onto a specific post."
       }
     },
-      "Notifications": {
-        "RaceReplaced": "Race replaced.",
-        "SigneLimitReached": "Sign limit reached ({max}).",
-        "ClefLimitReached": "Key limit reached ({max}).",
-        "KontrebandeLimitReached": "Kontrebande limit reached ({max}).",
-        "RacialSigneNotDroppable": "Racial Signs are acquired through a Race, not dropped directly.",
-        "CompendiumUnavailable": "Compendium not found: {pack}.",
-        "RegenerationApplied": "{actor} recovers {healed} HP thanks to Regeneration.",
-        "RegenerationAlreadyFull": "{actor} benefits from Regeneration, but their HP is already full."
-      },
+    "Notifications": {
+      "RaceReplaced": "Race replaced.",
+      "SigneLimitReached": "Sign limit reached ({max}).",
+      "ClefLimitReached": "Key limit reached ({max}).",
+      "KontrebandeLimitReached": "Kontrebande limit reached ({max}).",
+      "RacialSigneNotDroppable": "Racial Signs are acquired through a Race, not dropped directly.",
+      "CompendiumUnavailable": "Compendium not found: {pack}.",
+      "RegenerationApplied": "{actor} recovers {healed} HP thanks to Regeneration.",
+      "RegenerationAlreadyFull": "{actor} benefits from Regeneration, but their HP is already full."
+    },
     "ImagePicker": {
       "Change": "Change image",
       "ImageUpdated": "Image updated.",
@@ -388,7 +397,8 @@
       "Dangerosite": "Enemy Danger",
       "FearResistanceDangerositeHint": "apply Danger as a penalty",
       "CriticalSuccess": "Critical success",
-      "CriticalFailure": "Critical failure"
+      "CriticalFailure": "Critical failure",
+      "ModifierSummary": "{source} +{rollBonus} to the roll, +{damageBonus} damage"
     }
   }
 }

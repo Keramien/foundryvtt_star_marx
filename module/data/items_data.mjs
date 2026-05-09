@@ -67,6 +67,7 @@ export class SigneData extends foundry.abstract.TypeDataModel {
         initial: "group",
         choices: ["group", "alone"]
       }),
+      otherAffectedKamarades: new ArrayField(new StringField({ required: true })),
       racialOf:  new StringField({ required: true, initial: "" }),
       // Flag indicating this signe is granted by something external to
       // character creation (equipment, scenario reward, GM fiat). Bonus
