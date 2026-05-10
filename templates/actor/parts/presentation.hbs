@@ -102,10 +102,12 @@
             </details>
           {{/if}}
         </div>
-        <div class="item-actions">
-          <button type="button" data-action="itemEdit" title="{{localize 'STARMARX.Sheet.Action.Edit'}}"><i class="fa-solid fa-pen"></i></button>
-          <button type="button" data-action="itemDelete" title="{{localize 'STARMARX.Sheet.Action.Delete'}}"><i class="fa-solid fa-trash"></i></button>
-        </div>
+        {{#unless race.isVirtual}}
+          <div class="item-actions">
+            <button type="button" data-action="itemEdit" title="{{localize 'STARMARX.Sheet.Action.Edit'}}"><i class="fa-solid fa-pen"></i></button>
+            <button type="button" data-action="itemDelete" title="{{localize 'STARMARX.Sheet.Action.Delete'}}"><i class="fa-solid fa-trash"></i></button>
+          </div>
+        {{/unless}}
       </div>
     {{else}}
       <div class="drop-zone">

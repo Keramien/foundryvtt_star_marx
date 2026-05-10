@@ -216,6 +216,13 @@
       "DoctrineMismatch": {
         "Label": "Atypical doctrine",
         "Hint": "This race does not recommend the chosen Doctrine. You can still play it, but the GM may ask for a justification."
+      },
+      "Default": {
+        "Humain": {
+          "Name": "Human",
+          "Description": "<p>Humans have spread throughout the universe, adapting to many environments. Some developed mutations, such as a second liver on Vodkaworld or a third leg on high-gravity planets, thanks to Kolkha Kola altering their DNA.</p><p><strong>Racial Sign:</strong> the mandatory <em>Human</em> racial sign grants <strong>+2 additional Trait points</strong> beyond the standard 20, which can be placed in any Trait, even outside the Kamarade's Doctrine, <strong>and</strong> <strong>one additional chosen sign</strong> (racial + 2 chosen signs instead of racial + 1).</p>",
+          "Restrictions": "<p>None. The most flexible race.</p>"
+        }
       }
     },
     "Signe": {
@@ -239,6 +246,12 @@
         "Racial": "Racial",
         "Race": "Race-restricted",
         "Groupuscule": "Faction"
+      },
+      "Default": {
+        "Humain": {
+          "Name": "Human",
+          "Description": "<p><strong>Requirement:</strong> Human race.</p><p>The Human racial sign has two effects:</p><ul><li>In addition to the standard <strong>20 Trait points</strong>, the Kamarade gains <strong>2 extra points</strong> to assign to any Traits, <strong>even outside their Doctrine</strong> (both points may be placed in the same Trait).</li><li>They get <strong>one additional chosen sign</strong> (racial + 2 chosen signs instead of racial + 1).</li></ul>"
+        }
       },
       "Armurier": {
         "Label": "Armorer",

@@ -46,7 +46,9 @@ export class KamaradeData extends foundry.abstract.TypeDataModel {
       details: new SchemaField({
         description: new HTMLField(),
         notes:       new HTMLField(),
-        doctrine:    new StringField({ required: true, initial: "faucille", choices: DOCTRINES }),
+        doctrine:    new StringField({ required: true, initial: "marteau", choices: DOCTRINES }),
+        race:        new StringField({ required: true, initial: "humain" }),
+        racialSigne: new StringField({ required: true, initial: "humain" }),
         groupuscule: new StringField({ required: true, initial: "" }),
         sexe:        new StringField({ required: true, initial: "" }),
         age:         new NumberField({ required: true, integer: true, initial: 0, min: 0 }),

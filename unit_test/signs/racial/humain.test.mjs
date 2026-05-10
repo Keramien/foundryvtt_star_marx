@@ -28,6 +28,39 @@ describe("Kamarade Sign - Humain (humain)", () => {
     assert.equal(traitPoints.available, 22);
   });
 
+  test("applies the Humain racial sign from Kamarade default data", () => {
+    const actor = createActor({
+      system: {
+        details: {
+          race: "humain",
+          racialSigne: "humain"
+        }
+      }
+    });
+
+    const traitPoints = computeKamaradeTraitPoints(actor);
+
+    assert.equal(traitPoints.max, 22);
+    assert.equal(computeKamaradeSignesMax(actor), 2);
+  });
+
+  test("ignores the Humain default data when an explicit race is embedded", () => {
+    const actor = createActor({
+      items: [{ id: "race-mnogy", type: "race", name: "Mnogy", system: {} }],
+      system: {
+        details: {
+          race: "humain",
+          racialSigne: "humain"
+        }
+      }
+    });
+
+    const traitPoints = computeKamaradeTraitPoints(actor);
+
+    assert.equal(traitPoints.max, 20);
+    assert.equal(computeKamaradeSignesMax(actor), 1);
+  });
+
   test("stacks with trait XP", () => {
     const actor = createActor({
       items: [createHumainSigne()],

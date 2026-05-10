@@ -216,6 +216,13 @@
       "DoctrineMismatch": {
         "Label": "Doctrine atypique",
         "Hint": "Cette race ne recommande pas la Doctrine choisie. Le jeu reste possible, mais le Secrétaire Général pourrait demander une justification."
+      },
+      "Default": {
+        "Humain": {
+          "Name": "Humain",
+          "Description": "<p>Les Humains se sont repandus partout dans l'univers, s'adaptant a divers environnements. Certains ont developpe des mutations (second foie sur Vodkaworld, troisieme jambe sur les planetes a forte gravite, etc.) grace au Kolkha Kola qui a altere leur ADN.</p><p><strong>Signe Racial :</strong> le signe racial <em>Humain</em> (obligatoire) confere <strong>+2 points de Trait supplementaires</strong> (au-dela des 20 standards) pouvant etre places dans n'importe quel Trait meme hors Doctrine, <strong>et</strong> un <strong>signe au choix supplementaire</strong> (le Kamarade dispose donc de son racial + 2 signes au choix au lieu de racial + 1).</p>",
+          "Restrictions": "<p>Aucune. Race la plus flexible.</p>"
+        }
       }
     },
     "Signe": {
@@ -239,6 +246,12 @@
         "Racial": "Racial",
         "Race": "Réservé à une race",
         "Groupuscule": "Groupuscule"
+      },
+      "Default": {
+        "Humain": {
+          "Name": "Humain",
+          "Description": "<p><strong>Conditions requises :</strong> Race Humain.</p><p>Le signe racial Humain cumule deux effets :</p><ul><li>En plus des <strong>20 points de Traits</strong> standards, le Kamarade beneficie de <strong>2 points surnumeraires</strong> a repartir dans les Traits de son choix, <strong>meme hors de sa Doctrine</strong> (ces 2 points peuvent etre cumules sur un seul Trait).</li><li>Il dispose d'un <strong>signe au choix supplementaire</strong> (racial + 2 au choix au lieu de racial + 1).</li></ul>"
+        }
       },
       "Armurier": {
         "Label": "Armurier",

@@ -292,11 +292,40 @@ export function hasKamaradeItem(actor, name) {
 }
 
 export function hasKamaradeSigne(actor, name) {
+  const normalizedName = normalizeSignSlug(name);
+  if (hasKamaradeDefaultRacialSigne(actor, normalizedName)) return true;
+
   let found = false;
   actor.items?.forEach(item => {
-    if (item?.type === "signe" && isMatchingKamaradeSigne(item, name)) {
+    if (item?.type === "signe" && isMatchingKamaradeSigne(item, normalizedName)) {
       found = true;
     }
+  });
+  return found;
+}
+
+export function hasKamaradeDefaultRacialSigne(actor, name) {
+  if (actor.type !== "kamarade") return false;
+  if (hasKamaradeEmbeddedRace(actor)) return false;
+  return getKamaradeDefaultRacialSigneSlug(actor) === normalizeSignSlug(name);
+}
+
+export function getKamaradeDefaultRaceSlug(actor) {
+  if (actor.type !== "kamarade") return "";
+  if (hasKamaradeEmbeddedRace(actor)) return "";
+  return normalizeSignSlug(actor.system?.details?.race);
+}
+
+export function getKamaradeDefaultRacialSigneSlug(actor) {
+  if (actor.type !== "kamarade") return "";
+  if (hasKamaradeEmbeddedRace(actor)) return "";
+  return normalizeSignSlug(actor.system?.details?.racialSigne);
+}
+
+export function hasKamaradeEmbeddedRace(actor) {
+  let found = false;
+  actor.items?.forEach(item => {
+    if (item?.type === "race") found = true;
   });
   return found;
 }

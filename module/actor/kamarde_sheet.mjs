@@ -7,6 +7,8 @@ import { openStarMarxImagePicker } from "../helpers/image-picker.mjs";
 import { resolveKamaradeTraitRollModifiers } from "./kamarade-roll-modifiers.mjs";
 import {
   computeKamaradeZlotysBonus,
+  getKamaradeDefaultRaceSlug,
+  getKamaradeDefaultRacialSigneSlug,
   getKamaradeFearResistanceTraitId,
   getKamaradeHealthTraitId
 } from "./kamarade.mjs";
@@ -71,7 +73,7 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     context.chosenDoctrine = sys.details?.doctrine ?? DOCTRINES[0];
     context.traitGroups = this.#buildTraitGroups(sys, context.chosenDoctrine);
 
-    context.race  = actor.itemTypes.race?.[0] ?? null;
+    context.race  = actor.itemTypes.race?.[0] ?? this.#buildDefaultRace(actor);
     // Soft rule: a race may advertise which doctrines it is "compatible" with.
     // We don't prevent a player from choosing any doctrine, but the sheet will
     // flag the mismatch with a warning badge.
@@ -145,12 +147,42 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   //   generaux: player-chosen signes, counted against signesMax
   #partitionSignes(actor) {
     const signes = actor.items.filter(i => i.type === "signe");
+    const defaultRacialSigne = this.#buildDefaultRacialSigne(actor);
     const raciaux = signes.filter(i => i.system.category === "racial");
+    if (defaultRacialSigne) raciaux.unshift(defaultRacialSigne);
     const bonus = signes.filter(i => i.system.bonus && i.system.category !== "racial");
     const generaux = signes.filter(i =>
       i.system.category !== "racial" && !i.system.bonus
     );
     return { raciaux, bonus, generaux };
+  }
+
+  #buildDefaultRace(actor) {
+    if (getKamaradeDefaultRaceSlug(actor) !== "humain") return null;
+    return {
+      id: "default-race-humain",
+      img: "icons/svg/mystery-man.svg",
+      name: game.i18n.localize("STARMARX.Race.Default.Humain.Name"),
+      system: {
+        description: game.i18n.localize("STARMARX.Race.Default.Humain.Description"),
+        restrictions: game.i18n.localize("STARMARX.Race.Default.Humain.Restrictions")
+      },
+      isVirtual: true
+    };
+  }
+
+  #buildDefaultRacialSigne(actor) {
+    if (getKamaradeDefaultRacialSigneSlug(actor) !== "humain") return null;
+    return {
+      id: "default-signe-racial-humain",
+      img: "icons/svg/aura.svg",
+      name: game.i18n.localize("STARMARX.Signe.Default.Humain.Name"),
+      system: {
+        category: "racial",
+        description: game.i18n.localize("STARMARX.Signe.Default.Humain.Description")
+      },
+      isVirtual: true
+    };
   }
 
   // Three buckets mirroring signes:
