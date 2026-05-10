@@ -1,16 +1,29 @@
 import {
   DOCTRINES,
   TRAITS_BY_DOCTRINE,
-  SYSTEM_ID
+  SYSTEM_ID,
+  damageFromRank
 } from "../helpers/config.mjs";
 import { openStarMarxImagePicker } from "../helpers/image-picker.mjs";
+import {
+  STAR_MARX_ROLL_THRESHOLD,
+  buildStarMarxRollFormula,
+  buildStarMarxRollOutcomeFlavor,
+  evaluateStarMarxRollOutcome,
+  extractRollDiceValues
+} from "../helpers/roll-outcome.mjs";
 import { resolveKamaradeTraitRollModifiers } from "./kamarade-roll-modifiers.mjs";
 import {
+  computeKamaradeDamageCap,
   computeKamaradeZlotysBonus,
   getKamaradeDefaultRaceSlug,
   getKamaradeDefaultRacialSigneSlug,
   getKamaradeFearResistanceTraitId,
-  getKamaradeHealthTraitId
+  getKamaradeHealthTraitId,
+  hasActiveKamaradeSizeSigne,
+  hasKamaradeSigne,
+  isKamaradeDosAuMurActive,
+  normalizeSignSlug
 } from "./kamarade.mjs";
 
 const { ActorSheetV2 } = foundry.applications.sheets;
@@ -460,22 +473,39 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
 
   static async #onRollFearResistance(event, target) {
     const total = this.actor.system.fearResistance?.value ?? 0;
-    const roll = await new Roll("2d6 + @total", { total }).evaluate();
+    const targetedEnemy = KamaradeSheet.#getTargetedEnemy();
+    const dangerosite = KamaradeSheet.#getEnemyDangerosite(targetedEnemy);
+    const dangerositeModifier = targetedEnemy ? -dangerosite : 0;
+    const formula = buildStarMarxRollFormula("2d6", [total, dangerositeModifier]);
+    const roll = await new Roll(formula).evaluate();
+    const outcome = evaluateStarMarxRollOutcome(roll);
 
     const label = game.i18n.localize("STARMARX.Actor.FearResistance.Label");
     const threshold = game.i18n.localize("STARMARX.Roll.Threshold");
     const hint = game.i18n.localize("STARMARX.Roll.FearResistanceDangerositeHint");
     const flavor = `<strong>${label}</strong>
-      <small>(${threshold} 9 - ${hint})</small>`;
+      ${buildStarMarxRollOutcomeFlavor(outcome)}
+      <small>(${threshold} ${STAR_MARX_ROLL_THRESHOLD} - ${hint})</small>`;
+    const rollBreakdown = {
+      rollRows: KamaradeSheet.#buildRollDetailRows({
+        roll,
+        traitLabel: label,
+        traitTotal: total,
+        modifiers: null,
+        targetedEnemy,
+        dangerositeModifier
+      })
+    };
 
     await roll.toMessage({
       speaker: ChatMessage.getSpeaker({ actor: this.actor }),
-      flavor
+      flavor,
+      flags: { [SYSTEM_ID]: { rollBreakdown } }
     });
   }
 
-  // Roll 2d6 + trait.total for a given trait, post to chat with a
-  // success/failure verdict against the default threshold of 9.
+  // Roll 2d6 + trait.total for a given trait, post to chat with the
+  // critical/success/failure verdict against the default threshold of 9.
   static async #onRollTrait(event, target) {
     const doctrine = target.dataset.doctrine;
     const traitId  = target.dataset.trait;
@@ -490,24 +520,42 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       consume: true
     });
     const rollBonus = modifiers.rollBonus ?? 0;
-    const roll = await new Roll("2d6 + @total + @rollBonus", { total, rollBonus }).evaluate();
+    const targetedEnemy = KamaradeSheet.#getTargetedEnemy();
+    const dangerosite = KamaradeSheet.#getEnemyDangerosite(targetedEnemy);
+    const dangerositeModifier = targetedEnemy ? -dangerosite : 0;
+    const formula = buildStarMarxRollFormula("2d6", [total, rollBonus, dangerositeModifier]);
+    const roll = await new Roll(formula).evaluate();
 
-    const threshold = 9;
-    const success = roll.total >= threshold;
+    const outcome = evaluateStarMarxRollOutcome(roll);
     const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
     const traitLabel = game.i18n.localize(`STARMARX.Trait.${cap(doctrine)}.${cap(traitId)}`);
-    const verdict = game.i18n.localize(success
-      ? "STARMARX.Roll.CriticalSuccess"
-      : "STARMARX.Roll.CriticalFailure");
-    const color = success ? "#2e6b2e" : "#a61c1c";
     const flavor = `<strong>${traitLabel}</strong>
-      <span style="color:${color}">— ${verdict}</span>
-      <small>(${game.i18n.localize("STARMARX.Roll.Threshold")} ${threshold})</small>
-      ${KamaradeSheet.#buildRollModifierFlavor(modifiers)}`;
+      ${buildStarMarxRollOutcomeFlavor(outcome)}
+      <small>(${game.i18n.localize("STARMARX.Roll.Threshold")} ${STAR_MARX_ROLL_THRESHOLD})</small>`;
+    const rollBreakdown = {
+      rollRows: KamaradeSheet.#buildRollDetailRows({
+        roll,
+        traitLabel,
+        traitTotal: total,
+        modifiers,
+        targetedEnemy,
+        dangerositeModifier
+      }),
+      damage: KamaradeSheet.#buildDamageBreakdown({
+        actor: this.actor,
+        doctrine,
+        traitId,
+        traitLabel,
+        traitTotal: total,
+        modifiers,
+        targetedEnemy
+      })
+    };
 
     await roll.toMessage({
       speaker: ChatMessage.getSpeaker({ actor: this.actor }),
-      flavor
+      flavor,
+      flags: { [SYSTEM_ID]: { rollBreakdown } }
     });
   }
 
@@ -516,18 +564,155 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     ui.notifications.info(game.i18n.localize("STARMARX.Sheet.Action.HelpTraitTodo"));
   }
 
-  static #buildRollModifierFlavor(modifiers) {
-    if (!modifiers?.sources?.length) return "";
-
-    const lines = modifiers.sources.map(source => {
-      const label = game.i18n.localize(source.labelKey);
-      return game.i18n.format("STARMARX.Roll.ModifierSummary", {
-        source: label,
-        rollBonus: source.rollBonus ?? 0,
-        damageBonus: source.damageBonus ?? 0
+  static #buildRollDetailRows({
+    roll,
+    traitLabel,
+    traitTotal,
+    modifiers,
+    targetedEnemy,
+    dangerositeModifier
+  }) {
+    const diceValues = extractRollDiceValues(roll);
+    const diceTotal = diceValues.reduce((sum, value) => sum + value, 0);
+    const diceDetail = diceValues.length
+      ? `${diceValues.join(" + ")} = ${diceTotal}`
+      : "2d6";
+    const rows = [
+      { text: `${game.i18n.localize("STARMARX.Roll.Dice")} ${diceDetail}` }
+    ];
+    if (traitTotal !== 0) {
+      rows.push({
+        value: traitTotal,
+        label: game.i18n.format("STARMARX.Roll.StatBonus", { stat: traitLabel })
       });
-    });
-    return `<small>${lines.join("<br>")}</small>`;
+    }
+
+    for (const source of modifiers?.sources ?? []) {
+      const rollBonus = source.rollBonus ?? 0;
+      if (rollBonus === 0) continue;
+      rows.push({
+        value: rollBonus,
+        label: game.i18n.localize(source.labelKey)
+      });
+    }
+
+    if (targetedEnemy && dangerositeModifier !== 0) {
+      rows.push({
+        value: dangerositeModifier,
+        label: game.i18n.format("STARMARX.Roll.EnemyDanger", { enemy: targetedEnemy.name })
+      });
+    }
+
+    return rows;
+  }
+
+  static #buildDamageBreakdown({
+    actor,
+    doctrine,
+    traitId,
+    traitLabel,
+    traitTotal,
+    modifiers,
+    targetedEnemy
+  }) {
+    if (!targetedEnemy) return null;
+
+    const damageSource = KamaradeSheet.#getDamageSource(doctrine, traitId);
+    const terms = [{
+      value: damageFromRank(traitTotal),
+      label: game.i18n.format("STARMARX.Roll.DamageFromStat", {
+        stat: traitLabel,
+        total: traitTotal
+      })
+    }];
+
+    const manualBonus = damageSource ? (actor.system.damage?.[damageSource]?.bonus ?? 0) : 0;
+    if (manualBonus !== 0) {
+      terms.push({
+        value: manualBonus,
+        label: game.i18n.localize("STARMARX.Roll.ManualDamageBonus")
+      });
+    }
+
+    terms.push(...KamaradeSheet.#buildSignDamageTerms(actor, damageSource));
+    for (const source of modifiers?.sources ?? []) {
+      const damageBonus = source.damageBonus ?? 0;
+      if (damageBonus === 0) continue;
+      terms.push({
+        value: damageBonus,
+        label: game.i18n.localize(source.labelKey)
+      });
+    }
+
+    const rawDamage = terms.reduce((sum, term) => sum + term.value, 0);
+    const cap = damageSource ? computeKamaradeDamageCap(actor, damageSource) : null;
+    const capped = Number.isFinite(cap) && rawDamage > cap;
+    const damage = capped ? cap : rawDamage;
+    const rows = terms.map((term, index) => ({
+      value: term.value,
+      label: term.label,
+      forceSign: index > 0
+    }));
+    if (capped) {
+      rows.push({
+        text: game.i18n.format("STARMARX.Roll.DamageCapApplied", {
+          cap,
+          source: KamaradeSheet.#getSigneName(actor, "petit")
+        })
+      });
+    }
+
+    return {
+      label: game.i18n.localize("STARMARX.Roll.Damage"),
+      toggleLabel: game.i18n.localize("STARMARX.Roll.DamageToggleHint"),
+      total: damage,
+      rows
+    };
+  }
+
+  static #buildSignDamageTerms(actor, damageSource) {
+    const terms = [];
+    if (isKamaradeDosAuMurActive(actor)) {
+      terms.push({ value: 1, label: KamaradeSheet.#getSigneName(actor, "dosaumur") });
+    }
+    if (damageSource === "lutte") {
+      if (hasKamaradeSigne(actor, "boucher")) {
+        terms.push({ value: 1, label: KamaradeSheet.#getSigneName(actor, "boucher") });
+      }
+      if (hasActiveKamaradeSizeSigne(actor, "grand")) {
+        terms.push({ value: 1, label: KamaradeSheet.#getSigneName(actor, "grand") });
+      }
+      if (hasKamaradeSigne(actor, "krolik")) {
+        terms.push({ value: 1, label: KamaradeSheet.#getSigneName(actor, "krolik") });
+      }
+    }
+    if (damageSource === "ak47" && hasKamaradeSigne(actor, "precis")) {
+      terms.push({ value: 1, label: KamaradeSheet.#getSigneName(actor, "precis") });
+    }
+    return terms;
+  }
+
+  static #getTargetedEnemy() {
+    const targets = Array.from(game.user?.targets ?? []);
+    return targets.find(target => target?.actor?.type === "enemy")?.actor ?? null;
+  }
+
+  static #getEnemyDangerosite(enemy) {
+    const dangerosite = Number(enemy?.system?.dangerosite);
+    return Number.isFinite(dangerosite) ? dangerosite : 0;
+  }
+
+  static #getDamageSource(doctrine, traitId) {
+    if (doctrine !== "marteau") return null;
+    if (traitId === "lutte" || traitId === "ak47") return traitId;
+    return null;
+  }
+
+  static #getSigneName(actor, slug) {
+    const item = Array.from(actor.items ?? []).find(entry =>
+      entry?.type === "signe" && normalizeSignSlug(entry.name) === slug
+    );
+    return item?.name ?? slug;
   }
 
   // Reset every Trait rank to 0. Traits points spent drop to 0 as a result.

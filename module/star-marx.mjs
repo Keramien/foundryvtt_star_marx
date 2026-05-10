@@ -1,11 +1,12 @@
 import { StarMarxActor } from "./actor/actor.mjs";
-import { StarMarxCombat } from "./combat/combat.mjs";
+import { StarMarxCombat, configureStarMarxInitiative } from "./combat/combat.mjs";
 import { KamaradeSheet } from "./actor/kamarde_sheet.mjs";
 import { EnemySheet } from "./actor/enemy_sheet.mjs";
 import { SoyouzSheet } from "./actor/soyouz_sheet.mjs";
 import { StarMarxItem } from "./item/item.mjs";
 import { StarMarxItemSheet } from "./item/item_sheet.mjs";
 import { StarMarxTokenDocument, ensureLinkedActorPrototypeTokensLinked } from "./token/token_document.mjs";
+import { registerStarMarxChatRollBreakdownHooks } from "./helpers/chat-roll-breakdown.mjs";
 import { KamaradeData } from "./data/kamarade_data.mjs";
 import { EnemyData } from "./data/enemy_data.mjs";
 import { SoyouzData } from "./data/soyouz_data.mjs";
@@ -21,6 +22,8 @@ Hooks.once("init", () => {
 
   CONFIG.Actor.documentClass = StarMarxActor;
   CONFIG.Combat.documentClass = StarMarxCombat;
+  configureStarMarxInitiative(CONFIG);
+  registerStarMarxChatRollBreakdownHooks(Hooks);
   CONFIG.Item.documentClass = StarMarxItem;
   CONFIG.Token.documentClass = StarMarxTokenDocument;
 

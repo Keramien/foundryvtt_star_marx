@@ -1,5 +1,11 @@
 import { SYSTEM_ID, SOYOUZ_TRAITS, SOYOUZ_POSTES } from "../helpers/config.mjs";
 import { openStarMarxImagePicker } from "../helpers/image-picker.mjs";
+import {
+  STAR_MARX_ROLL_THRESHOLD,
+  buildStarMarxRollFormula,
+  buildStarMarxRollOutcomeFlavor,
+  evaluateStarMarxRollOutcome
+} from "../helpers/roll-outcome.mjs";
 
 const { ActorSheetV2 } = foundry.applications.sheets;
 const { HandlebarsApplicationMixin } = foundry.applications.api;
@@ -246,18 +252,13 @@ export class SoyouzSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     if (!trait) return;
 
     const total = trait.total ?? 0;
-    const roll = await new Roll("2d6 + @total", { total }).evaluate();
+    const roll = await new Roll(buildStarMarxRollFormula("2d6", [total])).evaluate();
 
-    const threshold = 9;
-    const success = roll.total >= threshold;
+    const outcome = evaluateStarMarxRollOutcome(roll);
     const traitLabel = game.i18n.localize(`STARMARX.Soyouz.Traits.${capitalize(traitId)}`);
-    const verdict = game.i18n.localize(success
-      ? "STARMARX.Roll.CriticalSuccess"
-      : "STARMARX.Roll.CriticalFailure");
-    const color = success ? "#2e6b2e" : "#a61c1c";
     const flavor = `<strong>${traitLabel}</strong>
-      <span style="color:${color}">— ${verdict}</span>
-      <small>(${game.i18n.localize("STARMARX.Roll.Threshold")} ${threshold})</small>`;
+      ${buildStarMarxRollOutcomeFlavor(outcome)}
+      <small>(${game.i18n.localize("STARMARX.Roll.Threshold")} ${STAR_MARX_ROLL_THRESHOLD})</small>`;
 
     await roll.toMessage({
       speaker: ChatMessage.getSpeaker({ actor: this.actor }),
