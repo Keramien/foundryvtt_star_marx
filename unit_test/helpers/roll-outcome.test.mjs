@@ -55,6 +55,22 @@ describe("Star Marx roll outcomes", () => {
     assert.deepEqual(values, [2, 5, 6]);
   });
 
+  test("ignores inactive dice from keep/drop expressions", () => {
+    const values = extractRollDiceValues({
+      dice: [
+        {
+          results: [
+            { result: 2, active: false },
+            { result: 5, active: true },
+            { result: 6, active: true }
+          ]
+        }
+      ]
+    });
+
+    assert.deepEqual(values, [5, 6]);
+  });
+
   test("builds formulas without zero-value modifiers", () => {
     const formula = buildStarMarxRollFormula("2d6", [0, 3, -0, -2]);
 

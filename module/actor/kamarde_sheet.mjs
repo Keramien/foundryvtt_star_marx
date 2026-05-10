@@ -6,6 +6,12 @@ import {
 } from "../helpers/config.mjs";
 import { openStarMarxImagePicker } from "../helpers/image-picker.mjs";
 import {
+  KAMARADE_ZLOTY_ROLL_OPTIONS,
+  getKamaradeZlotyRollOptionConfig,
+  getKamaradeZlotyRollOptionConfigs,
+  normalizeKamaradePreRollOptions
+} from "../helpers/kamarade-pre-roll.mjs";
+import {
   STAR_MARX_ROLL_THRESHOLD,
   buildStarMarxRollFormula,
   buildStarMarxRollOutcomeFlavor,
@@ -472,11 +478,23 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   }
 
   static async #onRollFearResistance(event, target) {
-    const total = this.actor.system.fearResistance?.value ?? 0;
     const targetedEnemy = KamaradeSheet.#getTargetedEnemy();
+    const preRoll = await KamaradeSheet.#promptPreRollOptions({
+      actor: this.actor,
+      allowIcePick: false
+    });
+    if (!preRoll) return;
+    if (!await KamaradeSheet.#applyPreRollActorUpdates(this.actor, preRoll)) return;
+
+    const total = this.actor.system.fearResistance?.value ?? 0;
     const dangerosite = KamaradeSheet.#getEnemyDangerosite(targetedEnemy);
     const dangerositeModifier = targetedEnemy ? -dangerosite : 0;
-    const formula = buildStarMarxRollFormula("2d6", [total, dangerositeModifier]);
+    const formula = buildStarMarxRollFormula(preRoll.baseFormula, [
+      total,
+      preRoll.contextualBonus,
+      preRoll.rollBonus,
+      dangerositeModifier
+    ]);
     const roll = await new Roll(formula).evaluate();
     const outcome = evaluateStarMarxRollOutcome(roll);
 
@@ -492,6 +510,7 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
         traitLabel: label,
         traitTotal: total,
         modifiers: null,
+        preRoll,
         targetedEnemy,
         dangerositeModifier
       })
@@ -509,6 +528,17 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   static async #onRollTrait(event, target) {
     const doctrine = target.dataset.doctrine;
     const traitId  = target.dataset.trait;
+    if (!this.actor.system.traits?.[doctrine]?.[traitId]) return;
+
+    const targetedEnemy = KamaradeSheet.#getTargetedEnemy();
+    const preRoll = await KamaradeSheet.#promptPreRollOptions({
+      actor: this.actor,
+      allowIcePick: KamaradeSheet.#canUseIcePick({ targetedEnemy })
+    });
+    if (!preRoll) return;
+    if (!KamaradeSheet.#isPreRollOptionAllowed(preRoll, { targetedEnemy })) return;
+    if (!await KamaradeSheet.#applyPreRollActorUpdates(this.actor, preRoll)) return;
+
     const trait = this.actor.system.traits?.[doctrine]?.[traitId];
     if (!trait) return;
 
@@ -520,10 +550,15 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       consume: true
     });
     const rollBonus = modifiers.rollBonus ?? 0;
-    const targetedEnemy = KamaradeSheet.#getTargetedEnemy();
     const dangerosite = KamaradeSheet.#getEnemyDangerosite(targetedEnemy);
     const dangerositeModifier = targetedEnemy ? -dangerosite : 0;
-    const formula = buildStarMarxRollFormula("2d6", [total, rollBonus, dangerositeModifier]);
+    const formula = buildStarMarxRollFormula(preRoll.baseFormula, [
+      total,
+      preRoll.contextualBonus,
+      rollBonus,
+      preRoll.rollBonus,
+      dangerositeModifier
+    ]);
     const roll = await new Roll(formula).evaluate();
 
     const outcome = evaluateStarMarxRollOutcome(roll);
@@ -538,6 +573,7 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
         traitLabel,
         traitTotal: total,
         modifiers,
+        preRoll,
         targetedEnemy,
         dangerositeModifier
       }),
@@ -548,6 +584,7 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
         traitLabel,
         traitTotal: total,
         modifiers,
+        preRoll,
         targetedEnemy
       })
     };
@@ -564,11 +601,94 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     ui.notifications.info(game.i18n.localize("STARMARX.Sheet.Action.HelpTraitTodo"));
   }
 
+  static async #promptPreRollOptions({ actor, allowIcePick }) {
+    const zlotys = actor.system.zlotys?.value ?? 0;
+    const optionHtml = getKamaradeZlotyRollOptionConfigs()
+      .map(option => {
+        const unavailable = option.key === KAMARADE_ZLOTY_ROLL_OPTIONS.picAGlace && !allowIcePick;
+        const tooExpensive = option.cost > zlotys;
+        const disabled = unavailable || tooExpensive ? " disabled" : "";
+        const label = game.i18n.format(option.optionLabelKey ?? option.labelKey, { cost: option.cost });
+        return `<option value="${option.key}"${disabled}>${KamaradeSheet.#escapeHtml(label)}</option>`;
+      })
+      .join("");
+
+    const content = `
+      <form class="star-marx-pre-roll">
+        <label class="star-marx-pre-roll__field">
+          <span>${game.i18n.localize("STARMARX.Roll.PreRoll.ContextualBonus")}</span>
+          <input type="number" name="contextualBonus" value="0" step="1">
+        </label>
+        <label class="star-marx-pre-roll__field">
+          <span>${game.i18n.localize("STARMARX.Roll.PreRoll.ZlotyOption")}</span>
+          <select name="zlotyOption">${optionHtml}</select>
+        </label>
+        <p class="star-marx-pre-roll__hint">${game.i18n.format("STARMARX.Roll.PreRoll.AvailableZlotys", { value: zlotys })}</p>
+      </form>`;
+
+    return foundry.applications.api.DialogV2.prompt({
+      window: { title: game.i18n.localize("STARMARX.Roll.PreRoll.Title") },
+      content,
+      modal: true,
+      rejectClose: false,
+      ok: {
+        label: game.i18n.localize("STARMARX.Roll.PreRoll.Roll"),
+        callback: (event, button) => normalizeKamaradePreRollOptions({
+          contextualBonus: button.form.elements.contextualBonus.valueAsNumber,
+          zlotyOption: button.form.elements.zlotyOption.value
+        })
+      }
+    });
+  }
+
+  static #isPreRollOptionAllowed(preRoll, { targetedEnemy }) {
+    if (preRoll.zlotyOption !== KAMARADE_ZLOTY_ROLL_OPTIONS.picAGlace) return true;
+    if (KamaradeSheet.#canUseIcePick({ targetedEnemy })) return true;
+
+    ui.notifications.warn(game.i18n.localize("STARMARX.Roll.PreRoll.PicAGlaceUnavailable"));
+    return false;
+  }
+
+  static #canUseIcePick({ targetedEnemy }) {
+    return !!targetedEnemy && KamaradeSheet.#isCombatActive(game.combat);
+  }
+
+  static #isCombatActive(combat) {
+    return !!combat && combat.started !== false;
+  }
+
+  static async #applyPreRollActorUpdates(actor, preRoll) {
+    const updates = {};
+    if (preRoll.zlotyCost > 0) {
+      const currentZlotys = actor.system.zlotys?.value ?? 0;
+      if (currentZlotys < preRoll.zlotyCost) {
+        ui.notifications.warn(game.i18n.format("STARMARX.Roll.PreRoll.NotEnoughZlotys", {
+          actor: actor.name,
+          cost: preRoll.zlotyCost
+        }));
+        return false;
+      }
+
+      const base = actor.system.zlotys?.base ?? 0;
+      const bonus = computeKamaradeZlotysBonus(actor);
+      updates["system.zlotys.offset"] = currentZlotys - preRoll.zlotyCost - base - bonus;
+    }
+
+    if (preRoll.setHealthToOne) {
+      const max = actor.system.health?.max ?? 0;
+      if (max > 0) updates["system.health.offset"] = 1 - max;
+    }
+
+    if (Object.keys(updates).length > 0) await actor.update(updates);
+    return true;
+  }
+
   static #buildRollDetailRows({
     roll,
     traitLabel,
     traitTotal,
     modifiers,
+    preRoll,
     targetedEnemy,
     dangerositeModifier
   }) {
@@ -586,6 +706,15 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
         label: game.i18n.format("STARMARX.Roll.StatBonus", { stat: traitLabel })
       });
     }
+    if (preRoll?.detailKey) {
+      rows.push({ text: game.i18n.localize(preRoll.detailKey) });
+    }
+    if (preRoll?.contextualBonus !== 0) {
+      rows.push({
+        value: preRoll.contextualBonus,
+        label: game.i18n.localize("STARMARX.Roll.PreRoll.ContextualBonusDetail")
+      });
+    }
 
     for (const source of modifiers?.sources ?? []) {
       const rollBonus = source.rollBonus ?? 0;
@@ -593,6 +722,12 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       rows.push({
         value: rollBonus,
         label: game.i18n.localize(source.labelKey)
+      });
+    }
+    if (preRoll?.rollBonus !== 0) {
+      rows.push({
+        value: preRoll.rollBonus,
+        label: game.i18n.localize(preRoll.labelKey)
       });
     }
 
@@ -613,6 +748,7 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     traitLabel,
     traitTotal,
     modifiers,
+    preRoll,
     targetedEnemy
   }) {
     if (!targetedEnemy) return null;
@@ -647,17 +783,26 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     const rawDamage = terms.reduce((sum, term) => sum + term.value, 0);
     const cap = damageSource ? computeKamaradeDamageCap(actor, damageSource) : null;
     const capped = Number.isFinite(cap) && rawDamage > cap;
-    const damage = capped ? cap : rawDamage;
-    const rows = terms.map((term, index) => ({
+    let damage = capped ? cap : rawDamage;
+    const rows = terms.map(term => ({
       value: term.value,
       label: term.label,
-      forceSign: index > 0
+      forceSign: true
     }));
     if (capped) {
       rows.push({
         text: game.i18n.format("STARMARX.Roll.DamageCapApplied", {
           cap,
           source: KamaradeSheet.#getSigneName(actor, "petit")
+        })
+      });
+    }
+    if ((preRoll?.damageMultiplier ?? 1) !== 1) {
+      damage *= preRoll.damageMultiplier;
+      rows.push({
+        text: game.i18n.format(preRoll.damageDetailKey, {
+          multiplier: preRoll.damageMultiplier,
+          source: game.i18n.localize(preRoll.labelKey)
         })
       });
     }
@@ -713,6 +858,15 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       entry?.type === "signe" && normalizeSignSlug(entry.name) === slug
     );
     return item?.name ?? slug;
+  }
+
+  static #escapeHtml(value) {
+    return String(value ?? "")
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#039;");
   }
 
   // Reset every Trait rank to 0. Traits points spent drop to 0 as a result.

@@ -50,6 +50,7 @@ export function extractRollDiceValues(roll) {
   return dice.flatMap(die => {
     const results = Array.isArray(die?.results) ? die.results : [];
     return results
+      .filter(result => result?.active !== false)
       .map(result => Number(result?.result ?? result?.value))
       .filter(Number.isFinite);
   });

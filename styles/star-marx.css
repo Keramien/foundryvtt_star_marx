@@ -1290,3 +1290,38 @@
   outline: 2px solid var(--sm-gold);
   outline-offset: 2px;
 }
+
+.star-marx-pre-roll {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.star-marx-pre-roll__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-weight: 700;
+}
+
+.star-marx-pre-roll__field input,
+.star-marx-pre-roll__field select {
+  color: #fff;
+  background: var(--sm-border);
+}
+
+.star-marx-pre-roll__field select option {
+  color: #fff;
+  background: var(--sm-border);
+}
+
+.star-marx-pre-roll__field select option:disabled {
+  color: #8f8f8f;
+  background: var(--sm-border);
+}
+
+.star-marx-pre-roll__hint {
+  margin: 0;
+  color: var(--sm-muted);
+  font-size: 0.85rem;
+}
