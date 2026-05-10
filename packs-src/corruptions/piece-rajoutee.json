@@ -1,0 +1,18 @@
+{
+  "_id": "corpiecerajoutAA",
+  "name": "Pièce rajoutée",
+  "type": "corruption",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Le joueur ajoute un élément utile au récit. Coût indicatif : <strong>1</strong> si l'impact est faible, <strong>3</strong> s'il est modéré, <strong>5</strong> s'il est important.</p>",
+    "cost": "X"
+  },
+  "effects": [],
+  "folder": "flcorruptionAAAA",
+  "sort": 7,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!corpiecerajoutAA"
+}

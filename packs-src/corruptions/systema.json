@@ -1,0 +1,18 @@
+{
+  "_id": "corsystemaAAAAAA",
+  "name": "Systema",
+  "type": "corruption",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "description": "<p>L'adversaire du Kamarade est blessé même si le jet d'attaque est raté.</p>",
+    "cost": "3"
+  },
+  "effects": [],
+  "folder": "flcorruptionAAAA",
+  "sort": 5,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!corsystemaAAAAAA"
+}

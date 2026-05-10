@@ -1,0 +1,18 @@
+{
+  "_id": "coriconescommAAA",
+  "name": "Icônes du Communisme",
+  "type": "corruption",
+  "img": "icons/svg/card-joker.svg",
+  "system": {
+    "description": "<p>Le joueur tire une carte <strong>Icône du Communisme</strong>.</p>",
+    "cost": "1"
+  },
+  "effects": [],
+  "folder": "flcorruptionAAAA",
+  "sort": 9,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!coriconescommAAA"
+}

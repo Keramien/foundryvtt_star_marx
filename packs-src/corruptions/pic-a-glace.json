@@ -1,0 +1,18 @@
+{
+  "_id": "corpicaglaceAAAA",
+  "name": "Pic à glace",
+  "type": "corruption",
+  "img": "icons/svg/hazard.svg",
+  "system": {
+    "description": "<p>Utilisable en combat. Le Kamarade gagne <strong>+1 au jet</strong>, double ses dégâts après les autres restrictions, mais tombe à <strong>1 PV</strong>.</p>",
+    "cost": "3"
+  },
+  "effects": [],
+  "folder": "flcorruptionAAAA",
+  "sort": 6,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!corpicaglaceAAAA"
+}

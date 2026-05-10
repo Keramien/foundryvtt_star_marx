@@ -1,0 +1,18 @@
+{
+  "_id": "cormolotovAAAAAA",
+  "name": "Molotov",
+  "type": "corruption",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "description": "<p>Le Kamarade multiplie par <strong>2</strong> les dégâts qu'il inflige.</p>",
+    "cost": "2"
+  },
+  "effects": [],
+  "folder": "flcorruptionAAAA",
+  "sort": 1,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!cormolotovAAAAAA"
+}

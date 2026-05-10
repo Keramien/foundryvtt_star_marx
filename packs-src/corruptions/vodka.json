@@ -1,0 +1,18 @@
+{
+  "_id": "corvodkaAAAAAAAA",
+  "name": "Vodka !",
+  "type": "corruption",
+  "img": "icons/svg/coins.svg",
+  "system": {
+    "description": "<p>Le Kamarade récupère <strong>3 PV</strong>. Non utilisable en combat.</p>",
+    "cost": "1"
+  },
+  "effects": [],
+  "folder": "flcorruptionAAAA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!corvodkaAAAAAAAA"
+}

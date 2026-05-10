@@ -198,6 +198,7 @@
         "faiblesse": "Weakness",
         "atout": "Trump",
         "don": "Gift",
+        "corruption": "Corruption",
         "signe_soyouz": "Ship Sign"
       },
       "Common": {
@@ -301,6 +302,12 @@
         "Rank": "Rank"
       },
       "Hint": "Antagonist-only attribute (NPCs, monsters). Cannot be bought by a Kamarade."
+    },
+    "Corruption": {
+      "Fields": {
+        "Cost": "Cost (Zlotys)"
+      },
+      "Hint": "Player aid for corruptions bought with Zlotys. No automated effect."
     },
     "SigneSoyouz": {
       "Banner": "Ship-only distinctive sign",
@@ -424,6 +431,7 @@
         "Roll": "Roll",
         "ContextualBonus": "Context bonus/penalty",
         "ContextualBonusDetail": "context bonus",
+        "HelpOption": "Help",
         "ZlotyOption": "Zloty corruption",
         "AvailableZlotys": "Available Zlotys: {value}",
         "NotEnoughZlotys": "{actor} does not have enough Zlotys ({cost} required).",
@@ -441,6 +449,17 @@
           "PicAGlaceOption": "Ice Pick ({cost}): +1, damage x2 but you fall to 1 HP",
           "PicAGlaceDamageDetail": "x{multiplier} {source}"
         }
+      },
+      "Help": {
+        "PlusOne": "Help +1",
+        "PlusOneOption": "Help +1: threshold 9",
+        "PlusTwo": "Help +2",
+        "PlusTwoOption": "Help +2: threshold 12",
+        "PlusThree": "Help +3",
+        "PlusThreeOption": "Help +3: threshold 15",
+        "FlavorTitle": "{trait}: {help}",
+        "SuccessLabel": "{help} succeeded",
+        "FailureLabel": "{help} failed"
       },
       "Success": "Success",
       "Failure": "Failure",

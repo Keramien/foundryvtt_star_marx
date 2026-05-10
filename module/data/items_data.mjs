@@ -151,6 +151,17 @@ export class DonData extends foundry.abstract.TypeDataModel {
   }
 }
 
+// Zloty corruption powers are player-facing rule aids. Their cost can be
+// variable ("X"), so it stays textual instead of numeric.
+export class CorruptionData extends foundry.abstract.TypeDataModel {
+  static defineSchema() {
+    return {
+      description: description(),
+      cost: new StringField({ required: true, initial: "1" })
+    };
+  }
+}
+
 // Ship-exclusive special sign, bought with 2 XP (pooled between Kamarades)
 // for the crew's vaisseau. Distinct from character `signe` so the two pools
 // never mix. `tag` is a free-form grouping string ("modele", "armement",

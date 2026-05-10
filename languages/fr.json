@@ -198,6 +198,7 @@
         "faiblesse": "Faiblesse",
         "atout": "Atout",
         "don": "Don",
+        "corruption": "Corruption",
         "signe_soyouz": "Signe de Soyouz"
       },
       "Common": {
@@ -301,6 +302,12 @@
         "Rank": "Rang"
       },
       "Hint": "Attribut réservé aux antagonistes (PNJ, monstres). Non achetable par un Kamarade."
+    },
+    "Corruption": {
+      "Fields": {
+        "Cost": "Coût (Zlotys)"
+      },
+      "Hint": "Aide de jeu pour les corruptions achetées avec des Zlotys. Aucun effet automatique."
     },
     "SigneSoyouz": {
       "Banner": "Signe particulier réservé aux vaisseaux",
@@ -424,6 +431,7 @@
         "Roll": "Lancer",
         "ContextualBonus": "Bonus/malus contextuel",
         "ContextualBonusDetail": "bonus contextuel",
+        "HelpOption": "Aide",
         "ZlotyOption": "Corruption aux Zlotys",
         "AvailableZlotys": "Zlotys disponibles : {value}",
         "NotEnoughZlotys": "{actor} n'a pas assez de Zlotys ({cost} requis).",
@@ -441,6 +449,17 @@
           "PicAGlaceOption": "Pic à glace ({cost}) : +1, dégât x2 mais vous tombez à 1 PV",
           "PicAGlaceDamageDetail": "x{multiplier} {source}"
         }
+      },
+      "Help": {
+        "PlusOne": "Aide +1",
+        "PlusOneOption": "Aide +1 : seuil 9",
+        "PlusTwo": "Aide +2",
+        "PlusTwoOption": "Aide +2 : seuil 12",
+        "PlusThree": "Aide +3",
+        "PlusThreeOption": "Aide +3 : seuil 15",
+        "FlavorTitle": "{trait} : {help}",
+        "SuccessLabel": "{help} réussie",
+        "FailureLabel": "{help} échouée"
       },
       "Success": "Réussite",
       "Failure": "Échec",

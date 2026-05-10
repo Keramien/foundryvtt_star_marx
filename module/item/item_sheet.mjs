@@ -33,6 +33,7 @@ export class StarMarxItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
       signe:         `systems/${SYSTEM_ID}/templates/item/parts/signe.hbs`,
       clef:          `systems/${SYSTEM_ID}/templates/item/parts/clef.hbs`,
       don:           `systems/${SYSTEM_ID}/templates/item/parts/don.hbs`,
+      corruption:    `systems/${SYSTEM_ID}/templates/item/parts/corruption.hbs`,
       signe_soyouz:  `systems/${SYSTEM_ID}/templates/item/parts/signe_soyouz.hbs`
     };
     if (parts.body && bodyByType[type]) {

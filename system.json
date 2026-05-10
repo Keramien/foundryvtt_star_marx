@@ -52,6 +52,7 @@
       "faiblesse":     {},
       "atout":         {},
       "don":           {},
+      "corruption":    {},
       "signe_soyouz":  {}
     }
   },
@@ -81,6 +82,13 @@
       "name": "dons",
       "label": "Dons",
       "path": "packs/dons",
+      "type": "Item",
+      "system": "star_marx"
+    },
+    {
+      "name": "corruptions",
+      "label": "Corruption",
+      "path": "packs/corruptions",
       "type": "Item",
       "system": "star_marx"
     },

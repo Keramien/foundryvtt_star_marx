@@ -1,0 +1,15 @@
+<section class="item-body corruption-body{{#unless isEditable}} item-body--readonly{{/unless}}">
+
+  <p class="hint">{{localize "STARMARX.Corruption.Hint"}}</p>
+
+  <div class="form-group">
+    <label>{{localize "STARMARX.Corruption.Fields.Cost"}}</label>
+    <input type="text" name="system.cost" value="{{system.cost}}">
+  </div>
+
+  <div class="form-group">
+    <label>{{localize "STARMARX.Sheet.Fields.Description"}}</label>
+    <prose-mirror name="system.description" value="{{system.description}}"></prose-mirror>
+  </div>
+
+</section>

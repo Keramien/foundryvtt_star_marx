@@ -1,0 +1,18 @@
+{
+  "_id": "corapparatchikAA",
+  "name": "Apparatchik",
+  "type": "corruption",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "description": "<p>Le Kamarade lance <strong>3 dés</strong> et additionne leurs résultats.</p>",
+    "cost": "2"
+  },
+  "effects": [],
+  "folder": "flcorruptionAAAA",
+  "sort": 4,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!corapparatchikAA"
+}

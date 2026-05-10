@@ -1,0 +1,18 @@
+{
+  "_id": "correquisitionAA",
+  "name": "Réquisition des moyens de production",
+  "type": "corruption",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>Pour un prix fixé par le Secrétaire Général, le joueur fait du bruit avec ses dés derrière un panneau et annonce si son jet est réussi ou raté.</p>",
+    "cost": "X"
+  },
+  "effects": [],
+  "folder": "flcorruptionAAAA",
+  "sort": 8,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!correquisitionAA"
+}

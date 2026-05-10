@@ -1,0 +1,18 @@
+{
+  "_id": "cormembrepartiAA",
+  "name": "Membre du Parti",
+  "type": "corruption",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "description": "<p>Le Kamarade lance <strong>3 dés</strong> et garde les <strong>2 meilleurs</strong>.</p>",
+    "cost": "1"
+  },
+  "effects": [],
+  "folder": "flcorruptionAAAA",
+  "sort": 3,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!cormembrepartiAA"
+}
