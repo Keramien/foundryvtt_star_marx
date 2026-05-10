@@ -2,6 +2,8 @@ import { describe, test } from "node:test";
 import assert from "node:assert/strict";
 import {
   KAMARADE_ZLOTY_ROLL_OPTIONS,
+  computeKamaradeHelpModifier,
+  normalizeKamaradeHelpRollOptions,
   normalizeKamaradePreRollOptions
 } from "../../module/helpers/kamarade-pre-roll.mjs";
 
@@ -47,5 +49,29 @@ describe("Kamarade pre-roll options", () => {
     assert.equal(options.rollBonus, 1);
     assert.equal(options.damageMultiplier, 2);
     assert.equal(options.setHealthToOne, true);
+  });
+
+  test("normalizes help choices to their threshold and modifier amount", () => {
+    assert.deepEqual(
+      normalizeKamaradeHelpRollOptions("help1"),
+      {
+        key: "help1",
+        labelKey: "STARMARX.Roll.Help.PlusOne",
+        optionLabelKey: "STARMARX.Roll.Help.PlusOneOption",
+        amount: 1,
+        threshold: 9
+      }
+    );
+    assert.equal(normalizeKamaradeHelpRollOptions("help2").threshold, 12);
+    assert.equal(normalizeKamaradeHelpRollOptions("help3").threshold, 15);
+  });
+
+  test("computes help modifier from success, failure, and critical outcomes", () => {
+    const help = normalizeKamaradeHelpRollOptions("help2");
+
+    assert.equal(computeKamaradeHelpModifier(help, { success: true, critical: false }), 2);
+    assert.equal(computeKamaradeHelpModifier(help, { success: false, critical: false }), -2);
+    assert.equal(computeKamaradeHelpModifier(help, { success: true, critical: true }), 4);
+    assert.equal(computeKamaradeHelpModifier(help, { success: false, critical: true }), -4);
   });
 });

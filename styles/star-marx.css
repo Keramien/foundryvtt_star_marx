@@ -501,15 +501,15 @@
   background: transparent;
   border: 1px solid var(--sm-border);
   color: var(--sm-ink);
-  width: 22px;
-  height: 22px;
+  width: 2.2rem;
+  height: 2.2rem;
   border-radius: 3px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0;
-  font-size: 0.75rem;
+  font-size: 0.95rem;
 }
 
 .star-marx .trait-btn:hover {
@@ -524,16 +524,33 @@
   border-color: var(--sm-gold);
 }
 
+.star-marx .trait-btn.trait-help {
+  position: relative;
+  margin-right: 1.3rem;
+}
+
+.star-marx .trait-btn.trait-help::after {
+  content: "";
+  position: absolute;
+  top: 15%;
+  right: -1.0rem;
+  bottom: 15%;
+  width: 1px;
+  background: color-mix(in srgb, var(--sm-border), transparent 35%);
+  pointer-events: none;
+}
+
 .star-marx .trait-name {
   font-size: 0.9rem;
+  text-transform: uppercase;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 .star-marx .trait-field {
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 2.2rem;
+  height: 2.2rem;
   box-sizing: border-box;
   text-align: center;
   background: var(--sm-paper);
@@ -551,8 +568,29 @@
   background: color-mix(in srgb, var(--sm-paper), var(--sm-border) 18%);
 }
 
+.star-marx .trait-auto,
+.star-marx .trait-points,
+.star-marx .trait-manual-bonus,
+.star-marx .trait-bonus,
+.star-marx .trait-avaries {
+  width: 1.9rem;
+  height: 1.9rem;
+  font-size: 0.85rem;
+}
+
+.star-marx .trait-points {
+  margin-left: 0.2rem;
+}
+
 .star-marx .trait-manual-bonus {
   color: var(--sm-muted);
+}
+
+.star-marx .trait-manual-bonus::placeholder,
+.star-marx .trait-bonus::placeholder,
+.star-marx .trait-avaries::placeholder {
+  font-size: 0.62rem;
+  opacity: 0.8;
 }
 
 .star-marx .trait-op {
@@ -1274,6 +1312,10 @@
   margin-top: 0.45rem;
 }
 
+.chat-message .star-marx-help-roll {
+  margin-top: 0.45rem;
+}
+
 .chat-message .star-marx-damage-roll .dice-tooltip {
   display: none;
 }
@@ -1322,6 +1364,6 @@
 
 .star-marx-pre-roll__hint {
   margin: 0;
-  color: var(--sm-muted);
+  color: #fff;
   font-size: 0.85rem;
 }

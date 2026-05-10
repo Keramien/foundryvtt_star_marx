@@ -10,7 +10,7 @@ export function registerStarMarxChatRollBreakdownHooks(hooks = globalThis.Hooks)
 
 export function injectStarMarxChatRollBreakdown(message, html) {
   const root = toHTMLElement(html);
-  if (!root || root.querySelector(".star-marx-roll-breakdown, .star-marx-damage-roll")) return;
+  if (!root || root.querySelector(".star-marx-roll-breakdown, .star-marx-damage-roll, .star-marx-help-roll")) return;
 
   const breakdown = getRollBreakdownFlag(message);
   if (!breakdown) return;
@@ -22,8 +22,10 @@ export function injectStarMarxChatRollBreakdown(message, html) {
 
   const rollDetails = renderRollDetails(breakdown.rollRows);
   const damageDetails = renderDamageDetails(breakdown.damage);
+  const helpDetails = renderHelpDetails(breakdown.help);
   if (rollDetails) diceRolls.insertAdjacentHTML("afterend", rollDetails);
   if (damageDetails) diceRoll.insertAdjacentHTML("afterend", damageDetails);
+  if (helpDetails) diceRoll.insertAdjacentHTML("afterend", helpDetails);
 
   for (const toggle of root.querySelectorAll("[data-star-marx-damage-toggle]")) {
     toggle.addEventListener("click", onDamageToggle);
@@ -63,6 +65,17 @@ function renderDamageDetails(damage) {
     </div>`;
 }
 
+function renderHelpDetails(help) {
+  if (!help || !Number.isFinite(Number(help.total))) return "";
+  return `
+    <div class="star-marx-help-roll dice-roll">
+      <div class="dice-result">
+        <div class="dice-formula">${escapeHtml(help.label)}</div>
+        <h4 class="dice-total star-marx-help-total">${escapeHtml(formatSignedNumber(help.total))}</h4>
+      </div>
+    </div>`;
+}
+
 function renderBreakdownRow(row) {
   return `<li>${escapeHtml(formatBreakdownRow(row))}</li>`;
 }
@@ -70,8 +83,13 @@ function renderBreakdownRow(row) {
 function formatBreakdownRow(row) {
   if (row?.text) return row.text;
   const value = Number(row?.value ?? 0);
-  const sign = value > 0 && row?.forceSign !== false ? "+" : "";
-  return `${sign}${value} ${row?.label ?? ""}`;
+  return `${formatSignedNumber(value, { forceSign: row?.forceSign !== false })} ${row?.label ?? ""}`;
+}
+
+function formatSignedNumber(value, { forceSign = true } = {}) {
+  const number = Number(value ?? 0);
+  const sign = number > 0 && forceSign ? "+" : "";
+  return `${sign}${number}`;
 }
 
 function onDamageToggle(event) {

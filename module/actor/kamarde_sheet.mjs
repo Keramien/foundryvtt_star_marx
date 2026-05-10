@@ -7,8 +7,10 @@ import {
 import { openStarMarxImagePicker } from "../helpers/image-picker.mjs";
 import {
   KAMARADE_ZLOTY_ROLL_OPTIONS,
-  getKamaradeZlotyRollOptionConfig,
+  computeKamaradeHelpModifier,
+  getKamaradeHelpRollOptionConfigs,
   getKamaradeZlotyRollOptionConfigs,
+  normalizeKamaradeHelpRollOptions,
   normalizeKamaradePreRollOptions
 } from "../helpers/kamarade-pre-roll.mjs";
 import {
@@ -484,6 +486,7 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       allowIcePick: false
     });
     if (!preRoll) return;
+    if (!KamaradeSheet.#isPreRollOptionAllowed(preRoll, { targetedEnemy: null })) return;
     if (!await KamaradeSheet.#applyPreRollActorUpdates(this.actor, preRoll)) return;
 
     const total = this.actor.system.fearResistance?.value ?? 0;
@@ -596,12 +599,67 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     });
   }
 
-  // Help roll — placeholder until the mechanic is designed.
   static async #onHelpTrait(event, target) {
-    ui.notifications.info(game.i18n.localize("STARMARX.Sheet.Action.HelpTraitTodo"));
+    const doctrine = target.dataset.doctrine;
+    const traitId = target.dataset.trait;
+    if (!this.actor.system.traits?.[doctrine]?.[traitId]) return;
+
+    const preRoll = await KamaradeSheet.#promptPreRollOptions({
+      actor: this.actor,
+      allowIcePick: false,
+      includeHelp: true
+    });
+    if (!preRoll) return;
+    if (!KamaradeSheet.#isPreRollOptionAllowed(preRoll, { targetedEnemy: null })) return;
+    if (!await KamaradeSheet.#applyPreRollActorUpdates(this.actor, preRoll)) return;
+
+    const trait = this.actor.system.traits?.[doctrine]?.[traitId];
+    if (!trait) return;
+
+    const total = trait.total ?? 0;
+    const formula = buildStarMarxRollFormula(preRoll.baseFormula, [
+      total,
+      preRoll.contextualBonus
+    ]);
+    const roll = await new Roll(formula).evaluate();
+    const outcome = evaluateStarMarxRollOutcome(roll, { threshold: preRoll.help.threshold });
+
+    const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
+    const traitLabel = game.i18n.localize(`STARMARX.Trait.${cap(doctrine)}.${cap(traitId)}`);
+    const helpLabel = game.i18n.localize(preRoll.help.labelKey);
+    const flavor = `<strong>${game.i18n.format("STARMARX.Roll.Help.FlavorTitle", {
+        trait: traitLabel,
+        help: helpLabel
+      })}</strong>
+      ${buildStarMarxRollOutcomeFlavor(outcome)}
+      <small>(${game.i18n.localize("STARMARX.Roll.Threshold")} ${preRoll.help.threshold})</small>`;
+
+    const helpModifier = computeKamaradeHelpModifier(preRoll.help, outcome);
+    const rollBreakdown = {
+      rollRows: KamaradeSheet.#buildRollDetailRows({
+        roll,
+        traitLabel,
+        traitTotal: total,
+        modifiers: null,
+        preRoll,
+        targetedEnemy: null,
+        dangerositeModifier: 0
+      }),
+      help: KamaradeSheet.#buildHelpBreakdown({
+        help: preRoll.help,
+        helpModifier,
+        outcome
+      })
+    };
+
+    await roll.toMessage({
+      speaker: ChatMessage.getSpeaker({ actor: this.actor }),
+      flavor,
+      flags: { [SYSTEM_ID]: { rollBreakdown } }
+    });
   }
 
-  static async #promptPreRollOptions({ actor, allowIcePick }) {
+  static async #promptPreRollOptions({ actor, allowIcePick, includeHelp = false }) {
     const zlotys = actor.system.zlotys?.value ?? 0;
     const optionHtml = getKamaradeZlotyRollOptionConfigs()
       .map(option => {
@@ -612,9 +670,22 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
         return `<option value="${option.key}"${disabled}>${KamaradeSheet.#escapeHtml(label)}</option>`;
       })
       .join("");
+    const helpHtml = includeHelp
+      ? `
+        <label class="star-marx-pre-roll__field">
+          <span>${game.i18n.localize("STARMARX.Roll.PreRoll.HelpOption")}</span>
+          <select name="helpOption">
+            ${getKamaradeHelpRollOptionConfigs().map(option => {
+              const label = game.i18n.localize(option.optionLabelKey);
+              return `<option value="${option.key}">${KamaradeSheet.#escapeHtml(label)}</option>`;
+            }).join("")}
+          </select>
+        </label>`
+      : "";
 
     const content = `
       <form class="star-marx-pre-roll">
+        ${helpHtml}
         <label class="star-marx-pre-roll__field">
           <span>${game.i18n.localize("STARMARX.Roll.PreRoll.ContextualBonus")}</span>
           <input type="number" name="contextualBonus" value="0" step="1">
@@ -633,10 +704,16 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       rejectClose: false,
       ok: {
         label: game.i18n.localize("STARMARX.Roll.PreRoll.Roll"),
-        callback: (event, button) => normalizeKamaradePreRollOptions({
-          contextualBonus: button.form.elements.contextualBonus.valueAsNumber,
-          zlotyOption: button.form.elements.zlotyOption.value
-        })
+        callback: (event, button) => {
+          const preRoll = normalizeKamaradePreRollOptions({
+            contextualBonus: button.form.elements.contextualBonus.valueAsNumber,
+            zlotyOption: button.form.elements.zlotyOption.value
+          });
+          if (includeHelp) {
+            preRoll.help = normalizeKamaradeHelpRollOptions(button.form.elements.helpOption.value);
+          }
+          return preRoll;
+        }
       }
     });
   }
@@ -812,6 +889,18 @@ export class KamaradeSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       toggleLabel: game.i18n.localize("STARMARX.Roll.DamageToggleHint"),
       total: damage,
       rows
+    };
+  }
+
+  static #buildHelpBreakdown({ help, helpModifier, outcome }) {
+    const helpLabel = game.i18n.localize(help.labelKey);
+    const labelKey = outcome.success
+      ? "STARMARX.Roll.Help.SuccessLabel"
+      : "STARMARX.Roll.Help.FailureLabel";
+
+    return {
+      label: game.i18n.format(labelKey, { help: helpLabel }),
+      total: helpModifier
     };
   }
 

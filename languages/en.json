@@ -350,7 +350,7 @@
         "Bonus": "Bonus (signs, equipment)",
         "BonusPlaceholder": "bonus",
         "Avaries": "Damage / avaries (usually negative)",
-        "AvariesPlaceholder": "avaries",
+        "AvariesPlaceholder": "avarie",
         "Total": "Effective total (score + bonus + avaries)"
       },
       "Sections": {
@@ -460,6 +460,18 @@
         "FlavorTitle": "{trait}: {help}",
         "SuccessLabel": "{help} succeeded",
         "FailureLabel": "{help} failed"
+      },
+      "Soyouz": {
+        "Actor": "Acting Kamarade",
+        "ActorTrait": "Kamarade Trait used",
+        "Computer": "On-board computer",
+        "NoActorTrait": "No Kamarade Trait",
+        "ZlotyHint": "Zlotys are spent by the selected Kamarade. The on-board computer officially bribes nobody.",
+        "ComputerCannotSpendZlotys": "The on-board computer cannot spend Zlotys.",
+        "KamaradeMissing": "Missing Kamarade for this Soyouz post.",
+        "KamaradeTraitBonus": "{actor}'s {trait}",
+        "ShipTraitBonus": "Soyouz {trait}",
+        "ShipDamageFromTrait": "Soyouz {trait} ({total})"
       },
       "Success": "Success",
       "Failure": "Failure",

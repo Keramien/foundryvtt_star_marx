@@ -1,1 +1,5 @@
-2026/05/08-10:22:50.012 3f94 Delete type=3 #1
+2026/05/10-14:54:15.094 5acc Recovering log #3
+2026/05/10-14:54:15.094 5acc Level-0 table #5: started
+2026/05/10-14:54:15.101 5acc Level-0 table #5: 9272 bytes OK
+2026/05/10-14:54:15.116 5acc Delete type=0 #3
+2026/05/10-14:54:15.116 5acc Delete type=3 #2

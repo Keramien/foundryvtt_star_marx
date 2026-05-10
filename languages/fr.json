@@ -350,7 +350,7 @@
         "Bonus": "Bonus (signes, équipement)",
         "BonusPlaceholder": "bonus",
         "Avaries": "Avaries (dégâts encaissés, généralement négatif)",
-        "AvariesPlaceholder": "avaries",
+        "AvariesPlaceholder": "avarie",
         "Total": "Total effectif (score + bonus + avaries)"
       },
       "Sections": {
@@ -460,6 +460,18 @@
         "FlavorTitle": "{trait} : {help}",
         "SuccessLabel": "{help} réussie",
         "FailureLabel": "{help} échouée"
+      },
+      "Soyouz": {
+        "Actor": "Kamarade qui agit",
+        "ActorTrait": "Trait Kamarade utilisé",
+        "Computer": "Ordinateur de bord",
+        "NoActorTrait": "Aucun trait Kamarade",
+        "ZlotyHint": "Les Zlotys sont dépensés par le Kamarade choisi. L'ordinateur de bord ne corrompt personne, officiellement.",
+        "ComputerCannotSpendZlotys": "L'ordinateur de bord ne peut pas dépenser de Zlotys.",
+        "KamaradeMissing": "Kamarade introuvable pour ce poste de Soyouz.",
+        "KamaradeTraitBonus": "{trait} de {actor}",
+        "ShipTraitBonus": "{trait} du Soyouz",
+        "ShipDamageFromTrait": "{trait} du Soyouz ({total})"
       },
       "Success": "Réussite",
       "Failure": "Échec",
