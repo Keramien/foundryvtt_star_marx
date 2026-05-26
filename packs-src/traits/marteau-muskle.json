@@ -1,0 +1,20 @@
+{
+  "_id": "trtmartea034ugvf",
+  "name": "Muskle",
+  "type": "trait",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "doctrine": "marteau",
+    "traitKey": "marteau.muskle",
+    "shortDescription": "soulever du poids, briser des choses, etc.",
+    "description": "<p>Ce Trait permet de mesurer la force musculaire du Kamarade pour soulever du poids, briser des choses, forcer ce qui résiste, et rappeler par l'exemple que la matière doit plier devant la volonté collectivisée.</p>"
+  },
+  "effects": [],
+  "folder": "fldtraitmarteauA",
+  "sort": 6,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!trtmartea034ugvf"
+}

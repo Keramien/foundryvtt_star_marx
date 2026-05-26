@@ -186,6 +186,43 @@
         "Samizdats": "Samizdats",
         "Tchernobyl": "Tchernobyl",
         "Universitet": "Universitet"
+      },
+      "ShortDescription": {
+        "Marteau": {
+          "Ak47": "tir, lancer, etc.",
+          "BriseurDeGreve": "intimider, racketter, etc.",
+          "Goulag": "survivre en milieu hostile, manger des trucs immondes sans être malade, etc.",
+          "Karkass": "solidité physique, résistance, etc.",
+          "Lutte": "se battre au contact, immobiliser quelqu'un, etc.",
+          "MedailleOlympique": "nager, courir, etc.",
+          "Muskle": "soulever du poids, briser des choses, etc.",
+          "PrisonnierPolitique": "résister à la torture, jouer les soumis, etc.",
+          "Soyouz": "piloter un vaisseau spatial, identifier un modèle, etc."
+        },
+        "Faucille": {
+          "Acrobate": "grimper, faire des entrechats entre des rayons laser, etc.",
+          "ActionPartisane": "poser des bombes, coller des affiches sans se faire remarquer, etc.",
+          "Bolchoi": "danse, piano, etc.",
+          "Corruption": "graisser les pattes, faire des faux papiers, etc.",
+          "EtreAuParfum": "connaître les dernières rumeurs, faire chanter, etc.",
+          "Grouillot": "laver la vaisselle, faire disparaître les traces compromettantes, etc.",
+          "MarcheNoir": "dégotter des marchandises, estimer une valeur marchande, etc.",
+          "PoupeeRusse": "se faire entretenir, confidences sur l'oreiller, etc.",
+          "Propagande": "mentir, faire diversion, etc.",
+          "SocialTraitre": "se cacher dans l'ombre, se déplacer sans faire de bruit, etc."
+        },
+        "Etoile": {
+          "Dopage": "soigner, fabriquer une drogue, etc.",
+          "JeuxEtParis": "tricher aux cartes, bluffer, etc.",
+          "Kgb": "remarquer quelque chose, filer quelqu'un, etc.",
+          "Machiniste": "réparer une machine, un vaisseau spatial, etc.",
+          "OperateurCodeur": "pirater un ordinateur, trouver une information sur Interkom, etc.",
+          "Pionnier": "parler une langue étrangère, connaître une civilisation nemtsy, etc.",
+          "RechercheConception": "inventer une machine, une nouvelle substance chimique, etc.",
+          "Samizdats": "journalisme, publier malgré la censure, etc.",
+          "Tchernobyl": "Trait des mutants, des robots, etc. (pouvoir spécial)",
+          "Universitet": "littérature, Histoire, etc."
+        }
       }
     },
     "Item": {
@@ -199,6 +236,8 @@
         "atout": "Atout",
         "don": "Don",
         "corruption": "Corruption",
+        "trait": "Trait Kamarade",
+        "trait_soyouz": "Trait Soyouz",
         "signe_soyouz": "Signe de Soyouz"
       },
       "Common": {
@@ -309,6 +348,17 @@
       },
       "Hint": "Aide de jeu pour les corruptions achetées avec des Zlotys. Aucun effet automatique."
     },
+    "TraitReference": {
+      "Banner": {
+        "trait": "Aide de jeu pour un Trait de Kamarade",
+        "trait_soyouz": "Aide de jeu pour un Trait de Soyouz"
+      },
+      "Fields": {
+        "Doctrine": "Doctrine",
+        "ShortDescription": "Description courte",
+        "Description": "Description détaillée"
+      }
+    },
     "SigneSoyouz": {
       "Banner": "Signe particulier réservé aux vaisseaux",
       "Fields": {
@@ -367,6 +417,17 @@
         "Datcha": "DATCHA",
         "Tetris": "TÉTRIS",
         "MurDeFer": "MUR DE FER"
+      },
+      "Trait": {
+        "ShortDescription": {
+          "Tupolev": "manœuvrer, accélérer, semer des poursuivants, etc.",
+          "OrgueDeStaline": "tirer, pilonner, faire ratata, etc.",
+          "Parade": "impressionner, négocier, forcer un blocus, etc.",
+          "Lebedev": "scanner, calculer, pirater l'Interkom, etc.",
+          "Datcha": "dormir, cuisiner, survivre aux longs trajets, etc.",
+          "Tetris": "charger, stocker, transporter, emboutir avec la masse du vaisseau, etc.",
+          "MurDeFer": "encaisser, blinder, rester pressurisé, etc."
+        }
       },
       "Postes": {
         "Pilote": "Pilote",

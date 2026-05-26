@@ -1,0 +1,19 @@
+{
+  "_id": "trsmurdef1lpjoyx",
+  "name": "MUR DE FER",
+  "type": "trait_soyouz",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "traitKey": "murDeFer",
+    "shortDescription": "encaisser, blinder, rester pressurisé, etc.",
+    "description": "<p>MUR DE FER représente le blindage et l'armure du vaisseau, sa résistance aux impacts, mais surtout ses points de vie.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 6,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!trsmurdef1lpjoyx"
+}

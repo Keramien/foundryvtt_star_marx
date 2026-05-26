@@ -1,0 +1,20 @@
+{
+  "_id": "trtetoile17bt1ef",
+  "name": "Pionnier",
+  "type": "trait",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "doctrine": "etoile",
+    "traitKey": "etoile.pionnier",
+    "shortDescription": "parler une langue étrangère, connaître une civilisation nemtsy, etc.",
+    "description": "<p>Ce Trait regroupe toutes les compétences d'ethnologie et de xénologie.</p><p>Il sert à parler une langue étrangère, connaître une civilisation nemtsy, ou comprendre les us et coutumes d'un pays, d'une tribu ou d'une bureaucratie locale.</p>"
+  },
+  "effects": [],
+  "folder": "fldtraitetoileAA",
+  "sort": 24,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!trtetoile17bt1ef"
+}

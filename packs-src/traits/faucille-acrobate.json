@@ -1,0 +1,20 @@
+{
+  "_id": "trtfaucil1446pnl",
+  "name": "Acrobate",
+  "type": "trait",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "doctrine": "faucille",
+    "traitKey": "faucille.acrobate",
+    "shortDescription": "grimper, faire des entrechats entre des rayons laser, etc.",
+    "description": "<p>Ce Trait regroupe toutes les actions faisant appel à l'agilité et à la souplesse : grimper, faire des entrechats entre des rayons laser, se faufiler avec panache, etc.</p>"
+  },
+  "effects": [],
+  "folder": "fldtraitfaucille",
+  "sort": 9,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!trtfaucil1446pnl"
+}

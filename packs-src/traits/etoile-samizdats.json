@@ -1,0 +1,20 @@
+{
+  "_id": "trtetoile1i7ihwn",
+  "name": "Samizdats",
+  "type": "trait",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "doctrine": "etoile",
+    "traitKey": "etoile.samizdats",
+    "shortDescription": "journalisme, publier malgré la censure, etc.",
+    "description": "<p>Ce Trait regroupe toutes les compétences liées au journalisme et à l'édition.</p><p>Il sert à écrire un livre ou un article, enquêter, publier malgré la censure, ou faire disparaître un stand alors qu'arrive la Tcheka pendant une convention clandestine.</p>"
+  },
+  "effects": [],
+  "folder": "fldtraitetoileAA",
+  "sort": 26,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!trtetoile1i7ihwn"
+}

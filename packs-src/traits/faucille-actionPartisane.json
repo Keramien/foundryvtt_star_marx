@@ -1,0 +1,20 @@
+{
+  "_id": "trtfaucil1j8yiwr",
+  "name": "Action Partisane",
+  "type": "trait",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "doctrine": "faucille",
+    "traitKey": "faucille.actionPartisane",
+    "shortDescription": "poser des bombes, coller des affiches sans se faire remarquer, etc.",
+    "description": "<p>Ce Trait permet aux Kamarades de concevoir et d'effectuer des actions politiques interdites sans se faire surprendre par la police politique ou dénoncer par un voisin zélé.</p><p>Il couvre aussi bien le collage d'affiches en douce que la pose de bombe ou le repérage des issues pour un attentat nudiste.</p>"
+  },
+  "effects": [],
+  "folder": "fldtraitfaucille",
+  "sort": 10,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!trtfaucil1j8yiwr"
+}

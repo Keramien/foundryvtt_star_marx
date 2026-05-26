@@ -1,0 +1,20 @@
+{
+  "_id": "trtmartea1kc1c1f",
+  "name": "Goulag",
+  "type": "trait",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "doctrine": "marteau",
+    "traitKey": "marteau.goulag",
+    "shortDescription": "survivre en milieu hostile, manger des trucs immondes sans être malade, etc.",
+    "description": "<p>Ce Trait permet aux Kamarades de survivre dans les villes polluées de l'Union, les jungles hostiles de la Border Zone et les goulags divers qui parsèment l'Univers.</p><p>Grâce à lui, un Kamarade peut manger des trucs immondes sans tomber gravement malade, marcher avec deux chaussures gauches, identifier une plante toxique, monter un campement de fortune, ou survivre au vide une minute de plus avec des moyens absolument peu recommandables.</p>"
+  },
+  "effects": [],
+  "folder": "fldtraitmarteauA",
+  "sort": 2,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!trtmartea1kc1c1f"
+}

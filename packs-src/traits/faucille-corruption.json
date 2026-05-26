@@ -1,0 +1,20 @@
+{
+  "_id": "trtfaucil11vqqth",
+  "name": "Corruption",
+  "type": "trait",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "doctrine": "faucille",
+    "traitKey": "faucille.corruption",
+    "shortDescription": "graisser les pattes, faire des faux papiers, etc.",
+    "description": "<p>Dans un monde gangréné par la pénurie, le népotisme et l'arbitraire, ce Trait regroupe les capacités du Kamarade à obtenir ce qui est théoriquement interdit en échange de biens matériels ou autres.</p><p>Il sert notamment à graisser des pattes, faire des faux papiers et transformer l'administration en partenaire provisoirement coopératif.</p>"
+  },
+  "effects": [],
+  "folder": "fldtraitfaucille",
+  "sort": 12,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!trtfaucil11vqqth"
+}

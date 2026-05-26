@@ -1,0 +1,20 @@
+{
+  "_id": "trtetoile0b58zc0",
+  "name": "Opérateur Codeur",
+  "type": "trait",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "doctrine": "etoile",
+    "traitKey": "etoile.operateurCodeur",
+    "shortDescription": "pirater un ordinateur, trouver une information sur Interkom, etc.",
+    "description": "<p>Ce Trait regroupe toutes les capacités informatiques : pirater un ordinateur, trouver une information sur Interkom, comprendre une interface hostile, etc.</p>"
+  },
+  "effects": [],
+  "folder": "fldtraitetoileAA",
+  "sort": 23,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!trtetoile0b58zc0"
+}

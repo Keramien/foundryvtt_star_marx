@@ -1,0 +1,20 @@
+{
+  "_id": "trtmartea1jo5vmc",
+  "name": "Karkass",
+  "type": "trait",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "doctrine": "marteau",
+    "traitKey": "marteau.karkass",
+    "shortDescription": "solidité physique, résistance, etc.",
+    "description": "<p>Ce Trait regroupe toute action, talent ou attitude faisant appel à la résistance physique du Kamarade.</p><p>On doit compter dessus pour survivre à une baignade dans une mer d'hydrocarbures ou à un baiser à la russe avec un Canichk, cette race de Nemtsyi très poilue et dépourvue d'œil qui porte tout à la bouche pour l'analyser.</p>"
+  },
+  "effects": [],
+  "folder": "fldtraitmarteauA",
+  "sort": 3,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!trtmartea1jo5vmc"
+}

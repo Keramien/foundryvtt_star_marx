@@ -1,0 +1,19 @@
+{
+  "_id": "trstupole0ir5lte",
+  "name": "TUPOLEV",
+  "type": "trait_soyouz",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "traitKey": "tupolev",
+    "shortDescription": "manœuvrer, accélérer, semer des poursuivants, etc.",
+    "description": "<p>TUPOLEV représente la vitesse de déplacement d'un engin, sa manœuvrabilité et le punch de ses moteurs.</p><p>Quand un Kamarade essaye de le faire manœuvrer, le score en TUPOLEV s'ajoute naturellement au score en SOYOUZ du pilote.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!trstupole0ir5lte"
+}

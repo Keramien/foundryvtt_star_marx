@@ -1,0 +1,19 @@
+{
+  "_id": "trsparade0iptovc",
+  "name": "PARADE",
+  "type": "trait_soyouz",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "traitKey": "parade",
+    "shortDescription": "impressionner, négocier, forcer un blocus, etc.",
+    "description": "<p>PARADE représente l'aspect du vaisseau.</p><p>Ce score peut être ajouté aux tentatives de PROPAGANDE ou de BRISEUR DE GRÈVE des pilotes, que ce soit pour faire peur, forcer un blocus spatial ou négocier les termes d'un contrat impliquant le vaisseau.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 2,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!trsparade0iptovc"
+}

@@ -1,0 +1,19 @@
+{
+  "_id": "trslebede1lm0ofa",
+  "name": "LEBEDEV",
+  "type": "trait_soyouz",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "traitKey": "lebedev",
+    "shortDescription": "scanner, calculer, pirater l'Interkom, etc.",
+    "description": "<p>LEBEDEV représente l'équipement informatique et les scanners du soyouz.</p><p>Il peut s'ajouter à un jet d'OPÉRATEUR CODEUR pour lire des échos radar, analyser des données scientifiques ou hacker l'Interkom.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 3,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!trslebede1lm0ofa"
+}

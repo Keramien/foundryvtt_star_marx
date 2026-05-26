@@ -1,0 +1,20 @@
+{
+  "_id": "trtetoile1u39d2e",
+  "name": "Machiniste",
+  "type": "trait",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "doctrine": "etoile",
+    "traitKey": "etoile.machiniste",
+    "shortDescription": "réparer une machine, un vaisseau spatial, etc.",
+    "description": "<p>Ce Trait regroupe toutes les compétences mécaniques : réparer une machine, un vaisseau spatial, un aspirateur, un grille-pain, et tout ce qui prétend fonctionner malgré son origine soviétique.</p>"
+  },
+  "effects": [],
+  "folder": "fldtraitetoileAA",
+  "sort": 22,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!trtetoile1u39d2e"
+}

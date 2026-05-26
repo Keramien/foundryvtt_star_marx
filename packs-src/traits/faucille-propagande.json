@@ -1,0 +1,20 @@
+{
+  "_id": "trtfaucil0q01vuh",
+  "name": "Propagande",
+  "type": "trait",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "doctrine": "faucille",
+    "traitKey": "faucille.propagande",
+    "shortDescription": "mentir, faire diversion, etc.",
+    "description": "<p>Ce Trait regroupe toutes les compétences faisant appel au mensonge ou au baratin, que ce soit en travestissant directement la vérité ou en faisant diversion.</p>"
+  },
+  "effects": [],
+  "folder": "fldtraitfaucille",
+  "sort": 17,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!trtfaucil0q01vuh"
+}

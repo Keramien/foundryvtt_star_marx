@@ -16,6 +16,15 @@ function description() {
   return new HTMLField();
 }
 
+function traitReferenceSchema(extra = {}) {
+  return {
+    ...extra,
+    traitKey: new StringField({ required: true, initial: "" }),
+    shortDescription: new StringField({ required: true, initial: "" }),
+    description: description()
+  };
+}
+
 export class RaceData extends foundry.abstract.TypeDataModel {
   static defineSchema() {
     return {
@@ -159,6 +168,24 @@ export class CorruptionData extends foundry.abstract.TypeDataModel {
       description: description(),
       cost: new StringField({ required: true, initial: "1" })
     };
+  }
+}
+
+// Reference aid for Kamarade Traits. It is intentionally non-mechanical:
+// these Items document what each Trait covers without affecting actors.
+export class TraitData extends foundry.abstract.TypeDataModel {
+  static defineSchema() {
+    return traitReferenceSchema({
+      doctrine: new StringField({ required: true, initial: "marteau", choices: DOCTRINES })
+    });
+  }
+}
+
+// Reference aid for Soyouz Traits. Kept separate from character Traits so
+// future ship-specific behavior can evolve without overloading one type.
+export class TraitSoyouzData extends foundry.abstract.TypeDataModel {
+  static defineSchema() {
+    return traitReferenceSchema();
   }
 }
 

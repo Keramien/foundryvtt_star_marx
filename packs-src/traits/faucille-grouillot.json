@@ -1,0 +1,20 @@
+{
+  "_id": "trtfaucil05fxkd7",
+  "name": "Grouillot",
+  "type": "trait",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "doctrine": "faucille",
+    "traitKey": "faucille.grouillot",
+    "shortDescription": "laver la vaisselle, faire disparaître les traces compromettantes, etc.",
+    "description": "<p>Les Kamarades auraient tort de délaisser ce Trait, celui des fées du logis.</p><p>Il peut servir à débusquer les bennes à ordures afin de s'y cacher, débarrasser une monture de ses puces, effacer des traces compromettantes, cuisiner l'improbable et rendre service là où personne ne veut mettre les mains.</p>"
+  },
+  "effects": [],
+  "folder": "fldtraitfaucille",
+  "sort": 14,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!trtfaucil05fxkd7"
+}

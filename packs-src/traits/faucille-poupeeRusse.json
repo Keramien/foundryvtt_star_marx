@@ -1,0 +1,20 @@
+{
+  "_id": "trtfaucil1y20e58",
+  "name": "Poupée Russe",
+  "type": "trait",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "doctrine": "faucille",
+    "traitKey": "faucille.poupeeRusse",
+    "shortDescription": "se faire entretenir, confidences sur l'oreiller, etc.",
+    "description": "<p>Ce Trait regroupe toutes les actions et attitudes liées à la séduction et les moyens d'en abuser.</p><p>Il permet évidemment de séduire, mais aussi d'inciter les partenaires romantiques ou sexuels du Kamarade à lui confier leurs secrets, à l'entretenir ou à lui rendre des services par espoir d'un regard ou d'un sourire.</p>"
+  },
+  "effects": [],
+  "folder": "fldtraitfaucille",
+  "sort": 16,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!trtfaucil1y20e58"
+}

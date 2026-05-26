@@ -53,6 +53,8 @@
       "atout":         {},
       "don":           {},
       "corruption":    {},
+      "trait":         {},
+      "trait_soyouz":  {},
       "signe_soyouz":  {}
     }
   },
@@ -66,7 +68,7 @@
     },
     {
       "name": "signes",
-      "label": "Signes particuliers",
+      "label": "Signes Particuliers Kamarade",
       "path": "packs/signes",
       "type": "Item",
       "system": "star_marx"
@@ -80,7 +82,7 @@
     },
     {
       "name": "dons",
-      "label": "Dons",
+      "label": "Dons Ennemis",
       "path": "packs/dons",
       "type": "Item",
       "system": "star_marx"
@@ -108,8 +110,22 @@
     },
     {
       "name": "signes_soyouz",
-      "label": "Signes Particuliers (Soyouz)",
+      "label": "Signes Particuliers Soyouz",
       "path": "packs/signes_soyouz",
+      "type": "Item",
+      "system": "star_marx"
+    },
+    {
+      "name": "traits",
+      "label": "Traits Kamarade",
+      "path": "packs/traits",
+      "type": "Item",
+      "system": "star_marx"
+    },
+    {
+      "name": "traits_soyouz",
+      "label": "Traits Soyouz",
+      "path": "packs/traits_soyouz",
       "type": "Item",
       "system": "star_marx"
     }

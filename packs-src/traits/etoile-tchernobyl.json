@@ -1,0 +1,20 @@
+{
+  "_id": "trtetoile1nrrld9",
+  "name": "Tchernobyl",
+  "type": "trait",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "doctrine": "etoile",
+    "traitKey": "etoile.tchernobyl",
+    "shortDescription": "Trait des mutants, des robots, etc. (pouvoir spécial)",
+    "description": "<p>Tchernobyl est le Trait des mutants, des robots et autres Kamarades à pouvoir spécial.</p><p>Pour jouer ce genre de Kamarade, il faut avoir un score en TCHERNOBYL et prendre un Signe particulier correspondant à son pouvoir. Comme toujours, le Secrétaire Général garde le dernier mot sur les usages possibles.</p>"
+  },
+  "effects": [],
+  "folder": "fldtraitetoileAA",
+  "sort": 27,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!trtetoile1nrrld9"
+}

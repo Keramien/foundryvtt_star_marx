@@ -1,5 +1,6 @@
 // Compile JSON sources under packs-src/<pack>/*.json into a LevelDB
 // compendium under packs/<pack>. Run with `npm run pack:build`.
+// Optional pack names can be passed after `--` to compile only those packs.
 //
 // We talk to classic-level directly rather than using the foundryvtt-cli's
 // compilePack() helper, because at the time of writing the CLI's cleanup
@@ -81,13 +82,17 @@ async function buildOne(packName) {
   console.log(`  packed ${seen.size} doc(s) → ${dst}`);
 }
 
-const packs = listPacks(SRC_DIR);
+const requestedPacks = process.argv.slice(2);
+const packs = requestedPacks.length > 0 ? requestedPacks : listPacks(SRC_DIR);
 if (packs.length === 0) {
   console.log("No packs to build in", SRC_DIR);
   process.exit(0);
 }
 
 for (const pack of packs) {
+  if (!statSync(join(SRC_DIR, pack), { throwIfNoEntry: false })?.isDirectory()) {
+    throw new Error(`Unknown pack '${pack}' under ${SRC_DIR}`);
+  }
   console.log(`Star Marx | Compiling pack ${pack}`);
   await buildOne(pack);
 }

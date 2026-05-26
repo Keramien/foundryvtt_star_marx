@@ -1,0 +1,20 @@
+{
+  "_id": "trtetoile1xe2mwl",
+  "name": "Jeux et Paris",
+  "type": "trait",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "doctrine": "etoile",
+    "traitKey": "etoile.jeuxEtParis",
+    "shortDescription": "tricher aux cartes, bluffer, etc.",
+    "description": "<p>Ce Trait regroupe toutes les compétences théoriques et pratiques liées aux jeux ainsi que la capacité à tricher : connaître les règles, tricher aux cartes, bluffer, etc.</p>"
+  },
+  "effects": [],
+  "folder": "fldtraitetoileAA",
+  "sort": 20,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!trtetoile1xe2mwl"
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "trtmartea1ggdund",
+  "name": "Soyouz",
+  "type": "trait",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "doctrine": "marteau",
+    "traitKey": "marteau.soyouz",
+    "shortDescription": "piloter un vaisseau spatial, identifier un modèle, etc.",
+    "description": "<p>Ce Trait regroupe toutes les compétences relatives aux vaisseaux spatiaux : aussi bien les piloter que d'identifier un modèle, voire reconnaître une antiquité ou un bâtiment historique.</p>"
+  },
+  "effects": [],
+  "folder": "fldtraitmarteauA",
+  "sort": 8,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!trtmartea1ggdund"
+}

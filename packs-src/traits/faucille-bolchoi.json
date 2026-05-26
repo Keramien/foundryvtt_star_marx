@@ -1,0 +1,20 @@
+{
+  "_id": "trtfaucil1djmm0e",
+  "name": "Bolchoï",
+  "type": "trait",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "doctrine": "faucille",
+    "traitKey": "faucille.bolchoi",
+    "shortDescription": "danse, piano, etc.",
+    "description": "<p>Ce Trait regroupe toutes les compétences théoriques et pratiques liées aux arts : danse, piano, peinture, etc.</p><p>Il couvre également la connaissance des courants artistiques et des artistes eux-mêmes, morts, vivants, ou entre les deux.</p>"
+  },
+  "effects": [],
+  "folder": "fldtraitfaucille",
+  "sort": 11,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!trtfaucil1djmm0e"
+}

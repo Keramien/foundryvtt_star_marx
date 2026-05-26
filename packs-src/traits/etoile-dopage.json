@@ -1,0 +1,20 @@
+{
+  "_id": "trtetoile1cjjkx5",
+  "name": "Dopage",
+  "type": "trait",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "doctrine": "etoile",
+    "traitKey": "etoile.dopage",
+    "shortDescription": "soigner, fabriquer une drogue, etc.",
+    "description": "<p>Ce Trait regroupe toutes les compétences théoriques et pratiques de médecine et de pharmacopée.</p><p>Il sert à soigner, fabriquer une drogue ou un médicament, reconnaître une maladie, et parfois aider un ami à remporter une compétition de natation féminine.</p>"
+  },
+  "effects": [],
+  "folder": "fldtraitetoileAA",
+  "sort": 19,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!trtetoile1cjjkx5"
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "trtetoile1bjmmua",
+  "name": "Recherche & Conception",
+  "type": "trait",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "doctrine": "etoile",
+    "traitKey": "etoile.rechercheConception",
+    "shortDescription": "inventer une machine, une nouvelle substance chimique, etc.",
+    "description": "<p>Ce Trait regroupe toutes les compétences scientifiques : inventer une machine, une nouvelle substance chimique, connaître les travaux d'un chercheur connu, etc.</p>"
+  },
+  "effects": [],
+  "folder": "fldtraitetoileAA",
+  "sort": 25,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!trtetoile1bjmmua"
+}

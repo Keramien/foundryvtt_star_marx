@@ -1,0 +1,19 @@
+{
+  "_id": "trstetris0b8a8vc",
+  "name": "TÉTRIS",
+  "type": "trait_soyouz",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "traitKey": "tetris",
+    "shortDescription": "charger, stocker, transporter, emboutir avec la masse du vaisseau, etc.",
+    "description": "<p>TÉTRIS représente la capacité des soutes.</p><p>À -2, il y a à peine la place pour une valisette. À -1, tout le monde peut amener des bagages limités. Au-delà, on commence à pouvoir songer à une cargaison, voire à des tankers exceptionnels.</p><p>Le TÉTRIS sert aussi à calculer les dégâts lorsque l'engin est utilisé lui-même comme une arme, par exemple en emboutissant un adversaire avec la masse du vaisseau.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 5,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!trstetris0b8a8vc"
+}

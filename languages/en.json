@@ -186,6 +186,43 @@
         "Samizdats": "Samizdats",
         "Tchernobyl": "Chernobyl",
         "Universitet": "Universitet"
+      },
+      "ShortDescription": {
+        "Marteau": {
+          "Ak47": "shooting, throwing, etc.",
+          "BriseurDeGreve": "intimidating, racketeering, etc.",
+          "Goulag": "surviving in hostile environments, eating foul things without getting sick, etc.",
+          "Karkass": "physical sturdiness, endurance, etc.",
+          "Lutte": "close combat, immobilizing someone, etc.",
+          "MedailleOlympique": "swimming, running, etc.",
+          "Muskle": "lifting weight, breaking things, etc.",
+          "PrisonnierPolitique": "resisting torture, playing submissive, etc.",
+          "Soyouz": "piloting a spaceship, identifying a model, etc."
+        },
+        "Faucille": {
+          "Acrobate": "climbing, leaping between laser beams, etc.",
+          "ActionPartisane": "planting bombs, putting up posters without being noticed, etc.",
+          "Bolchoi": "dance, piano, etc.",
+          "Corruption": "greasing palms, forging papers, etc.",
+          "EtreAuParfum": "knowing the latest rumors, blackmailing, etc.",
+          "Grouillot": "washing dishes, making compromising traces disappear, etc.",
+          "MarcheNoir": "scrounging up goods, estimating market value, etc.",
+          "PoupeeRusse": "being kept, pillow-talk confidences, etc.",
+          "Propagande": "lying, creating a diversion, etc.",
+          "SocialTraitre": "hiding in the shadows, moving silently, etc."
+        },
+        "Etoile": {
+          "Dopage": "healing, manufacturing a drug, etc.",
+          "JeuxEtParis": "cheating at cards, bluffing, etc.",
+          "Kgb": "noticing something, tailing someone, etc.",
+          "Machiniste": "repairing a machine, a spaceship, etc.",
+          "OperateurCodeur": "hacking a computer, finding information on Interkom, etc.",
+          "Pionnier": "speaking a foreign language, knowing a nemtsy civilization, etc.",
+          "RechercheConception": "inventing a machine, a new chemical substance, etc.",
+          "Samizdats": "journalism, publishing despite censorship, etc.",
+          "Tchernobyl": "Trait for mutants, robots, etc. (special power)",
+          "Universitet": "literature, History, etc."
+        }
       }
     },
     "Item": {
@@ -199,6 +236,8 @@
         "atout": "Trump",
         "don": "Gift",
         "corruption": "Corruption",
+        "trait": "Kamarade Trait",
+        "trait_soyouz": "Soyouz Trait",
         "signe_soyouz": "Ship Sign"
       },
       "Common": {
@@ -309,6 +348,17 @@
       },
       "Hint": "Player aid for corruptions bought with Zlotys. No automated effect."
     },
+    "TraitReference": {
+      "Banner": {
+        "trait": "Reference aid for a Kamarade Trait",
+        "trait_soyouz": "Reference aid for a Soyouz Trait"
+      },
+      "Fields": {
+        "Doctrine": "Doctrine",
+        "ShortDescription": "Short description",
+        "Description": "Detailed description"
+      }
+    },
     "SigneSoyouz": {
       "Banner": "Ship-only distinctive sign",
       "Fields": {
@@ -367,6 +417,17 @@
         "Datcha": "DATCHA",
         "Tetris": "TÉTRIS",
         "MurDeFer": "MUR DE FER"
+      },
+      "Trait": {
+        "ShortDescription": {
+          "Tupolev": "maneuvering, accelerating, shaking pursuers, etc.",
+          "OrgueDeStaline": "shooting, shelling, going rat-a-tat, etc.",
+          "Parade": "impressing, negotiating, forcing a blockade, etc.",
+          "Lebedev": "scanning, computing, hacking Interkom, etc.",
+          "Datcha": "sleeping, cooking, surviving long trips, etc.",
+          "Tetris": "loading, storing, hauling cargo, ramming with the ship's mass, etc.",
+          "MurDeFer": "enduring hits, armoring up, staying pressurized, etc."
+        }
       },
       "Postes": {
         "Pilote": "Pilot",

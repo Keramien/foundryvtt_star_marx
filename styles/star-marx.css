@@ -1066,10 +1066,16 @@
    title input opts out via :not() so it keeps its red/gold underline style. */
 .star-marx.item input[type="text"]:not(.item-sheet__name),
 .star-marx.item input[type="number"],
-.star-marx.item select {
+.star-marx.item select,
+.star-marx.item textarea {
   background: var(--sm-paper-alt);
   border: 1px solid var(--sm-border);
   padding: 3px 6px;
+}
+
+.star-marx.item textarea {
+  resize: vertical;
+  min-height: 2.4rem;
 }
 
 /* Hide the ProseMirror format toolbar (bold / italic / lists ...) when the
@@ -1084,25 +1090,38 @@
    (signe_soyouz) from Kamarade-facing items. The header swaps its red
    propaganda gradient for a spaceframe-blue one; the gold separator keeps the
    soviet-sci-fi parodic tone. */
-.star-marx.item .item-sheet__header[data-item-type="signe_soyouz"] {
+.star-marx.item .item-sheet__header[data-item-type="signe_soyouz"],
+.star-marx.item .item-sheet__header[data-item-type="trait_soyouz"] {
   background: linear-gradient(135deg, #1b3a5f 0%, #0d2340 100%);
 }
 
-.star-marx.item .soyouz-banner {
+.star-marx.item .soyouz-banner,
+.star-marx.item .trait-reference-banner {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   padding: 0.4rem 0.6rem;
-  background: rgba(27, 58, 95, 0.08);
-  border-left: 3px solid #1b3a5f;
-  color: #1b3a5f;
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   font-weight: 600;
 }
 
-.star-marx.item .soyouz-banner i {
+.star-marx.item .soyouz-banner,
+.star-marx.item .trait-reference-banner--soyouz {
+  background: rgba(27, 58, 95, 0.08);
+  border-left: 3px solid #1b3a5f;
+  color: #1b3a5f;
+}
+
+.star-marx.item .trait-reference-banner {
+  background: rgba(166, 28, 28, 0.08);
+  border-left: 3px solid var(--sm-red);
+  color: var(--sm-red);
+}
+
+.star-marx.item .soyouz-banner i,
+.star-marx.item .trait-reference-banner i {
   font-size: 0.9rem;
 }
 

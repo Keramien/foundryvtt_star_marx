@@ -13,7 +13,7 @@ import { SoyouzData } from "./data/soyouz_data.mjs";
 import {
   RaceData, SigneData, KontrebandeData, ClefData,
   BardaData, FaiblesseData, AtoutData, DonData,
-  CorruptionData, SigneSoyouzData
+  CorruptionData, TraitData, TraitSoyouzData, SigneSoyouzData
 } from "./data/items_data.mjs";
 import { SYSTEM_ID } from "./helpers/config.mjs";
 
@@ -44,6 +44,8 @@ Hooks.once("init", () => {
     atout:         AtoutData,
     don:           DonData,
     corruption:    CorruptionData,
+    trait:         TraitData,
+    trait_soyouz:  TraitSoyouzData,
     signe_soyouz:  SigneSoyouzData
   };
 
@@ -86,7 +88,7 @@ Hooks.once("init", () => {
 
   // Our custom Item sheet handles the system's authored item families.
   foundry.documents.collections.Items.registerSheet(SYSTEM_ID, StarMarxItemSheet, {
-    types: ["race", "signe", "clef", "don", "corruption", "signe_soyouz"],
+    types: ["race", "signe", "clef", "don", "corruption", "trait", "trait_soyouz", "signe_soyouz"],
     makeDefault: true,
     label: "STARMARX.Sheet.ItemLabel"
   });

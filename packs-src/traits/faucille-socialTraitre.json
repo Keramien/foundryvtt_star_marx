@@ -1,0 +1,20 @@
+{
+  "_id": "trtfaucil0cvbkp0",
+  "name": "Social Traître",
+  "type": "trait",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "doctrine": "faucille",
+    "traitKey": "faucille.socialTraitre",
+    "shortDescription": "se cacher dans l'ombre, se déplacer sans faire de bruit, etc.",
+    "description": "<p>Ce Trait regroupe toutes les capacités faisant appel à la discrétion : marcher sans bruit, se cacher dans l'ombre, ouvrir des portes sans les faire grincer ou dérober une carte de rationnement dans les poches d'un quidam.</p>"
+  },
+  "effects": [],
+  "folder": "fldtraitfaucille",
+  "sort": 18,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!trtfaucil0cvbkp0"
+}

@@ -1,0 +1,19 @@
+{
+  "_id": "trsdatcha1xjajb0",
+  "name": "DATCHA",
+  "type": "trait_soyouz",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "traitKey": "datcha",
+    "shortDescription": "dormir, cuisiner, survivre aux longs trajets, etc.",
+    "description": "<p>DATCHA représente le confort d'un vaisseau, son habitabilité et le côté douillet de ses équipements.</p><p>À -2, c'est l'exiguïté totale, les angles vifs des machines et pratiquement aucun espace prévu pour y vivre. À 0, on imagine un confort spartiate. À +1, le soyouz commence à être confortable comme un petit studio. Au-delà, c'est le luxe.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 4,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!trsdatcha1xjajb0"
+}

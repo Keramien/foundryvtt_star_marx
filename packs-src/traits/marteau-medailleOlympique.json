@@ -1,0 +1,20 @@
+{
+  "_id": "trtmartea0pyk34e",
+  "name": "Médaille Olympique",
+  "type": "trait",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "doctrine": "marteau",
+    "traitKey": "marteau.medailleOlympique",
+    "shortDescription": "nager, courir, etc.",
+    "description": "<p>Ce Trait joue un rôle dans toutes les actions nécessitant une aptitude sportive : course, escalade, natation, ou faire glisser une pierre en frottant très vite un parquet avec un balai.</p>"
+  },
+  "effects": [],
+  "folder": "fldtraitmarteauA",
+  "sort": 5,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!trtmartea0pyk34e"
+}

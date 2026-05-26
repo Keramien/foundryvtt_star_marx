@@ -1,0 +1,20 @@
+{
+  "_id": "trtfaucil0j1dmr3",
+  "name": "Être au Parfum",
+  "type": "trait",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "doctrine": "faucille",
+    "traitKey": "faucille.etreAuParfum",
+    "shortDescription": "connaître les dernières rumeurs, faire chanter, etc.",
+    "description": "<p>Ce Trait permet d'évaluer l'aisance sociale : connaître les rumeurs et les potins, flairer les mensonges et les secrets.</p><p>Il relève aussi d'une certaine mentalité criminelle, comme la capacité à faire chanter quelqu'un avec le sourire le plus administratif possible.</p>"
+  },
+  "effects": [],
+  "folder": "fldtraitfaucille",
+  "sort": 13,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!trtfaucil0j1dmr3"
+}

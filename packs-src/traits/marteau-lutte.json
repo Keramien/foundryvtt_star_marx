@@ -1,0 +1,20 @@
+{
+  "_id": "trtmartea11dra7y",
+  "name": "Lutte",
+  "type": "trait",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "doctrine": "marteau",
+    "traitKey": "marteau.lutte",
+    "shortDescription": "se battre au contact, immobiliser quelqu'un, etc.",
+    "description": "<p>Ce Trait fait appel à tout ce qui touche au corps à corps, comme immobiliser quelqu'un, lui donner un coup de poing, se débattre ou régler un désaccord dialectique à portée de mandibule.</p>"
+  },
+  "effects": [],
+  "folder": "fldtraitmarteauA",
+  "sort": 4,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!trtmartea11dra7y"
+}

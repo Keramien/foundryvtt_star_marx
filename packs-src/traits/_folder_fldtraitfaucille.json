@@ -1,0 +1,12 @@
+{
+  "_id": "fldtraitfaucille",
+  "_key": "!folders!fldtraitfaucille",
+  "name": "Faucille",
+  "type": "Item",
+  "sorting": "a",
+  "folder": null,
+  "sort": 1,
+  "color": "",
+  "description": "",
+  "flags": {}
+}

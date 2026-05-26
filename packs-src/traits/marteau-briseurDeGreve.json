@@ -1,0 +1,20 @@
+{
+  "_id": "trtmartea0mncp6o",
+  "name": "Briseur de Grève",
+  "type": "trait",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "doctrine": "marteau",
+    "traitKey": "marteau.briseurDeGreve",
+    "shortDescription": "intimider, racketter, etc.",
+    "description": "<p>Ce Trait regroupe toute action ou attitude faisant appel à l'intimidation. C'est la compétence classique des criminels et des mauvais garçons : racketter, faire taire quelqu'un, etc.</p>"
+  },
+  "effects": [],
+  "folder": "fldtraitmarteauA",
+  "sort": 1,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!trtmartea0mncp6o"
+}

@@ -1,0 +1,19 @@
+{
+  "_id": "trsorgued1kvqrps",
+  "name": "ORGUE DE STALINE",
+  "type": "trait_soyouz",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "traitKey": "orgueDeStaline",
+    "shortDescription": "tirer, pilonner, faire ratata, etc.",
+    "description": "<p>ORGUE DE STALINE représente l'armement du vaisseau.</p><p>Ce score s'ajoute au score en AK 47 d'un éventuel canonnier. Avec un score de -2, l'appareil est totalement désarmé, et tirer sur les ennemis par les fenêtres ouvertes reste une idée historiquement problématique.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 1,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!trsorgued1kvqrps"
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "trtetoile0q2zd35",
+  "name": "KGB",
+  "type": "trait",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "doctrine": "etoile",
+    "traitKey": "etoile.kgb",
+    "shortDescription": "remarquer quelque chose, filer quelqu'un, etc.",
+    "description": "<p>Ce Trait regroupe par essence toutes les compétences policières : remarquer un détail qui cloche, repérer quelque chose de suspect, filer quelqu'un, déduire, enquêter, analyser des dossiers, etc.</p>"
+  },
+  "effects": [],
+  "folder": "fldtraitetoileAA",
+  "sort": 21,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!trtetoile0q2zd35"
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "trtmartea1a8f9xl",
+  "name": "Prisonnier Politique",
+  "type": "trait",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "doctrine": "marteau",
+    "traitKey": "marteau.prisonnierPolitique",
+    "shortDescription": "résister à la torture, jouer les soumis, etc.",
+    "description": "<p>Beaucoup de citoyens ont développé ce mélange subtil de comédie, de baratin et de volonté qui leur permet de résister à la torture ou de jouer les soumis.</p>"
+  },
+  "effects": [],
+  "folder": "fldtraitmarteauA",
+  "sort": 7,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!trtmartea1a8f9xl"
+}

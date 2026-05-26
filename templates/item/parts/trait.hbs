@@ -1,0 +1,31 @@
+<section class="item-body trait-reference-body{{#unless isEditable}} item-body--readonly{{/unless}}">
+
+  <div class="trait-reference-banner {{#if (eq item.type "trait_soyouz")}}trait-reference-banner--soyouz{{/if}}">
+    <i class="fa-solid {{#if (eq item.type "trait_soyouz")}}fa-rocket{{else}}fa-dice-d6{{/if}}"></i>
+    <span>{{localize (concat "STARMARX.TraitReference.Banner." item.type)}}</span>
+  </div>
+
+  {{#if (eq item.type "trait")}}
+    <div class="form-group">
+      <label>{{localize "STARMARX.TraitReference.Fields.Doctrine"}}</label>
+      <select name="system.doctrine">
+        {{#each doctrines}}
+          <option value="{{this}}" {{#if (eq ../system.doctrine this)}}selected{{/if}}>
+            {{localize (concat "STARMARX.Doctrine." (capitalize this))}}
+          </option>
+        {{/each}}
+      </select>
+    </div>
+  {{/if}}
+
+  <div class="form-group">
+    <label>{{localize "STARMARX.TraitReference.Fields.ShortDescription"}}</label>
+    <textarea name="system.shortDescription" rows="2">{{system.shortDescription}}</textarea>
+  </div>
+
+  <div class="form-group">
+    <label>{{localize "STARMARX.TraitReference.Fields.Description"}}</label>
+    <prose-mirror name="system.description" value="{{system.description}}"></prose-mirror>
+  </div>
+
+</section>

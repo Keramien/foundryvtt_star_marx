@@ -1,0 +1,20 @@
+{
+  "_id": "trtmartea1yx2g8l",
+  "name": "AK 47",
+  "type": "trait",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "doctrine": "marteau",
+    "traitKey": "marteau.ak47",
+    "shortDescription": "tir, lancer, etc.",
+    "description": "<p>Ce Trait regroupe toutes les compétences relatives aux armes de jet. Il sert également lors des jets basiques de lancer, comme agripper un hélicoptère avec un grappin.</p>"
+  },
+  "effects": [],
+  "folder": "fldtraitmarteauA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!trtmartea1yx2g8l"
+}

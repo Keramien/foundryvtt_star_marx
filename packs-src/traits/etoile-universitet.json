@@ -1,0 +1,20 @@
+{
+  "_id": "trtetoile0ki4fc1",
+  "name": "Universitet",
+  "type": "trait",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "doctrine": "etoile",
+    "traitKey": "etoile.universitet",
+    "shortDescription": "littérature, Histoire, etc.",
+    "description": "<p>Ce Trait regroupe toutes les compétences liées aux sciences humaines et sociales, ainsi que la connaissance du fonctionnement des universités et des professeurs reconnus dans leurs domaines.</p>"
+  },
+  "effects": [],
+  "folder": "fldtraitetoileAA",
+  "sort": 28,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!trtetoile0ki4fc1"
+}

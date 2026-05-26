@@ -1,0 +1,20 @@
+{
+  "_id": "trtfaucil0aox8xa",
+  "name": "Marché Noir",
+  "type": "trait",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "doctrine": "faucille",
+    "traitKey": "faucille.marcheNoir",
+    "shortDescription": "dégotter des marchandises, estimer une valeur marchande, etc.",
+    "description": "<p>Ce Trait est cher à tous les contrebandiers, mais aussi au moindre citoyen de l'Union qui voudrait autre chose qu'un pantalon quinze tailles en dessous ou deux chaussures gauches.</p><p>Il sert à dégotter des marchandises, estimer une valeur marchande, connaître les réseaux de revente, cacher un produit illicite, etc.</p>"
+  },
+  "effects": [],
+  "folder": "fldtraitfaucille",
+  "sort": 15,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!items!trtfaucil0aox8xa"
+}
